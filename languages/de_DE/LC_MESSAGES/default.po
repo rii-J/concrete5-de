@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 5.4.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-16 09:32+0100\n"
-"PO-Revision-Date: 2011-09-16 09:59+0100\n"
+"PO-Revision-Date: 2011-09-26 17:42+0100\n"
 "Last-Translator: Riadh Jouili <info@concrete5-cms.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
@@ -1907,11 +1907,11 @@ msgstr ""
 
 #: concrete/controllers/dashboard/composer/drafts.php:13
 msgid "Draft deleted."
-msgstr "Datei gelöscht."
+msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:16
 msgid "Invalid page."
-msgstr "Ungültige Seiten ID angegeben."
+msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:30
 msgid "You must provide a name for your page before you can publish it."
@@ -1920,7 +1920,7 @@ msgstr ""
 #: concrete/controllers/dashboard/composer/write.php:37
 #: concrete/controllers/dashboard/composer/write.php:154
 msgid "Invalid parent page."
-msgstr "Ungültige Seiten ID angegeben."
+msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:41
 #: concrete/controllers/dashboard/composer/write.php:166
@@ -1929,15 +1929,15 @@ msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:103
 msgid "Draft saved successfully."
-msgstr "Der Block wurde erfolgreich gespeichert."
+msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:159
 msgid "Invalid composer draft."
-msgstr "Ungültige Dateierweiterung."
+msgstr ""
 
 #: concrete/controllers/dashboard/composer/write.php:177
 msgid "This page will be published beneath %s."
-msgstr "Unterseiten unterhalb dieser Seite hinzugefügt"
+msgstr ""
 
 #: concrete/controllers/dashboard/files/access.php:31
 msgid "Changes Saved"
@@ -2097,7 +2097,7 @@ msgstr "Dateien im theme wurden erfolgreich aktiviert."
 
 #: concrete/controllers/dashboard/pages/types/composer.php:42
 msgid "Composer settings updated."
-msgstr "IP-Blacklist Einstellungen erneuert."
+msgstr ""
 
 #: concrete/controllers/dashboard/pages/types/controller.php:31
 msgid "You must delete all pages of this type before deleting this page type."
@@ -2725,7 +2725,7 @@ msgstr "Datenbank Name"
 
 #: concrete/elements/block_master_collection_composer.php:21
 msgid "Custom Composer Template"
-msgstr "Benutzerdefinierte Vorlage setzen"
+msgstr ""
 
 #: concrete/elements/collection_add.php:53
 #: concrete/elements/collection_add.php:150
@@ -5814,11 +5814,11 @@ msgstr "Laden Sie mehr Themes auf dem Marketplace von concrete5.org herunter."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:7
 msgid "Composer Settings"
-msgstr "PHP Einstellungen"
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:21
 msgid "Included in Composer?"
-msgstr "Inhalt einbezogen in \"Stichwort Suche\"."
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:25
 msgid "Yes, include this page type in Composer."
@@ -5826,7 +5826,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:29
 msgid "Composer Publishing Settings"
-msgstr "Cache Einstellungen gespeichert."
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:35
 msgid "Choose from all pages when publishing."
@@ -5846,11 +5846,11 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:107
 msgid "Composer Content Order"
-msgstr "Seitenreihenfolge ändern"
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:147
 msgid "Save Composer Settings"
-msgstr "Einstellungen zum Protokollieren speichern"
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:148
 msgid "Back to Page Types"
@@ -5858,7 +5858,7 @@ msgstr "Keine Seitentypen gefunden."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:157
 msgid "Unable to access composer settings."
-msgstr "Zugriff auf Dateimanager fehlgeschlagen"
+msgstr ""
 
 #: concrete/single_pages/dashboard/pages/types/view.php:79
 msgid "Page Type added."
@@ -7657,7 +7657,7 @@ msgstr "Neue übergeordnete Seite auswählen."
 
 #: concrete/tools/i18n_js.php:87
 msgid "Edit in Composer"
-msgstr "Inhalt im Bearbeitungsmodus deaktiviert."
+msgstr ""
 
 #: concrete/tools/i18n_js.php:91
 msgid "Back to Sitemap"
