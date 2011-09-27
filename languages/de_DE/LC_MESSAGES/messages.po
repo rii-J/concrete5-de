@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: 5.4.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-16 09:32+0100\n"
-"PO-Revision-Date: 2011-09-26 17:42+0100\n"
-"Last-Translator: Riadh Jouili <info@concrete5-cms.de>\n"
+"PO-Revision-Date: 2011-09-27 09:20+0100\n"
+"Last-Translator: Patrick Heck <heckp@gmx.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -244,7 +244,7 @@ msgstr "Zugriff verweigert"
 #: concrete/blocks/date_nav/tools/rss.php:50
 #: concrete/blocks/date_nav/tools/rss.php:55
 msgid "You don't have permission to access this RSS feed"
-msgstr ""
+msgstr "Sie haben keine Berechtigung auf diesen RSS Feed zuzugreifen"
 
 #: concrete/blocks/external_form/add.php:3
 #: concrete/blocks/external_form/edit.php:5
@@ -535,7 +535,7 @@ msgstr "E-Mail Adresse"
 #: concrete/blocks/form/form_setup_html.php:110
 #: concrete/blocks/form/form_setup_html.php:186
 msgid "Telephone"
-msgstr ""
+msgstr "Telefon"
 
 #: concrete/blocks/form/form_setup_html.php:111
 #: concrete/blocks/form/form_setup_html.php:187
@@ -985,7 +985,7 @@ msgstr "Sitemap"
 
 #: concrete/blocks/next_previous/form_setup_html.php:46
 msgid "Chronological"
-msgstr ""
+msgstr "Chronologisch"
 
 #: concrete/blocks/next_previous/form_setup_html.php:51
 msgid "Exclude System Pages"
@@ -1890,7 +1890,7 @@ msgstr "Das Paket wurde installiert."
 
 #: concrete/controllers/dashboard/install.php:301
 msgid "You do not have permission to install add-ons."
-msgstr ""
+msgstr "Sie haben keine Berechtigung Erweiterungen zu installieren."
 
 #: concrete/controllers/dashboard/install.php:314
 #: concrete/controllers/dashboard/install.php:342
@@ -1903,19 +1903,19 @@ msgstr "Marketplace Artikel %s erfolgreich heruntergeladen."
 
 #: concrete/controllers/dashboard/install.php:330
 msgid "You do not have permission to download add-ons."
-msgstr ""
+msgstr "Sie haben keine Berechtigung Erweiterungen herunterzuladen."
 
 #: concrete/controllers/dashboard/composer/drafts.php:13
 msgid "Draft deleted."
-msgstr ""
+msgstr "Entwurf gelöscht."
 
 #: concrete/controllers/dashboard/composer/write.php:16
 msgid "Invalid page."
-msgstr ""
+msgstr "Ungültige Seite."
 
 #: concrete/controllers/dashboard/composer/write.php:30
 msgid "You must provide a name for your page before you can publish it."
-msgstr ""
+msgstr "Sie müssen einen Namen für die Seite angeben, bevor diese veröffentlicht werden kann."
 
 #: concrete/controllers/dashboard/composer/write.php:37
 #: concrete/controllers/dashboard/composer/write.php:154
@@ -1925,19 +1925,19 @@ msgstr ""
 #: concrete/controllers/dashboard/composer/write.php:41
 #: concrete/controllers/dashboard/composer/write.php:166
 msgid "You do not have permissions to add this page type in that location."
-msgstr ""
+msgstr "Sie haben keine Berechtigung diesen Seitentyp an diesem Ort hinzuzufügen."
 
 #: concrete/controllers/dashboard/composer/write.php:103
 msgid "Draft saved successfully."
-msgstr ""
+msgstr "Entwurf erfolgreich gespeichert."
 
 #: concrete/controllers/dashboard/composer/write.php:159
 msgid "Invalid composer draft."
-msgstr ""
+msgstr "Ungültiger Composer Entwurf."
 
 #: concrete/controllers/dashboard/composer/write.php:177
 msgid "This page will be published beneath %s."
-msgstr ""
+msgstr "Diese Seite wird unter %s veröffentlicht."
 
 #: concrete/controllers/dashboard/files/access.php:31
 msgid "Changes Saved"
@@ -2097,7 +2097,7 @@ msgstr "Dateien im theme wurden erfolgreich aktiviert."
 
 #: concrete/controllers/dashboard/pages/types/composer.php:42
 msgid "Composer settings updated."
-msgstr ""
+msgstr "Composer Einstellungen aktualisiert."
 
 #: concrete/controllers/dashboard/pages/types/controller.php:31
 msgid "You must delete all pages of this type before deleting this page type."
@@ -2105,7 +2105,7 @@ msgstr "Es müssen zuerst alle Seiten dieses Typs gelöscht werden, bevor dieser
 
 #: concrete/controllers/dashboard/pages/types/controller.php:37
 msgid "This page type is no longer included in composer."
-msgstr ""
+msgstr "Dieser Seitentyp ist nicht mehr in Composer enthalten."
 
 #: concrete/controllers/dashboard/reports/forms.php:117
 msgid "File not found"
@@ -2257,7 +2257,7 @@ msgstr "Zugriff"
 #: concrete/controllers/dashboard/settings/mail/controller.php:14
 #: concrete/controllers/dashboard/settings/multilingual/controller.php:15
 msgid "Multilingual"
-msgstr "Multilinguales Support"
+msgstr "Mehrsprachigkeit"
 
 #: concrete/controllers/dashboard/settings/controller.php:715
 #: concrete/controllers/dashboard/settings/marketplace.php:15
@@ -2713,7 +2713,7 @@ msgstr "Änderungsdatum"
 
 #: concrete/elements/block_master_collection_composer.php:12
 msgid "Composer"
-msgstr ""
+msgstr "Composer"
 
 #: concrete/elements/block_master_collection_composer.php:13
 msgid "Include block in Composer"
@@ -2725,7 +2725,7 @@ msgstr "Datenbank Name"
 
 #: concrete/elements/block_master_collection_composer.php:21
 msgid "Custom Composer Template"
-msgstr ""
+msgstr "Eigene Composer Vorlage"
 
 #: concrete/elements/collection_add.php:53
 #: concrete/elements/collection_add.php:150
@@ -4126,15 +4126,15 @@ msgstr "Aktivierte Benutzer"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:37
 msgid "Multilingual Setup"
-msgstr "Setup Index"
+msgstr "Mehrsprachigkeit einrichten"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:42
 msgid "Composer Beta"
-msgstr ""
+msgstr "Composer Beta"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:42
 msgid "Write for your site."
-msgstr "Weiter zur Website."
+msgstr "Inhalte schreiben"
 
 #: concrete/helpers/form/page_selector.php:50
 msgid "Choose Page"
@@ -5121,7 +5121,7 @@ msgstr "Oder loggen Sie sich mit einer OpenID ein"
 
 #: concrete/single_pages/login.php:178
 msgid "Language"
-msgstr ""
+msgstr "Sprache"
 
 #: concrete/single_pages/login.php:184
 msgid "Remember Me"
@@ -5400,7 +5400,7 @@ msgstr "Bilder und Dateien"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:2
 msgid "Drafts"
-msgstr ""
+msgstr "Entwürfe"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:12
 msgid "Last Modified"
@@ -5413,7 +5413,7 @@ msgstr "Seite öffnen"
 #: concrete/single_pages/dashboard/composer/drafts.php:33
 #, php-format
 msgid "You have not created any drafts. <a href=\"%s\">Visit Composer &gt;</a>"
-msgstr ""
+msgstr "Sie haben noch keine Entwürfe erstellt. <a href=\"%s\">Composer anzeigen&gt;</a>"
 
 #: concrete/single_pages/dashboard/composer/write.php:11
 msgid "Basic Information"
@@ -5476,7 +5476,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/composer/write.php:277
 msgid "You have not setup any page types for Composer."
-msgstr ""
+msgstr "Sie haben noch keine Seitentypen für Composer konfiguriert."
 
 #: concrete/single_pages/dashboard/files/access.php:20
 msgid "Add users or groups to determine access to the file manager."
@@ -5814,15 +5814,15 @@ msgstr "Laden Sie mehr Themes auf dem Marketplace von concrete5.org herunter."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:7
 msgid "Composer Settings"
-msgstr ""
+msgstr "Composer Einstellungen"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:21
 msgid "Included in Composer?"
-msgstr ""
+msgstr "Enthalten im Composer?"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:25
 msgid "Yes, include this page type in Composer."
-msgstr ""
+msgstr "Ja, diesen Seitentyp zum Composer ergänzen."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:29
 msgid "Composer Publishing Settings"
@@ -6619,11 +6619,11 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:13
 msgid "Offer choice of language on login."
-msgstr ""
+msgstr "Sprachauswahl anbieten bei Anmeldung."
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:16
 msgid "Default Language: "
-msgstr "Voreinstellung - %s Minuten"
+msgstr "Standardsprache:"
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:21
 msgid "This has been set in config/site.php"
@@ -6631,7 +6631,7 @@ msgstr ""
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:23
 msgid "Default Language"
-msgstr "Voreinstellung - %s Minuten"
+msgstr "Standardsprache"
 
 #: concrete/single_pages/dashboard/sitemap/access.php:11
 #: concrete/single_pages/dashboard/sitemap/access.php:27
