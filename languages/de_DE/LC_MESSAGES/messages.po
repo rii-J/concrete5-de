@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 5.4.2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-16 09:32+0100\n"
-"PO-Revision-Date: 2011-09-28 11:59+0100\n"
-"Last-Translator: Patrick Heck <patrick@patrickheck.de>\n"
+"POT-Creation-Date: 2011-09-26 14:07+0100\n"
+"PO-Revision-Date: 2011-09-26 15:27+0100\n"
+"Last-Translator: Johannes Link <mail@johanneslink.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: /Users/riadh/Concrete5/concrete5.4.2.1\n"
+"X-Poedit-SearchPath-1: /Users/Furehead/Documents/LG3-furehead/_web/C5/Concrete5-de-5421\n"
 
 #: concrete/blocks/autonav/controller.php:183
 msgid "Creates navigation trees and sitemaps."
@@ -41,7 +42,7 @@ msgstr "Vorschau"
 
 #: concrete/blocks/autonav/form_setup_html.php:25
 msgid "Pages Should Appear"
-msgstr "Seiten sollten erscheinen"
+msgstr "Seiten sollen erscheinen"
 
 #: concrete/blocks/autonav/form_setup_html.php:27
 msgid "in their sitemap order."
@@ -73,7 +74,7 @@ msgstr "Berechtigungen ansehen"
 
 #: concrete/blocks/autonav/form_setup_html.php:37
 msgid "Display pages to users even when those users cannot access those pages."
-msgstr "Besuchern Seiten anzeigen trotz fehlende Berechtigungen."
+msgstr "Besuchern Seiten anzeigen trotz fehlender Berechtigungen."
 
 #: concrete/blocks/autonav/form_setup_html.php:39
 msgid "Display Pages"
@@ -194,7 +195,7 @@ msgstr "überall"
 
 #: concrete/blocks/date_nav/form_setup_html.php:52
 msgid "at the current level"
-msgstr "von aktueller Ebene."
+msgstr "auf der aktuellen Ebene"
 
 #: concrete/blocks/date_nav/form_setup_html.php:54
 msgid "beneath this page"
@@ -218,11 +219,11 @@ msgstr "Seiteninfo"
 
 #: concrete/blocks/date_nav/form_setup_html.php:91
 msgid "Truncate Titles"
-msgstr "Titeln abschneiden"
+msgstr "Titel kürzen"
 
 #: concrete/blocks/date_nav/form_setup_html.php:94
 msgid "Truncate titles after"
-msgstr "Titeln abschneiden nach"
+msgstr "Titel kürzen nach"
 
 #: concrete/blocks/date_nav/form_setup_html.php:96
 #: concrete/blocks/date_nav/form_setup_html.php:107
@@ -231,11 +232,11 @@ msgstr "Zeichen"
 
 #: concrete/blocks/date_nav/form_setup_html.php:102
 msgid "Truncate Summaries"
-msgstr "Zusammenfassungen abschneiden"
+msgstr "Zusammenfassungen kürzen"
 
 #: concrete/blocks/date_nav/form_setup_html.php:105
 msgid "Truncate descriptions after"
-msgstr "Beschreibungen abschneiden nach"
+msgstr "Beschreibungen kürzen nach"
 
 #: concrete/blocks/date_nav/tools/rss.php:50
 msgid "Permission Denied"
@@ -244,7 +245,7 @@ msgstr "Zugriff verweigert"
 #: concrete/blocks/date_nav/tools/rss.php:50
 #: concrete/blocks/date_nav/tools/rss.php:55
 msgid "You don't have permission to access this RSS feed"
-msgstr "Sie haben keine Berechtigung auf diesen RSS Feed zuzugreifen"
+msgstr "Ihnen fehlen Zugangsrechte für diesen RSS-Feed."
 
 #: concrete/blocks/external_form/add.php:3
 #: concrete/blocks/external_form/edit.php:5
@@ -316,7 +317,7 @@ msgstr "Sie müssen Ihre Datei verlinken."
 #: concrete/blocks/flash_content/add.php:6
 #: concrete/blocks/flash_content/edit.php:9
 msgid "Flash File"
-msgstr "Flash Datei."
+msgstr "Flash Datei"
 
 #: concrete/blocks/flash_content/add.php:10
 #: concrete/blocks/flash_content/edit.php:13
@@ -325,27 +326,27 @@ msgstr "Qualität"
 
 #: concrete/blocks/flash_content/add.php:12
 msgid "low"
-msgstr "low"
+msgstr "niedrig"
 
 #: concrete/blocks/flash_content/add.php:13
 msgid "autolow"
-msgstr "autolow"
+msgstr "niedrig (automatisch)"
 
 #: concrete/blocks/flash_content/add.php:14
 msgid "autohigh"
-msgstr "autohigh"
+msgstr "hoch (automatisch)"
 
 #: concrete/blocks/flash_content/add.php:15
 msgid "medium"
-msgstr "medium"
+msgstr "mittel"
 
 #: concrete/blocks/flash_content/add.php:16
 msgid "high"
-msgstr "high"
+msgstr "hoch"
 
 #: concrete/blocks/flash_content/add.php:17
 msgid "best"
-msgstr "best"
+msgstr "maximum"
 
 #: concrete/blocks/flash_content/add.php:20
 #: concrete/blocks/flash_content/edit.php:23
@@ -398,7 +399,7 @@ msgstr "Bitte mindestens eine Frage hinzufügen."
 
 #: concrete/blocks/form/controller.php:204
 msgid "Oops, something is wrong with the form you posted (it doesn't have a question set id)."
-msgstr "Oops, etwas stimmt mit dem Formular, welches Sie abgesendet haben, nicht (die Frage ID ist nicht gesetzt)."
+msgstr "Ups, etwas stimmt mit dem Formular, welches Sie abgesendet haben, nicht (die Frage ID ist nicht gesetzt)."
 
 #: concrete/blocks/form/controller.php:213
 msgid "Incorrect captcha code"
@@ -421,12 +422,13 @@ msgid "Please correct the following errors:"
 msgstr "Bitte folgende Fehler korrigieren:"
 
 #: concrete/blocks/form/controller.php:347
+#, php-format
 msgid "%s Form Submission"
 msgstr "%s Formular Einreichung"
 
 #: concrete/blocks/form/controller.php:626
 msgid "Please type the letters and numbers shown in the image."
-msgstr "Bitte geben Sie die Zeichen und Nummern ein."
+msgstr "Bitte geben Sie die Zeichen und Nummern im Bild ein."
 
 #: concrete/blocks/form/controller.php:639
 msgid "Submit"
@@ -434,11 +436,11 @@ msgstr "Absenden"
 
 #: concrete/blocks/form/controller.php:660
 msgid "edit"
-msgstr "bearbeiten"
+msgstr "Bearbeiten"
 
 #: concrete/blocks/form/controller.php:661
 msgid "remove"
-msgstr "entfernen"
+msgstr "Löschen"
 
 #: concrete/blocks/form/form_setup_html.php:8
 msgid "Add"
@@ -470,19 +472,20 @@ msgstr "Empfänger E-Mail"
 
 #: concrete/blocks/form/form_setup_html.php:52
 msgid "(Seperate multiple emails with a comma)"
-msgstr "(trennen Sie mehrere E-Mails mit einem Komma)"
+msgstr "(Mehrere E-Mail-Adressen mit einem Komma trennen)"
 
 #: concrete/blocks/form/form_setup_html.php:59
+#, php-format
 msgid "Solving a <a href=\"%s\" target=\"_blank\">CAPTCHA</a> Required to Post?"
 msgstr "Eingabe eines <a href=\"%s\" target=\"_blank\">CAPTCHA</a> erforderlich um Beitrag zu erstellen?"
 
 #: concrete/blocks/form/form_setup_html.php:64
 msgid "Redirect to another page after form submission?"
-msgstr "Nach erfolgreicher übermittlung auf einer anderen Seite weiterleiten?"
+msgstr "Nach erfolgreicher Übermittlung auf eine andere Seite weiterleiten?"
 
 #: concrete/blocks/form/form_setup_html.php:88
 msgid "Add a New Question"
-msgstr "Eine neue Frage einfügen"
+msgstr "Frage hinzufügen"
 
 #: concrete/blocks/form/form_setup_html.php:90
 msgid "Your question has been added. To view it click the preview tab."
@@ -496,7 +499,7 @@ msgstr "Frage"
 #: concrete/blocks/form/form_setup_html.php:101
 #: concrete/blocks/form/form_setup_html.php:177
 msgid "Answer Type"
-msgstr "Antworttyp"
+msgstr "Antwort-Typ"
 
 #: concrete/blocks/form/form_setup_html.php:103
 #: concrete/blocks/form/form_setup_html.php:179
@@ -574,7 +577,7 @@ msgstr "Dieses Feld ist erforderlich."
 
 #: concrete/blocks/form/form_setup_html.php:151
 msgid "Add Question"
-msgstr "Frage einfügen"
+msgstr "Frage hinzufügen"
 
 #: concrete/blocks/form/form_setup_html.php:163
 msgid "Your question has been edited."
@@ -602,7 +605,7 @@ msgstr "Google Map"
 
 #: concrete/blocks/google_map/controller.php:36
 msgid "Please enter a zoom number from 0 to 21."
-msgstr "Bitte einen Vergrößerungswert zwischen 0 und 17 eingeben."
+msgstr "Bitte einen Zoom-Wert zwischen 0 und 21 eingeben."
 
 #: concrete/blocks/google_map/form_setup_html.php:9
 msgid "Map Title"
@@ -622,27 +625,30 @@ msgstr "Z.B. \"Schloßplatz 1, 10178 Berlin\""
 
 #: concrete/blocks/google_map/form_setup_html.php:20
 msgid "Zoom"
-msgstr "Vergrößerung"
+msgstr "Zoom"
 
 #: concrete/blocks/google_map/form_setup_html.php:23
 msgid "Enter a number from 0 to 21, with 21 being the most zoomed in."
-msgstr "Geben Sie eine Zahl zwischen 0 und 17 ein, wobei 17 am weitesten herangezoomt bedeutet."
+msgstr "Geben Sie eine Zahl zwischen 0 und 21 ein, wobei 21 am weitesten herangezoomt bedeutet."
 
 #: concrete/blocks/google_map/scrapbook.php:4
+#, php-format
 msgid "Location: %s"
 msgstr "Ort: %s"
 
 #: concrete/blocks/google_map/scrapbook.php:5
+#, php-format
 msgid "Latitude: %s"
 msgstr "Breitengrad: %s"
 
 #: concrete/blocks/google_map/scrapbook.php:6
+#, php-format
 msgid "Longitude: %s"
 msgstr "Längengrad: %s"
 
 #: concrete/blocks/google_map/view.php:6
 msgid "Google Map disabled in edit mode."
-msgstr "Popup-Platzhalter (deaktiviert im Bearbeitungsmodus)"
+msgstr "Google Map im Bearbeitungsmodus deaktiviert"
 
 #: concrete/blocks/guestbook/add.php:3
 #: concrete/blocks/guestbook/edit.php:2
@@ -666,6 +672,7 @@ msgstr "d M Y"
 
 #: concrete/blocks/guestbook/add.php:8
 #: concrete/blocks/guestbook/edit.php:11
+#, php-format
 msgid "Enter a <a href=\"%s\" target=\"_blank\">PHP date string</a> here."
 msgstr "Geben Sie hier einen <a href=\"%s\" target=\"_blank\">PHP date string</a> ein."
 
@@ -936,28 +943,28 @@ msgstr "Nach oben"
 
 #: concrete/blocks/next_previous/controller.php:17
 msgid "Navigate through sibling pages."
-msgstr "List pages based on type, area."
+msgstr "Durch benachbarte Seiten navigieren."
 
 #: concrete/blocks/next_previous/controller.php:21
 msgid "Next & Previous Nav"
-msgstr "Vor & Zurück Navigation"
+msgstr "Vorherige & Nächste Navigation"
 
 #: concrete/blocks/next_previous/form_setup_html.php:10
 #: concrete/blocks/next_previous/form_setup_html.php:17
 msgid "Next Label"
-msgstr "Nächstes Label"
+msgstr "\"Nächste\" Bezeichnung"
 
 #: concrete/blocks/next_previous/form_setup_html.php:11
 msgid "Next & Previous Labels"
-msgstr "Nächste und vorherige Label "
+msgstr "\"Nächste\" und \"Vorherige\" Bezeichnung"
 
 #: concrete/blocks/next_previous/form_setup_html.php:12
 msgid "Page Titles"
-msgstr "Seitentiteln"
+msgstr "Seiten-Titel"
 
 #: concrete/blocks/next_previous/form_setup_html.php:22
 msgid "Previous Label"
-msgstr "Vorheriges Label"
+msgstr "\"Vorherige\" Bezeichnung"
 
 #: concrete/blocks/next_previous/form_setup_html.php:27
 msgid "Up Label"
@@ -969,7 +976,7 @@ msgstr "Pfeile anzeigen"
 
 #: concrete/blocks/next_previous/form_setup_html.php:38
 msgid "Loop"
-msgstr "Loop"
+msgstr "Endlosschleife"
 
 #: concrete/blocks/next_previous/form_setup_html.php:39
 msgid "Return to start/end of page sequence"
@@ -989,7 +996,7 @@ msgstr "Chronologisch"
 
 #: concrete/blocks/next_previous/form_setup_html.php:51
 msgid "Exclude System Pages"
-msgstr "System-Seiten ausschliessen"
+msgstr "System-Seiten ausblenden"
 
 #: concrete/blocks/next_previous/form_setup_html.php:52
 msgid "yes"
@@ -1017,7 +1024,7 @@ msgstr "Filter"
 
 #: concrete/blocks/page_list/page_list_form.php:38
 msgid "(<strong>Note</strong>: You must create the \"is_featured\" page attribute first.)"
-msgstr "(<strong>Hinweis</strong>: Das Attribute \"is_featured\" muss erst erstellt werden.)"
+msgstr "(<strong>Hinweis</strong>: Das Attribut \"is_featured\" muss erst erstellt werden.)"
 
 #: concrete/blocks/page_list/page_list_form.php:42
 msgid "Display page aliases."
@@ -1037,7 +1044,7 @@ msgstr "Seiten sortieren"
 
 #: concrete/blocks/page_list/page_list_form.php:81
 msgid "Pages should appear"
-msgstr "Seiten sollten erscheinen"
+msgstr "Seiten sollen erscheinen"
 
 #: concrete/blocks/page_list/page_list_form.php:83
 msgid "in their sitemap order"
@@ -1045,7 +1052,7 @@ msgstr "in gleicher Reihenfolge wie die Sitemap"
 
 #: concrete/blocks/page_list/page_list_form.php:84
 msgid "with the most recent first"
-msgstr "die neuesten zu erst"
+msgstr "die Neuesten zu erst"
 
 #: concrete/blocks/page_list/page_list_form.php:85
 msgid "with the earliest first"
@@ -1061,7 +1068,7 @@ msgstr "in umgekehrter alphabetischer Reihenfolge"
 
 #: concrete/blocks/page_list/page_list_form.php:92
 msgid "Provide RSS Feed"
-msgstr "RSS-Feed anbieten"
+msgstr "RSS-Feed anzeigen"
 
 #: concrete/blocks/page_list/page_list_form.php:98
 msgid "RSS Feed Title"
@@ -1093,7 +1100,7 @@ msgstr "RSS-Feed abonnieren"
 
 #: concrete/blocks/page_list/tools/blog_rss.php:56
 msgid "This page list doesn't use the custom blog template, or you don't have permission to access this RSS feed"
-msgstr "Diese Seiteliste benutzt nicht die benutzerdefinierte Blogvorlage oder Sie haben keine Berechtigung auf diesen RSS Feed zuzugreifen"
+msgstr "Dieser Page List Block benutzt kein angepasstes Blog Template oder Ihnen fehlen Zugangsrechte für diesen RSS-Feed."
 
 #: concrete/blocks/rss_displayer/controller.php:24
 msgid "Fetch, parse and display the contents of an RSS or Atom feed."
@@ -1113,7 +1120,7 @@ msgstr "Bitte die Anzahl der zu zeigenden Einträge eingeben."
 
 #: concrete/blocks/rss_displayer/controller.php:51
 msgid "Oops, it looks like you've entered an invalid feed address!"
-msgstr "Oops, es scheint als haben Sie eine ungültige Feed-Adresse eingegeben!"
+msgstr "Ups, es scheint als haben Sie eine ungültige Feed-Adresse eingegeben!"
 
 #: concrete/blocks/rss_displayer/form_setup_html.php:11
 #: concrete/blocks/rss_displayer/view.php:14
@@ -1312,8 +1319,9 @@ msgid "Tags"
 msgstr "Tags"
 
 #: concrete/blocks/tags/tag_form.php:6
+#, php-format
 msgid "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
-msgstr "Fehler: Der aufgeforderte Seitenattribut mit dem Handle:  \"%s\" existiert nicht"
+msgstr "Fehler: Das erforderliche Seitenattribut mit dem Handle:  \"%s\" existiert nicht"
 
 #: concrete/blocks/tags/tag_form.php:11
 msgid "Advanced"
@@ -1325,7 +1333,7 @@ msgstr "Titel anzeigen"
 
 #: concrete/blocks/tags/tag_form.php:23
 msgid "Display Tags for the current page"
-msgstr "Tags für die aktuelle Seite anzeigen"
+msgstr "Schlagworte (Tags) für diese Seite anzeigen"
 
 #: concrete/blocks/tags/tag_form.php:29
 msgid "Display available tags"
@@ -1388,11 +1396,11 @@ msgstr "Primäre URL"
 
 #: concrete/blocks/youtube/form_setup_html.php:44
 msgid "iFrame - Works in more devices"
-msgstr "iFrame - Kompatibel mit einer größeren Anzahl von Geräten"
+msgstr "iFrame - höhere Kompatibilität"
 
 #: concrete/blocks/youtube/form_setup_html.php:45
 msgid "Flash Embed - Legacy method"
-msgstr "Flash Einbettung - Klassische Methode"
+msgstr "Flash - Standard-Methode"
 
 #: concrete/blocks/youtube/view.php:17
 msgid "YouTube Video disabled in edit mode."
@@ -1577,6 +1585,7 @@ msgid "Unable to locate database import file."
 msgstr "Zu importierende Datenbankdatei konnte nicht gefunden werden."
 
 #: concrete/controllers/install.php:98
+#, php-format
 msgid "Unable to install database: %s"
 msgstr "Datenbank konnte nicht installiert werden: %s"
 
@@ -1617,10 +1626,12 @@ msgid "Unable to connect to database."
 msgstr "Verbindung zur Datenbank konnte nicht hergestellt werden."
 
 #: concrete/controllers/install.php:209
+#, php-format
 msgid "There are already %s tables in this database. Concrete must be installed in an empty database."
 msgstr "In der Datenbank sind bereits %s Tabellen vorhanden. Concrete5 muss in eine leere Datenbank installiert werden."
 
 #: concrete/controllers/install.php:317
+#, php-format
 msgid "Congratulations. concrete5 has been installed. You have been logged in as <b>%s</b> with the password <b>%s</b>.<br/><br/>If you wish to change this password, you may do so from the users area of the dashboard."
 msgstr "Glückwunsch. Concrete wurde installiert. Sie sind angemeldet als <b>%s</b> mit dem Passwort <b>%s</b>.<br/><br/>Wenn Sie das Passwort ändern möchten, so können Sie dies unter Verwaltung im Bereich Benutzer tun."
 
@@ -1647,6 +1658,7 @@ msgstr "Ungültige E-Mail Adresse angegeben."
 
 #: concrete/controllers/login.php:61
 #: concrete/controllers/register.php:66
+#, php-format
 msgid "The email address %s is already in use. Please choose another."
 msgstr "Die E-Mail Adresse %s ist schon in Gebrauch. Bitte wählen Sie eine andere."
 
@@ -1655,6 +1667,7 @@ msgid "OpenID Verification Cancelled"
 msgstr "OpenID überprüfung abgebrochen"
 
 #: concrete/controllers/login.php:96
+#, php-format
 msgid "OpenID Authentication Failed: %s"
 msgstr "OpenID Authentifikation fehlgeschlagen: %s"
 
@@ -1697,6 +1710,7 @@ msgstr "Anmeldung erfolgreich"
 
 #: concrete/controllers/login.php:252
 #: concrete/controllers/register.php:121
+#, php-format
 msgid "The field \"%s\" is required"
 msgstr "Das Feld \"%s\" ist erforderlich"
 
@@ -1735,10 +1749,12 @@ msgid "Incorrect image validation code. Please check the image and re-enter the 
 msgstr "Falscher Code. Bitte prüfen Sie das Bild und geben Sie die Buchstaben und Zahlen wie dort zu sehen ein."
 
 #: concrete/controllers/register.php:72
+#, php-format
 msgid "A username must be between at least %s characters long."
 msgstr "Ein Benutzername muss mindestens %s Zeichen lang sein."
 
 #: concrete/controllers/register.php:76
+#, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Ein Benutzername kann nicht mehr als %s Zeichen lang sein."
 
@@ -1751,6 +1767,7 @@ msgid "A username may only contain letters or numbers."
 msgstr "Ein Benutzername darf nur Buchstaben und Ziffern enthalten."
 
 #: concrete/controllers/register.php:89
+#, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Der Benutzername %s existiert schon. Bitte wählen Sie einen anderen."
 
@@ -1789,11 +1806,13 @@ msgstr "Aktuelle Version von Concrete5 konnte nicht ermittelt werden. Aktualisie
 
 #: concrete/controllers/upgrade.php:41
 #: concrete/controllers/upgrade.php:71
+#, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "Upgrade von <b>%s</b>"
 
 #: concrete/controllers/upgrade.php:42
 #: concrete/controllers/upgrade.php:72
+#, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "Upgrade auf <b>%s</b>"
 
@@ -1802,6 +1821,7 @@ msgid "Your current website uses a version of Concrete5 greater than this one. Y
 msgstr "Ihre Website verwendet derzeit eine Version von Concrete5 die höher ist als diese. Sie können kein Upgrade durchführen."
 
 #: concrete/controllers/upgrade.php:46
+#, php-format
 msgid "Your site is already up to date! The current version of Concrete5 is <b>%s</b>. You should remove this file for security."
 msgstr "Ihre Website ist auf dem aktuellsten Stand! Die aktuelle Version von Concrete5 ist <b>%s</b>. Diese Datei sollten Sie aus Sicherheitsgründen entfernen."
 
@@ -1810,10 +1830,12 @@ msgid "You must first upgrade your site to version 5.3.2"
 msgstr "Sie müssen zunächst auf Version 5.3.2 upgraden."
 
 #: concrete/controllers/upgrade.php:206
+#, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Ein unerwarteter Fehler ist während des Upgrades aufgetreten: %s"
 
 #: concrete/controllers/upgrade.php:210
+#, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Upgrade auf <b>%s</b> abgeschlossen!"
 
@@ -1858,7 +1880,7 @@ msgstr "Blocktyp installiert."
 
 #: concrete/controllers/dashboard/install.php:154
 msgid "You do not have permission to install custom block types or add-ons."
-msgstr "Sie haben keine Berechtigung eigene Blocktypen oder Erweiterungen zu installieren."
+msgstr "Sie haben keine Berechtigung, eigene Block-Typen oder Add-Ons zu installieren."
 
 #: concrete/controllers/dashboard/install.php:169
 msgid "Only the super user may remove block types."
@@ -1890,7 +1912,7 @@ msgstr "Das Paket wurde installiert."
 
 #: concrete/controllers/dashboard/install.php:301
 msgid "You do not have permission to install add-ons."
-msgstr "Sie haben keine Berechtigung Erweiterungen zu installieren."
+msgstr "Sie haben keine Berechtigung, Add-Ons zu installieren."
 
 #: concrete/controllers/dashboard/install.php:314
 #: concrete/controllers/dashboard/install.php:342
@@ -1898,44 +1920,46 @@ msgid "Invalid marketplace item ID."
 msgstr "Ungültige Marketplace Element ID."
 
 #: concrete/controllers/dashboard/install.php:327
+#, php-format
 msgid "Marketplace item %s downloaded successfully."
 msgstr "Marketplace Artikel %s erfolgreich heruntergeladen."
 
 #: concrete/controllers/dashboard/install.php:330
 msgid "You do not have permission to download add-ons."
-msgstr "Sie haben keine Berechtigung Erweiterungen herunterzuladen."
+msgstr "Sie haben keine Berechtigung, Add-Ons herunterzuladen."
 
 #: concrete/controllers/dashboard/composer/drafts.php:13
 msgid "Draft deleted."
-msgstr "Entwurf gelöscht."
+msgstr "Datei gelöscht."
 
 #: concrete/controllers/dashboard/composer/write.php:16
 msgid "Invalid page."
-msgstr "Ungültige Seite."
+msgstr "Ungültige Seiten ID angegeben."
 
 #: concrete/controllers/dashboard/composer/write.php:30
 msgid "You must provide a name for your page before you can publish it."
-msgstr "Sie müssen einen Namen für die Seite angeben, bevor diese veröffentlicht werden kann."
+msgstr "Sie müssen einen Namen für Ihre Seite angeben, bevor Sie diese veröffentlichen können."
 
 #: concrete/controllers/dashboard/composer/write.php:37
 #: concrete/controllers/dashboard/composer/write.php:154
 msgid "Invalid parent page."
-msgstr "Ungültige übergeordnete Seite"
+msgstr "Ungültige Seiten ID angegeben."
 
 #: concrete/controllers/dashboard/composer/write.php:41
 #: concrete/controllers/dashboard/composer/write.php:166
 msgid "You do not have permissions to add this page type in that location."
-msgstr "Sie haben keine Berechtigung diesen Seitentyp an diesem Ort hinzuzufügen."
+msgstr "Sie können diesen Seitentyp an dieser Position nicht veröffentlichen."
 
 #: concrete/controllers/dashboard/composer/write.php:103
 msgid "Draft saved successfully."
-msgstr "Entwurf erfolgreich gespeichert."
+msgstr "Der Block wurde erfolgreich gespeichert."
 
 #: concrete/controllers/dashboard/composer/write.php:159
 msgid "Invalid composer draft."
-msgstr "Ungültiger Composer Entwurf."
+msgstr "Ungültige Dateierweiterung."
 
 #: concrete/controllers/dashboard/composer/write.php:177
+#, php-format
 msgid "This page will be published beneath %s."
 msgstr "Diese Seite wird unter %s veröffentlicht."
 
@@ -2097,7 +2121,7 @@ msgstr "Dateien im theme wurden erfolgreich aktiviert."
 
 #: concrete/controllers/dashboard/pages/types/composer.php:42
 msgid "Composer settings updated."
-msgstr "Composer Einstellungen aktualisiert."
+msgstr "IP-Blacklist Einstellungen erneuert."
 
 #: concrete/controllers/dashboard/pages/types/controller.php:31
 msgid "You must delete all pages of this type before deleting this page type."
@@ -2105,7 +2129,7 @@ msgstr "Es müssen zuerst alle Seiten dieses Typs gelöscht werden, bevor dieser
 
 #: concrete/controllers/dashboard/pages/types/controller.php:37
 msgid "This page type is no longer included in composer."
-msgstr "Dieser Seitentyp ist nicht mehr in Composer enthalten."
+msgstr "Dieser Seitentyp ist nicht mehr als Composer-Element deklariert."
 
 #: concrete/controllers/dashboard/reports/forms.php:117
 msgid "File not found"
@@ -2137,11 +2161,11 @@ msgstr "Marketplace Support ist deaktiviert."
 
 #: concrete/controllers/dashboard/settings/controller.php:98
 msgid "Bookmark icon saved."
-msgstr "Lesezeichen Piktogramm gespeichert"
+msgstr "Lesezeichen Favicon gespeichert"
 
 #: concrete/controllers/dashboard/settings/controller.php:101
 msgid "Bookmark icon removed."
-msgstr "Lesezeichen Piktogramm entfernt."
+msgstr "Lesezeichen Favicon entfernt."
 
 #: concrete/controllers/dashboard/settings/controller.php:104
 msgid "Editing preferences saved."
@@ -2208,11 +2232,11 @@ msgstr "Version von Concrete5"
 
 #: concrete/controllers/dashboard/settings/controller.php:509
 msgid "concrete5 Packages"
-msgstr "Concrete5 Pakete"
+msgstr "Concrete5 Packages"
 
 #: concrete/controllers/dashboard/settings/controller.php:528
 msgid "concrete5 Overrides"
-msgstr "Concrete5 überschreibt"
+msgstr "Concrete5 Overrides"
 
 #: concrete/controllers/dashboard/settings/controller.php:599
 msgid "Server Software"
@@ -2257,7 +2281,7 @@ msgstr "Zugriff"
 #: concrete/controllers/dashboard/settings/mail/controller.php:14
 #: concrete/controllers/dashboard/settings/multilingual/controller.php:15
 msgid "Multilingual"
-msgstr "Mehrsprachigkeit"
+msgstr "Sprachen"
 
 #: concrete/controllers/dashboard/settings/controller.php:715
 #: concrete/controllers/dashboard/settings/marketplace.php:15
@@ -2295,7 +2319,7 @@ msgstr "Ein unerwarteter Fehler ist beim Verbindungsaufbau Ihrer Seite zum Marke
 
 #: concrete/controllers/dashboard/settings/marketplace.php:37
 msgid "You do not have permission to connect this site to the marketplace."
-msgstr "Sie haben keine Berechtigung diese Seite mit dem Marketplace zu verbinden."
+msgstr "Ihnen fehlt die Berechtigung, diese Seite mit dem Concrete5 Marketplace zu verknüpfen."
 
 #: concrete/controllers/dashboard/settings/mail/controller.php:36
 msgid "Importer saved."
@@ -2322,14 +2346,17 @@ msgid "Index area settings saved."
 msgstr "Index Bereich Einstellungen gespeichert."
 
 #: concrete/controllers/dashboard/system/backup.php:59
+#, php-format
 msgid "Unable to locate file %s"
 msgstr "Nicht möglich die Datei %s zu lokalisieren."
 
 #: concrete/controllers/dashboard/system/update.php:70
+#, php-format
 msgid "The directory %s does not exist."
 msgstr "Das Verzeichnis %s existiert nicht."
 
 #: concrete/controllers/dashboard/system/update.php:72
+#, php-format
 msgid "The directory %s must be writable by the web server."
 msgstr "Das Verzeichnis %s muss vom Webserver beschreibbar sein."
 
@@ -2432,10 +2459,12 @@ msgid "Profile Information Saved."
 msgstr "Profil Informationen gespeichert."
 
 #: concrete/controllers/profile/edit.php:50
+#, php-format
 msgid "The email address '%s' is already in use. Please choose another."
 msgstr "Die E-Mail Adresse '%s' wird schon verwendet. Bitte wählen Sie eine andere."
 
 #: concrete/controllers/profile/edit.php:59
+#, php-format
 msgid "A password must be between %s and %s characters"
 msgstr "Ein Passwort muss zwischen %s und %s Zeichen lang sein."
 
@@ -2444,6 +2473,7 @@ msgid "A password may not contain \", ', >, <, or any spaces."
 msgstr "Ein Passwort darf diese Zeichen nicht enthalten: \",',>,< sowie Leerzeichen."
 
 #: concrete/controllers/profile/messages.php:136
+#, php-format
 msgid ""
 "From: %s\n"
 "Date Sent: %s\n"
@@ -2487,13 +2517,14 @@ msgstr "Lade..."
 
 #: concrete/elements/block_area_add_scrapbook.php:60
 msgid "'s Scrapbook"
-msgstr "s-Sammelmappe"
+msgstr "s-Vorlagenkatalog"
 
 #: concrete/elements/block_area_add_scrapbook.php:69
 msgid "Add From Scrapbook"
-msgstr "Einfügen aus einer Sammelmappe"
+msgstr "Einfügen aus einem Vorlagenkatalog"
 
 #: concrete/elements/block_area_footer.php:50
+#, php-format
 msgid "Add To %s"
 msgstr "Hinzufügen zu %s"
 
@@ -2593,10 +2624,12 @@ msgid "Lock Widths"
 msgstr "Breiten sperren"
 
 #: concrete/elements/block_area_layout.php:122
+#, php-format
 msgid "Update \"%s\" preset everywhere it is used?"
 msgstr "Update \"%s\" Vorlage überall wo sie verwendet wird?"
 
 #: concrete/elements/block_area_layout.php:123
+#, php-format
 msgid "Use this layout here, and leave \"%s\" unchanged?"
 msgstr "Dieses Layout verwenden, und \"%s\" unverändert belassen?"
 
@@ -2717,7 +2750,7 @@ msgstr "Composer"
 
 #: concrete/elements/block_master_collection_composer.php:13
 msgid "Include block in Composer"
-msgstr "Block im Composer mit einbeziehen"
+msgstr "Block in Composer integrieren"
 
 #: concrete/elements/block_master_collection_composer.php:17
 msgid "Block Name"
@@ -2725,7 +2758,7 @@ msgstr "Datenbank Name"
 
 #: concrete/elements/block_master_collection_composer.php:21
 msgid "Custom Composer Template"
-msgstr "Eigene Composer Vorlage"
+msgstr "Benutzerdefinierte Vorlage setzen"
 
 #: concrete/elements/collection_add.php:53
 #: concrete/elements/collection_add.php:150
@@ -2827,6 +2860,7 @@ msgid "This page has been marked for deletion."
 msgstr "Diese Seite wurde zum Löschen vorgemerkt."
 
 #: concrete/elements/collection_mcd.php:60
+#, php-format
 msgid "You marked this page for deletion on <strong>%s</strong>"
 msgstr "Sie haben diese Seite zur Löschung am <strong>%s</strong> vorgesehen"
 
@@ -2843,6 +2877,7 @@ msgid "Are you sure you wish to delete this page?"
 msgstr "Sind Sie sicher, dass Sie diese Seite löschen wollen?"
 
 #: concrete/elements/collection_mcd.php:83
+#, php-format
 msgid "This will remove %s child page(s)."
 msgstr "Dies wird %s Unterseite(n) entfernen."
 
@@ -2912,6 +2947,7 @@ msgstr "Vollständige Seitencache deaktivieren."
 
 #: concrete/elements/collection_metadata.php:212
 #: concrete/elements/collection_metadata.php:216
+#, php-format
 msgid "%s minutes"
 msgstr "%s Minuten"
 
@@ -2922,6 +2958,7 @@ msgstr "Bis der Cache manuell durchgeführt wird"
 
 #: concrete/elements/collection_metadata.php:223
 #: concrete/elements/collection_metadata.php:233
+#, php-format
 msgid "Use global setting - %s"
 msgstr "Globale Einstellungen benutzen - %s"
 
@@ -2935,9 +2972,10 @@ msgstr "Seite cachen."
 
 #: concrete/elements/collection_metadata.php:229
 msgid "Cache for how long?"
-msgstr "Wie lange soll das Cahing aktiviert sein?"
+msgstr "Wie lange soll das Caching aktiviert sein?"
 
 #: concrete/elements/collection_metadata.php:234
+#, php-format
 msgid "Default - %s minutes"
 msgstr "Voreinstellung - %s Minuten"
 
@@ -3042,6 +3080,7 @@ msgid "Design"
 msgstr "Design"
 
 #: concrete/elements/collection_theme.php:86
+#, php-format
 msgid "This is the defaults page for the %s page type. You cannot change it."
 msgstr "Dies ist die Standardseite für den Typ %s. Sie können diese nicht ändern."
 
@@ -3237,10 +3276,12 @@ msgid "You are changing a preset"
 msgstr "Sie sind dabei eine Standardvorlage zu verändern"
 
 #: concrete/elements/custom_style.php:336
+#, php-format
 msgid "Update \"%s\" preset everywhere it is used"
 msgstr "Update \"%s\" Vorlage überall wo diese Verwendung findet?"
 
 #: concrete/elements/custom_style.php:337
+#, php-format
 msgid "Use this style here, and leave \"%s\" unchanged"
 msgstr "Diesen Stil hier verwenden, und \"%s\" unverändert lassen?"
 
@@ -3289,6 +3330,7 @@ msgid "Remove from Scrapbook"
 msgstr "Einfügen aus einer Sammelmappe"
 
 #: concrete/elements/search_results_top.php:2
+#, php-format
 msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
 msgstr "Anzeige <b>%s</b> bis <b>%s</b> (<b>%s</b> Gesamt)"
 
@@ -3415,7 +3457,7 @@ msgstr "Es dauert nur einen kurzen Moment und Sie müssen Ihre Website nicht ein
 
 #: concrete/elements/dashboard/marketplace_connect_failed.php:46
 msgid "Connect to Community"
-msgstr "Zur Community verbinden"
+msgstr "Mit Community verknüpfen"
 
 #: concrete/elements/dashboard/notification_list.php:44
 msgid "Today"
@@ -3451,10 +3493,12 @@ msgid "More Information"
 msgstr "Mehr Informationen"
 
 #: concrete/elements/dashboard/notification_update.php:4
+#, php-format
 msgid "The latest version of concrete5 is <strong>%s</strong>. You are running %s. <a href=\"%s\">Update Now</a>!"
 msgstr "Die neueste Version von Concrete5 ist <strong>%s</strong>. Sie verwenden  %s. <a href=\"%s\">Aktualisieren Sie jetzt</a>!"
 
 #: concrete/elements/dashboard/notification_update.php:8
+#, php-format
 msgid "You have downloaded a new version of concrete5 but have not upgraded to it yet. <a href=\"%s\">Upgrade your site to %s now</a>!"
 msgstr "Sie haben eine neue Concrete5 Version runtergeladen, das Upgrade Script jedoch noch nicht ausgeführt. <a href=\"%s\">Aktualisieren Sie ihre Seite auf %s jetzt</a>!"
 
@@ -3467,6 +3511,7 @@ msgid "One Level Only"
 msgstr "Nur ein Ebene"
 
 #: concrete/elements/dashboard/modules/activity.php:2
+#, php-format
 msgid "You are logged in as <b>%s</b>. You logged in on <b>%s</b>."
 msgstr "Sie sind angemeldet als <b>%s</b>. Sie haben sich am <b>%s</b> angemeldet."
 
@@ -3515,18 +3560,20 @@ msgid "Full Documentation"
 msgstr "Vollständige Dokumentation"
 
 #: concrete/elements/dashboard/modules/help.php:13
+#, php-format
 msgid "Full documentation is available <a href=\"%s\">at Concrete5.org</a>"
 msgstr "Die vollständige Dokumentation ist verfügbar unter <a href=\"%s\">Concrete5.org</a>"
 
 #: concrete/elements/dashboard/modules/news.php:5
 msgid "View all &gt;"
-msgstr "Alle  betrachten &gt"
+msgstr "Alle  betrachten &gt;"
 
 #: concrete/elements/dashboard/modules/news.php:11
 msgid "There are no notifications."
 msgstr "Keine Meldungen vorhanden."
 
 #: concrete/elements/dashboard/modules/news.php:15
+#, php-format
 msgid "View all %s notifications &gt;"
 msgstr "Alle %s Meldungen betrachten &gt;"
 
@@ -3539,6 +3586,7 @@ msgid "You have not created any file sets yet."
 msgstr "Sie haben noch kein Dateienalbum erstellt."
 
 #: concrete/elements/files/add_to_sets.php:191
+#, php-format
 msgid "If a file set does not appear above, you either have no access to add files to it, or it does not accept the file types %s."
 msgstr "Erscheint weiter oben kein Dateialbum, besteht entweder keine Berechtigung diesem Album Dateien hinzuzufügen, oder es werden folgende Dateitypen %s nicht akzeptiert."
 
@@ -3597,10 +3645,12 @@ msgstr "&lt; Gespeicherte Suche verlassen"
 
 #: concrete/elements/files/search_form_advanced.php:140
 #: concrete/elements/files/search_form_simple.php:13
+#, php-format
 msgid "Only displaying %s files."
 msgstr "Nur %s Dateien anzeigen."
 
 #: concrete/elements/files/search_form_advanced.php:142
+#, php-format
 msgid "Only displaying files with extension .%s."
 msgstr "Nur Dateien mit folgender Erweiterung anzeigen .%s."
 
@@ -3666,7 +3716,7 @@ msgstr "Mehrere hochladen"
 
 #: concrete/elements/files/edit/image.php:43
 msgid "You must have the curl extension installed to use the remote image editor."
-msgstr "Sie benötigen die curl Erweiterung um die externe Bildbearbeitung zu benutzen."
+msgstr "Die CURL Erweiterung muss installiert sein, um die Remote Bildbearbeitung zu nutzen."
 
 #: concrete/elements/pages/search_form_advanced.php:6
 msgid "Date Added"
@@ -3897,6 +3947,7 @@ msgid "EMAILS ARE DISABLED. THIS EMAIL WAS LOGGED BUT NOT SENT"
 msgstr "E-MAILS SIND AUSGESCHALTET. DIESE E-MAIL WURDE GESPEICHERT ABER NICHT VERSENDET"
 
 #: concrete/helpers/concrete/dashboard/sitemap.php:324
+#, php-format
 msgid "%s more to display. <a href=\"%s\">View All</a>"
 msgstr "%s mehr zum Anzeigen. <a href=\"%s\">Alle betrachten</a>"
 
@@ -3918,7 +3969,7 @@ msgstr "Berichte"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:34
 msgid "Get data from forms and logs."
-msgstr "Daten von Formularen und Protokollen."
+msgstr "Formular-Einsendungen, Umfragen"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:79
 msgid "Form Results"
@@ -3934,7 +3985,7 @@ msgstr "Benutzer und Gruppen"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:80
 msgid "Add and manage people."
-msgstr "hinzufügen und bearbeiten."
+msgstr "Verwaltung, Berechtigungen"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:82
 msgid "Find Users"
@@ -3958,7 +4009,7 @@ msgstr "Seiten und Themes"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:88
 msgid "Reskin your site."
-msgstr "Aussehen der Seite festlegen."
+msgstr "Seitentypen und Attribute"
 
 #: concrete/helpers/concrete/upgrade/version_510.php:89
 msgid "Page Types"
@@ -3978,19 +4029,19 @@ msgstr "Dateimanager"
 
 #: concrete/helpers/concrete/upgrade/version_520.php:95
 msgid "All documents and images."
-msgstr "Alle Dokumente und Bilder."
+msgstr "Dateien, Bilder und Alben verwalten."
 
 #: concrete/helpers/concrete/upgrade/version_520.php:104
 msgid "Scrapbook"
-msgstr "Sammelmappe"
+msgstr "Vorlagenkatalog"
 
 #: concrete/helpers/concrete/upgrade/version_520.php:104
 msgid "Share content across your site."
-msgstr "Vorlagen erstellen und überall nutzen."
+msgstr "Inhalte für die gesamte Seite."
 
 #: concrete/helpers/concrete/upgrade/version_530.php:66
 msgid "Shared Scrapbook 1"
-msgstr "Gemeinsame Sammelmappe 1"
+msgstr "Gemeinsamr Vorlagenkatalog 1"
 
 #: concrete/helpers/concrete/upgrade/version_530.php:81
 msgid "Header Extra Content"
@@ -4053,6 +4104,7 @@ msgid "Address"
 msgstr "Adresse"
 
 #: concrete/helpers/concrete/upgrade/version_532.php:300
+#, php-format
 msgid "Error while converting the attributes on cID: %s Error:<br/>%s"
 msgstr "Fehler beim konvertieren der Attribute in cID: %s Fehler:<br/>%s"
 
@@ -4118,15 +4170,15 @@ msgstr "Blog Eintrag"
 
 #: concrete/helpers/concrete/upgrade/version_5411.php:29
 msgid "Install Packages and Connect to the Marketplace"
-msgstr "Pakete installieren und mit dem Marketplace verbinden"
+msgstr "Mit dem Concrete5 Marketplace verknüpfen und Erweiterungen installieren."
 
 #: concrete/helpers/concrete/upgrade/version_542.php:28
 msgid "Delete Users"
-msgstr "Aktivierte Benutzer"
+msgstr "Benutzer löschen"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:37
 msgid "Multilingual Setup"
-msgstr "Mehrsprachigkeit einrichten"
+msgstr "Sprachen Setup"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:42
 msgid "Composer Beta"
@@ -4134,7 +4186,7 @@ msgstr "Composer Beta"
 
 #: concrete/helpers/concrete/upgrade/version_542.php:42
 msgid "Write for your site."
-msgstr "Inhalte schreiben"
+msgstr "Komplexe Seiten einfach erstellen"
 
 #: concrete/helpers/form/page_selector.php:50
 msgid "Choose Page"
@@ -4171,7 +4223,7 @@ msgstr "Ungültiger Sicherheitscode"
 
 #: concrete/helpers/validation/captcha.php:67
 msgid "Click the image to see another captcha."
-msgstr "Bild anklicken um ein anderes captcha zu zeigen."
+msgstr "Das Bild anklicken, um ein anderes Captcha zu laden."
 
 #: concrete/helpers/validation/ip.php:63
 msgid "Unable to complete action: your IP address has been banned. Please contact the administrator of this site for more information."
@@ -4190,6 +4242,7 @@ msgid "Generate the sitemap.xml file that search engines use to crawl your site.
 msgstr "Die Datei sitemap.xml wird erstellt damit Suchmaschinen die Website durchsuchen können."
 
 #: concrete/jobs/generate_sitemap.php:49
+#, php-format
 msgid "Cannot open file %s"
 msgstr "Kann Datei %s nicht öffnen"
 
@@ -4198,6 +4251,7 @@ msgid "Sitemap XML File Saved."
 msgstr "Sitemap XML Datei gespeichert."
 
 #: concrete/jobs/generate_sitemap.php:112
+#, php-format
 msgid "The file %s is not writable"
 msgstr "Die Datei %s kann nicht ge-/beschrieben werden"
 
@@ -4214,6 +4268,7 @@ msgid "Indexing complete. Index is up to date"
 msgstr "Indizierung fertig gestellt. Index ist aktuell"
 
 #: concrete/jobs/index_search.php:45
+#, php-format
 msgid "Index partially updated. %s pages indexed (maximum number.) Re-run this job to continue this process."
 msgstr "Index teilweise aktualisiert. %s Seiten indiziert (maximale Anzahl.) Wiederholen Sie die Aufgabe um den Prozess fortzusetzen."
 
@@ -4226,6 +4281,7 @@ msgid "pages"
 msgstr "Seiten"
 
 #: concrete/jobs/index_search.php:47
+#, php-format
 msgid "Index updated. %s %s required reindexing."
 msgstr "Index aktualisiert. %s %s benötigt Reindizierung."
 
@@ -4246,15 +4302,17 @@ msgid "There was an error unpacking your file. Perhaps you have not uploaded a v
 msgstr "Es ist ein Fehler beim Entpacken Ihrer Datei aufgetreten. Möglicherweise haben Sie keine valide Zipdatei hochgeladen, oder zip ist nicht installiert."
 
 #: concrete/libraries/archive.php:120
+#, php-format
 msgid "The directory %s already exists. Perhaps this item has already been installed."
 msgstr "Das Verzeichnis %s existiert schon. Vielleicht wurde dies schon installiert."
 
 #: concrete/libraries/archive.php:124
 #, php-format
 msgid "Unable to copy directory %s to %s. Perhaps permissions are set incorrectly or the target directory does not exist."
-msgstr "Kann das Verzeichnis nicht von %s nach %s kopieren. Möglicherweise sind Berechtigungen falsch gesetzt oder das Zielverzeichnis existiert nicht."
+msgstr "Fehler beim Kopieren: Verzeichnis %s kann nicht nach %s kopiert werden. Prüfen Sie ob das Zielverzeichnis existiert und ob der Server dort Schreibrechte hat (ggf. chmod 777 auführen)."
 
 #: concrete/libraries/backup.php:24
+#, php-format
 msgid "Unable to create backup file: %s"
 msgstr "Sicherungsdatei: %s konnte nicht erstellt werden"
 
@@ -4275,10 +4333,12 @@ msgid "Unable to generate a marketplace token. Please ensure that allow_url_fope
 msgstr "Ein Marketplace Token konnte nicht generiert werden. Stellen Sie sicher dass entweder allow_url_fopen oder cURL an ist auf Ihrem Server. Falls beide an sind, ist es möglich dass Ihre IP Adresse auf unserem Server in der schwarzenliste steht. Ermitteln Sie die IP Adresse Ihre Website und senden Sie uns eine Anfrage an: <a href=\"mailto:help@concrete5.org\">help@concrete5.org</a>."
 
 #: concrete/libraries/marketplace.php:142
+#, php-format
 msgid "An updated version of %s is available."
 msgstr "Eine neue Version von %s ist verfügbar."
 
 #: concrete/libraries/marketplace.php:142
+#, php-format
 msgid "New Version: %s."
 msgstr "Neue Version: %s."
 
@@ -4287,6 +4347,7 @@ msgid "A new version of concrete5 is now available."
 msgstr "Eine neue Version von concrete5 ist verfügbar."
 
 #: concrete/libraries/view.php:815
+#, php-format
 msgid "File %s not found. All themes need default.php and view.php files in them. Consult concrete5 documentation on how to create these files."
 msgstr "Datei %s nicht gefunden. Alle Themes benötigen default.php und view.php im Themesverzeichnis. Erkundigen Sie sich in der Dokumentation zu concrete5, wie diese Dateien erstellt werden."
 
@@ -4319,6 +4380,7 @@ msgstr "Attribute dürfen nur Buchstaben, Zahlen und den Unterstrich \"_\" entha
 
 #: concrete/libraries/attribute/controller.php:160
 #: concrete/libraries/attribute/controller.php:163
+#, php-format
 msgid "An attribute with the handle %s already exists."
 msgstr "Ein Attribut mit dem Handle %s existiert schon."
 
@@ -4327,6 +4389,7 @@ msgid "The file was only partially uploaded."
 msgstr "Die Datei wurde nicht vollständig hochgeladen."
 
 #: concrete/libraries/file/importer.php:61
+#, php-format
 msgid "Uploaded file is too large. The current value of upload_max_filesize is %s"
 msgstr "Die hochgeladene Datei ist zu gross. Der aktuelle Wert von upload_max_filesize ist %s"
 
@@ -4335,6 +4398,7 @@ msgid "Unable to copy file to storage directory. Please check permissions on you
 msgstr "Datei konnte nicht abespeichert werden. Bitte Verzeichnisrechte (CHMOD) prüfen."
 
 #: concrete/libraries/file/importer.php:68
+#, php-format
 msgid ""
 "An unknown error occurred while uploading the file. Please check that file uploads are enabled, and that your file does not exceed the size of the post_max_size or upload_max_filesize variables.\n"
 "\n"
@@ -4377,6 +4441,7 @@ msgid "/\\-\\-\\- Reply ABOVE\\. Do not alter this line \\-\\-\\- \\[(.*)\\] \\-
 msgstr "/\\-\\-\\- Bitte oben antworten\\. Diese Zeile nicht bearbeiten \\-\\-\\- \\[(.*)\\] \\-\\-\\-/i"
 
 #: concrete/mail/block_form_submission.php:10
+#, php-format
 msgid ""
 "\n"
 "There has been a submission of the form %s on through your concrete5 website.\n"
@@ -4395,6 +4460,7 @@ msgstr ""
 "\n"
 
 #: concrete/mail/block_guestbook_notification.php:4
+#, php-format
 msgid ""
 "\n"
 "There is a new reply on a guestbook in your concrete5 website.\n"
@@ -4415,6 +4481,7 @@ msgstr ""
 "\n"
 
 #: concrete/mail/forgot_password.php:5
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4448,6 +4515,7 @@ msgstr ""
 
 #: concrete/mail/private_message.php:4
 #: concrete/mail/private_message_response_enabled.php:4
+#, php-format
 msgid "Private message from %s"
 msgstr "Private Nachricht von %s"
 
@@ -4457,16 +4525,19 @@ msgstr "*** NICHT AUF DIE FOLGENDE MELDUNG ANTWORTEN. ***"
 
 #: concrete/mail/private_message.php:8
 #: concrete/mail/private_message_response_enabled.php:6
+#, php-format
 msgid "A message has been sent to you by %s through your profile on %s"
 msgstr "Eine Nachricht wurde Ihnen von %s über Ihrem Profil auf %s gesendet"
 
 #: concrete/mail/private_message.php:10
 #: concrete/mail/private_message_response_enabled.php:8
+#, php-format
 msgid "Subject: %s"
 msgstr "Betreff: %s"
 
 #: concrete/mail/private_message.php:12
 #: concrete/mail/private_message_response_enabled.php:10
+#, php-format
 msgid ""
 "Message:\n"
 "%s"
@@ -4477,27 +4548,29 @@ msgstr ""
 #: concrete/mail/private_message.php:14
 #: concrete/mail/private_message_admin_warning.php:10
 #: concrete/mail/private_message_response_enabled.php:12
+#, php-format
 msgid "To view this user's profile, visit: %s"
 msgstr "Um das Profil von diesem Benutzer zu betrachten bitte besuchen Sie: %s"
 
 #: concrete/mail/private_message.php:16
 #: concrete/mail/private_message_response_enabled.php:14
+#, php-format
 msgid "To disable any future messages, change your profile preferences at: %s"
 msgstr "Um zukünftig keine Nachrichten mehr zu erhalten, bitte Einstellungen im Profil ändern: %s"
 
 #: concrete/mail/private_message_admin_warning.php:4
 #, php-format
 msgid "Private message limit exceeded for user: %s on %s"
-msgstr "Limit für private Nachrichten überschritten für Benutzer: %s auf %s"
+msgstr "Limit für private Nachrichten überschritten für Benutzer: %s am %s"
 
 #: concrete/mail/private_message_admin_warning.php:6
 #, php-format
 msgid "User: %s has tried to send more than %s private messages within %s minutes"
-msgstr "Benutzer: %s hat versucht mehr als %s private Nachrichten innerhalb von %s Minuten zu versenden"
+msgstr "Benutzer %s hat versucht, mehr als %s private Nachrichten innerhalb von %s Minuten zu senden."
 
 #: concrete/mail/private_message_admin_warning.php:8
 msgid "This behavior is typically an indication of someone spamming your site, you may want to take a closer look at this users activity and possibly disable or delete this user account."
-msgstr "Dieses Verhalten ist typischerweise ein Hinweis auf den Versuch Spam zu versenden. Sie sollten sich die Aktivitäten dieses Nutzes genauer ansehen und gegebenenfalls sein Konto sperren oder löschen."
+msgstr "Dieses Verhalten deutet auf Spam hin. Bitte prüfen Sie die Aktivitäten des Nutzers und sperren oder löschen Sie ggf. dessen Konto."
 
 #: concrete/mail/user_register.php:5
 #: concrete/mail/user_register_approval_required.php:5
@@ -4505,6 +4578,7 @@ msgid "Registration - Approval Required"
 msgstr "Registrierung - Bestätigung erforderlich"
 
 #: concrete/mail/user_register.php:6
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4521,6 +4595,7 @@ msgstr ""
 "E-Mail Adresse: %s\n"
 
 #: concrete/mail/user_register.php:18
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4535,6 +4610,7 @@ msgstr ""
 "%s"
 
 #: concrete/mail/user_register_approval_required.php:6
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4551,6 +4627,7 @@ msgstr ""
 "E-Mail Adresse: %s\n"
 
 #: concrete/mail/user_register_approval_required.php:18
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4569,6 +4646,7 @@ msgid "Registration - Validate Email Address"
 msgstr "Registrierung - E-Mail Adresse validieren"
 
 #: concrete/mail/validate_user_email.php:6
+#, php-format
 msgid ""
 "\n"
 "\n"
@@ -4589,10 +4667,12 @@ msgstr ""
 "\n"
 
 #: concrete/models/block_types.php:509
+#, php-format
 msgid "%s not found. Please check that the block controller file contains the correct class name."
 msgstr "%s nicht gefunden. Bitte stellen Sie sicher, dass in Ihre Block-Controller Datei der korrekte Klassennamen eingetragen ist."
 
 #: concrete/models/block_types.php:548
+#, php-format
 msgid "No block found with the handle %s found."
 msgstr "Kein Block mit dem Handle %s gefunden."
 
@@ -4601,6 +4681,7 @@ msgid "Page Type Icons"
 msgstr "Seitentypen Icons"
 
 #: concrete/models/collection_version.php:186
+#, php-format
 msgid "New Version %s"
 msgstr "Neue Version %s"
 
@@ -4629,10 +4710,12 @@ msgid "Error: The Job class must be a child class of Job."
 msgstr "Fehler: Die Job-Klasse muss eine Unterklasse von Job sein."
 
 #: concrete/models/job.php:193
+#, php-format
 msgid "Error: Invalid Job file. The class %s was not found in %s ."
 msgstr "Fehler: Ungültige Job Datei. Die Klasse %s wurde in %s nicht gefunden."
 
 #: concrete/models/job.php:200
+#, php-format
 msgid "Error: Invalid Jobs Directory %s"
 msgstr "Fehler: Ungültiges Jobs Verzeichnis %s"
 
@@ -4650,10 +4733,12 @@ msgstr "Es ist nicht möglich eine Verbindung zum Marketplace aufzubauen, um das
 
 #: concrete/models/package.php:265
 #: concrete/models/package.php:272
+#, php-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
 #: concrete/models/package.php:268
+#, php-format
 msgid " %s (%s)"
 msgstr " %s (%s)"
 
@@ -4666,6 +4751,7 @@ msgid "Invalid Package."
 msgstr "Ungültiges Paket."
 
 #: concrete/models/package.php:380
+#, php-format
 msgid "This package requires Concrete version %s or greater."
 msgstr "Dieses Paket benötigt Concrete Version %s oder höher."
 
@@ -4686,6 +4772,7 @@ msgid "An error occurred while trying to install the package."
 msgstr "Beim Installieren des Paketes ist ein Fehler aufgetreten."
 
 #: concrete/models/package.php:385
+#, php-format
 msgid "Unable to backup old package directory to %s"
 msgstr "Konnte altes Packetverzeichnis nicht nach %s sichern"
 
@@ -4698,12 +4785,17 @@ msgid "(No Description)"
 msgstr "Meta Beschreibung"
 
 #: concrete/models/page_theme_archive.php:35
+#, php-format
 msgid "Unable to uninstall %s theme by moving it to the trash."
 msgstr "Kann theme %s nicht durch Verschieben in den Müll deinstallieren."
 
 #: concrete/models/task_permission.php:169
 msgid "Invalid task permission."
 msgstr "Ungültiger Aufgabenzugriff"
+
+#: concrete/models/userinfo.php:264
+msgid "(No Subject)"
+msgstr "(Kein Betreff)"
 
 #: concrete/models/user_banned_ip.php:51
 msgid "Failed Registration"
@@ -4736,15 +4828,11 @@ msgstr "Ermittle Benutzer"
 #: concrete/models/user_private_message.php:267
 #, php-format
 msgid "You may not send more than %s messages in %s minutes"
-msgstr "Sie dürfen nicht mehr als %s Nachrichten in %s Minuten versenden"
+msgstr "Sie dürfen nicht mehr als %s Nachrichten in %s Minuten senden."
 
 #: concrete/models/user_private_message.php:275
 msgid "warning"
 msgstr "Warnung"
-
-#: concrete/models/userinfo.php:264
-msgid "(No Subject)"
-msgstr "(Kein Betreff)"
 
 #: concrete/models/attribute/types/address/controller.php:154
 msgid "You must specify at least one country."
@@ -4993,17 +5081,18 @@ msgstr "Teste Optionale Möglichkeiten"
 
 #: concrete/single_pages/install.php:142
 msgid "Remote File Importing Available"
-msgstr ""
+msgstr "Remote Datei Import Verfügbar"
 
 #: concrete/single_pages/install.php:145
 msgid "Remote file importing through the file manager requires the iconv PHP extension."
-msgstr ""
+msgstr "Remote Datei Import durch den Dateimanager benötigt die iconv PHP Erweiterung."
 
 #: concrete/single_pages/install.php:149
 msgid "Version Comparison Available"
 msgstr "Versionsvergleich verfügbar"
 
 #: concrete/single_pages/install.php:152
+#, php-format
 msgid "You must chmod 755 %s and disable PHP safe mode."
 msgstr "Keine Schreibrechte auf %s, bitte chmod 755 ausführen und PHP safe mode deaktivieren."
 
@@ -5012,6 +5101,7 @@ msgid "Run Tests Again"
 msgstr "Tests erneut ausführen"
 
 #: concrete/single_pages/install.php:163
+#, php-format
 msgid "Having trouble? Check the <a href=\"%s\">installation help forums</a>, or <a href=\"%s\">have us host a copy</a> for you."
 msgstr "Probleme? Lesen Sie <a href=\"%s\">das Hilfeforum für Installationsfragen</a>, oder <a href=\"%s\">lassen Sie uns Concrete für Sie betreiben</a>."
 
@@ -5056,6 +5146,7 @@ msgid "Install sample content"
 msgstr "Beispielinhalte installieren"
 
 #: concrete/single_pages/login.php:7
+#, php-format
 msgid "Sign in to %s"
 msgstr "Bei %s anmelden"
 
@@ -5088,6 +5179,7 @@ msgid "Email Address Verified"
 msgstr "E-Mail Adresse überprüft"
 
 #: concrete/single_pages/login.php:49
+#, php-format
 msgid "The email address <b>%s</b> has been verified and you are now a fully validated member of this website."
 msgstr "Die E-Mail Adresse <b>%s</b> wurde überprüft, Sie sind nun ein Mitglied dieser Website."
 
@@ -5199,6 +5291,7 @@ msgid "Upgrade"
 msgstr "Aktualisieren"
 
 #: concrete/single_pages/upgrade.php:30
+#, php-format
 msgid "<a href=\"%s\">Click here</a> if you would like to re-run this script."
 msgstr "<a href=\"%s\">Hier klicken </a> falls Sie dieses Script erneut ausführen wollen."
 
@@ -5216,7 +5309,7 @@ msgstr "Den Marketplace erkunden"
 
 #: concrete/single_pages/dashboard/install.php:20
 msgid "You do not have access to download themes or add-ons from the marketplace."
-msgstr "Sie haben keinen Zugriff auf den Download von Themes oder Erweiterungen vom Marketplace"
+msgstr "Sie haben keine Berechtigung, Themes oder Add-Ons vom Concrete5 Marketplace herunterzuladen."
 
 #: concrete/single_pages/dashboard/install.php:29
 msgid "in"
@@ -5251,6 +5344,7 @@ msgid "Uninstall Package"
 msgstr "Paket deinstallieren"
 
 #: concrete/single_pages/dashboard/install.php:105
+#, php-format
 msgid "This will remove all elements associated with the %s package. This cannot be undone. Are you sure?"
 msgstr "Dies entfernt alle Elemente die mit Paket %s zusammenhängen. Dieser Vorgang kann nicht rückgängig gemacht werden. Sind Sie sicher?"
 
@@ -5259,12 +5353,13 @@ msgid "Items To Uninstall"
 msgstr "Objekte zum Deinstallieren"
 
 #: concrete/single_pages/dashboard/install.php:114
+#, php-format
 msgid "Uninstalling %s will remove the following data from your system."
 msgstr "Deinstallation von %s wird die folgenden Daten von Ihrem System entfernen."
 
 #: concrete/single_pages/dashboard/install.php:132
 msgid "Move package to trash directory on server?"
-msgstr "Das Paket in das Trash -Verzeichnis verschieben?"
+msgstr "Das Paket in das Trash-Verzeichnis verschieben?"
 
 #: concrete/single_pages/dashboard/install.php:133
 msgid "Yes, remove the package's directory from of the installation directory."
@@ -5273,21 +5368,23 @@ msgstr "Ja, entferne das Paketverzeichnis aus dem Installationsverzeichnis."
 #: concrete/single_pages/dashboard/install.php:162
 #: concrete/single_pages/dashboard/install.php:561
 msgid "Downloaded and Ready to Install"
-msgstr "Heruntergeladen und bereit zum installieren."
+msgstr "Heruntergeladen und bereit zum Installieren."
 
 #: concrete/single_pages/dashboard/install.php:173
 #: concrete/single_pages/dashboard/install.php:220
+#, php-format
 msgid "Current Version: %s"
 msgstr "Aktuelle Version: %s"
 
 #: concrete/single_pages/dashboard/install.php:174
 #: concrete/single_pages/dashboard/install.php:221
+#, php-format
 msgid "New Version: %s"
 msgstr "Neue Version: %s"
 
 #: concrete/single_pages/dashboard/install.php:187
 msgid "Available for Download"
-msgstr "Verfügbar zum downloaden"
+msgstr "Verfügbar zum Downloaden"
 
 #: concrete/single_pages/dashboard/install.php:199
 msgid "The Following Updates are Available"
@@ -5295,7 +5392,7 @@ msgstr "Die folgenden Updates sind verfügbar"
 
 #: concrete/single_pages/dashboard/install.php:224
 msgid "Download and Install"
-msgstr "Herunterladen und Installieren"
+msgstr "Herunterladen und installieren"
 
 #: concrete/single_pages/dashboard/install.php:233
 msgid "There are no updates for your add-ons currently available from the marketplace."
@@ -5304,7 +5401,7 @@ msgstr "Es sind momentan keine Updates für Ihre Erweiterungen verfügbar."
 #: concrete/single_pages/dashboard/install.php:338
 #: concrete/single_pages/dashboard/install.php:390
 msgid "Return to Add Functionality"
-msgstr "Zurück um Funktionen hinzufügen?"
+msgstr "Zurück zu Erweiterungen"
 
 #: concrete/single_pages/dashboard/install.php:352
 msgid "Block Types"
@@ -5327,6 +5424,7 @@ msgid "Refresh"
 msgstr "Aktualisieren"
 
 #: concrete/single_pages/dashboard/install.php:409
+#, php-format
 msgid "This will remove all instances of the %s block type. This cannot be undone. Are you sure?"
 msgstr "Dies wird alle Instanzen des %s Blocktyps entfernen. Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher?"
 
@@ -5359,6 +5457,7 @@ msgid "There is currently <strong>1</strong> update available."
 msgstr "Es ist momentan <strong>1</strong> Update verfügbar."
 
 #: concrete/single_pages/dashboard/install.php:510
+#, php-format
 msgid "There are currently <strong>%s</strong> updates available."
 msgstr "Es sind momentan <strong>%s</strong> Updates verfügbar."
 
@@ -5368,15 +5467,17 @@ msgstr "Erweiterungen aktualisieren"
 
 #: concrete/single_pages/dashboard/install.php:532
 msgid "Your site is currently connected to the concrete5 community."
-msgstr "Ihre Website ist aktuell mit der concrete5 Community verbunden."
+msgstr "Ihre Website ist aktuell mit der concrete5 Community verknüpft."
 
 #: concrete/single_pages/dashboard/install.php:534
+#, php-format
 msgid "There appears to be nothing currently available to install from your <a href=\"%s\" target=\"_blank\">project page</a>."
 msgstr "Es gibt nichts von Ihrer <a href=\"%s\" target=\"_blank\">Projektseite</a> zu installieren."
 
 #: concrete/single_pages/dashboard/install.php:536
+#, php-format
 msgid "Browse more <a href=\"%s\">add-ons</a> and <a href=\"%s\">themes</a>, and check on your <a href=\"%s\" target=\"_blank\">project page</a>."
-msgstr "Mehr <a href=\"%s\">Erweiterungen</a> und <a href=\"%s\">themes</a> durchstöbern und auf Ihre <a href=\"%s\" target=\"_blank\">projekt Seite</a> ansehen ."
+msgstr "Mehr <a href=\"%s\">Erweiterungen</a> und <a href=\"%s\">Themes</a> durchstöbern und auf Ihrer <a href=\"%s\" target=\"_blank\">Projekt Seite</a> ansehen ."
 
 #: concrete/single_pages/dashboard/install.php:538
 msgid "Check for updates &gt;"
@@ -5408,12 +5509,12 @@ msgstr "Änderungsdatum"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:17
 msgid "(Untitled Page)"
-msgstr "Seite öffnen"
+msgstr "(Unbenannte Seite)"
 
 #: concrete/single_pages/dashboard/composer/drafts.php:33
 #, php-format
 msgid "You have not created any drafts. <a href=\"%s\">Visit Composer &gt;</a>"
-msgstr "Sie haben noch keine Entwürfe erstellt. <a href=\"%s\">Composer anzeigen&gt;</a>"
+msgstr "Sie haben noch keine Entwürfe erstellt. <a href=\"%s\">Composer öffnen &gt;</a>"
 
 #: concrete/single_pages/dashboard/composer/write.php:11
 msgid "Basic Information"
@@ -5429,11 +5530,11 @@ msgstr "Eingabedatum"
 
 #: concrete/single_pages/dashboard/composer/write.php:33
 msgid "Publish Location"
-msgstr "Standard Ablage"
+msgstr "Veröffentlichungs-Pfad"
 
 #: concrete/single_pages/dashboard/composer/write.php:44
 msgid "Choose publish location."
-msgstr "Speicherort für Datei wählen"
+msgstr "Veröffentlichungs-Pfad wählen"
 
 #: concrete/single_pages/dashboard/composer/write.php:52
 msgid "Attributes &amp; Content"
@@ -5441,7 +5542,7 @@ msgstr "Header Extra Inhalt"
 
 #: concrete/single_pages/dashboard/composer/write.php:78
 msgid "Block not found. Unable to edit in composer."
-msgstr "Block nicht gefunden. Kann nicht im Composer bearbeitet werden."
+msgstr "Der Block kann nicht im Composer bearbeitet werden (Block nicht gefunden)."
 
 #: concrete/single_pages/dashboard/composer/write.php:96
 msgid "Discard"
@@ -5456,27 +5557,27 @@ msgstr "Berechtigungen"
 #: concrete/single_pages/dashboard/composer/write.php:105
 #: concrete/single_pages/dashboard/composer/write.php:203
 msgid "Publish Page"
-msgstr "Seite öffnen"
+msgstr "Seite veröffentlichen"
 
 #: concrete/single_pages/dashboard/composer/write.php:107
 msgid "Publish Changes"
-msgstr "Änderungen gespeichert"
+msgstr "Änderungen veröffentlichen"
 
 #: concrete/single_pages/dashboard/composer/write.php:140
 msgid "Page saved at "
-msgstr "Seiteneinstellungen gespeichert."
+msgstr "Seite gespeichert"
 
 #: concrete/single_pages/dashboard/composer/write.php:224
 msgid "Discard this draft?"
-msgstr "Seite cachen."
+msgstr "Diesen Entwurf verwerfen."
 
 #: concrete/single_pages/dashboard/composer/write.php:270
 msgid "What type of page would you like to write?"
-msgstr "Welchen Seitentyp möchten Sie erstellen?"
+msgstr "Welchen Seitentyp wollen Sie erstellen?"
 
 #: concrete/single_pages/dashboard/composer/write.php:277
 msgid "You have not setup any page types for Composer."
-msgstr "Sie haben noch keine Seitentypen für Composer konfiguriert."
+msgstr "Sie haben noch keine Seitentypen für den Composer eingerichtet."
 
 #: concrete/single_pages/dashboard/files/access.php:20
 msgid "Add users or groups to determine access to the file manager."
@@ -5488,7 +5589,7 @@ msgid ""
 "\t\t\tSeparate extensions with commas. Periods and spaces will be\n"
 "\t\t\tignored."
 msgstr ""
-"Nur Dateien mit den folgenden Erweiterungen werden erlaubt sein.\n"
+"Nur Dateien mit den folgenden Erweiterungen erlauben:\n"
 "\t\t\tTrennen Sie mehrere Erweiterungen mit Kommas. Punkte und\n"
 "\t\t\tLeerzeichen werden ignoriert."
 
@@ -5502,7 +5603,7 @@ msgstr "Standard Ort für Dateien"
 
 #: concrete/single_pages/dashboard/files/access.php:88
 msgid "Enter the directory where files will be stored on this server by default."
-msgstr "Geben Sie das Verzeichnis ein, in dem Datein auf diesem Server per default abgelegt werden sollen."
+msgstr "Geben Sie das Verzeichnis ein, in dem Dateien auf diesem Server standardmäßig abgelegt werden sollen."
 
 #: concrete/single_pages/dashboard/files/access.php:92
 msgid "Alternate Storage Directory"
@@ -5583,7 +5684,7 @@ msgstr "Reihenfolge speichern."
 
 #: concrete/single_pages/dashboard/files/sets.php:114
 msgid "Click and drag to reorder the files in this set. New files added to this set will automatically be appended to the end."
-msgstr "Dateien per Click-and-drag in diesem Album einordnen. Neue Dateien werden automatisch ganz am Ende eingeordnet. "
+msgstr "Dateien per Drag & Drop in diesem Album einordnen. Neue Dateien werden automatisch ganz am Ende eingeordnet. "
 
 #: concrete/single_pages/dashboard/files/sets.php:135
 msgid "There are no files in this set."
@@ -5603,7 +5704,7 @@ msgstr "Dateialben"
 
 #: concrete/single_pages/dashboard/files/sets.php:224
 msgid "Public Sets"
-msgstr "öffentliche Alben"
+msgstr "Öffentliche Alben"
 
 #: concrete/single_pages/dashboard/files/sets.php:227
 msgid "My Sets"
@@ -5620,7 +5721,7 @@ msgstr "Keine Dateienalben gefunden."
 
 #: concrete/single_pages/dashboard/files/sets.php:263
 msgid "Add Public Set"
-msgstr "öffentliches Album hinzufügen"
+msgstr "Öffentliches Album hinzufügen"
 
 #: concrete/single_pages/dashboard/files/sets.php:301
 msgid "Are you sure you want to delete this file set?"
@@ -5756,6 +5857,7 @@ msgid "None. This file will automatically be used for pages without a template."
 msgstr "Keine. Diese Datei wird automatisch für Seiten ohne Vorlage verwendet."
 
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:65
+#, php-format
 msgid "None. This file will automatically be used by the <strong>%s</strong> page."
 msgstr "Keine. Diese Datei wird automatisch von der <strong>%s</strong> Seite verwendet."
 
@@ -5764,6 +5866,7 @@ msgid "Create page type."
 msgstr "Seitentyp erstellen."
 
 #: concrete/single_pages/dashboard/pages/themes/inspect.php:72
+#, php-format
 msgid "None. This file will automatically be used by the <strong>%s</strong> page type."
 msgstr "Keine. Diese Datei wird automatisch von dem <strong>%s</strong> Seitentyp verwendet."
 
@@ -5818,11 +5921,11 @@ msgstr "Composer Einstellungen"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:21
 msgid "Included in Composer?"
-msgstr "Enthalten im Composer?"
+msgstr "In Composer integriert?"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:25
 msgid "Yes, include this page type in Composer."
-msgstr "Ja, diesen Seitentyp mit Composer bearbeiten."
+msgstr "Diesen Seitentyp für Composer einrichten."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:29
 msgid "Composer Publishing Settings"
@@ -5830,19 +5933,19 @@ msgstr "Composer Veröffentlichungs-Einstellungen"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:35
 msgid "Choose from all pages when publishing."
-msgstr "Kann unterhalb einer beliebigen Seite veröffentlicht werden."
+msgstr "Veröffentlichen für alle Seiten erlauben."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:41
 msgid "Choose from pages of a certain type when publishing."
-msgstr "Kann nur unterhalb von Seites eines bestimmten Typs veröffentlicht werden."
+msgstr "Veröffentlichen nur für bestimmte Seitentypen erlauben."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:56
 msgid "Always publish below a certain page."
-msgstr "Immer unterhalb einer ganz bestimmten Seite veröffentlichen."
+msgstr "Immer unter einem bestimmten Seitentyp veröffentlichen."
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:72
 msgid "Attributes to Display in Composer"
-msgstr "Attribute, die im Composer angezeigt werden sollen"
+msgstr "Attribute für Composer"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:107
 msgid "Composer Content Order"
@@ -5850,15 +5953,15 @@ msgstr "Composer Inhalts-Reihenfolge"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:147
 msgid "Save Composer Settings"
-msgstr "Composer Einstellungen Speichern"
+msgstr "Composer Einstellungen speichern"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:148
 msgid "Back to Page Types"
-msgstr "Keine Seitentypen gefunden."
+msgstr "Zurück zu Seiten-Typen"
 
 #: concrete/single_pages/dashboard/pages/types/composer.php:157
 msgid "Unable to access composer settings."
-msgstr "Kann nicht auf die Composer EInstellungen zugreifen"
+msgstr "Zugriff auf Composer Einstellungen fehlgeschlagen."
 
 #: concrete/single_pages/dashboard/pages/types/view.php:79
 msgid "Page Type added."
@@ -5879,11 +5982,13 @@ msgstr "Pflichtfeld"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:117
 #: concrete/single_pages/dashboard/pages/types/view.php:253
+#, php-format
 msgid "(To add your own page type icons, create a file set named \"%s\" and add files to that set)"
 msgstr "(Um eigene Symbole hinzuzufügen, einen Dateialbum mit dem Namen\"%s\" erstellen und diese Symbole dort speichern)"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:121
 #: concrete/single_pages/dashboard/pages/types/view.php:257
+#, php-format
 msgid "(Pulling icons from file set \"%s\". Icons will be displayed at %s x %s.)"
 msgstr "(Symbole aus dem Dateialbum \"%s\" entnommen. Symbole werden in %s x %s angezeigt.)"
 
@@ -5915,7 +6020,7 @@ msgstr "Seitentyp hinzufügen"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:309
 msgid "Default Attributes to Display"
-msgstr "Anzahl der zu zeigenden Einträge"
+msgstr "Anzuzeigende Standard Attribute"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:359
 msgid "No page types found."
@@ -5924,15 +6029,15 @@ msgstr "Keine Seitentypen gefunden."
 #: concrete/single_pages/dashboard/pages/types/view.php:394
 #: concrete/single_pages/dashboard/pages/types/view.php:398
 msgid "Defaults"
-msgstr "Standards"
+msgstr "Standard-Blöcke"
 
 #: concrete/single_pages/dashboard/pages/types/view.php:396
 msgid "You do not have access to page type default content."
-msgstr "Sie haben keine Berechtigung auf den Seitentyp standardinhalt zu zugreifen."
+msgstr "Sie haben keine Berechtigung die Standard-Blöcke zu definieren."
 
 #: concrete/single_pages/dashboard/pages/types/view.php:398
 msgid "Lets you set default permissions and blocks for a particular page type."
-msgstr "Lässt Sie Standardberechtigungen für Blöcke und bestimmte Seitentypen setzen."
+msgstr "Standardberechtigungen und Standard-Blöcke für einen Seitentyp einrichten."
 
 #: concrete/single_pages/dashboard/pages/types/view.php:418
 msgid "Add a Page Type"
@@ -6011,6 +6116,7 @@ msgid "Submitted By User"
 msgstr "Eingereicht von Benutzer"
 
 #: concrete/single_pages/dashboard/reports/forms.php:136
+#, php-format
 msgid "(User ID: %s)"
 msgstr "(Benutzer ID: %s)"
 
@@ -6035,6 +6141,7 @@ msgid "Clear Log"
 msgstr "Protokoll leeren"
 
 #: concrete/single_pages/dashboard/reports/surveys.php:5
+#, php-format
 msgid "Results for &#34;%s&#34;"
 msgstr "Ergebnisse für &#34;%s&#34;"
 
@@ -6080,17 +6187,18 @@ msgstr "Anzahl Meldungen"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:147
 msgid "Choose a Scrapbook"
-msgstr "Wählen Sie eine Sammelmappe"
+msgstr "Wählen Sie einen Vorlagenkatalog"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:154
 #: concrete/single_pages/dashboard/scrapbook/view.php:212
 msgid "Scrapbook Name"
-msgstr "Name der Sammelmappe"
+msgstr "Name des Vorlagenkatalogs"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:163
 #: concrete/single_pages/dashboard/scrapbook/view.php:235
+#, php-format
 msgid "%s's Personal Scrapbook"
-msgstr "%s's persönliche Sammelmappe"
+msgstr "%s's persönliche Vorlagen"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:167
 #: concrete/single_pages/dashboard/scrapbook/view.php:193
@@ -6104,32 +6212,32 @@ msgstr "Umbennen"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:195
 msgid "Are you sure you want to permantly delete this scrapbook?"
-msgstr "Wollen Sie diese Sammelmappe endgültig löschen?"
+msgstr "Wollen Sie diesen Vorlagenkatalog endgültig löschen?"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:204
 msgid "Add a Global Scrapbook"
-msgstr "Eine globale Sammelmappe einfügen"
+msgstr "Einen globalen Vorlagenkatalog erstellen"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:239
 #: concrete/single_pages/dashboard/scrapbook/view.php:304
 msgid "&laquo; Return to Scrapbook List"
-msgstr "&laquo; Zurück zur Sammelmappenliste"
+msgstr "&laquo; Zurück zum Vorlagenkatalog"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:306
 msgid "Add Block to Scrapbook"
-msgstr "Block in die Sammelmappe einfügen"
+msgstr "Block als Vorlage speichern"
 
 #: concrete/single_pages/dashboard/scrapbook/view.php:313
 msgid "You have no items in this scrapbook."
-msgstr "Sie haben keine Einträge in dieser Sammelmappe."
+msgstr "Sie haben keine Einträge in diesem Vorlagenkatalog"
 
 #: concrete/single_pages/dashboard/settings/marketplace.php:2
 msgid "Connect to the Community"
-msgstr "Mit Community verbinden"
+msgstr "Mit Community verknüpfen"
 
 #: concrete/single_pages/dashboard/settings/marketplace.php:9
 msgid "Your site is now connected to the concrete5 community!"
-msgstr "Ihre Website ist nun mit der concrete5 Community verbunden!"
+msgstr "Ihre Website ist nun mit der concrete5 Community verknüpft!"
 
 #: concrete/single_pages/dashboard/settings/view.php:36
 #: concrete/single_pages/dashboard/settings/view.php:52
@@ -6138,7 +6246,7 @@ msgstr "Aufgaben Berechtigungen"
 
 #: concrete/single_pages/dashboard/settings/view.php:41
 msgid "Set permissions for common concrete5 tasks."
-msgstr "Zugriffe für verschiedene concrete5 Aufgaben setzen."
+msgstr "Berechtigungen für verschiedene concrete5 Aufgaben setzen."
 
 #: concrete/single_pages/dashboard/settings/view.php:54
 msgid "You are not allowed to change these permissions."
@@ -6146,7 +6254,7 @@ msgstr "Ihnen ist nicht erlaubt diese Berechtigungen zu verändern."
 
 #: concrete/single_pages/dashboard/settings/view.php:72
 msgid "Attribute Type Associations"
-msgstr "Attribut-Typ Verknüpfungen"
+msgstr "Attribut-Typ Zuordnungen"
 
 #: concrete/single_pages/dashboard/settings/view.php:106
 msgid "Custom Attribute Types"
@@ -6249,6 +6357,7 @@ msgid "Refresh core database tables and blocks."
 msgstr "Aktuallisieren der Haupt Datenbanktabellen und Blöcke."
 
 #: concrete/single_pages/dashboard/settings/view.php:236
+#, php-format
 msgid "Refreshes %s files contained in %s and all block directories."
 msgstr "Aktualisiert %s Dateien, die in %s enthalten sind und alle Blockverzeichnisse."
 
@@ -6257,6 +6366,7 @@ msgid "Reload custom tables."
 msgstr "Neuladen bestimmter Tabellen."
 
 #: concrete/single_pages/dashboard/settings/view.php:238
+#, php-format
 msgid "Reloads database tables contained in %s."
 msgstr "Lädt Datenbanktabellen von %s."
 
@@ -6411,7 +6521,7 @@ msgstr "Geben Sie pro Zeile eine IP-Adresse in der unten gezeigten Form ein, um 
 
 #: concrete/single_pages/dashboard/settings/view.php:510
 msgid "Site Name"
-msgstr "Name der Wbsite"
+msgstr "Name der Website"
 
 #: concrete/single_pages/dashboard/settings/view.php:514
 msgid "Name Your Website"
@@ -6422,6 +6532,7 @@ msgid "Save Site Name"
 msgstr "Name speichern"
 
 #: concrete/single_pages/dashboard/settings/view.php:538
+#, php-format
 msgid "Your site is currently connected to the concrete5 community. <a href=\"%s\">Visit project page</a>."
 msgstr "Ihre Seite ist momentan mit der concrete5 Community verbunden.<a href=\"%s\">Projektseite besuchen</a>."
 
@@ -6435,7 +6546,7 @@ msgstr "Dieser HTML Code wird am Ende jeder Seite angefügt.(Google Analytics...
 
 #: concrete/single_pages/dashboard/settings/view.php:575
 msgid "Upload Bookmark Icon"
-msgstr "Lesezeichen Piktogramm hochladen"
+msgstr "Favicon hochladen"
 
 #: concrete/single_pages/dashboard/settings/view.php:597
 msgid "Your image should be 16x16 pixels, and should be an gif or a png with a .ico file extension."
@@ -6470,8 +6581,9 @@ msgid "Enable Pretty URLs"
 msgstr "Pretty URLs einschalten"
 
 #: concrete/single_pages/dashboard/settings/view.php:664
+#, php-format
 msgid "Automatically translates your path-based Concrete5 URLs so that they don't include %s."
-msgstr "übersetzt automatisch Ihre pfad-basierten concrete5 URLs, damit diese nicht %s enthalten."
+msgstr "Optimiert die URLs, so dass diese nicht %s enthalten auf Basis von mod_rewrite und Angaben in der .htaccess Datei."
 
 #: concrete/single_pages/dashboard/settings/view.php:667
 msgid "Required Code"
@@ -6499,7 +6611,7 @@ msgstr "Caching speichert häufig benutzte Daten damit sie schneller abgerufen w
 
 #: concrete/single_pages/dashboard/settings/view.php:716
 msgid "Basic Cache"
-msgstr "Standard Cache"
+msgstr "Basis Cache"
 
 #: concrete/single_pages/dashboard/settings/view.php:726
 msgid "Disabled, unless specified at page level."
@@ -6515,7 +6627,7 @@ msgstr "Immer aktiviert (Emergency Cache Mode)"
 
 #: concrete/single_pages/dashboard/settings/view.php:731
 msgid "Full Page Cache Lifetime"
-msgstr "Dauer des vollständigen Seitecaches"
+msgstr "Dauer des vollständigen Seitencaches"
 
 #: concrete/single_pages/dashboard/settings/view.php:734
 msgid "Custom - "
@@ -6523,7 +6635,7 @@ msgstr "Benutzerdefiniert -"
 
 #: concrete/single_pages/dashboard/settings/view.php:742
 msgid "Update Cache"
-msgstr "Cache aktualisieren"
+msgstr "Einstellungen speichern"
 
 #: concrete/single_pages/dashboard/settings/view.php:752
 #: concrete/single_pages/dashboard/settings/view.php:756
@@ -6548,7 +6660,7 @@ msgstr "Büro"
 
 #: concrete/single_pages/dashboard/settings/view.php:825
 msgid "The minimum width is 580px."
-msgstr "Minmalbreite ist 580px"
+msgstr "Minimalbreite ist 580px"
 
 #: concrete/single_pages/dashboard/settings/view.php:834
 msgid "TinyMCE Reference"
@@ -6615,23 +6727,23 @@ msgstr "Interface"
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:9
 msgid "You don't have any interface languages installed. You must run concrete5 in English."
-msgstr ""
+msgstr "Sie haben keine Sprachen installiert. Concrete5 wird auf Englisch dargestellt."
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:13
 msgid "Offer choice of language on login."
-msgstr "Sprachauswahl anbieten bei Anmeldung."
+msgstr "Sprach-Auswahl beim Login anbieten."
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:16
 msgid "Default Language: "
-msgstr "Standardsprache:"
+msgstr "Standard Sprache"
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:21
 msgid "This has been set in config/site.php"
-msgstr "Dies wurde festgelegt in config/site.php"
+msgstr "(in config/site.php definiert)"
 
 #: concrete/single_pages/dashboard/settings/multilingual/view.php:23
 msgid "Default Language"
-msgstr "Standardsprache"
+msgstr "Standard Sprache"
 
 #: concrete/single_pages/dashboard/sitemap/access.php:11
 #: concrete/single_pages/dashboard/sitemap/access.php:27
@@ -6770,6 +6882,7 @@ msgid "Results of Last Run"
 msgstr "Ergebnis der letzten Ausführung"
 
 #: concrete/single_pages/dashboard/system/jobs.php:148
+#, php-format
 msgid "Currently Running (Since %s)"
 msgstr "Aktiv (seit %s)"
 
@@ -6794,10 +6907,12 @@ msgid "Download Update"
 msgstr "Update herunterladen"
 
 #: concrete/single_pages/dashboard/system/update.php:12
+#, php-format
 msgid "Version: %s"
 msgstr "Version: %s"
 
 #: concrete/single_pages/dashboard/system/update.php:12
+#, php-format
 msgid "Release Date: %s"
 msgstr "Release Datum: %s"
 
@@ -6822,10 +6937,12 @@ msgid "Install Local Update"
 msgstr "Lokales Update installieren"
 
 #: concrete/single_pages/dashboard/system/update.php:39
+#, php-format
 msgid "Make sure you <a href=\"%s\">backup your database</a> before updating."
 msgstr "Stellen Sie sicher, dass Sie <a href=\"%s\">Ihre Datenbank sichern</a> bevor Sie ein Update durchführen."
 
 #: concrete/single_pages/dashboard/system/update.php:48
+#, php-format
 msgid "An update is available. Click below to update to <strong>%s</strong>"
 msgstr "Ein Update ist verfügbar. Klicken Sie unten um ein Update zu <strong>%s</strong> durchzuführen."
 
@@ -6839,6 +6956,7 @@ msgid "Several updates are available. Please choose the desired update from the 
 msgstr "Verschiedene Updates sind verfügbar. Bitte wählen Sie erst ein oder mehrere Updates aus der Liste aus!"
 
 #: concrete/single_pages/dashboard/users/add.php:45
+#, php-format
 msgid "The username '%s' already exists. Please choose another"
 msgstr "Der Benutzername '%s' existiert schon. Bitte wählen Sie einen anderen."
 
@@ -6875,6 +6993,7 @@ msgid "Add User Attribute"
 msgstr "Benutzerattribut hinzufügen"
 
 #: concrete/single_pages/dashboard/users/groups.php:61
+#, php-format
 msgid "A group named \"%s\" already exists"
 msgstr "Eine Gruppe mit dem Namen \"%s\" existiert bereits."
 
@@ -6983,6 +7102,7 @@ msgid "Are you sure you want to permanently remove this group?"
 msgstr "Sind Sie sicher, dass Sie diese Gruppe unwideruflich löschen wollen?"
 
 #: concrete/single_pages/dashboard/users/groups.php:337
+#, php-format
 msgid "You must be logged in as %s to remove groups."
 msgstr "Sie müssen als %s eingeloggt sein um Gruppen zu entfernen."
 
@@ -7051,6 +7171,7 @@ msgid "Registration is enabled."
 msgstr "Registrierung aktiviert."
 
 #: concrete/single_pages/dashboard/users/registration.php:109
+#, php-format
 msgid "Solving a <a href=\"%s\" target=\"_blank\">CAPTCHA</a> is required to register."
 msgstr "Eingabe eines <a href=\"%s\" target=\"_blank\">CAPTCHA</a> für die Registrierung erforderlich."
 
@@ -7079,6 +7200,7 @@ msgid "User deactivated."
 msgstr "Benutzer deaktiviert."
 
 #: concrete/single_pages/dashboard/users/search.php:135
+#, php-format
 msgid "A username must be at least %s characters long."
 msgstr "Ein Benutzername muss mindestens %s Zeichen lang sein."
 
@@ -7153,6 +7275,7 @@ msgid "Activate User"
 msgstr "Benutzer aktivieren"
 
 #: concrete/single_pages/dashboard/users/search.php:410
+#, php-format
 msgid "This will end your current session and sign you in as %s"
 msgstr "Dies beendet Ihre Sitzung und meldet Sie als Benutzer: %s neu an!"
 
@@ -7298,11 +7421,12 @@ msgid ""
 "\t\t\t\tWe've notified an administrator to check into this. \n"
 "\t\t\t\tPlease wait a few minutes before sending a new message."
 msgstr ""
-"Sie haben mehr Nachrichten gesendet als im Moment verarbeitet werden können. Die letzte wurde nicht mehr versendet \n"
-"\t\t\t\tDer Administrator wurde benachrichtigt um dies zu untersuchen. \n"
-"\t\t\t\tBitte warten Sie ein paar Minuten bevor Sie versuchen eine neue Nachricht zu versenden."
+"Sie haben mehr Nachrichten gesendet als möglich. Die letzte ging daher nicht raus. \n"
+"\t\t\t\tWir haben den Administrator informiert. \n"
+"\t\t\t\tBitte warten Sie einige Minuten."
 
 #: concrete/single_pages/profile/messages.php:126
+#, php-format
 msgid "Re: %s"
 msgstr "Aw: %s"
 
@@ -7336,6 +7460,7 @@ msgstr "Posteingang"
 
 #: concrete/single_pages/profile/messages.php:180
 #: concrete/single_pages/profile/messages.php:190
+#, php-format
 msgid "<strong>%s</strong>, sent by %s on %s"
 msgstr "<strong>%s</strong>, gesendet von %s um %s"
 
@@ -7388,7 +7513,7 @@ msgstr "Concrete5 - Open source management system (PHP und MySQL)"
 #: concrete/themes/greensalad/default.php:49
 #: concrete/themes/greensalad/full.php:44
 msgid "concrete5 - open source CMS"
-msgstr "concrete5 Open Source CMS"
+msgstr "Concrete5 Open Source CMS"
 
 #: concrete/themes/dark_chocolate/elements/footer.php:6
 #: concrete/themes/default/elements/footer.php:6
@@ -7401,6 +7526,7 @@ msgstr "Alle Rechte vorbehalten."
 #: concrete/themes/default/elements/footer.php:17
 #: concrete/themes/greensalad/default.php:63
 #: concrete/themes/greensalad/full.php:58
+#, php-format
 msgid "Currently logged in as <b>%s</b>."
 msgstr "Angemeldet als <b>%s</b>."
 
@@ -7441,11 +7567,11 @@ msgstr "Wo möchten Sie diese Seite veröffentlichen?"
 
 #: concrete/tools/edit_block_popup.php:34
 msgid "This is a global block.  Editing it here will change all instances of this block throughout the site."
-msgstr "Dies ist ein globaler Block. Änderungen an dieser Stelle haben Auswirkungen auf der ganzen Website."
+msgstr "Dies ist ein globaler Block. Änderungen haben Auswirkung auf alle verknüpften Instanzen dieses Blockes."
 
 #: concrete/tools/edit_block_popup.php:42
 msgid "This block is an alias of Page Defaults. Editing it here will \"disconnect\" it so changes to Page Defaults will no longer affect this block."
-msgstr "Dieser Block ist ein Alias eines Seitenstandards. Wenn Sie ihn bearbeiten wird er \"entkoppelt\", so dass Änderungen an den Seitenstandards diesen Block nicht mehr betreffen."
+msgstr "Dieser Block ist ein Alias von der Standardseite. Wenn Sie ihn hier ändern, werden Änderungen auf der Standardseite keinen Einfluss mehr auf diesen Block haben."
 
 #: concrete/tools/edit_collection_popup.php:92
 msgid "Someone has already checked out this page for editing."
@@ -7467,7 +7593,7 @@ msgstr "Block hinzufügen"
 
 #: concrete/tools/i18n_js.php:13
 msgid "Paste from Scrapbook"
-msgstr "Aus einer Sammelmappe einfügen"
+msgstr "Aus Vorlagenkatalog einfügen"
 
 #: concrete/tools/i18n_js.php:15
 msgid "Edit Layout"
@@ -7660,7 +7786,7 @@ msgstr "Neue übergeordnete Seite auswählen."
 
 #: concrete/tools/i18n_js.php:87
 msgid "Edit in Composer"
-msgstr "Im Composer bearbeiten"
+msgstr "Inhalt im Bearbeitungsmodus deaktiviert."
 
 #: concrete/tools/i18n_js.php:91
 msgid "Back to Sitemap"
@@ -7796,6 +7922,7 @@ msgstr "Diese Seite ist zum Löschen vorgemerkt."
 
 #: concrete/tools/page_controls_menu_js.php:68
 #: concrete/tools/versions.php:447
+#, php-format
 msgid "This will remove %s pages."
 msgstr "Diese Aktion entfernt %s Seiten"
 
@@ -7810,7 +7937,7 @@ msgstr "Nur Administratoren können Löschaktionen über mehrere Seiten einleite
 
 #: concrete/tools/page_controls_menu_js.php:83
 msgid "Page Defaults for"
-msgstr "Vorlage für existierende Seitentypen."
+msgstr "Standard-Blöcke für"
 
 #: concrete/tools/page_controls_menu_js.php:83
 msgid "page type"
@@ -7818,7 +7945,7 @@ msgstr "Seitentyp"
 
 #: concrete/tools/page_controls_menu_js.php:84
 msgid "(All edits take effect immediately)"
-msgstr "(Alle Änderungen treten sofort in Kraft)"
+msgstr "(Alle Änderungen wirken sich sofort aus)"
 
 #: concrete/tools/page_controls_menu_js.php:111
 msgid "Dashboard"
@@ -7877,6 +8004,7 @@ msgid "Select Group"
 msgstr "Gruppe auswählen"
 
 #: concrete/tools/versions.php:69
+#, php-format
 msgid "You must make %s executable in order to compare versions of pages."
 msgstr "Sie müssen die Datei %s als ausführbar markieren, um die Seitenversionen vergleichen zu können."
 
@@ -7918,6 +8046,7 @@ msgstr "LÖSCHUNG"
 
 #: concrete/tools/versions.php:435
 #: concrete/tools/versions.php:471
+#, php-format
 msgid "(Marked by: <strong>%s</strong> on <strong>%s</strong>)"
 msgstr "(Markiert durch: <strong>%s</strong> auf <strong>%s</strong>)"
 
@@ -8001,10 +8130,12 @@ msgid "was moved beneath"
 msgstr "wurde verschoben unter"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:79
+#, php-format
 msgid "Your request to move \"%s\" beneath \"%s\" has been stored. Someone with approval rights will have to activate the change."
 msgstr "Sie haben beantragt, die Seite \"%s\" nach \"%s\" zu verschieben. Jemand mit Genehmigungs-Rechten muss dies noch bestätigen."
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:114
+#, php-format
 msgid "You dragged \"%s\" onto \"%s.\" What do you wish to do?"
 msgstr "Sie haben \"%s\" auf \"%s\" gezogen. Was wollen Sie tun?"
 
@@ -8016,7 +8147,7 @@ msgstr "unter"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:128
 msgid "Save old page path"
-msgstr "Alten Seitenpfad speichern"
+msgstr "Alten Seiten-Pfad speichern"
 
 #: concrete/tools/dashboard/sitemap_drag_request.php:134
 msgid "The page will appear in both locations; all edits to the original will be reflected in the alias."
@@ -8047,6 +8178,7 @@ msgid "1 file uploaded successfully."
 msgstr "1 Datei erfolgreich hochgeladen."
 
 #: concrete/tools/files/bulk_properties.php:276
+#, php-format
 msgid "%s files uploaded successfully."
 msgstr "%s Dateien erfolgreich hochgeladen."
 
@@ -8179,7 +8311,7 @@ msgstr "Dateien aktivieren"
 
 #: concrete/tools/files/import.php:114
 msgid "Uploading..."
-msgstr "Wird hochgeladen..."
+msgstr "Upload läuft..."
 
 #: concrete/tools/files/import.php:161
 msgid "Upload Queue"
@@ -8198,10 +8330,12 @@ msgid "Cancel All Uploads"
 msgstr "Hochladen abbrechen"
 
 #: concrete/tools/files/import.php:197
+#, php-format
 msgid "Upload Max File Size: %s"
 msgstr "Max. Dateiupload-Grösse: %s"
 
 #: concrete/tools/files/import.php:198
+#, php-format
 msgid "Post Max Size: %s"
 msgstr "Maximale Post Size: %s"
 
@@ -8220,6 +8354,7 @@ msgstr "Dateien von incoming/ Verzeichnis löschen"
 
 #: concrete/tools/files/import.php:259
 #: concrete/tools/files/replace.php:41
+#, php-format
 msgid "No files found in %s"
 msgstr "Keine Dateien gefunden in %s"
 
@@ -8309,10 +8444,12 @@ msgid "Page Added To"
 msgstr "Seiten hinzugefügt zu"
 
 #: concrete/tools/files/properties.php:251
+#, php-format
 msgid "Added by <strong>%s</strong> on %s"
 msgstr "Hinzugefügt von <strong>%s</strong> am %s"
 
 #: concrete/tools/files/properties.php:289
+#, php-format
 msgid "%s File Properties"
 msgstr "%s Datei Eigenschaften"
 
@@ -8353,14 +8490,17 @@ msgid "Add from Remote URL"
 msgstr "Hinzufügen von entfernter URL"
 
 #: concrete/tools/files/rescan.php:10
+#, php-format
 msgid "Unable to rescan %s. Error encountered: %s. Rescan halted."
 msgstr "%s kann nicht erneut gelesen werden. Aufgetretener Fehler: %s. Einlesen angehalten."
 
 #: concrete/tools/files/rescan.php:32
+#, php-format
 msgid "File <strong>%s</strong> could not be found."
 msgstr "Datei <strong>%s</strong> konnte nicht gefunden werden."
 
 #: concrete/tools/files/rescan.php:36
+#, php-format
 msgid "File <strong>%s</strong> has been rescanned"
 msgstr "Datei <strong>%s</strong> wurde neu eingelesen"
 
@@ -8398,7 +8538,7 @@ msgstr "Hochladen beendet."
 
 #: concrete/tools/files/importers/remote.php:34
 msgid "Remote URL import requires the iconv extension enabled on your server."
-msgstr ""
+msgstr "Der Remote URL Import benötigt die iconv Extension auf dem Server."
 
 #: concrete/tools/files/importers/remote.php:50
 msgid " is not a valid URL."
@@ -8422,7 +8562,7 @@ msgstr "Beim Runterladen ist ein Fehler aufgetreten."
 
 #: concrete/tools/marketplace/download.php:5
 msgid "You do not have permission to download packages from the marketplace."
-msgstr "Sie haben keine Berechtigung Pakete vom Marketplace herunterzuladen."
+msgstr "Sie haben keine Berechtigung, Erweiterungen (Packages) vom Concrete5 Marketplace herunterzuladen."
 
 #: concrete/tools/marketplace/download.php:36
 msgid "Invalid package or no package specified."
@@ -8449,6 +8589,7 @@ msgid "To install the package manually:"
 msgstr "Um das Paket manuell zu installieren gehen Sie wie folgt vor:"
 
 #: concrete/tools/marketplace/download.php:76
+#, php-format
 msgid "Download the package from <a href=\"%s\">here</a>."
 msgstr "Herunterladen des Pakets unter folgender <a href=\"%s\">Adresse</a>."
 
@@ -8457,6 +8598,7 @@ msgid "Upload and unpack the package on your web server. Place the unpacked file
 msgstr "Laden und entpacken Sie das Paket auf Ihren Server. Verschieben Sie die entpackten Dateien in das Paketverzeichnis des Root Ihrer concrete5 Installation."
 
 #: concrete/tools/marketplace/download.php:78
+#, php-format
 msgid "Go to the the <a href=\"%s\">Add Functionality</a> page in your concrete5 Dashboard."
 msgstr "Gehen Sie zu <a href=\"%s\">Funktion hinzufügen</a> Seite in Ihrer concrete5 Verwaltung."
 
@@ -8501,6 +8643,7 @@ msgid "curl must be enabled to preview external themes."
 msgstr "curl muss eingeschaltet sein um eine Vorschau externer Themes zu erhalten."
 
 #: concrete/tools/themes/preview_internal.php:24
+#, php-format
 msgid "Theme not found in %s"
 msgstr "Theme in %s nicht gefunden"
 
