@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 5.4.2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-26 14:07+0100\n"
-"PO-Revision-Date: 2011-10-11 21:58+0100\n"
+"PO-Revision-Date: 2011-10-12 15:49+0100\n"
 "Last-Translator: Johannes Link <mail@johanneslink.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
@@ -3278,15 +3278,15 @@ msgstr "Schließen"
 
 #: concrete/elements/scrapbook_lists.php:12
 msgid "You have no items in your scrapbook."
-msgstr "Keine Elemente in Sammelmappe."
+msgstr "Keine Elemente im Vorlagenkatalog."
 
 #: concrete/elements/scrapbook_lists.php:54
 msgid "No blocks have been added to this scrapbook."
-msgstr "Zu dieser Sammelmappe wurden keine Blocks hinzugefügt."
+msgstr "Zu diesem Vorlagenkatalog wurden noch keine Blocks hinzugefügt."
 
 #: concrete/elements/scrapbook_lists.php:63
 msgid "Remove from Scrapbook"
-msgstr "Einfügen aus einer Sammelmappe"
+msgstr "Einfügen aus einem Vorlagenkatalog"
 
 #: concrete/elements/search_results_top.php:2
 msgid "Viewing <b>%s</b> to <b>%s</b> (<b>%s</b> Total)"
@@ -6241,7 +6241,7 @@ msgstr "Schema aktualisieren"
 
 #: concrete/single_pages/dashboard/settings/view.php:235
 msgid "Refresh core database tables and blocks."
-msgstr "Aktuallisieren der Haupt Datenbanktabellen und Blöcke."
+msgstr "Aktualisieren der Haupt Datenbanktabellen und Blöcke."
 
 #: concrete/single_pages/dashboard/settings/view.php:236
 msgid "Refreshes %s files contained in %s and all block directories."
@@ -7841,19 +7841,19 @@ msgstr "Fehler: Block nicht gefunden."
 
 #: concrete/tools/pile_manager.php:234
 msgid "Please choose a scrapbook."
-msgstr "Wählen Sie eine Sammelmappe."
+msgstr "Wählen Sie einen Vorlagenkatalog."
 
 #: concrete/tools/pile_manager.php:274
 msgid "New copy to Scrapbook"
-msgstr "Block in die Sammelmappe einfügen"
+msgstr "Kopie des Blocks als Vorlage speichern"
 
 #: concrete/tools/pile_manager.php:275
 msgid "Alias original to Scrapbook"
-msgstr "Block in die Sammelmappe einfügen"
+msgstr "Globale Vorlage aus diesem Block erstellen"
 
 #: concrete/tools/pile_manager.php:286
 msgid "Block added to scrapbook."
-msgstr "Block wurde in die Sammelmappe kopiert."
+msgstr "Block zum Vorlagenkatalog hinzugefügt."
 
 #: concrete/tools/select_group.php:7
 msgid "You have no access to groups."
