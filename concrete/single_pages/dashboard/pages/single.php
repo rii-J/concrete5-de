@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $ih = Loader::helper('concrete/interface');
 Loader::model('single_page');
@@ -39,26 +39,26 @@ $generated = SinglePage::getList();
 	$message = t('Static page created.');
 }
 ?>
-<h1><span><?php  echo t('Single Pages')?></span></h1>
+<h1><span><?php echo t('Single Pages')?></span></h1>
 	<div class="ccm-dashboard-inner">
 	
 	<div style="margin:0px; padding:0px; width:100%; height:auto" >	
 	<table border="0" cellspacing="1" cellpadding="0" class="grid-list" width="600">
 	<tr>
-		<td colspan="4" class="header"><?php  echo t('Already Installed')?></td>
+		<td colspan="4" class="header"><?php echo t('Already Installed')?></td>
 	</tr>
 	<tr>
-		<td class="subheader" width="100%"><?php  echo t('Name')?></td>
-		<td class="subheader"><?php  echo t('Path')?></td>
-		<td class="subheader"><?php  echo t('Package')?></td>
+		<td class="subheader" width="100%"><?php echo t('Name')?></td>
+		<td class="subheader"><?php echo t('Path')?></td>
+		<td class="subheader"><?php echo t('Package')?></td>
 		<td class="subheader"><div style="width: 90px"></div></td>
 	</tr>
-	<?php   if (count($generated) == 0) { ?>
-		<tr><td colspan="4"><?php  echo t('No pages found.')?></td></tr>
-	<?php   } else { ?>
+	<?php  if (count($generated) == 0) { ?>
+		<tr><td colspan="4"><?php echo t('No pages found.')?></td></tr>
+	<?php  } else { ?>
 	
-	<?php   foreach ($generated as $p) { ?>
-	<?php  
+	<?php  foreach ($generated as $p) { ?>
+	<?php 
 		if ($p->getPackageID() > 0) {
 			$package = Package::getByID($p->getPackageID());
 			if(is_object($package)) {
@@ -70,31 +70,31 @@ $generated = SinglePage::getList();
 		}
 		
 	?>
-	<tr <?php   if ($packageHandle == DIRNAME_PACKAGE_CORE) { ?> class="ccm-core-package-row" <?php   } ?>>
-		<td><a href="<?php  echo DIR_REL?>/<?php  echo DISPATCHER_FILENAME?>?cID=<?php  echo $p->getCollectionID()?>"><?php  echo $p->getCollectionName()?></a></td>
-		<td><?php  echo $p->getCollectionPath()?></td>
-		<td><?php   print $packageName; ?></td>
+	<tr <?php  if ($packageHandle == DIRNAME_PACKAGE_CORE) { ?> class="ccm-core-package-row" <?php  } ?>>
+		<td><a href="<?php echo DIR_REL?>/<?php echo DISPATCHER_FILENAME?>?cID=<?php echo $p->getCollectionID()?>"><?php echo $p->getCollectionName()?></a></td>
+		<td><?php echo $p->getCollectionPath()?></td>
+		<td><?php  print $packageName; ?></td>
 		<td>
-			<?php   print $ih->button(t('Refresh'),$this->url('/dashboard/pages/single/?p=' . $p->getCollectionID() . '&task=refresh&' . $valt->getParameter('refresh')), 'left', false, array('title'=>t('Refreshes the page, rebuilding its permissions and its name.')));?>
+			<?php  print $ih->button(t('Refresh'),$this->url('/dashboard/pages/single/?p=' . $p->getCollectionID() . '&task=refresh&' . $valt->getParameter('refresh')), 'left', false, array('title'=>t('Refreshes the page, rebuilding its permissions and its name.')));?>
 		</td>
 	</tr>
-	<?php   }
+	<?php  }
 	
 	} ?>
 	<tr>
-		<td colspan="4" class="header"><?php  echo t('Add Single Page')?></td>
+		<td colspan="4" class="header"><?php echo t('Add Single Page')?></td>
 	</tr>
 	<tr>
-		<td colspan="4"><?php  echo t('The page you want to add is available at:')?>
+		<td colspan="4"><?php echo t('The page you want to add is available at:')?>
 		<br>
-		<form method="post" id="add_static_page_form" action="<?php  echo $this->url('/dashboard/pages/single/')?>">
-		<?php  echo $valt->output('add_single_page')?>
+		<form method="post" id="add_static_page_form" action="<?php echo $this->url('/dashboard/pages/single/')?>">
+		<?php echo $valt->output('add_single_page')?>
 		<table border="0" cellspacing="0" cellpadding="0">
 		<tr>
 		<td>
-		<?php  echo BASE_URL . DIR_REL?>/<input type="text" name="pageURL" value="<?php  echo $_POST['pageURL']?>" style="width: 200px" /></td>
+		<?php echo BASE_URL . DIR_REL?>/<input type="text" name="pageURL" value="<?php  if (isset($_POST['pageURL'])) { print Loader::helper('text')->entities($_POST['pageURL']); }?>" style="width: 200px" /></td>
 		<td>
-		<?php   print $ih->submit(t('Add'), 'add_static_page_form', 'left');?></td>
+		<?php  print $ih->submit(t('Add'), 'add_static_page_form', 'left');?></td>
 		</tr>
 		</table>
 		

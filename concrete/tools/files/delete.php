@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
 $form = Loader::helper('form');
@@ -50,53 +50,53 @@ $searchInstance = $_REQUEST['searchInstance'];
 
 ?>
 
-<h1><?php  echo t('Delete Files')?></h1>
+<h1><?php echo t('Delete Files')?></h1>
 
-<?php   if ($fcnt == 0) { ?>
-	<?php  echo t("You do not have permission to delete any of the selected files."); ?>
-<?php   } else { ?>
+<?php  if ($fcnt == 0) { ?>
+	<?php echo t("You do not have permission to delete any of the selected files."); ?>
+<?php  } else { ?>
 
-	<?php  echo t('Are you sure you want to delete the following files?')?><br/><br/>
+	<?php echo t('Are you sure you want to delete the following files?')?><br/><br/>
 
-	<form id="ccm-<?php  echo $searchInstance?>-delete-form" method="post" action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/delete">
-	<?php  echo $form->hidden('task', 'delete_files')?>
+	<form id="ccm-<?php echo $searchInstance?>-delete-form" method="post" action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/delete">
+	<?php echo $form->hidden('task', 'delete_files')?>
 	<table border="0" cellspacing="0" cellpadding="0" width="100%" class="ccm-results-list">
 	
-	<?php   foreach($files as $f) { 
+	<?php  foreach($files as $f) { 
 		$fp = new Permissions($f);
 		if ($fp->canAdmin()) {
 			$fv = $f->getApprovedVersion();
 			if (is_object($fv)) { ?>
 			
-			<?php  echo $form->hidden('fID[]', $f->getFileID())?>		
+			<?php echo $form->hidden('fID[]', $f->getFileID())?>		
 			
 			<tr>
 				<td>
 				<div class="ccm-file-list-thumbnail">
-					<div class="ccm-file-list-thumbnail-image" fID="<?php  echo $f->getFileID()?>"><table border="0" cellspacing="0" cellpadding="0" height="70" width="100%"><tr><td align="center" fID="<?php  echo $f->getFileID()?>" style="padding: 0px"><?php  echo $fv->getThumbnail(1)?></td></tr></table></div>
+					<div class="ccm-file-list-thumbnail-image" fID="<?php echo $f->getFileID()?>"><table border="0" cellspacing="0" cellpadding="0" height="70" width="100%"><tr><td align="center" fID="<?php echo $f->getFileID()?>" style="padding: 0px"><?php echo $fv->getThumbnail(1)?></td></tr></table></div>
 				</div>
 				</td>
 		
-				<td><?php  echo $fv->getType()?></td>
-				<td class="ccm-file-list-filename" width="100%"><div style="word-wrap: break-word; width: 150px"><?php  echo $fv->getTitle()?></td>
-				<td><?php  echo date(DATE_APP_DASHBOARD_SEARCH_RESULTS_FILES, strtotime($f->getDateAdded()))?></td>
-				<td><?php  echo $fv->getSize()?></td>
-				<td><?php  echo $fv->getAuthorName()?></td>
+				<td><?php echo $fv->getType()?></td>
+				<td class="ccm-file-list-filename" width="100%"><div style="word-wrap: break-word; width: 150px"><?php echo $fv->getTitle()?></td>
+				<td><?php echo date(DATE_APP_DASHBOARD_SEARCH_RESULTS_FILES, strtotime($f->getDateAdded()))?></td>
+				<td><?php echo $fv->getSize()?></td>
+				<td><?php echo $fv->getAuthorName()?></td>
 			</tr>
 			
-			<?php   }
+			<?php  }
 		}
 		
 	} ?>
 	</table>
 	</form>
 	<br/>
-	<?php   $ih = Loader::helper('concrete/interface')?>
-	<?php  echo $ih->button_js(t('Delete'), 'ccm_alDeleteFiles(\'' . $searchInstance . '\')')?>
-	<?php  echo $ih->button_js(t('Cancel'), 'jQuery.fn.dialog.closeTop()', 'left')?>	
+	<?php  $ih = Loader::helper('concrete/interface')?>
+	<?php echo $ih->button_js(t('Delete'), 'ccm_alDeleteFiles(\'' . $searchInstance . '\')')?>
+	<?php echo $ih->button_js(t('Cancel'), 'jQuery.fn.dialog.closeTop()', 'left')?>	
 		
 		
-	<?php  
+	<?php 
 	
 }
 	

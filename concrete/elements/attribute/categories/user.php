@@ -1,4 +1,4 @@
-<?php  
+<?php 
 if (is_object($key)) {
 	$uakProfileDisplay = $key->isAttributeKeyDisplayedOnProfile();
 	$uakProfileEdit = $key->isAttributeKeyEditableOnProfile();
@@ -9,25 +9,25 @@ if (is_object($key)) {
 	$uakIsActive = $key->isAttributeKeyActive();
 }
 ?>
-<?php   $form = Loader::helper('form'); ?>
+<?php  $form = Loader::helper('form'); ?>
 <table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 <tr>
-	<td class="subheader" style="width: 34%"><?php  echo t('Public Display')?></td>
-	<td class="subheader" style="width: 33%"><?php  echo t('Edit Mode')?></td>
-	<td class="subheader" style="width: 33%"><?php  echo t('Registration')?></td>
+	<td class="subheader" style="width: 34%"><?php echo t('Public Display')?></td>
+	<td class="subheader" style="width: 33%"><?php echo t('Edit Mode')?></td>
+	<td class="subheader" style="width: 33%"><?php echo t('Registration')?></td>
 </tr>	
 <tr>
 	<td valign="top">
-	<?php  echo $form->checkbox('uakProfileDisplay', 1, $uakProfileDisplay)?> <?php  echo t('Displayed in Public Profile.');?><br/>
-	<?php  echo $form->checkbox('uakMemberListDisplay', 1, $uakMemberListDisplay)?> <?php  echo t('Displayed on Member List.');?>
+	<?php echo $form->checkbox('uakProfileDisplay', 1, $uakProfileDisplay)?> <?php echo t('Displayed in Public Profile.');?><br/>
+	<?php echo $form->checkbox('uakMemberListDisplay', 1, $uakMemberListDisplay)?> <?php echo t('Displayed on Member List.');?>
 	</td>
 	<td valign="top">
-		<?php  echo $form->checkbox('uakProfileEdit', 1, $uakProfileEdit)?> <?php  echo t('Editable in Profile.');?><Br/>
-		<?php  echo $form->checkbox('uakProfileEditRequired', 1, $uakProfileEditRequired)?> <?php  echo t('Editable and Required in Profile.');?>
+		<?php echo $form->checkbox('uakProfileEdit', 1, $uakProfileEdit)?> <?php echo t('Editable in Profile.');?><Br/>
+		<?php echo $form->checkbox('uakProfileEditRequired', 1, $uakProfileEditRequired)?> <?php echo t('Editable and Required in Profile.');?>
 	</td>
 	<td valign="top">
-		<?php  echo $form->checkbox('uakRegisterEdit', 1, $uakRegisterEdit)?> <?php  echo t('Show on Registration Form.');?><Br/>
-		<?php  echo $form->checkbox('uakRegisterEditRequired', 1, $uakRegisterEditRequired)?> <?php  echo t('Require on Registration Form.');?>
+		<?php echo $form->checkbox('uakRegisterEdit', 1, $uakRegisterEdit)?> <?php echo t('Show on Registration Form.');?><Br/>
+		<?php echo $form->checkbox('uakRegisterEditRequired', 1, $uakRegisterEditRequired)?> <?php echo t('Require on Registration Form.');?>
 	</td>
 </tr>
 </table>

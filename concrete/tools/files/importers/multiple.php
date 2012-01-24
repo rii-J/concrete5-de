@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $jsh = Loader::helper("json");
 $cf = Loader::helper("file");

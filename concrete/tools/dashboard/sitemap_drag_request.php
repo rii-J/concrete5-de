@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 defined('C5_EXECUTE') or die("Access Denied.");
 $sh = Loader::helper('concrete/dashboard/sitemap');
@@ -111,50 +111,50 @@ if ($successMessage) {
 ?>
 
 <h2>
-<?php  echo t('You dragged "%s" onto "%s." What do you wish to do?',$oc->getCollectionName(),$dc->getCollectionName())?>
+<?php echo t('You dragged "%s" onto "%s." What do you wish to do?',$oc->getCollectionName(),$dc->getCollectionName())?>
 </h2><br/>
 	<form>
 
-		<input type="hidden" name="origCID" id="origCID" value="<?php  echo $_REQUEST['origCID']?>" />
-		<input type="hidden" name="destParentID" id="destParentID" value="<?php  echo $dc->getCollectionParentID()?>" />
-		<input type="hidden" name="destCID" id="destCID" value="<?php  echo $_REQUEST['destCID']?>" />
-		<input type="hidden" name="instance_id" id="instance_id" value="<?php  echo $_REQUEST['instance_id']?>" />
-		<input type="hidden" name="select_mode" id="select_mode" value="<?php  echo $_REQUEST['select_mode']?>" />
-		<input type="hidden" name="display_mode" id="display_mode" value="<?php  echo $_REQUEST['display_mode']?>" />
+		<input type="hidden" name="origCID" id="origCID" value="<?php echo $_REQUEST['origCID']?>" />
+		<input type="hidden" name="destParentID" id="destParentID" value="<?php echo $dc->getCollectionParentID()?>" />
+		<input type="hidden" name="destCID" id="destCID" value="<?php echo $_REQUEST['destCID']?>" />
+		<input type="hidden" name="instance_id" id="instance_id" value="<?php echo $_REQUEST['instance_id']?>" />
+		<input type="hidden" name="select_mode" id="select_mode" value="<?php echo $_REQUEST['select_mode']?>" />
+		<input type="hidden" name="display_mode" id="display_mode" value="<?php echo $_REQUEST['display_mode']?>" />
 
 		<input type="radio" checked style="vertical-align: middle" id="ctaskMove" name="ctask" value="MOVE" onclick="toggleMove()" />
-		<strong><?php  echo t('Move')?></strong> "<?php  echo $oc->getCollectionName()?>" <?php  echo t('beneath')?> "<?php  echo $dc->getCollectionName()?>"
+		<strong><?php echo t('Move')?></strong> "<?php echo $oc->getCollectionName()?>" <?php echo t('beneath')?> "<?php echo $dc->getCollectionName()?>"
 		<div style="margin: 4px 0px 0px 20px">
-		<input type="checkbox" id="saveOldPagePath" name="saveOldPagePath" value="1" style="vertical-align: middle" <?php   if (isset($_SESSION['movePageSaveOldPagePath']) && $_SESSION['movePageSaveOldPagePath']) { ?> checked="checked" <?php   } ?> /> <?php  echo t('Save old page path')?>
+		<input type="checkbox" id="saveOldPagePath" name="saveOldPagePath" value="1" style="vertical-align: middle" <?php  if (isset($_SESSION['movePageSaveOldPagePath']) && $_SESSION['movePageSaveOldPagePath']) { ?> checked="checked" <?php  } ?> /> <?php echo t('Save old page path')?>
 		</div>
 		<br/>
 		
-		<?php   if ($oc->getCollectionPointerID() < 1) { ?>
+		<?php  if ($oc->getCollectionPointerID() < 1) { ?>
 		<input type="radio" style="vertical-align: middle" id="ctaskAlias" name="ctask" value="ALIAS" onclick="toggleAlias()" />
-		<strong><?php  echo t('Alias')?></strong> "<?php  echo $oc->getCollectionName()?>" <?php  echo t('beneath')?> "<?php  echo $dc->getCollectionName()?>" - <?php  echo t('The page will appear in both locations; all edits to the original will be reflected in the alias.')?>
+		<strong><?php echo t('Alias')?></strong> "<?php echo $oc->getCollectionName()?>" <?php echo t('beneath')?> "<?php echo $dc->getCollectionName()?>" - <?php echo t('The page will appear in both locations; all edits to the original will be reflected in the alias.')?>
 		<br/><br/>
-		<?php   } ?>
+		<?php  } ?>
 		
 		<input type="radio" style="vertical-align: middle" id="ctaskCopy" name="ctask" value="COPY" onclick="toggleCopy()" />
-		<strong><?php  echo t('Copy')?></strong> "<?php  echo $oc->getCollectionName()?>" <?php  echo t('beneath')?> "<?php  echo $dc->getCollectionName()?>"
+		<strong><?php echo t('Copy')?></strong> "<?php echo $oc->getCollectionName()?>" <?php echo t('beneath')?> "<?php echo $dc->getCollectionName()?>"
 		<div style="margin: 4px 0px 0px 20px">
-		<?php   if ($ocp->canAdminPage() && $oc->getCollectionPointerID() < 1) { ?>
-			<input type="radio" id="copyThisPage" name="copyAll" value="0" style="vertical-align: middle" disabled /> <?php  echo t('Copy this page.')?><br/>
-			<input type="radio" id="copyChildren" name="copyAll" value="1" style="vertical-align: middle" disabled /> <?php  echo t('Copy this page + children.')?>
-		<?php   } else { ?> 
-			<?php  echo t('Your copy operation will only affect the current page - not any children.')?>
-		<?php   } ?>
+		<?php  if ($ocp->canAdminPage() && $oc->getCollectionPointerID() < 1) { ?>
+			<input type="radio" id="copyThisPage" name="copyAll" value="0" style="vertical-align: middle" disabled /> <?php echo t('Copy this page.')?><br/>
+			<input type="radio" id="copyChildren" name="copyAll" value="1" style="vertical-align: middle" disabled /> <?php echo t('Copy this page + children.')?>
+		<?php  } else { ?> 
+			<?php echo t('Your copy operation will only affect the current page - not any children.')?>
+		<?php  } ?>
 		</div>
 		
 		<br/>
 	
 	<div class="ccm-buttons">
-	<?php   if ($_REQUEST['sitemap_mode'] == 'move_copy_delete') { ?>
-		<a href="javascript:void(0)" onclick="$.fn.dialog.closeTop()" id="ccm-exit-drag-request" title="<?php  echo t('Choose Page')?>" class="ccm-button-left cancel"><span><em class="ccm-button-close"><?php  echo t('Cancel')?></em></span></a>
-	<?php   } else { ?>
-		<a href="javascript:void(0)" onclick="showBranch(<?php  echo $oc->getCollectionID()?>);$.fn.dialog.closeTop()" class="ccm-button-left cancel"><span><em class="ccm-button-close"><?php  echo t('Cancel')?></em></span></a>
-	<?php   } ?>
-	<a href="javascript:void(0)" onclick="moveCopyAliasNode(<?php   if ($_REQUEST['sitemap_mode'] == 'move_copy_delete') { ?>true<?php   } ?>)" class="ccm-button-right accept"><span><?php  echo t('Go')?></span></a>
+	<?php  if ($_REQUEST['sitemap_mode'] == 'move_copy_delete') { ?>
+		<a href="javascript:void(0)" onclick="$.fn.dialog.closeTop()" id="ccm-exit-drag-request" title="<?php echo t('Choose Page')?>" class="ccm-button-left cancel"><span><em class="ccm-button-close"><?php echo t('Cancel')?></em></span></a>
+	<?php  } else { ?>
+		<a href="javascript:void(0)" onclick="showBranch(<?php echo $oc->getCollectionID()?>);$.fn.dialog.closeTop()" class="ccm-button-left cancel"><span><em class="ccm-button-close"><?php echo t('Cancel')?></em></span></a>
+	<?php  } ?>
+	<a href="javascript:void(0)" onclick="moveCopyAliasNode(<?php  if ($_REQUEST['sitemap_mode'] == 'move_copy_delete') { ?>true<?php  } ?>)" class="ccm-button-right accept"><span><?php echo t('Go')?></span></a>
 	</div>
 	
 	<div class="ccm-spacer">&nbsp;</div>

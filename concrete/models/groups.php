@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * Contains the group and grouplist classes.
  * @package Users 

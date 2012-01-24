@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
 if (isset($error) && $error != '') {
@@ -14,9 +14,9 @@ if (isset($error) && $error != '') {
 	?>
 	
 	<ul class="ccm-error">
-	<?php   foreach($_error as $e): ?>
-		<li><?php   echo $e?></li>
-	<?php   endforeach; ?>
+	<?php  foreach($_error as $e): ?>
+		<li><?php  echo $e?></li>
+	<?php  endforeach; ?>
 	</ul>
 
-<?php   } ?>
+<?php  } ?>

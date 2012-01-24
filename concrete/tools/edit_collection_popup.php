@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 defined('C5_EXECUTE') or die("Access Denied.");
 
@@ -67,11 +67,11 @@ if (!$canViewPane) {
 
 ?>
 
-<?php   Loader::element('pane_header', array('c'=>$c)); ?>
+<?php  Loader::element('pane_header', array('c'=>$c)); ?>
 
-<div id="<?php  echo $divID?>">
+<div id="<?php echo $divID?>">
 
-<?php   if (!$_GET['close']) {
+<?php  if (!$_GET['close']) {
 
 	if (!$c->isEditMode() && ($_GET['ctask'] != 'add')) {
 		// first, we attempt to check the user in as editing the collection

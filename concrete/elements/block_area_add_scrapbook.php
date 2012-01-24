@@ -1,4 +1,4 @@
-<?php   
+<?php  
 defined('C5_EXECUTE') or die("Access Denied.");
 ?>
 
@@ -7,10 +7,10 @@ ccmPrepareScrapbookItemsDelete=function(){
 	$("a.ccm-scrapbook-delete").click(function() {
 		var id=$(this).attr('id');
 		var arHandle=$(this).attr('arHandle');
-		var qStr='&ptask=delete_content&arHandle='+encodeURIComponent(arHandle)+'<?php  echo $token?>'; 
+		var qStr='&ptask=delete_content&arHandle='+encodeURIComponent(arHandle)+'<?php echo $token?>'; 
 		
 		if( id.indexOf('bID')>-1 ){
-			if(!confirm('<?php  echo t('Are you sure you want to delete this block?').'\n'.t('(All page instances will also be removed)') ?>'))
+			if(!confirm('<?php echo t('Are you sure you want to delete this block?').'\n'.t('(All page instances will also be removed)') ?>'))
 				return false;
 			var bID = id.substring(13);
 			qStr='bID=' + bID + qStr;
@@ -35,11 +35,11 @@ $(function(){ ccmPrepareScrapbookItemsDelete(); });
 ccmChangeDisplayedScrapbook = function(sel){  
 	var scrapbook=$(sel).val(); 
 	if(!scrapbook) return false;
-	$('#ccm-scrapbookListsWrap').html("<div style='padding:16px;'><?php  echo t('Loading...')?></div>");
+	$('#ccm-scrapbookListsWrap').html("<div style='padding:16px;'><?php echo t('Loading...')?></div>");
 	$.ajax({
 	type: 'POST',
 	url: CCM_TOOLS_PATH+"/edit_area_scrapbook_refresh.php",
-	data: 'cID=<?php  echo intval($_REQUEST['cID'])?>&arHandle=<?php  echo urlencode($_REQUEST['arHandle'])?>&scrapbookName='+scrapbook+'&<?php  echo $token?>',
+	data: 'cID=<?php echo intval($_REQUEST['cID'])?>&arHandle=<?php echo urlencode($_REQUEST['arHandle'])?>&scrapbookName='+scrapbook+'&<?php echo $token?>',
 	success: function(resp) { 
 		$('#ccm-scrapbookListsWrap').html(resp);
 		ccmPrepareScrapbookItemsDelete(); 
@@ -49,7 +49,7 @@ ccmChangeDisplayedScrapbook = function(sel){
 </script>
 
 
-<?php   
+<?php  
 $u = new User();
 $scrapbookHelper=Loader::helper('concrete/scrapbook'); 
 $scrapBookAreasData = $scrapbookHelper->getAvailableScrapbooks(); 
@@ -57,17 +57,17 @@ $scrapbookName=$_SESSION['ccmLastViewedScrapbook'];
 ?>	
 <select name="scrapbookName" onchange="ccmChangeDisplayedScrapbook(this)" style=" float:right; margin-top:6px;"> 
 	<option value="userScrapbook">
-		<?php  echo ucfirst($u->getUserName()) ?><?php  echo t("'s Scrapbook") ?> 
+		<?php echo ucfirst($u->getUserName()) ?><?php echo t("'s Scrapbook") ?> 
 	</option>
-	<?php   foreach($scrapBookAreasData as $scrapBookAreaData){ ?>
-		<option value="<?php  echo addslashes($scrapBookAreaData['arHandle'])?>" <?php  echo ($scrapbookName==$scrapBookAreaData['arHandle'])?'selected':''?>>
-			<?php  echo $scrapBookAreaData['arHandle'] ?>
+	<?php  foreach($scrapBookAreasData as $scrapBookAreaData){ ?>
+		<option value="<?php echo addslashes($scrapBookAreaData['arHandle'])?>" <?php echo ($scrapbookName==$scrapBookAreaData['arHandle'])?'selected':''?>>
+			<?php echo $scrapBookAreaData['arHandle'] ?>
 		</option>
-	<?php   } ?>
+	<?php  } ?>
 </select> 	
 
-<h1><?php  echo t('Add From Scrapbook')?></h1>		
+<h1><?php echo t('Add From Scrapbook')?></h1>		
 	
 <div id="ccm-scrapbookListsWrap">
-<?php   Loader::element('scrapbook_lists', array( 'c'=>$c, 'a'=>$a, 'scrapbookName'=>$scrapbookName, 'token'=>$token ) );  ?>
+<?php  Loader::element('scrapbook_lists', array( 'c'=>$c, 'a'=>$a, 'scrapbookName'=>$scrapbookName, 'token'=>$token ) );  ?>
 </div>

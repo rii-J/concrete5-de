@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * Helper elements for dealing with errors in Concrete
  * @package Helpers

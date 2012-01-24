@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 if (!defined('DISPATCHER_FILENAME')) {
 	define('DISPATCHER_FILENAME', 'index.php');

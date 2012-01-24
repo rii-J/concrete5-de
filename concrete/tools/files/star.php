@@ -1,4 +1,4 @@
-<?php  
+<?php 
 	defined('C5_EXECUTE') or die("Access Denied.");
 	Loader::model('file_set');
 	$file_set = FileSet::createAndGetSet('Starred Files',FileSet::TYPE_STARRED);

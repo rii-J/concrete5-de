@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * $Id: JSON.php 40 2007-06-18 11:43:15Z spocke $
  *

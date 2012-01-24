@@ -1,38 +1,38 @@
-<?php   $av = Loader::helper('concrete/avatar'); ?>
+<?php  $av = Loader::helper('concrete/avatar'); ?>
 <div id="ccm-profile-sidebar">
 	<div class="ccm-profile-header">
-		<a href="<?php  echo View::url('/profile',$profile->getUserID())?>"><?php  echo  $av->outputUserAvatar($profile)?></a><br />
-		<a href="<?php  echo View::url('/profile',$profile->getUserID())?>"><?php  echo  $profile->getUsername()?></a>
+		<a href="<?php echo View::url('/profile',$profile->getUserID())?>"><?php echo  $av->outputUserAvatar($profile)?></a><br />
+		<a href="<?php echo View::url('/profile',$profile->getUserID())?>"><?php echo  $profile->getUsername()?></a>
 	</div>
-	<div style="margin-top:16px; padding-bottom:4px; margin-bottom:0px; font-weight:bold"><?php  echo t('Member Since')?></div>
-	<?php  echo date(DATE_APP_GENERIC_MDY_FULL, strtotime($profile->getUserDateAdded('user')))?>
+	<div style="margin-top:16px; padding-bottom:4px; margin-bottom:0px; font-weight:bold"><?php echo t('Member Since')?></div>
+	<?php echo date(DATE_APP_GENERIC_MDY_FULL, strtotime($profile->getUserDateAdded('user')))?>
 	
-	<?php   
+	<?php  
 	$u = new User();
 	if ($u->isRegistered() && $u->getUserID() != $profile->getUserID()) { ?>
 	<div style="margin-top:16px;">
 		<div>
-		<?php   if( !UsersFriends::isFriend( $profile->getUserID(), $u->uID ) ){ ?>
-			<a href="<?php  echo View::url('/profile/friends','add_friend', $profile->getUserID())?>">
-				<?php  echo t('Add to My Friends') ?>
+		<?php  if( !UsersFriends::isFriend( $profile->getUserID(), $u->uID ) ){ ?>
+			<a href="<?php echo View::url('/profile/friends','add_friend', $profile->getUserID())?>">
+				<?php echo t('Add to My Friends') ?>
 			</a>
-		<?php   }else{ ?>
-			<a href="<?php  echo View::url('/profile/friends','remove_friend', $profile->getUserID() )?>">
-				<?php  echo t('Remove from My Friends') ?>
+		<?php  }else{ ?>
+			<a href="<?php echo View::url('/profile/friends','remove_friend', $profile->getUserID() )?>">
+				<?php echo t('Remove from My Friends') ?>
 			</a>
-		<?php   } ?>
+		<?php  } ?>
 		
 		</div>
-		<?php   if ($profile->getUserProfilePrivateMessagesEnabled() == 1) { ?>
-			<a href="<?php  echo $this->url('/profile/messages', 'write', $profile->getUserID())?>"><?php  echo t('Send Private Message')?></a>	
-		<?php   } ?>
+		<?php  if ($profile->getUserProfilePrivateMessagesEnabled() == 1) { ?>
+			<a href="<?php echo $this->url('/profile/messages', 'write', $profile->getUserID())?>"><?php echo t('Send Private Message')?></a>	
+		<?php  } ?>
 		
 	</div>
-	<?php   } ?>
+	<?php  } ?>
 
 	
 	<div>
-	<?php   
+	<?php  
 	if($u->getUserID() == $profile->getUserID()) {
 		$nc = Page::getByPath('/profile');
 		$bt = BlockType::getByHandle('autonav');
@@ -47,9 +47,9 @@
 	?>
 	</div>
 
-		<form method="get" action="<?php  echo $this->url('/members')?>">
-		<h4><?php  echo t('Search Members')?></h4>
-		<?php  
+		<form method="get" action="<?php echo $this->url('/members')?>">
+		<h4><?php echo t('Search Members')?></h4>
+		<?php 
 		$form = Loader::helper('form');
 		print $form->text('keywords', array('style' => 'width: 80px'));
 		print '&nbsp;&nbsp;';

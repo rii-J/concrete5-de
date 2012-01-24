@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 if (!defined('E_DEPRECATED')) {
 	error_reporting(E_ALL ^ E_NOTICE);
@@ -282,7 +282,7 @@ class InstallController extends Controller {
 						}
 						
 						// write the config file
-						$configuration = "<?php  \n";
+						$configuration = "<?php \n";
 						$configuration .= "define('DB_SERVER', '" . addslashes($_POST['DB_SERVER']) . "');\n";
 						$configuration .= "define('DB_USERNAME', '" . addslashes($_POST['DB_USERNAME']) . "');\n";
 						$configuration .= "define('DB_PASSWORD', '" . addslashes($_POST['DB_PASSWORD']) . "');\n";

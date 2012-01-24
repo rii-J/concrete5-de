@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 Loader::controller('/profile/edit');
 Loader::model('user_private_message');

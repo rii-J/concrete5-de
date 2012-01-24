@@ -1,4 +1,4 @@
-<?php   
+<?php  
 defined('C5_EXECUTE') or die("Access Denied.");
 class FormBlockController extends BlockController {
 
@@ -649,20 +649,20 @@ class MiniSurvey{
 				
 					$requiredSymbol=($questionRow['required'])?'<span class="required">*</span>':'';				
 					?>
-					<div id="miniSurveyQuestionRow<?php   echo $questionRow['msqID']?>" class="miniSurveyQuestionRow">
-						<div class="miniSurveyQuestion"><?php   echo $questionRow['question'].' '.$requiredSymbol?></div>
-						<?php    /* <div class="miniSurveyResponse"><?php   echo $this->loadInputType($questionRow,$showEdit)?></div> */ ?>
+					<div id="miniSurveyQuestionRow<?php  echo $questionRow['msqID']?>" class="miniSurveyQuestionRow">
+						<div class="miniSurveyQuestion"><?php  echo $questionRow['question'].' '.$requiredSymbol?></div>
+						<?php   /* <div class="miniSurveyResponse"><?php  echo $this->loadInputType($questionRow,$showEdit)?></div> */ ?>
 						<div class="miniSurveyOptions">
 							<div style="float:right">
-								<a href="#" onclick="miniSurvey.moveUp(this,<?php   echo $questionRow['msqID']?>);return false" class="moveUpLink"></a> 
-								<a href="#" onclick="miniSurvey.moveDown(this,<?php   echo $questionRow['msqID']?>);return false" class="moveDownLink"></a>						  
+								<a href="#" onclick="miniSurvey.moveUp(this,<?php  echo $questionRow['msqID']?>);return false" class="moveUpLink"></a> 
+								<a href="#" onclick="miniSurvey.moveDown(this,<?php  echo $questionRow['msqID']?>);return false" class="moveDownLink"></a>						  
 							</div>						
-							<a href="#" onclick="miniSurvey.reloadQuestion(<?php  echo intval($questionRow['qID']) ?>);return false"><?php   echo t('edit')?></a> &nbsp;&nbsp; 
-							<a href="#" onclick="miniSurvey.deleteQuestion(this,<?php  echo intval($questionRow['msqID']) ?>,<?php  echo intval($questionRow['qID'])?>);return false"><?php  echo  t('remove')?></a>
+							<a href="#" onclick="miniSurvey.reloadQuestion(<?php echo intval($questionRow['qID']) ?>);return false"><?php  echo t('edit')?></a> &nbsp;&nbsp; 
+							<a href="#" onclick="miniSurvey.deleteQuestion(this,<?php echo intval($questionRow['msqID']) ?>,<?php echo intval($questionRow['qID'])?>);return false"><?php echo  t('remove')?></a>
 						</div>
 						<div class="miniSurveySpacer"></div>
 					</div>
-				<?php    }			 
+				<?php   }			 
 				echo '</div></div>';
 			}
 		}
@@ -696,7 +696,7 @@ class MiniSurvey{
 						$html.= '<option value="" '.$selected.'>----</option>';					
 					}
 					foreach($options as $option){
-						$checked=($_REQUEST['Question'.$msqID]==trim($option))?'selected="selected':'';
+						$checked=($_REQUEST['Question'.$msqID]==trim($option))?'selected="selected"':'';
 						$html.= '<option '.$checked.'>'.trim($option).'</option>';
 					}
 					return '<select name="Question'.$msqID.'" id="Question'.$msqID.'" >'.$html.'</select>';

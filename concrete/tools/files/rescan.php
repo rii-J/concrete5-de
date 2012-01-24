@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 
 function shutdownRescan() {
@@ -41,5 +41,5 @@ if(is_array($_REQUEST['fID'])) foreach($_REQUEST['fID'] as $fID) {
 print '</ol>';
 
 if ($fcnt == 0) { ?>
-	<?php  echo t('You do not have permission to rescan any of the selected files.'); ?>
-<?php   } ?>
+	<?php echo t('You do not have permission to rescan any of the selected files.'); ?>
+<?php  } ?>

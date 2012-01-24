@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 /**
  * Routes file types to importers, handlers.

@@ -1,4 +1,4 @@
-<?php   
+<?php  
 	defined('C5_EXECUTE') or die("Access Denied.");
 	$cID = $b->getBlockCollectionID();
 	$c = $b->getBlockCollectionObject();
@@ -29,52 +29,52 @@
 	
 
 <script type="text/javascript">
-<?php   $id = $bID . $a->getAreaID(); ?>
+<?php  $id = $bID . $a->getAreaID(); ?>
 
-ccm_menuObj<?php  echo $id?> = new Object();
-ccm_menuObj<?php  echo $id?>.type = "BLOCK";
-ccm_menuObj<?php  echo $id?>.arHandle = '<?php  echo $arHandle?>';
-ccm_menuObj<?php  echo $id?>.aID = <?php  echo $a->getAreaID()?>;
-ccm_menuObj<?php  echo $id?>.bID = <?php  echo $bID?>;
-ccm_menuObj<?php  echo $id?>.isGlobal = <?php  echo intval($isGlobal)?>;
-<?php   if ($b->isEditable() && $p->canWrite()) { ?>
-ccm_menuObj<?php  echo $id?>.canWrite =true;
-ccm_menuObj<?php  echo $id?>.btName = "<?php  echo $btw->getBlockTypeName()?>";
-ccm_menuObj<?php  echo $id?>.width = <?php  echo $btw->getBlockTypeInterfaceWidth()?>;
-ccm_menuObj<?php  echo $id?>.height = <?php  echo (!$isGlobal)?$btw->getBlockTypeInterfaceHeight():$btw->getBlockTypeInterfaceHeight()+20 ?>;
-<?php   }
+ccm_menuObj<?php echo $id?> = new Object();
+ccm_menuObj<?php echo $id?>.type = "BLOCK";
+ccm_menuObj<?php echo $id?>.arHandle = '<?php echo $arHandle?>';
+ccm_menuObj<?php echo $id?>.aID = <?php echo $a->getAreaID()?>;
+ccm_menuObj<?php echo $id?>.bID = <?php echo $bID?>;
+ccm_menuObj<?php echo $id?>.isGlobal = <?php echo intval($isGlobal)?>;
+<?php  if ($b->isEditable() && $p->canWrite()) { ?>
+ccm_menuObj<?php echo $id?>.canWrite =true;
+ccm_menuObj<?php echo $id?>.btName = "<?php echo $btw->getBlockTypeName()?>";
+ccm_menuObj<?php echo $id?>.width = <?php echo $btw->getBlockTypeInterfaceWidth()?>;
+ccm_menuObj<?php echo $id?>.height = <?php echo (!$isGlobal)?$btw->getBlockTypeInterfaceHeight():$btw->getBlockTypeInterfaceHeight()+20 ?>;
+<?php  }
 if ($p->canAdminBlock() && PERMISSIONS_MODEL != 'simple') { ?>
-ccm_menuObj<?php  echo $id?>.canModifyGroups = true;
-<?php   }
+ccm_menuObj<?php echo $id?>.canModifyGroups = true;
+<?php  }
 if ($p->canWrite() && ENABLE_CUSTOM_DESIGN == true) { ?>
-	ccm_menuObj<?php  echo $id?>.canDesign = true;
-<?php   } else { ?>
-	ccm_menuObj<?php  echo $id?>.canDesign = false;
-<?php   }
+	ccm_menuObj<?php echo $id?>.canDesign = true;
+<?php  } else { ?>
+	ccm_menuObj<?php echo $id?>.canDesign = false;
+<?php  }
 if ($p->canAdminBlock()) { ?>
-ccm_menuObj<?php  echo $id?>.canAdmin = true;
-<?php   }
+ccm_menuObj<?php echo $id?>.canAdmin = true;
+<?php  }
 if ($p->canDeleteBlock()) { ?>
-ccm_menuObj<?php  echo $id?>.canDelete = true;
-ccm_menuObj<?php  echo $id?>.deleteMessage = "<?php  echo $deleteMessage?>";
-<?php   }
+ccm_menuObj<?php echo $id?>.canDelete = true;
+ccm_menuObj<?php echo $id?>.deleteMessage = "<?php echo $deleteMessage?>";
+<?php  }
 if ($c->isMasterCollection()) { ?>
-ccm_menuObj<?php  echo $id?>.canAliasBlockOut = true;
-<?php  
+ccm_menuObj<?php echo $id?>.canAliasBlockOut = true;
+<?php 
 $ct = CollectionType::getByID($c->getCollectionTypeID());
 if ($ct->isCollectionTypeIncludedInComposer()) { ?>
-	ccm_menuObj<?php  echo $id?>.canSetupComposer = true;
-<?php   }
+	ccm_menuObj<?php echo $id?>.canSetupComposer = true;
+<?php  }
 
 }
 
 if ($p->canWrite()) {  ?>
-	ccm_menuObj<?php  echo $id?>.canArrange = true;
-<?php   
+	ccm_menuObj<?php echo $id?>.canArrange = true;
+<?php  
 }
 if ($editMessage) { ?>
-ccm_menuObj<?php  echo $id?>.editMessage = "<?php  echo $editMessage?>";
-<?php   } ?>
-$(function() {ccm_menuInit(ccm_menuObj<?php  echo $id?>)});
+ccm_menuObj<?php echo $id?>.editMessage = "<?php echo $editMessage?>";
+<?php  } ?>
+$(function() {ccm_menuInit(ccm_menuObj<?php echo $id?>)});
 
 </script>

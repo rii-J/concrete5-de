@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $valt = Loader::helper('validation/token');
 $token = '&' . $valt->getParameter();
@@ -10,13 +10,13 @@ if (isset($cp)) {
 ?>
 
 <script type="text/javascript">
-<?php  
+<?php 
 $valt = Loader::helper('validation/token');
 print "var CCM_SECURITY_TOKEN = '" . $valt->generate() . "';";
 ?>
 </script>
 
-<?php  
+<?php 
 $this->addHeaderItem($html->css('ccm.ui.css'));
 $this->addHeaderItem($html->css('jquery.rating.css'));
 $this->addHeaderItem($html->css('ccm.dialog.css'));
@@ -38,7 +38,7 @@ $this->addHeaderItem($html->javascript('jquery.rating.js'));
 $this->addHeaderItem($html->javascript('jquery.colorpicker.js'));
 	
 if (ACTIVE_LOCALE != 'en_US') {
-	$dlocale = str_replace('_', '-', ACTIVE_LOCALE);
+	$dlocale = str_replace('_', '-', LANGUAGE);
 	$this->addHeaderItem($html->javascript('i18n/ui.datepicker-' . $dlocale . '.js'));
 	$this->addHeaderItem('<script type="text/javascript">$(function() { jQuery.datepicker.setDefaults({dateFormat: \'yy-mm-dd\'}); });</script>');
 }

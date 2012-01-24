@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $pla = PackageList::get();
 $pl = $pla->getPackages();

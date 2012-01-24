@@ -1,4 +1,4 @@
-<?php  
+<?php 
 $textEditorHeight=intval(Config::get('CONTENTS_TXT_EDITOR_HEIGHT'));
 $textEditorWidth = '100%';
 //else $textEditorWidth=  $textEditorWidth;
@@ -27,17 +27,17 @@ if (!isset($editor_mode)) {
 <script language="javascript">
 tinyMCE.init({
 	mode : "textareas",
-	width: "<?php  echo $textEditorWidth?>", 
-	height: "<?php  echo $textEditorHeight?>px", 	
+	width: "<?php echo $textEditorWidth?>", 
+	height: "<?php echo $textEditorHeight?>px", 	
 	inlinepopups_skin : "concreteMCE",
 	theme_concrete_buttons2_add : "spellchecker",
 	relative_urls : false,
-	document_base_url: '<?php  echo BASE_URL . DIR_REL?>/',
+	document_base_url: '<?php echo BASE_URL . DIR_REL?>/',
 	convert_urls: false,
-	<?php  
+	<?php 
 	if( $txtEditorMode=='CUSTOM' ){ ?>
 		//theme : "concrete",
-		<?php  
+		<?php 
 		$code = Config::get('CONTENTS_TXT_EDITOR_CUSTOM_CODE').'';
 		if ($editor_selector != 'ccm-advanced-editor') {
 			$code = str_replace('ccm-advanced-editor', $editor_selector, $code);
@@ -45,7 +45,7 @@ tinyMCE.init({
 		print $code;
 	}elseif($txtEditorMode=='ADVANCED'){ ?>
 		plugins: "inlinepopups,spellchecker,safari,advimage,advlink,table,advhr,xhtmlxtras,emotions,insertdatetime,paste,visualchars,nonbreaking,pagebreak,style",
-		editor_selector : "<?php  echo $editor_selector?>",
+		editor_selector : "<?php echo $editor_selector?>",
 		theme : "advanced",
 		theme_advanced_buttons1 : "cut,copy,paste,pastetext,pasteword,|,undo,redo,|,styleselect,formatselect,fontsizeselect,fontselect",
 		theme_advanced_buttons2 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,outdent,indent,blockquote,|,link,unlink,anchor,|,forecolor,backcolor,|,image,charmap,emotions",
@@ -58,8 +58,8 @@ tinyMCE.init({
 		//theme_advanced_styles: "Note=ccm-note",		
 		theme_advanced_toolbar_align : "left",
 		spellchecker_languages : "+English=en"
- 	<?php   }elseif($txtEditorMode=='OFFICE'){ ?> 
-		editor_selector : "<?php  echo $editor_selector?>",
+ 	<?php  }elseif($txtEditorMode=='OFFICE'){ ?> 
+		editor_selector : "<?php echo $editor_selector?>",
 		spellchecker_languages : "+English=en",
 		theme : "advanced",
 		plugins : "safari,spellchecker,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras", //,template,imagemanager,filemanager",		
@@ -76,16 +76,16 @@ tinyMCE.init({
 		theme_advanced_statusbar_location : "bottom",
 		//theme_advanced_styles: "Note=ccm-note",		
 		theme_advanced_resizing : true				
- 	<?php   }elseif($txtEditorMode=='BASIC'){ ?> 
-		editor_selector : "<?php  echo $editor_selector?>",
+ 	<?php  }elseif($txtEditorMode=='BASIC'){ ?> 
+		editor_selector : "<?php echo $editor_selector?>",
 		spellchecker_languages : "+English=en",
 		theme : "simple",
 		plugins: "paste,inlinepopups,spellchecker,safari,advlink",
-	<?php   }else{ //simple ?>
+	<?php  }else{ //simple ?>
 		theme : "concrete", 
 		plugins: "paste,inlinepopups,spellchecker,safari,advlink,advimage,advhr",
-		editor_selector : "<?php  echo $editor_selector?>",
+		editor_selector : "<?php echo $editor_selector?>",
 		spellchecker_languages : "+English=en"		
-	<?php   } ?>
+	<?php  } ?>
 });
 </script>

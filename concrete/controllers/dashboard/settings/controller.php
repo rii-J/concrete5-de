@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 defined('C5_EXECUTE') or die("Access Denied.");
 class DashboardSettingsController extends Controller {
@@ -954,7 +954,7 @@ theme_advanced_buttons2 : "bold,italic,underline,strikethrough,|,justifyleft,jus
 theme_advanced_fonts : "Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats",
 // etc.
 */		
-		<?php   
+		<?php  
 		$js=ob_get_contents();
 		ob_end_clean();
 		return $js;

@@ -1,10 +1,10 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 <div class="ccm-pane-controls">
 
 <script type="text/javascript">
 	function makeAlias(value, formInputID) {
 		alias = value.replace(/[&]/gi, "and");
-		alias = alias.replace(/[\s|.]+/gi, "<?php  echo PAGE_PATH_SEPARATOR?>");
+		alias = alias.replace(/[\s|.]+/gi, "<?php echo PAGE_PATH_SEPARATOR?>");
 		
 		// thanks fernandos
         alias = alias.replace(/[\u00C4\u00E4]/gi, "ae");            // Ää    
@@ -16,12 +16,12 @@
         alias = alias.replace(/[\u00C5\u00E5]/gi, "aa");            // Åå    
         alias = alias.replace(/[\u00E8\u00C8\u00E9\u00C9]/gi, "e"); // éÉèÈ 
 		
-		alias = alias.replace(/[^0-9A-Za-z]/gi, "<?php  echo PAGE_PATH_SEPARATOR?>");
-		alias = alias.replace(/<?php  echo PAGE_PATH_SEPARATOR?>+/gi, '<?php  echo PAGE_PATH_SEPARATOR?>');
-		if (alias.charAt(alias.length-1) == '<?php  echo PAGE_PATH_SEPARATOR?>') {
+		alias = alias.replace(/[^0-9A-Za-z]/gi, "<?php echo PAGE_PATH_SEPARATOR?>");
+		alias = alias.replace(/<?php echo PAGE_PATH_SEPARATOR?>+/gi, '<?php echo PAGE_PATH_SEPARATOR?>');
+		if (alias.charAt(alias.length-1) == '<?php echo PAGE_PATH_SEPARATOR?>') {
 			alias = alias.substring(0,alias.length-1);
 		}
-		if (alias.charAt(0) == '<?php  echo PAGE_PATH_SEPARATOR?>') {
+		if (alias.charAt(0) == '<?php echo PAGE_PATH_SEPARATOR?>') {
 			alias = alias.substring(1,alias.length);
 		}
 		alias = alias.toLowerCase();
@@ -31,7 +31,7 @@
 	} 	
 </script>
 
-<?php   
+<?php  
 
 Loader::model('collection_attributes');
 Loader::model('collection_types');
@@ -50,12 +50,12 @@ for ($i = 0; $i < count($ctArray); $i++) {
 
 	?>
 	
-	<h1><?php  echo t('Add Page')?></h1>
+	<h1><?php echo t('Add Page')?></h1>
 
-	<form method="post" action="<?php  echo $c->getCollectionAction()?>" id="ccmAddPage">		
-	<input type="hidden" name="rel" value="<?php  echo $_REQUEST['rel']?>" />
-	<?php   // sitemap mode ?>
-	<input type="hidden" name="mode" value="<?php  echo $_REQUEST['mode']?>" />
+	<form method="post" action="<?php echo $c->getCollectionAction()?>" id="ccmAddPage">		
+	<input type="hidden" name="rel" value="<?php echo $_REQUEST['rel']?>" />
+	<?php  // sitemap mode ?>
+	<input type="hidden" name="mode" value="<?php echo $_REQUEST['mode']?>" />
 	<input type="hidden" name="ctID" value="0" />
 	 
 	<div class="ccm-form-area">
@@ -63,18 +63,18 @@ for ($i = 0; $i < count($ctArray); $i++) {
 		<div id="ccm-choose-pg-type">
 			<div id="ccm-show-page-types" style="float:right; display:none">
 				<span id="ccm-selectedPgType" style="padding-right:4px"></span>
-				<a onclick="ccmChangePgType(this)">(<?php  echo t('Change')?>)</a>
+				<a onclick="ccmChangePgType(this)">(<?php echo t('Change')?>)</a>
 			</div>	
 		
-			<h2><?php  echo t('Choose a Page Type')?></h2>
+			<h2><?php echo t('Choose a Page Type')?></h2>
 			
-			<div id="ccm-page-type-scroller" class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php  echo ceil($cnt/4)?>">
-				<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
-				<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
+			<div id="ccm-page-type-scroller" class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php echo ceil($cnt/4)?>">
+				<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
+				<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
 				
 				<div class="ccm-scroller-inner">
-					<ul id="ccm-select-page-type" style="width: <?php  echo $cnt * 132?>px">
-						<?php   
+					<ul id="ccm-select-page-type" style="width: <?php echo $cnt * 132?>px">
+						<?php  
 						foreach($ctArray as $ct) { 
 							if ($cp->canAddSubCollection($ct)) { 
 							$requiredKeys=array();
@@ -90,15 +90,15 @@ for ($i = 0; $i < count($ctArray); $i++) {
 							$usedKeysCombined = array_merge($requiredKeys, $usedKeys);
 							?>
 							
-							<?php   $class = ($ct->getCollectionTypeID() == $ctID) ? 'ccm-item-selected' : ''; ?>
+							<?php  $class = ($ct->getCollectionTypeID() == $ctID) ? 'ccm-item-selected' : ''; ?>
 					
-							<li class="<?php  echo $class?>"><a href="javascript:void(0)" ccm-page-type-id="<?php  echo $ct->getCollectionTypeID()?>"><?php  echo  $ct->getCollectionTypeIconImage(); ?></a>
-							<span id="pgTypeName<?php  echo $ct->getCollectionTypeID()?>"><?php  echo $ct->getCollectionTypeName()?></span>
-							<input id="shownAttributeKeys<?php  echo $ct->getCollectionTypeID()?>" name="shownAttributeKeys<?php  echo $ct->getCollectionTypeID()?>" type="hidden" value="<?php  echo join(',',$usedKeysCombined)?>" />
-							<input id="requiredAttributeKeys<?php  echo $ct->getCollectionTypeID()?>" name="requiredAttributeKeys<?php  echo $ct->getCollectionTypeID()?>" type="hidden" value="<?php  echo join(',',$requiredKeys)?>" />
+							<li class="<?php echo $class?>"><a href="javascript:void(0)" ccm-page-type-id="<?php echo $ct->getCollectionTypeID()?>"><?php echo  $ct->getCollectionTypeIconImage(); ?></a>
+							<span id="pgTypeName<?php echo $ct->getCollectionTypeID()?>"><?php echo $ct->getCollectionTypeName()?></span>
+							<input id="shownAttributeKeys<?php echo $ct->getCollectionTypeID()?>" name="shownAttributeKeys<?php echo $ct->getCollectionTypeID()?>" type="hidden" value="<?php echo join(',',$usedKeysCombined)?>" />
+							<input id="requiredAttributeKeys<?php echo $ct->getCollectionTypeID()?>" name="requiredAttributeKeys<?php echo $ct->getCollectionTypeID()?>" type="hidden" value="<?php echo join(',',$requiredKeys)?>" />
 							</li> 
 						
-						<?php   } 
+						<?php  } 
 						
 						}?>
 					
@@ -108,23 +108,23 @@ for ($i = 0; $i < count($ctArray); $i++) {
 			</div>
 		</div> 
 
-		<h2><?php  echo t('Page Information')?></h2>
+		<h2><?php echo t('Page Information')?></h2>
 
 		<div class="ccm-field">	
 			<div class="ccm-field-one" style="width: 400px">
-				<label><?php  echo t('Name')?></label> <input type="text" name="cName" value="" class="text" style="width: 100%" onKeyUp="makeAlias(this.value, 'cHandle')" >
+				<label><?php echo t('Name')?></label> <input type="text" name="cName" value="" class="text" style="width: 100%" onKeyUp="makeAlias(this.value, 'cHandle')" >
 			</div>
 			
 			<div class="ccm-field-two" style="width: 200px"	>
-				<label><?php  echo t('Alias')?></label> <input type="text" name="cHandle" style="width: 100%" value="" id="cHandle">
+				<label><?php echo t('Alias')?></label> <input type="text" name="cHandle" style="width: 100%" value="" id="cHandle">
 			</div>
 		
 			<div class="ccm-spacer">&nbsp;</div>
 		</div>
 		
 		<div class="ccm-field">		
-			<label><?php  echo t('Public Date/Time')?></label> 
-			<?php  
+			<label><?php echo t('Public Date/Time')?></label> 
+			<?php 
 			$dt = Loader::helper('form/date_time');
 			echo $dt->datetime('cDatePublic' );
 			?> 
@@ -132,13 +132,13 @@ for ($i = 0; $i < count($ctArray); $i++) {
 
 	
 		<div class="ccm-field">
-			<label><?php  echo t('Description')?></label> <textarea name="cDescription" style="width: 100%; height: 80px"></textarea>
+			<label><?php echo t('Description')?></label> <textarea name="cDescription" style="width: 100%; height: 80px"></textarea>
 		</div>
 		
 		<style type="text/css">
 		#ccm-metadata-fields{display:none; }
 		</style>
-		<?php  
+		<?php 
 		$nc=new Page();
 		Loader::element('collection_metadata_fields', array('c'=>$nc) ); ?>
 	
@@ -147,7 +147,7 @@ for ($i = 0; $i < count($ctArray); $i++) {
 	
 
 	<div class="ccm-buttons">
-		<?php  echo Loader::helper('concrete/interface')->submit(t('Add Page'),'ccmAddPage')?>
+		<?php echo Loader::helper('concrete/interface')->submit(t('Add Page'),'ccmAddPage')?>
 	</div>	
 	<input type="hidden" name="add" value="1" />
 	<input type="hidden" name="processCollection" value="1">
@@ -157,20 +157,20 @@ for ($i = 0; $i < count($ctArray); $i++) {
 </form>
 </div>
 
-<?php   $pageTypeMSG = t('You must choose a page type.'); ?>
+<?php  $pageTypeMSG = t('You must choose a page type.'); ?>
 
 <script type="text/javascript">
 $(function() {
 	$("a.ccm-scroller-l").hover(function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l_active.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_l_active.png');
 	}, function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_l.png');
 	});
 
 	$("a.ccm-scroller-r").hover(function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r_active.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_r_active.png');
 	}, function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_r.png');
 	});
 	
 	var numThumbs = 4;	
@@ -207,7 +207,7 @@ $(function() {
 	
 	ccm_testAddSubmit = function() {
 		if ($("input[name=ctID]").val() < 1) {
-			alert("<?php  echo $pageTypeMSG?>");
+			alert("<?php echo $pageTypeMSG?>");
 			return false;
 		}
 		return true;

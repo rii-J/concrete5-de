@@ -1,2 +1,2 @@
-<?php  
+<?php 
 	class SignupRequest extends Model{}	

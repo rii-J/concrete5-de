@@ -1,9 +1,9 @@
-<?php    defined('C5_EXECUTE') or die("Access Denied.");
+<?php   defined('C5_EXECUTE') or die("Access Denied.");
 
 $tp = new TaskPermission();
 if (!$tp->canInstallPackages()) { ?>
-	<p><?php  echo t('You do not have permission to download packages from the marketplace.')?></p>
-	<?php   exit;
+	<p><?php echo t('You do not have permission to download packages from the marketplace.')?></p>
+	<?php  exit;
 
 }
 
@@ -55,7 +55,7 @@ if (!$error->has() && $install) {
 
 if (!$error->has()) { ?>
 	<p>
-	<?php   if ($install) {
+	<?php  if ($install) {
  		echo t('The package was successfully installed.');
 	} else {
 		echo t('The package was successfully downloaded and decompressed on your server.');
@@ -64,19 +64,19 @@ if (!$error->has()) { ?>
 	print Loader::helper('concrete/interface')->button_js(t('Return'), 'javascript:ccm_getMarketplaceItem.onComplete()')?>
 	
 	</p>
-<?php   } else { ?>
-	<p><?php  echo  t("The package could not be installed:") ?></p>
+<?php  } else { ?>
+	<p><?php echo  t("The package could not be installed:") ?></p>
 
-	<?php   $error->output(); ?>
+	<?php  $error->output(); ?>
 
     <hr/>
-    <?php   if (is_object($mri)) { ?>
-	<p><?php  echo  t("To install the package manually:") ?></p>
+    <?php  if (is_object($mri)) { ?>
+	<p><?php echo  t("To install the package manually:") ?></p>
 	<ol>
-		<li><?php  echo t('Download the package from <a href="%s">here</a>.', $mri->getRemoteURL())?></li>
-		<li><?php  echo t('Upload and unpack the package on your web server. Place the unpacked files in the packages directory of the root of your concrete5 installation.')?></li>
-		<li><?php  echo t('Go to the the <a href="%s">Add Functionality</a> page in your concrete5 Dashboard.', View::url('/dashboard/install'))?></li>
-        <li><?php  echo t('Click the Install button next to the package name.')?></li>
+		<li><?php echo t('Download the package from <a href="%s">here</a>.', $mri->getRemoteURL())?></li>
+		<li><?php echo t('Upload and unpack the package on your web server. Place the unpacked files in the packages directory of the root of your concrete5 installation.')?></li>
+		<li><?php echo t('Go to the the <a href="%s">Add Functionality</a> page in your concrete5 Dashboard.', View::url('/dashboard/install'))?></li>
+        <li><?php echo t('Click the Install button next to the package name.')?></li>
 	</ol>
-	<?php   } ?>
-<?php   } ?>
+	<?php  } ?>
+<?php  } ?>

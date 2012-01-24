@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
 $form = Loader::helper('form');
@@ -57,5 +57,5 @@ if (!function_exists('curl_init')) {
 	curl_close ($ch);
 	
 	?>
-	<iframe class="ccm-file-editor-wrapper" id="ccm-file-editor-wrapper<?php  echo time()?>" style="padding: 0px; border: 0px; margin: 0px" width="100%" height="100%" frameborder="0" border="0" src="<?php  echo $url?>"></iframe>
-<?php   } ?>
+	<iframe class="ccm-file-editor-wrapper" id="ccm-file-editor-wrapper<?php echo time()?>" style="padding: 0px; border: 0px; margin: 0px" width="100%" height="100%" frameborder="0" border="0" src="<?php echo $url?>"></iframe>
+<?php  } ?>

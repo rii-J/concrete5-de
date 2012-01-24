@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
 $form = Loader::helper('form');
@@ -244,7 +244,7 @@ function printFileAttributeRow($ak, $fv, $value) {
 
 if (!isset($_REQUEST['reload'])) { ?>
 	<div id="ccm-file-properties-wrapper">
-<?php   } ?>
+<?php  } ?>
 
 <script type="text/javascript">
 var ccm_activeFileManagerAddCompleteTab = "ccm-file-manager-add-complete-basic";
@@ -269,64 +269,64 @@ table.ccm-grid th {width: 70px}
 
 </style>
 
-<?php   if ($_REQUEST['uploaded']) { ?>
-	<?php   if (count($_REQUEST['fID']) == 1) { ?>
-		<div class="ccm-message"><strong><?php  echo t('1 file uploaded successfully.')?></strong></div>
-	<?php   } else { ?>
-		<div class="ccm-message"><strong><?php  echo t('%s files uploaded successfully.', count($_REQUEST['fID']))?></strong></div>
-	<?php   } ?>
-<?php   } ?>
+<?php  if ($_REQUEST['uploaded']) { ?>
+	<?php  if (count($_REQUEST['fID']) == 1) { ?>
+		<div class="ccm-message"><strong><?php echo t('1 file uploaded successfully.')?></strong></div>
+	<?php  } else { ?>
+		<div class="ccm-message"><strong><?php echo t('%s files uploaded successfully.', count($_REQUEST['fID']))?></strong></div>
+	<?php  } ?>
+<?php  } ?>
 
 <ul class="ccm-dialog-tabs" id="ccm-file-manager-add-complete-tabs">
-	<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-file-manager-add-complete-basic"><?php  echo t('Basic Properties')?></a></li>
-	<?php   if (count($attribs) > 0) { ?>
-		<li><a href="javascript:void(0)" id="ccm-file-manager-add-complete-attributes"><?php  echo t('Other Properties')?></a></li>
-	<?php   } ?>
-	<?php   if ($_REQUEST['uploaded']) { ?>
-		<li><a href="javascript:void(0)" id="ccm-file-manager-add-complete-sets"><?php  echo t('Sets')?></a></li>
-	<?php   } ?>
+	<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-file-manager-add-complete-basic"><?php echo t('Basic Properties')?></a></li>
+	<?php  if (count($attribs) > 0) { ?>
+		<li><a href="javascript:void(0)" id="ccm-file-manager-add-complete-attributes"><?php echo t('Other Properties')?></a></li>
+	<?php  } ?>
+	<?php  if ($_REQUEST['uploaded']) { ?>
+		<li><a href="javascript:void(0)" id="ccm-file-manager-add-complete-sets"><?php echo t('Sets')?></a></li>
+	<?php  } ?>
 </ul>
 
 <div id="ccm-file-properties">
 <div id="ccm-file-manager-add-complete-basic-tab">
 <table border="0" cellspacing="0" cellpadding="0" class="ccm-grid">  
-<?php   if (count($files) == 1) { ?>
+<?php  if (count($files) == 1) { ?>
 <tr>
-	<th><?php  echo t('ID')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getFileID()?> <span style="color: #afafaf">(<?php  echo t('Version')?> <?php  echo $fv->getFileVersionID()?>)</span></td>
+	<th><?php echo t('ID')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getFileID()?> <span style="color: #afafaf">(<?php echo t('Version')?> <?php echo $fv->getFileVersionID()?>)</span></td>
 </tr>
 <tr>
-	<th><?php  echo t('Filename')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getFileName()?></td>
+	<th><?php echo t('Filename')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getFileName()?></td>
 </tr>
 <tr>
-	<th><?php  echo t('URL to File')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getRelativePath(true)?></td>
-</tr>
-
-<tr>
-	<th><?php  echo t('Type')?></th>
-	<td colspan="2"><?php  echo $fv->getType()?></td>
+	<th><?php echo t('URL to File')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getRelativePath(true)?></td>
 </tr>
 
 <tr>
-	<th><?php  echo t('Size')?></th>
-	<td colspan="2"><?php  echo $fv->getSize()?> (<?php  echo number_format($fv->getFullSize())?> <?php  echo t('bytes')?>)</td>
+	<th><?php echo t('Type')?></th>
+	<td colspan="2"><?php echo $fv->getType()?></td>
 </tr>
-<?php   } ?>
 
-<?php  
+<tr>
+	<th><?php echo t('Size')?></th>
+	<td colspan="2"><?php echo $fv->getSize()?> (<?php echo number_format($fv->getFullSize())?> <?php echo t('bytes')?>)</td>
+</tr>
+<?php  } ?>
+
+<?php 
 printCorePropertyRow(t('Title'), 'fvTitle', $defaultPropertyVals['title'], $form->text('fvTitle', $defaultPropertyVals['titleValue']));
 printCorePropertyRow(t('Description'), 'fvDescription', $defaultPropertyVals['description'], $form->textarea('fvDescription', $defaultPropertyVals['descriptionValue']));
 printCorePropertyRow(t('Tags'), 'fvTags', $defaultPropertyVals['tags'], $form->textarea('fvTags', $defaultPropertyVals['tagsValue']));
 ?>
 
-<?php   if (count($files) == 1) { ?>
+<?php  if (count($files) == 1) { ?>
 <tr>
-	<th><?php  echo t('File Preview')?></th>
-	<td colspan="2"><?php  echo $fv->getThumbnail(2)?></td>
+	<th><?php echo t('File Preview')?></th>
+	<td colspan="2"><?php echo $fv->getThumbnail(2)?></td>
 </tr>
-<?php   } ?>
+<?php  } ?>
 </table>
 
 </div>
@@ -334,7 +334,7 @@ printCorePropertyRow(t('Tags'), 'fvTags', $defaultPropertyVals['tags'], $form->t
 <div id="ccm-file-manager-add-complete-attributes-tab" style="display: none">
 
 <table border="0" cellspacing="0" cellpadding="0" class="ccm-grid" width="100%">  
-<?php  
+<?php 
 foreach($attribs as $at) { 
 	printFileAttributeRow($at, $fv, $defaultPropertyVals['ak' . $at->getAttributeKeyID()]);
 } ?>
@@ -343,13 +343,13 @@ foreach($attribs as $at) {
 </div>
 </div>
 
-<?php   if ($_REQUEST['uploaded']) { ?>
+<?php  if ($_REQUEST['uploaded']) { ?>
 
 	<div id="ccm-file-manager-add-complete-sets-tab" style="display: none">	
-		<div class="ccm-files-add-to-sets-wrapper"><?php   Loader::element('files/add_to_sets', array('disableForm' => FALSE, 'disableTitle' => true)) ?></div>
+		<div class="ccm-files-add-to-sets-wrapper"><?php  Loader::element('files/add_to_sets', array('disableForm' => FALSE, 'disableTitle' => true)) ?></div>
 	</div>
 
-<?php   } ?>
+<?php  } ?>
 
 <script type="text/javascript">
 $(function() { 
@@ -357,7 +357,7 @@ $(function() {
 });
 </script>
 
-<?php  
+<?php 
 if (!isset($_REQUEST['reload'])) { ?>
 </div>
-<?php   }
+<?php  }

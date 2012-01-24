@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @package Helpers
  * @category Concrete
@@ -23,6 +23,11 @@ class FormHelper {
 	private $radioIndex = 1;
 	private $selectIndex = 1;
 
+	public function reset() {
+		$this->radioIndex = 1;
+		$this->selectIndex = 1;
+	}
+	
 	public function __construct() {
 		$this->th = Loader::helper("text");
 	}

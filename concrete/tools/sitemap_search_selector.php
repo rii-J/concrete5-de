@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $sh = Loader::helper('concrete/dashboard/sitemap');
 if (!$sh->canRead()) {
@@ -8,8 +8,8 @@ if (!$sh->canRead()) {
 ?>
 <div>
 
-<?php  echo Loader::helper('html')->css('ccm.sitemap.css')?>
-<?php  echo Loader::helper('html')->javascript('ccm.sitemap.js')?>
+<?php echo Loader::helper('html')->css('ccm.sitemap.css')?>
+<?php echo Loader::helper('html')->javascript('ccm.sitemap.js')?>
 
 
 <script type="text/javascript">
@@ -26,21 +26,21 @@ $("#ccm-ss-tabs a").click(function() {
 </script>
 
 <ul class="ccm-dialog-tabs" id="ccm-ss-tabs">
-<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-show-sitemap"><?php  echo t('Sitemap')?></a></li>
-<li><a href="javascript:void(0)" id="ccm-show-search"><?php  echo t('Search')?></a></li>
+<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-show-sitemap"><?php echo t('Sitemap')?></a></li>
+<li><a href="javascript:void(0)" id="ccm-show-search"><?php echo t('Search')?></a></li>
 </ul>
 
 <br/>
 
 <div id="ccm-show-sitemap-tab">
-<?php   $sitemapCombinedMode = true; ?>
-<?php   include(DIR_FILES_TOOLS_REQUIRED . '/sitemap_overlay.php'); ?>
+<?php  $sitemapCombinedMode = true; ?>
+<?php  include(DIR_FILES_TOOLS_REQUIRED . '/sitemap_overlay.php'); ?>
 
 </div>
 
 <div id="ccm-show-search-tab" style="display: none">
 
-<?php   
+<?php  
 $sitemap_select_mode = $select_mode;
 include(DIR_FILES_TOOLS_REQUIRED . '/pages/search_dialog.php'); ?>
 

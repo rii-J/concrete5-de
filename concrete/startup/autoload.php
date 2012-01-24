@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 function __autoload($class) {
 	$txt = Loader::helper('text');

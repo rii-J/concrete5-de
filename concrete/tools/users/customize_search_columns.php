@@ -1,4 +1,4 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied.");
+<?php  defined('C5_EXECUTE') or die("Access Denied.");
 Loader::model('user_attributes');
 $form = Loader::helper('form');
 $tp = new TaskPermission();
@@ -31,21 +31,21 @@ $list = UserAttributeKey::getList();
 
 ?>
 
-<form method="post" id="ccm-user-customize-search-columns-form" action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/users/customize_search_columns/">
-<?php  echo $form->hidden('task', 'update_columns')?>
+<form method="post" id="ccm-user-customize-search-columns-form" action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/users/customize_search_columns/">
+<?php echo $form->hidden('task', 'update_columns')?>
 
-<h1><?php  echo t('Additional Searchable Attributes')?></h1>
+<h1><?php echo t('Additional Searchable Attributes')?></h1>
 
-<p><?php  echo t('Choose the additional attributes you wish to include as column headers.')?></p>
+<p><?php echo t('Choose the additional attributes you wish to include as column headers.')?></p>
 
-<?php   foreach($list as $ak) { ?>
+<?php  foreach($list as $ak) { ?>
 
-	<div><?php  echo $form->checkbox('akID[]', $ak->getAttributeKeyID(), in_array($ak->getAttributeKeyID(), $selectedAKIDs), array('style' => 'vertical-align: middle'))?> <?php  echo $ak->getAttributeKeyDisplayHandle()?></div>
+	<div><?php echo $form->checkbox('akID[]', $ak->getAttributeKeyID(), in_array($ak->getAttributeKeyID(), $selectedAKIDs), array('style' => 'vertical-align: middle'))?> <?php echo $ak->getAttributeKeyDisplayHandle()?></div>
 	
-<?php   } ?>
+<?php  } ?>
 
 <br/><br/>
-<?php  
+<?php 
 $h = Loader::helper('concrete/interface');
 $b1 = $h->submit(t('Save'), 'save', 'left');
 print $b1;

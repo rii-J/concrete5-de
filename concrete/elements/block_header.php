@@ -1,4 +1,4 @@
-<?php   
+<?php  
 defined('C5_EXECUTE') or die("Access Denied.");
 $c = $b->getBlockCollectionObject();
 if (!is_object($a)) {

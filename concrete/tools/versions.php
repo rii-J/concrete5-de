@@ -1,4 +1,4 @@
-<?php  
+<?php 
 	defined('C5_EXECUTE') or die("Access Denied.");
 	$valt = Loader::helper('validation/token');
 	$fh = Loader::helper('file');
@@ -15,7 +15,7 @@
 	}
 	
 	if ($_GET['vtask'] == 'view_version') { ?>
-		<?php   /*
+		<?php  /*
 		we use the always-updated ID below so that Safari doesn't cache the iframe's contents. We probably shouldn't be
 		making a new iframe on every request to this anyway, but it doesn't happen very often and it represents a significant
 		hurdle to making it a bit of a better citizen, so we'll do it this way for now.
@@ -23,9 +23,9 @@
 		*/
 		?>
 		
-		<iframe border="0" id="v<?php  echo time()?>" frameborder="0" height="100%" width="100%" src="<?php  echo BASE_URL . DIR_REL?>/<?php  echo DISPATCHER_FILENAME?>?cvID=<?php  echo $_REQUEST['cvID']?>&cID=<?php  echo $_REQUEST['cID']?>" />
+		<iframe border="0" id="v<?php echo time()?>" frameborder="0" height="100%" width="100%" src="<?php echo BASE_URL . DIR_REL?>/<?php echo DISPATCHER_FILENAME?>?cvID=<?php echo $_REQUEST['cvID']?>&cID=<?php echo $_REQUEST['cID']?>" />
 	
-	<?php   
+	<?php  
 		exit;
 	}
 	
@@ -72,10 +72,10 @@
 		
 		} else if ($_GET['vtask'] == 'compare_iframe') { ?>
 		
-			<iframe id="v<?php  echo time()?>" border="0" frameborder="0" height="100%" width="100%" src="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cvID1=<?php  echo $_REQUEST['cvID1']?>&cvID2=<?php  echo $_REQUEST['cvID2']?>&vtask=compare&cID=<?php  echo $_REQUEST['cID']?>" />
+			<iframe id="v<?php echo time()?>" border="0" frameborder="0" height="100%" width="100%" src="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cvID1=<?php echo $_REQUEST['cvID1']?>&cvID2=<?php echo $_REQUEST['cvID2']?>&vtask=compare&cID=<?php echo $_REQUEST['cID']?>" />
 			
 		
-		<?php   }
+		<?php  }
 		
 		exit;
 		
@@ -169,9 +169,9 @@
 
 if (!$_GET['versions_reloaded']) { ?>
 	<div id="ccm-versions-container">
-<?php   } ?>
+<?php  } ?>
 
-<?php   Loader::element('pane_header', array('c'=>$c, 'close'=>'ccm_exitVersionList')); ?>
+<?php  Loader::element('pane_header', array('c'=>$c, 'close'=>'ccm_exitVersionList')); ?>
 
 <div class="ccm-pane-controls">
 
@@ -196,9 +196,9 @@ $(function() {
 		
 	});
 	
-	<?php   if ($_REQUEST['forcereload']) { ?>
+	<?php  if ($_REQUEST['forcereload']) { ?>
 		ccm_versionsMustReload = true;
-	<?php   } ?>
+	<?php  } ?>
 
 });
 
@@ -279,7 +279,7 @@ $("input[name=vCompare]").click(function() {
 
 	$.fn.dialog.open({
 		title: ccmi18n.compareVersions,
-		href: CCM_TOOLS_PATH + '/versions.php?cID=<?php  echo $c->getCollectionID()?>&cvID1=' + cvID1 + '&cvID2=' + cvID2 + '&vtask=compare_iframe',
+		href: CCM_TOOLS_PATH + '/versions.php?cID=<?php echo $c->getCollectionID()?>&cvID1=' + cvID1 + '&cvID2=' + cvID2 + '&vtask=compare_iframe',
 		width: '85%',
 		modal: false,
 		height: '80%'
@@ -290,7 +290,7 @@ $("input[name=vApprove]").click(function() {
 	
 	var cvID = $("input[type=checkbox]:checked").get(0).value;
 	jQuery.fn.dialog.showLoader();
-	$("#ccm-versions-container").load(CCM_TOOLS_PATH + '/versions.php?versions_reloaded=1&cID=<?php  echo $c->getCollectionID()?>&cvID=' + cvID + '&vtask=approve<?php  echo $token?>', function() {
+	$("#ccm-versions-container").load(CCM_TOOLS_PATH + '/versions.php?versions_reloaded=1&cID=<?php echo $c->getCollectionID()?>&cvID=' + cvID + '&vtask=approve<?php echo $token?>', function() {
 		jQuery.fn.dialog.hideLoader();
 	});
 	
@@ -298,7 +298,7 @@ $("input[name=vApprove]").click(function() {
 
 ccm_goToVersionPage = function(p, url) {
 	jQuery.fn.dialog.showLoader();
-	var dest = CCM_TOOLS_PATH + '/versions.php?versions_reloaded=1&cID=<?php  echo $c->getCollectionID()?>&<?php   echo PAGING_STRING?>' + p;
+	var dest = CCM_TOOLS_PATH + '/versions.php?versions_reloaded=1&cID=<?php echo $c->getCollectionID()?>&<?php  echo PAGING_STRING?>' + p;
 	$("#ccm-versions-container").load(dest, function() {
 		jQuery.fn.dialog.hideLoader();
 	});
@@ -323,8 +323,8 @@ $("input[name=vRemove]").click(function() {
 	//ccm_showTopbarLoader();
 	var params = {
 		'vtask': 'remove_group',
-		'ccm_token': '<?php  echo $valt->generate()?>',
-		'cID': <?php  echo $c->getCollectionID()?>,
+		'ccm_token': '<?php echo $valt->generate()?>',
+		'cID': <?php echo $c->getCollectionID()?>,
 		'cvIDs': cvIDStr
 	}
 	
@@ -339,39 +339,39 @@ $("input[name=vRemove]").click(function() {
 <div class="ccm-pane-controls">
 <div id="ccm-edit-collection">
 
-<h1><?php  echo t('Page Versions')?></h1>
-<p><?php  echo t("The following is a list of all this page's versions. If you can edit a page you will automatically see its most recent version, but the approved version is what regular users will see.")?></p>
+<h1><?php echo t('Page Versions')?></h1>
+<p><?php echo t("The following is a list of all this page's versions. If you can edit a page you will automatically see its most recent version, but the approved version is what regular users will see.")?></p>
 
 <div class="ccm-form-area">
 
 
-	<?php   if ($isCheckedOut) { ?> 
-		<?php  echo t('Someone has already checked out this page for editing.')?>
-	<?php   } else { ?>
+	<?php  if ($isCheckedOut) { ?> 
+		<?php echo t('Someone has already checked out this page for editing.')?>
+	<?php  } else { ?>
 	
 	
 	<form>
-	<?php  echo t('Select')?>: <a id="ccm-version-select-none" href="#"><?php  echo t('None')?></a> | <a id="ccm-version-select-old" href="#"><?php  echo t('Old Versions')?></a>
+	<?php echo t('Select')?>: <a id="ccm-version-select-none" href="#"><?php echo t('None')?></a> | <a id="ccm-version-select-old" href="#"><?php echo t('Old Versions')?></a>
 	&nbsp;&nbsp;
-	<input type="button" name="vCompare" value="<?php  echo t('Compare')?>" disabled />
+	<input type="button" name="vCompare" value="<?php echo t('Compare')?>" disabled />
 	&nbsp;
-	<input type="button" name="vApprove" value="<?php  echo t('Approve')?>" disabled />
+	<input type="button" name="vApprove" value="<?php echo t('Approve')?>" disabled />
 	
 	&nbsp;
-	<input type="button" name="vRemove" value="<?php  echo t('Remove')?>" disabled />
+	<input type="button" name="vRemove" value="<?php echo t('Remove')?>" disabled />
 	
 	</form>
 	<br/>
 	<table border="0" cellspacing="0" width="100%" class="ccm-grid" cellpadding="0">
 	<tr>
 		<th>&nbsp;</th>
-		<th><?php  echo t('Name')?></th>
-		<th><?php  echo t('Comments')?></th>
-		<th><?php  echo t('Creator')?></th>
-		<th><?php  echo t('Approver')?></th>
-		<th><?php  echo t('Added On')?></th>
+		<th><?php echo t('Name')?></th>
+		<th><?php echo t('Comments')?></th>
+		<th><?php echo t('Creator')?></th>
+		<th><?php echo t('Approver')?></th>
+		<th><?php echo t('Added On')?></th>
 	</tr>
-	<?php   
+	<?php  
 	$vIsPending = true;
 	foreach ($vArray as $v) { 
 		if ($v->isApproved()) {
@@ -393,34 +393,34 @@ $("input[name=vRemove]").click(function() {
 		}
 		
 	?> 
-	<tr id="ccm-version-row<?php  echo $v->getVersionID()?>" class="<?php  echo $class?>">
-		<td><input type="checkbox" <?php   if ($vIsPending) { ?> class="cb-version-pending"<?php   } else if ($v->isApproved()) { ?> class="cb-version-active"<?php   } else { ?> class="cb-version-old" <?php   } ?> id="cb<?php  echo $v->getVersionID()?>" name="vID[]" value="<?php  echo $v->getVersionID()?>" /></td>
-		<td><a dialog-width="85%" dialog-height="80%" title="<?php  echo t('Compare Versions')?>" class="ccm-version" dialog-title="<?php  echo t('Compare Versions')?>" dialog-modal="false" href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&cvID=<?php  echo $v->getVersionID()?>&vtask=view_version"><?php  echo $v->getVersionName()?></a></td>
-		<td><?php  echo $v->getVersionComments()?></td>
-		<td><?php  
+	<tr id="ccm-version-row<?php echo $v->getVersionID()?>" class="<?php echo $class?>">
+		<td><input type="checkbox" <?php  if ($vIsPending) { ?> class="cb-version-pending"<?php  } else if ($v->isApproved()) { ?> class="cb-version-active"<?php  } else { ?> class="cb-version-old" <?php  } ?> id="cb<?php echo $v->getVersionID()?>" name="vID[]" value="<?php echo $v->getVersionID()?>" /></td>
+		<td><a dialog-width="85%" dialog-height="80%" title="<?php echo t('Compare Versions')?>" class="ccm-version" dialog-title="<?php echo t('Compare Versions')?>" dialog-modal="false" href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&cvID=<?php echo $v->getVersionID()?>&vtask=view_version"><?php echo $v->getVersionName()?></a></td>
+		<td><?php echo $v->getVersionComments()?></td>
+		<td><?php 
 			print $v->getVersionAuthorUserName();
 			
 			?></td>
-		<td><?php  
+		<td><?php 
 			print $v->getVersionApproverUserName();
 			
 			?></td>
-		<td><?php  echo date(DATE_APP_PAGE_VERSIONS, strtotime($v->getVersionDateCreated('user')))?></td>
+		<td><?php echo date(DATE_APP_PAGE_VERSIONS, strtotime($v->getVersionDateCreated('user')))?></td>
 	</tr>	
-	<?php   } ?>
+	<?php  } ?>
 	</table>
-	<?php   if ($total > 20 ) { ?>
+	<?php  if ($total > 20 ) { ?>
 		<div class="ccm-pagination" style="margin-top: 8px">
-			<span class="ccm-page-left"><?php  echo $ph->getPrevious()?></span>
-			<span class="ccm-page-right"><?php  echo $ph->getNext()?></span>
-			<?php  echo $ph->getPages()?>
+			<span class="ccm-page-left"><?php echo $ph->getPrevious()?></span>
+			<span class="ccm-page-right"><?php echo $ph->getNext()?></span>
+			<?php echo $ph->getPages()?>
 		</div>
-	<?php   } ?>
+	<?php  } ?>
 	<br>
 	
-	<h2><?php  echo t('Pending Actions')?></h2>
+	<h2><?php echo t('Pending Actions')?></h2>
 	
-	<?php   
+	<?php  
 
 	$pendingAction = $c->getPendingAction();
 	switch($pendingAction) {
@@ -431,62 +431,62 @@ $("input[name=vRemove]").click(function() {
 			?>
 
 			<div>
-				<strong class="important"><?php  echo t('DELETION')?></strong>
-				<?php  echo t('(Marked by: <strong>%s</strong> on <strong>%s</strong>)',$ud->getUserName(), date(DATE_APP_PAGE_VERSIONS, strtotime($c->getPendingActionDateTime())))?>
+				<strong class="important"><?php echo t('DELETION')?></strong>
+				<?php echo t('(Marked by: <strong>%s</strong> on <strong>%s</strong>)',$ud->getUserName(), date(DATE_APP_PAGE_VERSIONS, strtotime($c->getPendingActionDateTime())))?>
 			</div>
 
-			<?php   if ($cp->canApproveCollection()) { ?>
-				<?php   if ($children == 0) { ?>
+			<?php  if ($cp->canApproveCollection()) { ?>
+				<?php  if ($children == 0) { ?>
 				
 					<div class="ccm-buttons">
-					<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=approve_pending_action<?php  echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php  echo t('Approve')?></span></a>
-					<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=clear_pending_action<?php  echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php  echo t('Deny')?></em></span></a>
+					<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=approve_pending_action<?php echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php echo t('Approve')?></span></a>
+					<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=clear_pending_action<?php echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php echo t('Deny')?></em></span></a>
 					</div>
 			
-				<?php   } else if ($children > 0) { ?>
-					<?php  echo t('This will remove %s pages.',$pages)?>
-					<?php   if (!$cp->canAdminPage()) { ?>
-						<?php  echo t('Only the super user may remove multiple pages.')?><br>
+				<?php  } else if ($children > 0) { ?>
+					<?php echo t('This will remove %s pages.',$pages)?>
+					<?php  if (!$cp->canAdminPage()) { ?>
+						<?php echo t('Only the super user may remove multiple pages.')?><br>
 						<div class="ccm-buttons">
-						<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=clear_pending_action<?php  echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php  echo t('Deny')?></em></span></a>
+						<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=clear_pending_action<?php echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php echo t('Deny')?></em></span></a>
 						</div>
 
-					<?php   } else { ?>
+					<?php  } else { ?>
 						<div class="ccm-buttons">
-						<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=approve_pending_action<?php  echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php  echo t('Approve')?></span></a>
-						<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=clear_pending_action<?php  echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php  echo t('Deny')?></em></span></a>
+						<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=approve_pending_action<?php echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php echo t('Approve')?></span></a>
+						<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=clear_pending_action<?php echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php echo t('Deny')?></em></span></a>
 						</div>
 
-					<?php   } ?>
-				<?php   } ?>
-			<?php   } ?>
+					<?php  } ?>
+				<?php  } ?>
+			<?php  } ?>
 
-		<?php   break;
+		<?php  break;
 		case 'MOVE':
 			$ud = UserInfo::getByID($c->getPendingActionUserID());
 			?>
 
 			<div>
-				<strong class="important"><?php  echo t('MOVE')?></strong>  
-				<?php  echo t('(Marked by: <strong>%s</strong> on <strong>%s</strong>)',$ud->getUserName(), date(DATE_APP_PAGE_VERSIONS, strtotime($c->getPendingActionDateTime()) ))?>
+				<strong class="important"><?php echo t('MOVE')?></strong>  
+				<?php echo t('(Marked by: <strong>%s</strong> on <strong>%s</strong>)',$ud->getUserName(), date(DATE_APP_PAGE_VERSIONS, strtotime($c->getPendingActionDateTime()) ))?>
 			</div>
-			<?php   $nc = Page::getByID($c->getPendingActionTargetCollectionID(), 'ACTIVE'); ?>
-				<?php   if (is_object($nc)) { ?>
-					<br><?php  echo t('This page is being moved to')?> <strong><a href="<?php  echo DIR_REL?>/<?php  echo DISPATCHER_FILENAME?>?cID=<?php  echo $nc->getCollectionID()?>" target="_blank"><?php  echo $nc->getCollectionName()?></a></strong>
-				<?php   } 
+			<?php  $nc = Page::getByID($c->getPendingActionTargetCollectionID(), 'ACTIVE'); ?>
+				<?php  if (is_object($nc)) { ?>
+					<br><?php echo t('This page is being moved to')?> <strong><a href="<?php echo DIR_REL?>/<?php echo DISPATCHER_FILENAME?>?cID=<?php echo $nc->getCollectionID()?>" target="_blank"><?php echo $nc->getCollectionName()?></a></strong>
+				<?php  } 
 			?>
-			<?php   if ($cp->canApproveCollection()) { ?>
+			<?php  if ($cp->canApproveCollection()) { ?>
 				<div class="ccm-buttons">
-				<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=approve_pending_action<?php  echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php  echo t('Approve')?></span></a>
-				<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php  echo $cID?>&ctask=clear_pending_action<?php  echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php  echo t('Deny')?></em></span></a>
+				<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=approve_pending_action<?php echo $token?>" class="ccm-button-right accept" onclick="return ccm_runAction(this)"><span><?php echo t('Approve')?></span></a>
+				<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/versions.php?cID=<?php echo $cID?>&ctask=clear_pending_action<?php echo $token?>" class="ccm-button-left cancel" onclick="return ccm_runAction(this)"><span><em class="ccm-button-close"><?php echo t('Deny')?></em></span></a>
 				</div>
-			<?php   } ?>
-		<?php   break;
+			<?php  } ?>
+		<?php  break;
 		default: ?>
 			
-			<?php  echo t('There are no pending actions for this page.')?>
+			<?php echo t('There are no pending actions for this page.')?>
 			
-		<?php   break;
+		<?php  break;
 		
 		}
 	
@@ -500,6 +500,6 @@ $("input[name=vRemove]").click(function() {
 </div>
 </div>
 
-<?php   if (!$_GET['versions_reloaded']) { ?>
+<?php  if (!$_GET['versions_reloaded']) { ?>
 </div>
-<?php   } ?>
+<?php  } ?>

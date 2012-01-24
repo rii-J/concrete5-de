@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @access private
  * @package Helpers
@@ -27,6 +27,15 @@ class ConcreteDashboardSitemapHelper {
 	// integrate droppables
 	
 	public $html = '';
+	
+	/**
+	 * this method is called by the Loader::helper to clean up the instance of this object
+	 * resets the class scope variables
+	 * @return void
+	*/
+	public function reset() {
+		$this->html = '';
+	}
 	
 	function addOpenNode($cID) {
 		if (is_array($_SESSION['dsbSitemapNodes'])) {

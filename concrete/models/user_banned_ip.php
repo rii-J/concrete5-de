@@ -1,4 +1,4 @@
-<?php  
+<?php 
 class UserBannedIP extends ADOdb_Active_Record{	
 	protected $unique_keys;
 	public function __construct ($db_name=false,$keys=false) {

@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
 $form = Loader::helper('form');
@@ -169,31 +169,31 @@ function printFileAttributeRow($ak, $fv) {
 
 if (!isset($_REQUEST['reload'])) { ?>
 	<div id="ccm-file-properties-wrapper">
-<?php   } ?>
+<?php  } ?>
 
-<div class="ccm-file-properties-tabs" id="ccm-file-properties-tab-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>">
+<div class="ccm-file-properties-tabs" id="ccm-file-properties-tab-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>">
 
 <ul class="ccm-dialog-tabs">
-<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-file-properties-details-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>"><?php  echo t('Details')?></a></li>
-<?php   if (!$previewMode) { ?>
-	<li><a href="javascript:void(0)" id="ccm-file-properties-versions-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>"><?php  echo t('Versions')?></a></li>
-<?php   } ?>
-<li><a href="javascript:void(0)" id="ccm-file-properties-statistics-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>"><?php  echo t('Statistics')?></a></li>
+<li class="ccm-nav-active"><a href="javascript:void(0)" id="ccm-file-properties-details-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>"><?php echo t('Details')?></a></li>
+<?php  if (!$previewMode) { ?>
+	<li><a href="javascript:void(0)" id="ccm-file-properties-versions-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>"><?php echo t('Versions')?></a></li>
+<?php  } ?>
+<li><a href="javascript:void(0)" id="ccm-file-properties-statistics-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>"><?php echo t('Statistics')?></a></li>
 </ul>
 
 <script type="text/javascript">
-//var ccm_fiActiveTab = "ccm-file-properties-details-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>";
-$("#ccm-file-properties-tab-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?> ul a").click(function() {
-	$("#ccm-file-properties-tab-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?> li").removeClass('ccm-nav-active');
-	$("#ccm-file-properties-tab-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?> .ccm-file-properties-details-tab").hide();
+//var ccm_fiActiveTab = "ccm-file-properties-details-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>";
+$("#ccm-file-properties-tab-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?> ul a").click(function() {
+	$("#ccm-file-properties-tab-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?> li").removeClass('ccm-nav-active');
+	$("#ccm-file-properties-tab-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?> .ccm-file-properties-details-tab").hide();
 	$(this).parent().addClass("ccm-nav-active");
 	$('#' + $(this).attr('id') + '-tab').show();
 });
 </script>
 
-<div class="ccm-file-properties-details-tab" id="ccm-file-properties-details-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>-tab">
+<div class="ccm-file-properties-details-tab" id="ccm-file-properties-details-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>-tab">
 
-<?php  
+<?php 
 if (!$previewMode) { 
 	$h = Loader::helper('concrete/interface');
 	$b1 = $h->button_js(t('Rescan'), 'ccm_alRescanFiles(' . $f->getFileID() . ')');
@@ -202,25 +202,25 @@ if (!$previewMode) {
 
 ?>
 
-<h1><?php  echo t('File Details')?></h1>
+<h1><?php echo t('File Details')?></h1>
 
 
 <div id="ccm-file-properties">
-<h2><?php  echo t('Basic Properties')?></h2>
+<h2><?php echo t('Basic Properties')?></h2>
 <table border="0" cellspacing="0" cellpadding="0" class="ccm-grid">
 <tr>
-	<th><?php  echo t('ID')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getFileID()?> <span style="color: #afafaf">(<?php  echo t('Version')?> <?php  echo $fv->getFileVersionID()?>)</span></td>
+	<th><?php echo t('ID')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getFileID()?> <span style="color: #afafaf">(<?php echo t('Version')?> <?php echo $fv->getFileVersionID()?>)</span></td>
 </tr>
 <tr>
-	<th><?php  echo t('Filename')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getFileName()?></td>
+	<th><?php echo t('Filename')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getFileName()?></td>
 </tr>
 <tr>
-	<th><?php  echo t('URL to File')?></th>
-	<td width="100%" colspan="2"><?php  echo $fv->getRelativePath(true)?></td>
+	<th><?php echo t('URL to File')?></th>
+	<td width="100%" colspan="2"><?php echo $fv->getRelativePath(true)?></td>
 </tr>
-<?php  
+<?php 
 $oc = $f->getOriginalPageObject();
 if (is_object($oc)) { 
 	$fileManager = Page::getByPath('/dashboard/files/search'); 
@@ -233,24 +233,24 @@ if (is_object($oc)) {
 	?>
 
 <tr>
-	<th><?php  echo t('Page Added To')?></th>
-	<td width="100%" colspan="2"><a href="<?php  echo Loader::helper('navigation')->getLinkToCollection($oc)?>" target="_blank"><?php  echo $ocName?></a></td>
+	<th><?php echo t('Page Added To')?></th>
+	<td width="100%" colspan="2"><a href="<?php echo Loader::helper('navigation')->getLinkToCollection($oc)?>" target="_blank"><?php echo $ocName?></a></td>
 </tr>
-<?php   } ?>
+<?php  } ?>
 
 <tr>
-	<th><?php  echo t('Type')?></th>
-	<td colspan="2"><?php  echo $fv->getType()?></td>
+	<th><?php echo t('Type')?></th>
+	<td colspan="2"><?php echo $fv->getType()?></td>
 </tr>
 <tr>
-	<th><?php  echo t('Size')?></th>
-	<td colspan="2"><?php  echo $fv->getSize()?> (<?php  echo number_format($fv->getFullSize())?> <?php  echo t('bytes')?>)</td>
+	<th><?php echo t('Size')?></th>
+	<td colspan="2"><?php echo $fv->getSize()?> (<?php echo number_format($fv->getFullSize())?> <?php echo t('bytes')?>)</td>
 </tr>
 <tr>
-	<th><?php  echo t('Date Added')?></th>
-	<td colspan="2"><?php  echo t('Added by <strong>%s</strong> on %s', $fv->getAuthorName(), date(DATE_APP_FILE_PROPERTIES, strtotime($f->getDateAdded())))?></td>
+	<th><?php echo t('Date Added')?></th>
+	<td colspan="2"><?php echo t('Added by <strong>%s</strong> on %s', $fv->getAuthorName(), date(DATE_APP_FILE_PROPERTIES, strtotime($f->getDateAdded())))?></td>
 </tr>
-<?php  
+<?php 
 Loader::model("file_storage_location");
 $fsl = FileStorageLocation::getByID(FileStorageLocation::ALTERNATE_ID);
 if (is_object($fsl)) {
@@ -265,10 +265,10 @@ if (!isset($sli)) {
 
 ?>
 <tr>
-	<th><?php  echo t('Location')?></th>
-	<td colspan="2"><?php  echo $sli?></td>
+	<th><?php echo t('Location')?></th>
+	<td colspan="2"><?php echo $sli?></td>
 </tr>
-<?php  
+<?php 
 printCorePropertyRow(t('Title'), 'fvTitle', $fv->getTitle(), $form->text('fvTitle', $fv->getTitle()));
 printCorePropertyRow(t('Description'), 'fvDescription', $fv->getDescription(), $form->textarea('fvDescription', $fv->getDescription()));
 printCorePropertyRow(t('Tags'), 'fvTags', $fv->getTags(), $form->textarea('fvTags', $fv->getTags()));
@@ -278,7 +278,7 @@ printCorePropertyRow(t('Tags'), 'fvTags', $fv->getTags(), $form->textarea('fvTag
 </table>
 
 
-<?php   
+<?php  
 $attribs = FileAttributeKey::getImporterList($fv);
 $ft = $fv->getType();
 
@@ -286,9 +286,9 @@ if (count($attribs) > 0) { ?>
 
 <br/>
 
-<h2><?php  echo t('%s File Properties', $ft)?></h2>
+<h2><?php echo t('%s File Properties', $ft)?></h2>
 <table border="0" cellspacing="0" cellpadding="0" class="ccm-grid">
-<?php  
+<?php 
 
 foreach($attribs as $at) {
 
@@ -298,18 +298,18 @@ foreach($attribs as $at) {
 
 ?>
 </table>
-<?php   } ?>
+<?php  } ?>
 
-<?php   
+<?php  
 $attribs = FileAttributeKey::getUserAddedList();
 
 if (count($attribs) > 0) { ?>
 
 <br/>
 
-<h2><?php  echo t('Other Properties')?></h2>
+<h2><?php echo t('Other Properties')?></h2>
 <table border="0" cellspacing="0" cellpadding="0" class="ccm-grid">
-<?php  
+<?php 
 
 foreach($attribs as $at) {
 
@@ -319,58 +319,58 @@ foreach($attribs as $at) {
 
 ?>
 </table>
-<?php   } ?>
+<?php  } ?>
 
 <br/>
 
 </div>
 
-<h2><?php  echo t('File Preview')?></h2>
+<h2><?php echo t('File Preview')?></h2>
 
 <div style="text-align: center">
-<?php  echo $fv->getThumbnail(2)?>
+<?php echo $fv->getThumbnail(2)?>
 </div>
 
 </div>
 
-<?php   if (!$previewMode) { ?>
+<?php  if (!$previewMode) { ?>
 	
-	<div class="ccm-file-properties-details-tab" id="ccm-file-properties-versions-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>-tab" style="display: none">
+	<div class="ccm-file-properties-details-tab" id="ccm-file-properties-versions-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>-tab" style="display: none">
 	
-		<h1><?php  echo t('File Versions')?></h1>
+		<h1><?php echo t('File Versions')?></h1>
 	
 		<table border="0" cellspacing="0" width="100%" id="ccm-file-versions-grid" class="ccm-grid" cellpadding="0">
 		<tr>
 			<th>&nbsp;</th>
-			<th><?php  echo t('Filename')?></th>
-			<th><?php  echo t('Title')?></th>
-			<th><?php  echo t('Comments')?></th>
-			<th><?php  echo t('Creator')?></th>
-			<th><?php  echo t('Added On')?></th>
-			<?php   if ($fp->canAdmin()) { ?>
+			<th><?php echo t('Filename')?></th>
+			<th><?php echo t('Title')?></th>
+			<th><?php echo t('Comments')?></th>
+			<th><?php echo t('Creator')?></th>
+			<th><?php echo t('Added On')?></th>
+			<?php  if ($fp->canAdmin()) { ?>
 				<th>&nbsp;</th>
-			<?php   } ?>
+			<?php  } ?>
 		</tr>
-		<?php  
+		<?php 
 		$versions = $f->getVersionList();
 		foreach($versions as $fvv) { ?>
-			<tr fID="<?php  echo $f->getFileID()?>" fvID="<?php  echo $fvv->getFileVersionID()?>" <?php   if ($fvv->getFileVersionID() == $fv->getFileVersionID()) { ?> class="ccm-file-versions-grid-active" <?php   } ?>>
+			<tr fID="<?php echo $f->getFileID()?>" fvID="<?php echo $fvv->getFileVersionID()?>" <?php  if ($fvv->getFileVersionID() == $fv->getFileVersionID()) { ?> class="ccm-file-versions-grid-active" <?php  } ?>>
 				<td style="text-align: center">
-					<?php  echo $form->radio('vlfvID', $fvv->getFileVersionID(), $fvv->getFileVersionID() == $fv->getFileVersionID())?>
+					<?php echo $form->radio('vlfvID', $fvv->getFileVersionID(), $fvv->getFileVersionID() == $fv->getFileVersionID())?>
 				</td>
 				<td width="100">
 					<div style="width: 150px; word-wrap: break-word">
-					<a href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/properties?fID=<?php  echo $f->getFileID()?>&fvID=<?php  echo $fvv->getFileVersionID()?>&task=preview_version" dialog-modal="false" dialog-width="630" dialog-height="450" dialog-title="<?php  echo t('Preview File')?>" class="dialog-launch">
-						<?php  echo $fvv->getFilename()?>
+					<a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/properties?fID=<?php echo $f->getFileID()?>&fvID=<?php echo $fvv->getFileVersionID()?>&task=preview_version" dialog-modal="false" dialog-width="630" dialog-height="450" dialog-title="<?php echo t('Preview File')?>" class="dialog-launch">
+						<?php echo $fvv->getFilename()?>
 					</a>
 					</div>
 				</td>
 				<td> 
 					<div style="width: 150px; word-wrap: break-word">
-						<?php  echo $fvv->getTitle()?>
+						<?php echo $fvv->getTitle()?>
 					</div>
 				</td>
-				<td><?php  
+				<td><?php 
 					$comments = $fvv->getVersionLogComments();
 					if (count($comments) > 0) {
 						print t('Updated ');
@@ -386,39 +386,39 @@ foreach($attribs as $at) {
 					}
 					?>
 					</td>
-				<td><?php  echo $fvv->getAuthorName()?></td>
-				<td><?php  echo date(DATE_APP_FILE_VERSIONS, strtotime($fvv->getDateAdded()))?></td>
-				<?php   if ($fp->canAdmin()) { ?>
-					<?php   if ($fvv->getFileVersionID() == $fv->getFileVersionID()) { ?>
+				<td><?php echo $fvv->getAuthorName()?></td>
+				<td><?php echo date(DATE_APP_FILE_VERSIONS, strtotime($fvv->getDateAdded()))?></td>
+				<?php  if ($fp->canAdmin()) { ?>
+					<?php  if ($fvv->getFileVersionID() == $fv->getFileVersionID()) { ?>
 						<td>&nbsp;</td>
-					<?php   } else { ?>
-						<td><a class="ccm-file-versions-remove" href="javascript:void(0)"><?php  echo t('Delete')?></a></td>
-					<?php   } ?>
-				<?php   } ?>
+					<?php  } else { ?>
+						<td><a class="ccm-file-versions-remove" href="javascript:void(0)"><?php echo t('Delete')?></a></td>
+					<?php  } ?>
+				<?php  } ?>
 			</tr>	
 		
-		<?php   } ?>
+		<?php  } ?>
 		
 		</table>
 	
 	</div>
 
-<?php   } ?>
+<?php  } ?>
 
-<div class="ccm-file-properties-details-tab" id="ccm-file-properties-statistics-<?php  echo $f->getFileID()?>-<?php  echo $fv->getFileVersionID()?>-tab" style="display: none">
+<div class="ccm-file-properties-details-tab" id="ccm-file-properties-statistics-<?php echo $f->getFileID()?>-<?php echo $fv->getFileVersionID()?>-tab" style="display: none">
 	
-	<h1><?php  echo t('Download Statistics')?></h1>
-	<?php  
+	<h1><?php echo t('Download Statistics')?></h1>
+	<?php 
 	$downloadStatistics = $f->getDownloadStatistics();
 	?>
-	<h2><?php  echo count($downloadStatistics).' '.t('Downloads')?></h2>
+	<h2><?php echo count($downloadStatistics).' '.t('Downloads')?></h2>
 	<table border="0" cellspacing="0" width="100%" id="ccm-file-versions-grid" class="ccm-grid" cellpadding="0">
 		<tr> 
-			<th><?php  echo t('User')?></th>
-			<th><?php  echo t('Download Time')?></th>
-			<th><?php  echo t('File Version ID')?></th>
+			<th><?php echo t('User')?></th>
+			<th><?php echo t('Download Time')?></th>
+			<th><?php echo t('File Version ID')?></th>
 		</tr>	
-		<?php  
+		<?php 
 		
 		$downloadStatsCounter=0;
 		foreach($downloadStatistics as $download){ 
@@ -427,21 +427,24 @@ foreach($attribs as $at) {
 			?>
 		<tr>
 			<td>
-				<?php   
+				<?php  
 				$uID=intval($download['uID']);
 				if(!$uID){
 					echo t('Anonymous');
 				}else{ 
 					$downloadUI = UserInfo::getById($uID);
-					//echo get_class($downloadUI);
-					echo $downloadUI->getUserName();
+					if($downloadUI instanceof UserInfo) {
+						echo $downloadUI->getUserName();
+					} else {
+						echo t('Deleted User');
+					}
 				} 
 				?>
 			</td>
-			<td><?php  echo date(DATE_APP_FILE_DOWNLOAD, strtotime($download['timestamp']))?></td>
-			<td><?php  echo intval($download['fvID'])?></td>
+			<td><?php echo date(DATE_APP_FILE_DOWNLOAD, strtotime($download['timestamp']))?></td>
+			<td><?php echo intval($download['fvID'])?></td>
 		</tr>
-		<?php   } ?>
+		<?php  } ?>
 	</table>
 </div>
 
@@ -454,7 +457,7 @@ $(function() {
 });
 </script>
 
-<?php  
+<?php 
 if (!isset($_REQUEST['reload'])) { ?>
 </div>
-<?php   }
+<?php  }

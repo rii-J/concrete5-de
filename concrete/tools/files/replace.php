@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
 $ch = Loader::helper('concrete/file');
@@ -20,40 +20,40 @@ Loader::element('files/upload_single', array('searchInstance' => $searchInstance
 
 <hr />
 
-<h3><?php  echo t('Add from Incoming Directory')?></h3>
+<h3><?php echo t('Add from Incoming Directory')?></h3>
 <div>
-<?php  
+<?php 
 $contents = array();
 $con1 = $ch->getIncomingDirectoryContents();
 foreach($con1 as $con) {
 	$contents[$con['name']] = $con['name'];
 }
 if (count($contents) > 0) { ?>
-<form method="post" id="ccm-file-manager-replace-incoming" action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/importers/incoming">
-    <input type="hidden" name="searchInstance" value="<?php  echo $searchInstance?>" />
-	<?php  echo  $form->select('send_file', $contents, array('style' => 'width:200px'));?>
+<form method="post" id="ccm-file-manager-replace-incoming" action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/importers/incoming">
+    <input type="hidden" name="searchInstance" value="<?php echo $searchInstance?>" />
+	<?php echo  $form->select('send_file', $contents, array('style' => 'width:200px'));?>
 	&nbsp;&nbsp;
-	<?php  echo  $form->submit('submit', t('Add File')); ?>
-	<?php  echo  $form->hidden('fID', $f->getFileID()); ?>
-	<?php  echo $valt->output('import_incoming');?>
+	<?php echo  $form->submit('submit', t('Add File')); ?>
+	<?php echo  $form->hidden('fID', $f->getFileID()); ?>
+	<?php echo $valt->output('import_incoming');?>
 </form>
-<?php   } else { ?>
-	<?php  echo t('No files found in %s', DIR_FILES_INCOMING)?>
-<?php   } ?>
+<?php  } else { ?>
+	<?php echo t('No files found in %s', DIR_FILES_INCOMING)?>
+<?php  } ?>
 </div>
 
 <hr />
 
-<h3><?php  echo t("Add from Remote URL")?></h3>
+<h3><?php echo t("Add from Remote URL")?></h3>
 
-<form method="post" id="ccm-file-manager-replace-remote" action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/importers/remote">
-<?php  echo $valt->output('import_remote');?>
-    <input type="hidden" name="searchInstance" value="<?php  echo $searchInstance?>" />
-<?php  echo  $form->hidden('fID', $f->getFileID()); ?>
+<form method="post" id="ccm-file-manager-replace-remote" action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/importers/remote">
+<?php echo $valt->output('import_remote');?>
+    <input type="hidden" name="searchInstance" value="<?php echo $searchInstance?>" />
+<?php echo  $form->hidden('fID', $f->getFileID()); ?>
 
-<?php  echo $form->text('url_upload_1', array('style' => 'width:195px'))?>
+<?php echo $form->text('url_upload_1', array('style' => 'width:195px'))?>
 &nbsp;&nbsp;
-<?php  echo  $form->submit('submit', t('Add File')); ?>
+<?php echo  $form->submit('submit', t('Add File')); ?>
 
 </form>
 

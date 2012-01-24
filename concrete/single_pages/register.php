@@ -1,62 +1,62 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied."); ?>
-<h1><?php  echo t('Site Registration')?></h1>
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
+<h1><?php echo t('Site Registration')?></h1>
 <div class="ccm-form">
 
-<?php   
+<?php  
 if($success) { 
 	switch($success) { 
 		case "registered": 
 			?>
-			<p><strong><?php  echo $successMsg ?></strong><br/><br/>
-			<a href="<?php  echo $this->url('/')?>"><?php  echo t('Return to Home')?></a>
-			<?php   
+			<p><strong><?php echo $successMsg ?></strong><br/><br/>
+			<a href="<?php echo $this->url('/')?>"><?php echo t('Return to Home')?></a>
+			<?php  
 		break;
 		case "validate": 
 			?>
-			<p><?php  echo $successMsg[0] ?></p>
-			<p><?php  echo $successMsg[1] ?></p>
-			<p><a href="<?php  echo $this->url('/')?>"><?php  echo t('Return to Home')?></a></p>
-			<?php  
+			<p><?php echo $successMsg[0] ?></p>
+			<p><?php echo $successMsg[1] ?></p>
+			<p><a href="<?php echo $this->url('/')?>"><?php echo t('Return to Home')?></a></p>
+			<?php 
 		break;
 		case "pending":
 			?>
-			<p><?php  echo $successMsg ?></p>
-			<p><a href="<?php  echo $this->url('/')?>"><?php  echo t('Return to Home')?></a></p>
-            <?php  
+			<p><?php echo $successMsg ?></p>
+			<p><a href="<?php echo $this->url('/')?>"><?php echo t('Return to Home')?></a></p>
+            <?php 
 		break;
 	}
 		
 } else { ?>
 
-<form method="post" action="<?php  echo $this->url('/register', 'do_register')?>">
+<form method="post" action="<?php echo $this->url('/register', 'do_register')?>">
 
-	<?php   if ($displayUserName) { ?>
+	<?php  if ($displayUserName) { ?>
 		<div>
-		<?php  echo $form->label('uName', t('Username') )?>
-		<?php  echo $form->text('uName')?>
+		<?php echo $form->label('uName', t('Username') )?>
+		<?php echo $form->text('uName')?>
 		</div>
 		<br/>
-	<?php   } ?>
+	<?php  } ?>
 	
 	<div>
-	<?php  echo $form->label('uEmail', t('Email Address') )?>
-	<?php  echo $form->text('uEmail')?>
+	<?php echo $form->label('uEmail', t('Email Address') )?>
+	<?php echo $form->text('uEmail')?>
 	</div>
 	<br/>
 	
 	<div>
-	<?php  echo $form->label('uPassword', t('Password') )?>
-	<?php  echo $form->password('uPassword')?>
+	<?php echo $form->label('uPassword', t('Password') )?>
+	<?php echo $form->password('uPassword')?>
 	</div>
 	<br/>
 
 	<div>
-	<?php  echo $form->label('uPasswordConfirm', t('Confirm Password') )?>
-	<?php  echo $form->password('uPasswordConfirm')?>
+	<?php echo $form->label('uPasswordConfirm', t('Confirm Password') )?>
+	<?php echo $form->password('uPasswordConfirm')?>
 	</div>
 	<br/>
 	
-	<?php  
+	<?php 
 	
 	$attribs = UserAttributeKey::getRegistrationList();
 	$af = Loader::helper('form/attribute');
@@ -73,17 +73,17 @@ if($success) {
 		$captcha->display();
 		?>
 		
-		<div><?php   $captcha->showInput();?> </div>
-	<?php   } ?>
+		<div><?php  $captcha->showInput();?> </div>
+	<?php  } ?>
 	
 	<br/>
 	
 	<div class="ccm-buttons">
-		<?php  echo $form->submit('register', t('Register'))?>
-		<?php  echo $form->hidden('rcID', $rcID); ?>
+		<?php echo $form->submit('register', t('Register'))?>
+		<?php echo $form->hidden('rcID', $rcID); ?>
 	</div>
 
 </form>
-<?php   } ?>
+<?php  } ?>
 
 </div>

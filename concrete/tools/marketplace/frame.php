@@ -1,4 +1,4 @@
-<?php    defined('C5_EXECUTE') or die("Access Denied.");
+<?php   defined('C5_EXECUTE') or die("Access Denied.");
 
 $tp = new TaskPermission();
 if ($tp->canInstallPackages()) { 
@@ -11,11 +11,11 @@ if ($tp->canInstallPackages()) {
 	
 		?>
 		<script type="text/javascript">
-			<?php   if ($_REQUEST['mpID']) { ?>
-				parent.ccm_getMarketplaceItem({mpID: '<?php  echo $_REQUEST['mpID']?>', closeTop: true});
-			<?php   } ?>
+			<?php  if ($_REQUEST['mpID']) { ?>
+				parent.ccm_getMarketplaceItem({mpID: '<?php echo $_REQUEST['mpID']?>', closeTop: true});
+			<?php  } ?>
 		</script>
-	<?php   } else {
+	<?php  } else {
 		$completeURL = BASE_URL . REL_DIR_FILES_TOOLS_REQUIRED . '/marketplace/frame?complete=1&mpID=' . $_REQUEST['mpID'];
 		print $mi->getMarketplaceFrame('100%', '100%', $completeURL);
 	}

@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * Captcha helper
  * 
@@ -7,7 +7,7 @@
  * Create a form like this.
  * <code>
  * <form method="post">
- *  <?php  
+ *  <?php 
  *  $captcha = Loader::helper('validation/captcha');
  *  $captcha->display();
  *  ?>

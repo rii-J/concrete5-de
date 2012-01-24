@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 Loader::library('search');
 Loader::model('search/file');
@@ -71,10 +71,10 @@ $s = new FileSearch($searchArray);
 
 ?>
 
-<h1><span><?php  echo t('Images and Files')?></span></h1>
+<h1><span><?php echo t('Images and Files')?></span></h1>
 
 <div class="ccm-dashboard-inner">
 
-<?php   include(DIR_FILES_TOOLS_REQUIRED . '/al.php'); ?>
+<?php  include(DIR_FILES_TOOLS_REQUIRED . '/al.php'); ?>
 
 </div>

@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @access private
  * @package Helpers

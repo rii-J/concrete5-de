@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @package Helpers
  * @author Andrew Embler <andrew@concrete5.org>

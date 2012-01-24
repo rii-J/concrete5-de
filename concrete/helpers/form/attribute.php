@@ -1,8 +1,12 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 class FormAttributeHelper {
 	
 	private $obj;
+	
+	public function reset() {
+		unset($this->obj);
+	}
 	
 	public function setAttributeObject($obj) {
 		$this->obj = $obj;

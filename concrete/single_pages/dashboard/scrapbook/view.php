@@ -1,4 +1,4 @@
-<?php  
+<?php 
 $ih = Loader::helper('concrete/interface'); 
 $ci = Loader::helper('concrete/urls');
 $valt = Loader::helper('validation/token');
@@ -54,57 +54,57 @@ var GlobalScrapbook = {
 			opacity: 0.5,
 			stop: function() {
 				var idslist = $('#ccm-scrapbook-list').sortable('serialize'); 
-				idslist=idslist+'&arHandle=<?php  echo ($globalScrapbookArea) ? urlencode($globalScrapbookArea->getAreaHandle()) : '' ?>';
-				$.post('<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/dashboard/scrapbook_services.php?mode=reorder', idslist, function(r) {
+				idslist=idslist+'&arHandle=<?php echo ($globalScrapbookArea) ? urlencode($globalScrapbookArea->getAreaHandle()) : '' ?>';
+				$.post('<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/dashboard/scrapbook_services.php?mode=reorder', idslist, function(r) {
 					
 				});
 			}
 		});
 	},
 	addBlock:function(e){
-		<?php   if(!$globalScrapbookArea){ ?>
+		<?php  if(!$globalScrapbookArea){ ?>
 		return false;
-		<?php   }else{ ?>
-		ccm_openAreaAddBlock("<?php  echo urlencode($globalScrapbookArea->getAreaHandle()) ?>", true);
-		<?php   } ?>
+		<?php  }else{ ?>
+		ccm_openAreaAddBlock("<?php echo urlencode($globalScrapbookArea->getAreaHandle()) ?>", true);
+		<?php  } ?>
 	},
 	editBlock:function(bID,w,h){ 
 		if(!w) w=550;
 		if(!h) h=380; 
-		var editBlockURL = '<?php  echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
+		var editBlockURL = '<?php echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
 		$.fn.dialog.open({
 			title: ccmi18n.editBlock,
-			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php  echo urlencode($scrapbookName)?>&btask=edit&isGlobal=1',
+			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php echo urlencode($scrapbookName)?>&btask=edit&isGlobal=1',
 			width: w,
 			modal: false,
 			height: h
 		});		
 	},
 	editBlockTemplate:function(bID){ 
-		var editBlockURL = '<?php  echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
+		var editBlockURL = '<?php echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
 		$.fn.dialog.open({
 			title: ccmi18n.changeBlockTemplate,
-			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php  echo urlencode($scrapbookName)?>&btask=template',
+			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php echo urlencode($scrapbookName)?>&btask=template',
 			width: 300,
 			modal: false,
 			height: 100
 		});		
 	},
 	editBlockDesign:function(bID){ 
-		var editBlockURL = '<?php  echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
+		var editBlockURL = '<?php echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
 		$.fn.dialog.open({
-			title: '<?php  echo t("Design")?>',
-			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php  echo urlencode($scrapbookName)?>&btask=block_css',
+			title: '<?php echo t("Design")?>',
+			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php echo urlencode($scrapbookName)?>&btask=block_css',
 			width: 450,
 			modal: false,
 			height: 420
 		});		
 	},
 	editBlockPermissions:function(bID){ 
-		var editBlockURL = '<?php  echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
+		var editBlockURL = '<?php echo REL_DIR_FILES_TOOLS_REQUIRED ?>/edit_block_popup';
 		$.fn.dialog.open({
 			title: ccmi18n.changeBlockTemplate,
-			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php  echo urlencode($scrapbookName)?>&btask=groups',
+			href: editBlockURL+'?cID='+CCM_CID+'&bID='+bID+'&arHandle=<?php echo urlencode($scrapbookName)?>&btask=groups',
 			width: 400,
 			modal: false,
 			height: 380
@@ -112,7 +112,7 @@ var GlobalScrapbook = {
 	},
 
 	confirmDelete:function(){
-		if(!confirm("<?php  echo t('Are you sure you want to delete this block?').'\n'.t('(All page instances will also be removed)') ?>")) return false;
+		if(!confirm("<?php echo t('Are you sure you want to delete this block?').'\n'.t('(All page instances will also be removed)') ?>")) return false;
 		return true;
 	},
 	toggleRename:function(bID){
@@ -142,78 +142,78 @@ $(function(){ GlobalScrapbook.init(); });
 
 
 
-<?php   if(!$scrapbookName){ ?>
+<?php  if(!$scrapbookName){ ?>
 
-	<h1><span><?php  echo t('Choose a Scrapbook')?></span></h1>
+	<h1><span><?php echo t('Choose a Scrapbook')?></span></h1>
 	
 	<div class="ccm-dashboard-inner"> 
 		 
 		<table id="availableScrapbooks" border="0" cellspacing="1" class="grid-list" >
 			<tr>
 				<td class="header">
-					<?php  echo t('Scrapbook Name')?>
+					<?php echo t('Scrapbook Name')?>
 				</td>
 				<td class="header">
-					<?php  echo t('Options')?>
+					<?php echo t('Options')?>
 				</td>
 			</tr>		
 			<tr>
 				<td>  
-					<a href="<?php  echo View::url($cPath,'view','?scrapbookName=userScrapbook' ) ?>">
-					<?php  echo t("%s's Personal Scrapbook", $u->getUserName()) ?>
+					<a href="<?php echo View::url($cPath,'view','?scrapbookName=userScrapbook' ) ?>">
+					<?php echo t("%s's Personal Scrapbook", $u->getUserName()) ?>
 					</a>
 				</td>
 				<td class="options">
-					<a href="<?php  echo View::url($cPath,'view','?scrapbookName=userScrapbook' ) ?>"><?php  echo t('View')?></a> &nbsp; 
+					<a href="<?php echo View::url($cPath,'view','?scrapbookName=userScrapbook' ) ?>"><?php echo t('View')?></a> &nbsp; 
 				</td>
 			</tr>			
-			<?php   if(is_array($availableScrapbooks)) 
+			<?php  if(is_array($availableScrapbooks)) 
 				foreach($availableScrapbooks as $availableScrapbook){ ?>
 			<tr>
 				<td>		
-					<div id="ccm-scrapbookNameWrap<?php  echo $availableScrapbook['arID'] ?>" class="ccm-scrapbookNameWrap">
+					<div id="ccm-scrapbookNameWrap<?php echo $availableScrapbook['arID'] ?>" class="ccm-scrapbookNameWrap">
 						<div class="view">
-							<a href="<?php  echo View::url($cPath,'view','?scrapbookName='.urlencode($availableScrapbook['arHandle']) ) ?>" >
-								<?php  echo $availableScrapbook['arHandle'] ?>
+							<a href="<?php echo View::url($cPath,'view','?scrapbookName='.urlencode($availableScrapbook['arHandle']) ) ?>" >
+								<?php echo $availableScrapbook['arHandle'] ?>
 							</a>&nbsp;
 						</div>
 						<div class="edit">
-							<form method="post" action="<?php   echo $this->action('rename_scrapbook')?>">
-								<?php   $valt->output('rename_scrapbook')?>
-								<input name="arID" type="hidden" value="<?php  echo intval($availableScrapbook['arID']) ?>" /> 
-								<input name="scrapbookName" type="text" value="<?php  echo $availableScrapbook['arHandle'] ?>" />
-								<input name="Submit" type="submit" value="<?php  echo t('Save')?>" />
-								<input onclick="GlobalScrapbook.toggleScrapbookRename(<?php  echo intval($availableScrapbook['arID']) ?>)" name="cancel" type="button" value="<?php  echo t('Cancel')?>" />
+							<form method="post" action="<?php  echo $this->action('rename_scrapbook')?>">
+								<?php  $valt->output('rename_scrapbook')?>
+								<input name="arID" type="hidden" value="<?php echo intval($availableScrapbook['arID']) ?>" /> 
+								<input name="scrapbookName" type="text" value="<?php echo $availableScrapbook['arHandle'] ?>" />
+								<input name="Submit" type="submit" value="<?php echo t('Save')?>" />
+								<input onclick="GlobalScrapbook.toggleScrapbookRename(<?php echo intval($availableScrapbook['arID']) ?>)" name="cancel" type="button" value="<?php echo t('Cancel')?>" />
 								&nbsp;
 							</form>
 						</div>
 					</div>					
 				</td>
 				<td class="options">
-					<a href="<?php  echo View::url($cPath,'view','?scrapbookName='.urlencode($availableScrapbook['arHandle']) ) ?>"><?php  echo t('View')?></a> &nbsp;|&nbsp; 
-						<a onclick="GlobalScrapbook.toggleScrapbookRename(<?php  echo intval($availableScrapbook['arID']) ?>); return false;" href="#"><?php  echo t('Rename')?></a> &nbsp;|&nbsp; 
-						<a onclick="if(!confirm('<?php  echo t('Are you sure you want to permantly delete this scrapbook?')?>')) return false;" 
-						   href="<?php   echo $this->action('delete_scrapbook', urlencode($availableScrapbook['arHandle']), $valt->generate('delete_scrapbook') ) ?>"><?php  echo t('Delete')?></a>
+					<a href="<?php echo View::url($cPath,'view','?scrapbookName='.urlencode($availableScrapbook['arHandle']) ) ?>"><?php echo t('View')?></a> &nbsp;|&nbsp; 
+						<a onclick="GlobalScrapbook.toggleScrapbookRename(<?php echo intval($availableScrapbook['arID']) ?>); return false;" href="#"><?php echo t('Rename')?></a> &nbsp;|&nbsp; 
+						<a onclick="if(!confirm('<?php echo t('Are you sure you want to permantly delete this scrapbook?')?>')) return false;" 
+						   href="<?php  echo $this->action('delete_scrapbook', urlencode($availableScrapbook['arHandle']), $valt->generate('delete_scrapbook') ) ?>"><?php echo t('Delete')?></a>
 				</td>
 			</tr> 
-			<?php   } 
+			<?php  } 
 			
 			$form = Loader::helper('form'); ?>
 			
 			<tr>
-				<td colspan="2" class="subheader"><?php  echo t('Add a Global Scrapbook')?></td>
+				<td colspan="2" class="subheader"><?php echo t('Add a Global Scrapbook')?></td>
 			</tr>
 			<tr>
 			<td colspan="2">
-			<form id="addScrapbookForm" method="post" action="<?php   echo $this->action('addScrapbook') ?>">
-			<?php   $valt->output('add_scrapbook');?>
+			<form id="addScrapbookForm" method="post" action="<?php  echo $this->action('addScrapbook') ?>">
+			<?php  $valt->output('add_scrapbook');?>
 			<table border="0" cellspacing="0" cellpadding="0">
 			<tr>
-			<td><?php  echo $form->label('scrapbookName', t('Scrapbook Name'))?><br/>
+			<td><?php echo $form->label('scrapbookName', t('Scrapbook Name'))?><br/>
 			<input name="scrapbookName" id="scrapbookName" class="ccm-input-text" type="text" value="" size="30"  />
 			</td>
 			<td valign="bottom">
-			<?php   echo $ih->submit(t('Add'), 'addScrapbookForm', 'left')?>
+			<?php  echo $ih->submit(t('Add'), 'addScrapbookForm', 'left')?>
 			</td>
 			</tr>
 			</table>
@@ -230,16 +230,16 @@ $(function(){ GlobalScrapbook.init(); });
 
 
 
-<?php   }else if($scrapbookName=='userScrapbook'){ ?>
+<?php  }else if($scrapbookName=='userScrapbook'){ ?>
 	
-	<h1><span><?php  echo t("%s's Personal Scrapbook", $u->getUserName()) ?></span></h1>
+	<h1><span><?php echo t("%s's Personal Scrapbook", $u->getUserName()) ?></span></h1>
 	
 	<div class="ccm-dashboard-inner">	
 	
-		<a style="float: right" href="<?php  echo View::url($cPath) ?>"><?php  echo  t("&laquo; Return to Scrapbook List") ?></a>		
+		<a style="float: right" href="<?php echo View::url($cPath) ?>"><?php echo  t("&laquo; Return to Scrapbook List") ?></a>		
 
 		<div id="ccm-scrapbook-list" class="user-scrapbook ui-sortable">
-		<?php    
+		<?php   
 		$sp = Pile::getDefault();
 		$contents = $sp->getPileContentObjects('display_order_date');
 		$realPilesCounter=0;
@@ -250,27 +250,27 @@ $(function(){ GlobalScrapbook.init(); });
 				$btIcon = $ci->getBlockTypeIconURL($bt);
 				$pcID=$obj->getPileContentID();
 				?>			
-				<div class="ccm-scrapbook-list-item" id="ccm-pc-<?php  echo $pcID ?>">
+				<div class="ccm-scrapbook-list-item" id="ccm-pc-<?php echo $pcID ?>">
 					<div class="ccm-block-type">
 						<div class="options">  					 
-						  <a title="<?php   echo t('Remove from Scrapbook')?>" 
-							href="<?php   echo $this->action('deleteBlock', urlencode($scrapbookName), $pcID, 0, $valt->generate('delete_scrapbook_block')) ?>" 
-							id="sb<?php  echo $pcID ?>">
-							<?php  echo t('Delete') ?>
+						  <a title="<?php  echo t('Remove from Scrapbook')?>" 
+							href="<?php  echo $this->action('deleteBlock', urlencode($scrapbookName), $pcID, 0, $valt->generate('delete_scrapbook_block')) ?>" 
+							id="sb<?php echo $pcID ?>">
+							<?php echo t('Delete') ?>
 						  </a>
 						</div> 
 						
 						<div class="ccm-block-type-inner">
-							<div class="ccm-block-type-inner-icon ccm-scrapbook-item-handle" style="background: url(<?php  echo $btIcon?>) no-repeat center left;">
-							<img src="<?php  echo ASSETS_URL_IMAGES?>/spacer.gif" width="16" height="16" />
+							<div class="ccm-block-type-inner-icon ccm-scrapbook-item-handle" style="background: url(<?php echo $btIcon?>) no-repeat center left;">
+							<img src="<?php echo ASSETS_URL_IMAGES?>/spacer.gif" width="16" height="16" />
 							</div>
 							<div class="view">
-								<a><?php  echo $bt->getBlockTypeName()?></a>													
+								<a><?php echo $bt->getBlockTypeName()?></a>													
 							</div>							
 						</div>
 						
 						<div class="ccm-scrapbook-list-item-detail">	
-							<?php  	
+							<?php 	
 							try {
 								$bv = new BlockView();
 								$bv->render($item, 'scrapbook');
@@ -281,7 +281,7 @@ $(function(){ GlobalScrapbook.init(); });
 						</div>
 					</div>
 				</div>	
-				<?php  
+				<?php 
 				$realPilesCounter++;
 			} 
 		}	
@@ -295,20 +295,20 @@ $(function(){ GlobalScrapbook.init(); });
 	
 	</div>
 
-<?php   }else{ ?>
+<?php  }else{ ?>
 
-	<h1><span><?php  echo htmlentities($scrapbookName, ENT_QUOTES, APP_CHARSET) ?></span></h1>
+	<h1><span><?php echo htmlentities($scrapbookName, ENT_QUOTES, APP_CHARSET) ?></span></h1>
 	
 	<div class="ccm-dashboard-inner"> 
 
-		<a style="float: right" href="<?php  echo View::url($cPath) ?>"><?php  echo  t("&laquo; Return to Scrapbook List") ?></a>		
+		<a style="float: right" href="<?php echo View::url($cPath) ?>"><?php echo  t("&laquo; Return to Scrapbook List") ?></a>		
 		
-		<div class="sillyIE7"><?php  echo  $ih->button_js( t('Add Block to Scrapbook'), 'GlobalScrapbook.addBlock(event)','left'); ?></div>
+		<div class="sillyIE7"><?php echo  $ih->button_js( t('Add Block to Scrapbook'), 'GlobalScrapbook.addBlock(event)','left'); ?></div>
 		
 		<div class="ccm-spacer"></div>	
 		
 		<div id="ccm-scrapbook-list" class="ui-sortable">			
-			<?php   		 			
+			<?php  		 			
 			if( !count($globalScrapbookBlocks) ){
 				echo t('You have no items in this scrapbook.');
 			}else foreach($globalScrapbookBlocks as $b) {
@@ -323,68 +323,68 @@ $(function(){ GlobalScrapbook.init(); });
 					$b->updateBlockName( $scrapbookName.' '.intval($b->bID) );
 				 }
 				 ?>
-				 <div class="ccm-scrapbook-list-item" id="ccm-scrapbook-list-item-<?php  echo intval($b->bID)?>"> 
+				 <div class="ccm-scrapbook-list-item" id="ccm-scrapbook-list-item-<?php echo intval($b->bID)?>"> 
 					 <div class="ccm-block-type">  
 						<div class="options"> 
-							<?php   if ($bp->canWrite()) { ?>
-							<a href="javascript:void(0)" onclick="GlobalScrapbook.toggleRename(<?php  echo intval($b->bID) ?>)"><?php  echo t('Rename')?></a>
+							<?php  if ($bp->canWrite()) { ?>
+							<a href="javascript:void(0)" onclick="GlobalScrapbook.toggleRename(<?php echo intval($b->bID) ?>)"><?php echo t('Rename')?></a>
 							&nbsp;|&nbsp; 
-							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockTemplate(<?php  echo intval($b->bID) ?>)" ><?php  echo t('Custom Template')?></a> 
+							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockTemplate(<?php echo intval($b->bID) ?>)" ><?php echo t('Custom Template')?></a> 
 							&nbsp;|&nbsp; 
-							<?php   if (ENABLE_CUSTOM_DESIGN == true) { ?>
-							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockDesign(<?php  echo intval($b->bID) ?>)" ><?php  echo t('Design')?></a> 
+							<?php  if (ENABLE_CUSTOM_DESIGN == true) { ?>
+							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockDesign(<?php echo intval($b->bID) ?>)" ><?php echo t('Design')?></a> 
 							&nbsp;|&nbsp; 
-							<?php   } ?>
-							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlock(<?php  echo intval($b->bID) ?>,<?php  echo $bt->getBlockTypeInterfaceWidth()?> , <?php  echo $bt->getBlockTypeInterfaceHeight()?> )" ><?php  echo t('Edit')?></a> 
+							<?php  } ?>
+							<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlock(<?php echo intval($b->bID) ?>,<?php echo $bt->getBlockTypeInterfaceWidth()?> , <?php echo $bt->getBlockTypeInterfaceHeight()?> )" ><?php echo t('Edit')?></a> 
 							&nbsp;|&nbsp; 
 							
-							<?php   } ?>
+							<?php  } ?>
 							
-							<?php   if (PERMISSIONS_MODEL != 'simple' && $bp->canAdmin()) { ?>
-								<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockPermissions(<?php  echo $b->getBlockID()?>)" ><?php  echo t('Permissions')?></a> 
-								<?php   if ($bp->canDeleteBlock()) { ?>
+							<?php  if (PERMISSIONS_MODEL != 'simple' && $bp->canAdmin()) { ?>
+								<a href="javascript:void(0)" onclick="GlobalScrapbook.editBlockPermissions(<?php echo $b->getBlockID()?>)" ><?php echo t('Permissions')?></a> 
+								<?php  if ($bp->canDeleteBlock()) { ?>
 									&nbsp;|&nbsp;
-								<?php   } ?>
-							<?php   } ?>
+								<?php  } ?>
+							<?php  } ?>
 							
-							<?php   if ($bp->canDeleteBlock()) { ?>
-							<a href="<?php   echo $this->action('deleteBlock', Loader::helper('text')->entities($scrapbookName), 0, intval($b->bID), $valt->generate('delete_scrapbook_block'))?>" onclick="return GlobalScrapbook.confirmDelete()">
-								<?php  echo t('Delete')?>
+							<?php  if ($bp->canDeleteBlock()) { ?>
+							<a href="<?php  echo $this->action('deleteBlock', Loader::helper('text')->entities($scrapbookName), 0, intval($b->bID), $valt->generate('delete_scrapbook_block'))?>" onclick="return GlobalScrapbook.confirmDelete()">
+								<?php echo t('Delete')?>
 							</a> 
 							
-							<?php   } ?>
+							<?php  } ?>
 						</div>  
-						<div id="ccm-block-type-inner<?php  echo intval($b->bID)?>" class="ccm-block-type-inner">
-							<div class="ccm-block-type-inner-icon ccm-scrapbook-item-handle" style="background: url(<?php  echo $btIcon?>) no-repeat center left;">
-							<img src="<?php  echo ASSETS_URL_IMAGES?>/spacer.gif" width="16" height="16" />
+						<div id="ccm-block-type-inner<?php echo intval($b->bID)?>" class="ccm-block-type-inner">
+							<div class="ccm-block-type-inner-icon ccm-scrapbook-item-handle" style="background: url(<?php echo $btIcon?>) no-repeat center left;">
+							<img src="<?php echo ASSETS_URL_IMAGES?>/spacer.gif" width="16" height="16" />
 							</div>
 							<div class="view">
-								<a onclick="GlobalScrapbook.toggleRename(<?php  echo intval($b->bID) ?>)" >
-									<?php  echo $bt->getBlockTypeName()?>: "<?php  echo $b->getBlockName() ?>"
+								<a onclick="GlobalScrapbook.toggleRename(<?php echo intval($b->bID) ?>)" >
+									<?php echo $bt->getBlockTypeName()?>: "<?php echo $b->getBlockName() ?>"
 								</a>&nbsp;
 							</div>
 							<div class="edit">
-								<form method="post" action="<?php   echo $this->action('rename_block')?>">
-									<?php   $valt->output('rename_scrapbook_block')?>
-									<input name="bID" type="hidden" value="<?php  echo intval($b->bID) ?>" />
-									<input name="scrapbookName" type="hidden" value="<?php  echo $scrapbookName ?>" />
-									<input name="bName" type="text" value="<?php  echo $b->getBlockName() ?>" />
-									<input name="Submit" type="submit" value="<?php  echo t('Save')?>" />
-									<input onclick="GlobalScrapbook.toggleRename(<?php  echo intval($b->bID) ?>)" name="cancel" type="button" value="<?php  echo t('Cancel')?>" />
+								<form method="post" action="<?php  echo $this->action('rename_block')?>">
+									<?php  $valt->output('rename_scrapbook_block')?>
+									<input name="bID" type="hidden" value="<?php echo intval($b->bID) ?>" />
+									<input name="scrapbookName" type="hidden" value="<?php echo $scrapbookName ?>" />
+									<input name="bName" type="text" value="<?php echo $b->getBlockName() ?>" />
+									<input name="Submit" type="submit" value="<?php echo t('Save')?>" />
+									<input onclick="GlobalScrapbook.toggleRename(<?php echo intval($b->bID) ?>)" name="cancel" type="button" value="<?php echo t('Cancel')?>" />
 									&nbsp;
 								</form>
 							</div>
 						</div>
 						<div class="ccm-scrapbook-list-item-detail">	
-							<?php  echo  $bv->render($b, 'scrapbook'); ?>
+							<?php echo  $bv->render($b, 'scrapbook'); ?>
 						</div>
 					</div>
 				</div>
-			<?php   } ?>	
+			<?php  } ?>	
 			
 		</div> 	
 		
 	
 	</div>
 
-<?php   } ?>
+<?php  } ?>

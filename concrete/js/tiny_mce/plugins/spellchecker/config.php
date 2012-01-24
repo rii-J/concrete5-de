@@ -1,4 +1,4 @@
-<?php  
+<?php 
 	// General settings
 	$config['general.engine'] = 'GoogleSpell';
 	//$config['general.engine'] = 'PSpell';

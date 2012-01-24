@@ -1,7 +1,7 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied."); ?>
-<?php   unset($variables); ?>
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php  unset($variables); ?>
 <div class="ccm-paging">
-	<?php   
+	<?php  
 		$script = $_SERVER['PHP_SELF'];
 		if (isset($pOptions['script'])) {
 			$script = $pOptions['script'];

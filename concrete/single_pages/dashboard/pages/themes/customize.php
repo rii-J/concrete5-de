@@ -1,20 +1,20 @@
-<?php   
+<?php  
 defined('C5_EXECUTE') or die("Access Denied."); 
 $vt = Loader::helper('validation/token');
 ?>
-<h1><span><?php  echo t('Customize Theme')?></span></h1>
+<h1><span><?php echo t('Customize Theme')?></span></h1>
 <div class="ccm-dashboard-inner">
 
-<?php   $h = Loader::helper('concrete/interface'); ?>
-<?php   if (count($styles) > 0) { ?>
+<?php  $h = Loader::helper('concrete/interface'); ?>
+<?php  if (count($styles) > 0) { ?>
 
 
-<form action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/themes/preview_internal?themeID=<?php  echo $themeID?>&previewCID=1" method="post" target="preview-theme" id="customize-form">
-<?php  echo $vt->output()?>
-<?php  echo $form->hidden('saveAction', $this->action('save')); ?>
-<?php  echo $form->hidden('resetAction', $this->action('reset')); ?>
+<form action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/themes/preview_internal?themeID=<?php echo $themeID?>&previewCID=1" method="post" target="preview-theme" id="customize-form">
+<?php echo $vt->output()?>
+<?php echo $form->hidden('saveAction', $this->action('save')); ?>
+<?php echo $form->hidden('resetAction', $this->action('reset')); ?>
 
-<?php   
+<?php  
 $useSlots = false;
 // we use the slots if we have more than one style type for any given style
 foreach($styles as $tempStyles) {
@@ -28,7 +28,7 @@ foreach($styles as $tempStyles) {
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
 	<td valign="top">
-<?php  	
+<?php 	
 	$customSt = false;
 	
 	foreach($styles as $sto) { 
@@ -40,74 +40,74 @@ foreach($styles as $tempStyles) {
 		
 		?>
 	
-		<div class="ccm-theme-style-attribute <?php   if ($useSlots) { ?>ccm-theme-style-slots<?php   } ?>">
-		<?php  echo $st->getName()?>
+		<div class="ccm-theme-style-attribute <?php  if ($useSlots) { ?>ccm-theme-style-slots<?php  } ?>">
+		<?php echo $st->getName()?>
 
-		<?php   
+		<?php  
 		for ($i = 0; $i < count($sto); $i++) { 
 			$slot = $i + 1;
 			$st = $sto[$i];
 			switch($st->getType()) {
 				case PageThemeEditableStyle::TSTYPE_COLOR: ?>
-					<?php  echo $form->hidden('input_theme_style_' . $st->getHandle() . '_' . $st->getType(), $st->getValue())?>
-					<div class="ccm-theme-style-color <?php   if ($useSlots) { ?>ccm-theme-style-slot-<?php  echo $slot?><?php   } ?>" id="theme_style_<?php  echo $st->getHandle()?>_<?php  echo $st->getType()?>"><div hex-color="<?php  echo $st->getValue()?>" style="background-color: <?php  echo $st->getValue()?>"></div></div>
-				<?php   
+					<?php echo $form->hidden('input_theme_style_' . $st->getHandle() . '_' . $st->getType(), $st->getValue())?>
+					<div class="ccm-theme-style-color <?php  if ($useSlots) { ?>ccm-theme-style-slot-<?php echo $slot?><?php  } ?>" id="theme_style_<?php echo $st->getHandle()?>_<?php echo $st->getType()?>"><div hex-color="<?php echo $st->getValue()?>" style="background-color: <?php echo $st->getValue()?>"></div></div>
+				<?php  
 					break;
 				case PageThemeEditableStyle::TSTYPE_FONT: ?>
-					<?php  echo $form->hidden('input_theme_style_' . $st->getHandle() . '_' . $st->getType(), $st->getShortValue())?>
-					<div class="ccm-theme-style-font <?php   if ($useSlots) { ?>ccm-theme-style-slot-<?php  echo $slot?><?php   } ?>" font-panel-font="<?php  echo $st->getFamily()?>" font-panel-weight="<?php  echo $st->getWeight()?>" font-panel-style="<?php  echo $st->getStyle()?>" font-panel-size="<?php  echo $st->getSize()?>" id="theme_style_<?php  echo $st->getHandle()?>_<?php  echo $st->getType()?>"><div></div></div>
+					<?php echo $form->hidden('input_theme_style_' . $st->getHandle() . '_' . $st->getType(), $st->getShortValue())?>
+					<div class="ccm-theme-style-font <?php  if ($useSlots) { ?>ccm-theme-style-slot-<?php echo $slot?><?php  } ?>" font-panel-font="<?php echo $st->getFamily()?>" font-panel-weight="<?php echo $st->getWeight()?>" font-panel-style="<?php echo $st->getStyle()?>" font-panel-size="<?php echo $st->getSize()?>" id="theme_style_<?php echo $st->getHandle()?>_<?php echo $st->getType()?>"><div></div></div>
 					
-				<?php   
+				<?php  
 					break;
 			}
 		} ?>
 		</div>
 		
-	<?php   
+	<?php  
 	} 
 	
 	if (isset($customST)) { ?>
-	<div class="ccm-theme-style-attribute <?php   if ($useSlots) { ?>ccm-theme-style-slots<?php   } ?>">
-		<?php  echo t('Add Your CSS')?>
-		<?php  echo $form->hidden('input_theme_style_' . $customST->getHandle() . '_' . $customST->getType(), $customST->getOriginalValue())?>
-		<div class="ccm-theme-style-custom <?php   if ($useSlots) { ?>ccm-theme-style-slot-1<?php   } ?>" id="theme_style_<?php  echo $customST->getHandle()?>_<?php  echo $customST->getType()?>"><div></div></div>
+	<div class="ccm-theme-style-attribute <?php  if ($useSlots) { ?>ccm-theme-style-slots<?php  } ?>">
+		<?php echo t('Add Your CSS')?>
+		<?php echo $form->hidden('input_theme_style_' . $customST->getHandle() . '_' . $customST->getType(), $customST->getOriginalValue())?>
+		<div class="ccm-theme-style-custom <?php  if ($useSlots) { ?>ccm-theme-style-slot-1<?php  } ?>" id="theme_style_<?php echo $customST->getHandle()?>_<?php echo $customST->getType()?>"><div></div></div>
 	</div>
 	
-	<?php   }
+	<?php  }
 
 	?>
 	
-	<?php   
+	<?php  
 		$b1 = $h->button_js(t('Reset'), 'resetCustomizedTheme()', 'left');
 		$b2 = $h->button_js(t('Save'), 'saveCustomizedTheme()');
 	?>
-	<?php  echo $h->buttons($b1, $b2); ?>
+	<?php echo $h->buttons($b1, $b2); ?>
 	
-	<?php  echo $form->hidden('themeID', $themeID)?>
-	<?php  echo $form->hidden('ttask', 'preview_theme_customization')?>
+	<?php echo $form->hidden('themeID', $themeID)?>
+	<?php echo $form->hidden('ttask', 'preview_theme_customization')?>
 	
 	</td>
 	<td valign="top" width="100%">
 	<div style="padding: 8px; border: 2px solid #eee; margin-left: 10px">
-	<iframe name="preview-theme" height="500px" width="100%" src="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/themes/preview_internal?themeID=<?php  echo $themeID?>&previewCID=1" border="0" frameborder="0"></iframe>
+	<iframe name="preview-theme" height="500px" width="100%" src="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/themes/preview_internal?themeID=<?php echo $themeID?>&previewCID=1" border="0" frameborder="0"></iframe>
 	</div>
 
 	
 	</td>
 	</tr>
 	</table>
-<?php   		
+<?php  		
 } else {
 	print t('This theme contains no styles that can be customized.');
 }
 ?>
 
 </form>
-<?php   $ok = t('Ok')?>
-<?php   $resetMsg = t('This will remove any theme customizations you have made.'); ?>
+<?php  $ok = t('Ok')?>
+<?php  $resetMsg = t('This will remove any theme customizations you have made.'); ?>
 <script type="text/javascript">
 
-var lblOk = '<?php  echo $ok?>';
+var lblOk = '<?php echo $ok?>';
 
 jQuery.CustomPanel = {
 	activePanel: false,
@@ -298,7 +298,7 @@ saveCustomizedTheme = function() {
 }
 
 resetCustomizedTheme = function() {
-	if (confirm('<?php  echo $resetMsg?>')) { 
+	if (confirm('<?php echo $resetMsg?>')) { 
 		$("#customize-form").attr('target', '_self');
 		$("#customize-form").get(0).action = $('#resetAction').val();
 		$("#customize-form").get(0).submit();

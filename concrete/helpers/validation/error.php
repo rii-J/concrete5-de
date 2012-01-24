@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @package Helpers
  * @subpackage Validation
@@ -19,6 +19,15 @@
 	class ValidationErrorHelper {
 	
 		protected $error = array();
+		
+		/**
+		 * this method is called by the Loader::helper to clean up the instance of this object
+		 * resets the class scope variables
+		 * @return void
+		*/
+		public function reset() {
+			$this->error = array();
+		}
 		
 		/** 
 		 * Adds an error object or exception to the internal error array

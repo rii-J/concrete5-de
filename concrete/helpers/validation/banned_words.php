@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 /**
  * Helper functions for catching or stripping dirty words from content

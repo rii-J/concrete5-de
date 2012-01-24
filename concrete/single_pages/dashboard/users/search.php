@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 $attribs = UserAttributeKey::getList(true);
 $u = new User();
@@ -211,10 +211,10 @@ if (is_object($uo)) {
 
 		<div class="wrapper">
 		<div class="actions">
-		<span class="required">*</span> - <?php  echo t('required field')?>
+		<span class="required">*</span> - <?php echo t('required field')?>
 		</div>
 		
-		<?php  
+		<?php 
 		$uName = ($_POST) ? $_POST['uName'] : $uo->getUserName();
 		$uEmail = ($_POST) ? $_POST['uEmail'] : $uo->getUserEmail();
 		?>
@@ -234,60 +234,62 @@ if (is_object($uo)) {
 	</script>
 		
 		
-	<h1><span><?php  echo t('Edit Account')?></span></h1>
+	<h1><span><?php echo t('Edit Account')?></span></h1>
 	
 	<div class="ccm-dashboard-inner">
 
-		<form method="post" enctype="multipart/form-data" id="ccm-user-form" action="<?php  echo $this->url('/dashboard/users/search?uID=' . intval($_GET['uID']) )?>">
-		<?php  echo $valt->output('update_account_' . intval($_GET['uID']) )?>
+		<form method="post" enctype="multipart/form-data" id="ccm-user-form" action="<?php echo $this->url('/dashboard/users/search?uID=' . intval($_GET['uID']) )?>">
+		<?php echo $valt->output('update_account_' . intval($_GET['uID']) )?>
 		<input type="hidden" name="_disableLogin" value="1">
 	
 		<div style="margin:0px; padding:0px; width:100%; height:auto" >
 		<table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 		<tr>
-			<td colspan="3" class="header"><?php  echo t('Core Information')?></td>
+			<td colspan="3" class="header"><?php echo t('Core Information')?></td>
 		</tr>
 		<tr>
-			<td class="subheader"><?php  echo t('Username')?> <span class="required">*</span></td>
-			<td class="subheader"><?php  echo t('Email Address')?> <span class="required">*</span></td>
-			<td class="subheader"><?php  echo t('User Avatar')?></td>
+			<td class="subheader"><?php echo t('Username')?> <span class="required">*</span></td>
+			<td class="subheader"><?php echo t('Email Address')?> <span class="required">*</span></td>
+			<td class="subheader"><?php echo t('User Avatar')?></td>
 		</tr>	
 		<tr>
-			<td><input type="text" name="uName" autocomplete="off" value="<?php  echo $uName?>" style="width: 94%"></td>
-			<td><input type="text" name="uEmail" autocomplete="off" value="<?php  echo $uEmail?>" style="width: 94%"></td>
-			<td><input type="file" name="uAvatar" style="width: 94%" /> <input type="hidden" name="uHasAvatar" value="<?php  echo $uo->hasAvatar()?>" />
+			<td><input type="text" name="uName" autocomplete="off" value="<?php echo $uName?>" style="width: 94%"></td>
+			<td><input type="text" name="uEmail" autocomplete="off" value="<?php echo $uEmail?>" style="width: 94%"></td>
+			<td><input type="file" name="uAvatar" style="width: 94%" /> <input type="hidden" name="uHasAvatar" value="<?php echo $uo->hasAvatar()?>" />
 			
-			<?php   if ($uo->hasAvatar()) { ?>
-			<input type="button" onclick="location.href='<?php  echo $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=remove-avatar')?>'" value="<?php  echo t('Remove Avatar')?>" />
-			<?php   } ?>
+			<?php  if ($uo->hasAvatar()) { ?>
+			<input type="button" onclick="location.href='<?php echo $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=remove-avatar')?>'" value="<?php echo t('Remove Avatar')?>" />
+			<?php  } ?>
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3" class="header"><?php  echo t('Change Password')?></td>
+			<td colspan="3" class="header"><?php echo t('Change Password')?></td>
 		</tr>
 		<tr>
-			<td class="subheader"><?php  echo t('Password')?></td>
-			<td class="subheader" colspan="2"><?php  echo t('Password (Confirm)')?></td>
+			<td class="subheader"><?php echo t('Password')?></td>
+			<td class="subheader" colspan="2"><?php echo t('Password (Confirm)')?></td>
 		</tr>
         <tr>
 			<td><input type="password" name="uPassword" autocomplete="off" value="" style="width: 94%"></td>
 			<td><input type="password" name="uPasswordConfirm" autocomplete="off" value="" style="width: 94%"></td>
-			<td><?php  echo t('(Leave these fields blank to keep the same password)')?></td>
+			<td><?php echo t('(Leave these fields blank to keep the same password)')?></td>
 		</tr>
-		<?php  
+		<?php 
 		$languages = Localization::getAvailableInterfaceLanguages();
 		if (count($languages) > 0) { ?>
 	
 		<tr>
-			<td class="subheader" colspan="3"><?php  echo t('Default Language')?></td>
+			<td class="subheader" colspan="3"><?php echo t('Default Language')?></td>
 		</tr>	
 		<tr>
 			<Td colspan="3">
-			<?php  
+			<?php 
 				array_unshift($languages, 'en_US');
 				$locales = array();
 				Loader::library('3rdparty/Zend/Locale');
+				Loader::library('3rdparty/Zend/Locale/Data');
 				$locales[''] = t('** Default');
+				Zend_Locale_Data::setCache(Cache::getLibrary());
 				foreach($languages as $lang) {
 					$loc = new Zend_Locale($lang);
 					$locales[$lang] = Zend_Locale::getTranslation($loc->getLanguage(), 'language', ACTIVE_LOCALE);
@@ -297,33 +299,33 @@ if (is_object($uo)) {
 			?>
 			</td>
 		</tr>	
-		<?php   } ?>
+		<?php  } ?>
 
-		<?php   if(ENABLE_USER_TIMEZONES) { ?>
+		<?php  if(ENABLE_USER_TIMEZONES) { ?>
         <tr>
-        	<td class="subheader" colspan="3"><?php  echo t('Time Zone')?></td>
+        	<td class="subheader" colspan="3"><?php echo t('Time Zone')?></td>
         </tr>
         <tr>
 			<td colspan="3">
-            	<?php   
+            	<?php  
 				echo $form->select('uTimezone', 
 						$dh->getTimezones(), 
 						($uo->getUserTimezone()?$uo->getUserTimezone():date_default_timezone_get())
 					); ?>
             </td>
 		</tr>
-        <?php   } ?>
+        <?php  } ?>
         <tr>
 			<td colspan="3" class="header">
-				<a id="groupSelector" href="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/user_group_selector.php?mode=groups" dialog-title="<?php  echo t('Add Groups')?>" dialog-modal="false" style="float: right"><?php  echo t('Add Group')?></a>
-				<?php  echo t('Groups')?>
+				<a id="groupSelector" href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/user_group_selector.php?mode=groups" dialog-title="<?php echo t('Add Groups')?>" dialog-modal="false" style="float: right"><?php echo t('Add Group')?></a>
+				<?php echo t('Groups')?>
 			</td>
 		</tr>
-		<?php   $gArray = $gl->getGroupList(); ?>
+		<?php  $gArray = $gl->getGroupList(); ?>
 		<tr>
 			<td colspan="3">
-			<?php   foreach ($gArray as $g) { ?>
-				<input type="checkbox" name="gID[]" value="<?php  echo $g->getGroupID()?>" style="vertical-align: middle" <?php   
+			<?php  foreach ($gArray as $g) { ?>
+				<input type="checkbox" name="gID[]" value="<?php echo $g->getGroupID()?>" style="vertical-align: middle" <?php  
 					if (is_array($_POST['gID'])) {
 						if (in_array($g->getGroupID(), $_POST['gID'])) {
 							echo(' checked ');
@@ -333,8 +335,8 @@ if (is_object($uo)) {
 							echo(' checked ');
 						}
 					}
-				?> /> <?php  echo $g->getGroupName()?><br>
-			<?php   } ?>
+				?> /> <?php echo $g->getGroupName()?><br>
+			<?php  } ?>
 			
 			<div id="ccm-additional-groups"></div>
 			
@@ -346,8 +348,8 @@ if (is_object($uo)) {
 
 		<div class="ccm-buttons">
 		
-		<?php  echo Loader::helper('concrete/interface')->button(t('Back'), $this->url('/dashboard/users/search?uID=' . intval($_GET['uID'])), 'left')?>
-		<?php  echo Loader::helper('concrete/interface')->submit(t('Update User'))?>
+		<?php echo Loader::helper('concrete/interface')->button(t('Back'), $this->url('/dashboard/users/search?uID=' . intval($_GET['uID'])), 'left')?>
+		<?php echo Loader::helper('concrete/interface')->submit(t('Update User'))?>
 
 		</div>	
 		</form>
@@ -358,9 +360,9 @@ if (is_object($uo)) {
 		
 		<table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 		<tr>
-			<td colspan="3" class="header"><?php  echo t('Other Information - Click Field Name to Edit')?></td>
+			<td colspan="3" class="header"><?php echo t('Other Information - Click Field Name to Edit')?></td>
 		</tr>
-		<?php  
+		<?php 
 	
 		$attribs = UserAttributeKey::getEditableList();
 		foreach($attribs as $ak) { 
@@ -375,34 +377,34 @@ if (is_object($uo)) {
 		
 	</div>
 	
-	<?php   } else { ?>
+	<?php  } else { ?>
 
-	<h1><span><?php  echo t('View User')?></span></h1>
+	<h1><span><?php echo t('View User')?></span></h1>
 	
 	<div class="ccm-dashboard-inner">
 		<div class="actions" >			
 		
-			<?php   if ($uo->getUserID() != USER_SUPER_ID || $u->isSuperUser()) { ?>
+			<?php  if ($uo->getUserID() != USER_SUPER_ID || $u->isSuperUser()) { ?>
 	
-				<?php   print $ih->button(t('Edit User'), $this->url('/dashboard/users/search?uID=' . intval($uID) ) . '&task=edit', 'left');?>
+				<?php  print $ih->button(t('Edit User'), $this->url('/dashboard/users/search?uID=' . intval($uID) ) . '&task=edit', 'left');?>
 	
-				<?php   if (USER_VALIDATE_EMAIL == true) { ?>
-					<?php   if ($uo->isValidated() < 1) { ?>
-					<?php   print $ih->button(t('Mark Email as Valid'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=validate_email'), 'left');?>
-					<?php   } ?>
-				<?php   } ?>
+				<?php  if (USER_VALIDATE_EMAIL == true) { ?>
+					<?php  if ($uo->isValidated() < 1) { ?>
+					<?php  print $ih->button(t('Mark Email as Valid'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=validate_email'), 'left');?>
+					<?php  } ?>
+				<?php  } ?>
 				
-				<?php   if ($uo->getUserID() != USER_SUPER_ID) { ?>
-					<?php   if ($uo->isActive()) { ?>
-						<?php   print $ih->button(t('Deactivate User'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=deactivate&ccm_token='.$valt->generate('user_deactivate')), 'left');?>
-					<?php   } else { ?>
-						<?php   print $ih->button(t('Activate User'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=activate&ccm_token='.$valt->generate('user_activate')), 'left');?>
-					<?php   } ?>
-				<?php   } ?>
+				<?php  if ($uo->getUserID() != USER_SUPER_ID) { ?>
+					<?php  if ($uo->isActive()) { ?>
+						<?php  print $ih->button(t('Deactivate User'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=deactivate&ccm_token='.$valt->generate('user_deactivate')), 'left');?>
+					<?php  } else { ?>
+						<?php  print $ih->button(t('Activate User'), $this->url('/dashboard/users/search?uID=' . intval($uID) . '&task=activate&ccm_token='.$valt->generate('user_activate')), 'left');?>
+					<?php  } ?>
+				<?php  } ?>
 			
-			<?php   } ?>
+			<?php  } ?>
 			
-			<?php  
+			<?php 
 			$tp = new TaskPermission();
 			if ($uo->getUserID() != $u->getUserID()) {
 				if ($tp->canSudo()) { 
@@ -413,34 +415,34 @@ if (is_object($uo)) {
 	
 					<script type="text/javascript">
 					loginAsUser = function() {
-						if (confirm('<?php  echo $loginAsUserConfirm?>')) { 
-							location.href = "<?php  echo $this->url('/dashboard/users/search', 'sign_in_as_user', $uo->getUserID(), $valt->generate('sudo'))?>";				
+						if (confirm('<?php echo $loginAsUserConfirm?>')) { 
+							location.href = "<?php echo $this->url('/dashboard/users/search', 'sign_in_as_user', $uo->getUserID(), $valt->generate('sudo'))?>";				
 						}
 					}
 					</script>
 	
-				<?php   } /*else { ?>
-					<?php   print $ih->button_js(t('Sign In as User'), 'alert(\'' . t('You do not have permission to sign in as other users.') . '\')', 'left', 'ccm-button-inactive');?>
-				<?php   }*/ ?>
-			<?php   } ?>
+				<?php  } /*else { ?>
+					<?php  print $ih->button_js(t('Sign In as User'), 'alert(\'' . t('You do not have permission to sign in as other users.') . '\')', 'left', 'ccm-button-inactive');?>
+				<?php  }*/ ?>
+			<?php  } ?>
 
 		</div>
 		
-		<h2><?php  echo t('Required Information')?></h2>
+		<h2><?php echo t('Required Information')?></h2>
 		
 		<div style="margin:0px; padding:0px; width:100%; height:auto" >
 		<table border="0" cellspacing="1" cellpadding="0">
 		<tr>
-			<td><?php  echo $av->outputUserAvatar($uo)?></td>
-			<td><?php  echo $uo->getUserName()?><br/>
-			<a href="mailto:<?php  echo $uo->getUserEmail()?>"><?php  echo $uo->getUserEmail()?></a><br/>
-			<?php  echo $uo->getUserDateAdded('user')?>
-			<?php  echo (ENABLE_USER_TIMEZONES && strlen($uo->getUserTimezone())?"<br />".t('Timezone').": ".$uo->getUserTimezone():"")?>
+			<td><?php echo $av->outputUserAvatar($uo)?></td>
+			<td><?php echo $uo->getUserName()?><br/>
+			<a href="mailto:<?php echo $uo->getUserEmail()?>"><?php echo $uo->getUserEmail()?></a><br/>
+			<?php echo $uo->getUserDateAdded('user')?>
+			<?php echo (ENABLE_USER_TIMEZONES && strlen($uo->getUserTimezone())?"<br />".t('Timezone').": ".$uo->getUserTimezone():"")?>
             
-			<?php   if (USER_VALIDATE_EMAIL) { ?><br/>
-				<?php  echo t('Full Record')?>: <strong><?php  echo  ($uo->isFullRecord()) ? "Yes" : "No" ?></strong>
+			<?php  if (USER_VALIDATE_EMAIL) { ?><br/>
+				<?php echo t('Full Record')?>: <strong><?php echo  ($uo->isFullRecord()) ? "Yes" : "No" ?></strong>
 				&nbsp;&nbsp;
-				<?php  echo t('Email Validated')?>: <strong><?php  
+				<?php echo t('Email Validated')?>: <strong><?php 
 					switch($uo->isValidated()) {
 						case '-1':
 							print t('Unknown');
@@ -453,22 +455,22 @@ if (is_object($uo)) {
 							break;
 					}?>
 					</strong>
-			<?php   } ?></td>
+			<?php  } ?></td>
 		</tr>
 		</table>
 		</div>
 
 		
-		<?php  
+		<?php 
 		$attribs = UserAttributeKey::getList(true);
 		if (count($attribs) > 0) { ?>
-		<h2><?php  echo t('Other Information')?></h2>
+		<h2><?php echo t('Other Information')?></h2>
 
 		<div style="margin:0px; padding:0px; width:100%; height:auto" >
 		<table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 
 
-		<?php   
+		<?php  
 		for ($i = 0; $i < count($attribs); $i = $i + 3) { 			
 			$uk = $attribs[$i]; 
 			$uk2 = $attribs[$i+1]; 
@@ -477,44 +479,44 @@ if (is_object($uo)) {
 			?>
 			
 		<tr>
-			<td class="subheader" style="width: 33%"><?php  echo $uk->getAttributeKeyDisplayHandle()?></td>
-			<?php   if (is_object($uk2)) { ?><td  style="width: 33%" class="subheader"><?php  echo $uk2->getAttributeKeyDisplayHandle()?></td><?php   } else { ?><td  style="width: 33%" class="subheader">&nbsp;</td><?php   } ?>
-			<?php   if (is_object($uk3)) { ?><td  style="width: 33%"class="subheader"><?php  echo $uk3->getAttributeKeyDisplayHandle()?></td><?php   } else { ?><td style="width: 33%" class="subheader">&nbsp;</td><?php   } ?>
+			<td class="subheader" style="width: 33%"><?php echo $uk->getAttributeKeyDisplayHandle()?></td>
+			<?php  if (is_object($uk2)) { ?><td  style="width: 33%" class="subheader"><?php echo $uk2->getAttributeKeyDisplayHandle()?></td><?php  } else { ?><td  style="width: 33%" class="subheader">&nbsp;</td><?php  } ?>
+			<?php  if (is_object($uk3)) { ?><td  style="width: 33%"class="subheader"><?php echo $uk3->getAttributeKeyDisplayHandle()?></td><?php  } else { ?><td style="width: 33%" class="subheader">&nbsp;</td><?php  } ?>
 		</tr>
 		<tr>
-			<td><?php  echo $uo->getAttribute($uk->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td>
-			<?php   if (is_object($uk2)) { ?><td><?php  echo $uo->getAttribute($uk2->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td><?php   } else { ?><td style="width: 33%">&nbsp;</td><?php   } ?>
-			<?php   if (is_object($uk3)) { ?><td><?php  echo $uo->getAttribute($uk3->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td><?php   } else { ?><td>&nbsp;</td><?php   } ?>
+			<td><?php echo $uo->getAttribute($uk->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td>
+			<?php  if (is_object($uk2)) { ?><td><?php echo $uo->getAttribute($uk2->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td><?php  } else { ?><td style="width: 33%">&nbsp;</td><?php  } ?>
+			<?php  if (is_object($uk3)) { ?><td><?php echo $uo->getAttribute($uk3->getAttributeKeyHandle(), 'displaySanitized', 'display')?></td><?php  } else { ?><td>&nbsp;</td><?php  } ?>
 		</tr>
-		<?php   } ?>
+		<?php  } ?>
 		
 		</table>
 		</div>
 		
-		<?php   }  ?>
+		<?php  }  ?>
 		
-		<h2><?php  echo t('Groups')?></h2>
+		<h2><?php echo t('Groups')?></h2>
 
 		<div style="margin:0px; padding:0px; width:100%; height:auto" >
 		
 		<table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 		<tr>
-			<td colspan="2" class="header"><?php  echo t('Group')?></td>
-			<td class="header"><?php  echo t('Date Entered')?></td>
+			<td colspan="2" class="header"><?php echo t('Group')?></td>
+			<td class="header"><?php echo t('Date Entered')?></td>
 		</tr>
-		<?php   $gArray = $gl->getGroupList(); ?>
+		<?php  $gArray = $gl->getGroupList(); ?>
 		<tr>
 			<td colspan="2">
-				<?php   $enteredArray = array(); ?>
-				<?php   foreach ($gArray as $g) { ?>
-					<?php   if ($g->inGroup()) {
+				<?php  $enteredArray = array(); ?>
+				<?php  foreach ($gArray as $g) { ?>
+					<?php  if ($g->inGroup()) {
 						echo($g->getGroupName() . '<br>');
 						$enteredArray[] = $g->getGroupDateTimeEntered();
 					} ?>
-				<?php   } ?>
+				<?php  } ?>
 			</td>
 			<td>
-			<?php   foreach ($enteredArray as $dateTime) {
+			<?php  foreach ($enteredArray as $dateTime) {
 				if ($dateTime != '0000-00-00 00:00:00') {
 					echo($dateTime . '<br>');
 				} else {
@@ -527,40 +529,40 @@ if (is_object($uo)) {
 		</div>
 	</div>
 
-	<h1><span><?php  echo t('Delete User')?></span></h1>
+	<h1><span><?php echo t('Delete User')?></span></h1>
 	
 	<div class="ccm-dashboard-inner">
 		<div class="ccm-spacer"></div>
-		<?php  
+		<?php 
 		$cu = new User();
 		$tp = new TaskPermission();
 		if ($tp->canDeleteUser()) {
 		$delConfirmJS = t('Are you sure you want to permanently remove this user?');
 			if ($uo->getUserID() == USER_SUPER_ID) { ?>
-				<?php  echo t('You may not remove the super user account.')?>
-			<?php   } else if (!$tp->canDeleteUser()) { ?>
-				<?php  echo t('You do not have permission to perform this action.');		
+				<?php echo t('You may not remove the super user account.')?>
+			<?php  } else if (!$tp->canDeleteUser()) { ?>
+				<?php echo t('You do not have permission to perform this action.');		
 			} else if ($uo->getUserID() == $cu->getUserID()) {
 				echo t('You cannot delete your own user account.');
 			}else{ ?>   
 				
 				<script type="text/javascript">
 				deleteUser = function() {
-					if (confirm('<?php  echo $delConfirmJS?>')) { 
-						location.href = "<?php  echo $this->url('/dashboard/users/search', 'delete', $uo->getUserID(), $valt->generate('delete_account'))?>";				
+					if (confirm('<?php echo $delConfirmJS?>')) { 
+						location.href = "<?php echo $this->url('/dashboard/users/search', 'delete', $uo->getUserID(), $valt->generate('delete_account'))?>";				
 					}
 				}
 				</script>
 	
-				<?php   print $ih->button_js(t('Delete User Account'), "deleteUser()", 'left');?>
+				<?php  print $ih->button_js(t('Delete User Account'), "deleteUser()", 'left');?>
 	
-			<?php   }
+			<?php  }
 		} else {
 			echo t('You do not have permission to perform this action.');
 		}?>
 		<div class="ccm-spacer"></div>
 	</div>
-	<?php   } ?>
+	<?php  } ?>
 
 
 <script type="text/javascript">
@@ -631,15 +633,15 @@ $(function() {
 </script>
 
 
-<?php  
+<?php 
 
 } else { ?>
 
-<h1><span><?php  echo t('User Search')?></span></h1>
+<h1><span><?php echo t('User Search')?></span></h1>
 
 <div class="ccm-dashboard-inner">
 
-	<?php  
+	<?php 
 	$tp = new TaskPermission();
 	if ($tp->canAccessUserSearch()) { 
 	
@@ -648,7 +650,7 @@ $(function() {
 	<table id="ccm-search-form-table" >
 		<tr>
 			<td valign="top" class="ccm-search-form-advanced-col">
-				<?php   Loader::element('users/search_form_advanced'); ?>
+				<?php  Loader::element('users/search_form_advanced'); ?>
 			</td>		
 
 			<td valign="top" width="100%">	
@@ -657,7 +659,7 @@ $(function() {
 					
 					<div id="ccm-user-search-results">
 					
-						<?php   Loader::element('users/search_results', array('users' => $users, 'userList' => $userList, 'pagination' => $pagination)); ?>
+						<?php  Loader::element('users/search_results', array('users' => $users, 'userList' => $userList, 'pagination' => $pagination)); ?>
 					
 					</div>
 				
@@ -667,10 +669,10 @@ $(function() {
 		</tr>
 	</table>		
 
-	<?php   } else { ?>
-		<p><?php  echo t('You do not have access to user search. This setting may be changed in the access section of the dashboard settings page.')?></p>
-	<?php   } ?>
+	<?php  } else { ?>
+		<p><?php echo t('You do not have access to user search. This setting may be changed in the access section of the dashboard settings page.')?></p>
+	<?php  } ?>
 	
 </div>
 
-<?php   } ?>
+<?php  } ?>

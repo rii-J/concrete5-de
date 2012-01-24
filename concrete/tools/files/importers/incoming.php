@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 defined('C5_EXECUTE') or die("Access Denied.");
 $u = new User();
@@ -58,18 +58,18 @@ if ($valt->validate('import_incoming')) {
 <html>
 <head>
 <script language="javascript">
-	<?php   if(strlen($error)) { ?>
-		window.parent.ccmAlert.notice("<?php  echo t('Upload Error')?>", "<?php  echo str_replace("\n", '', nl2br($error))?>");
+	<?php  if(strlen($error)) { ?>
+		window.parent.ccmAlert.notice("<?php echo t('Upload Error')?>", "<?php echo str_replace("\n", '', nl2br($error))?>");
 		window.parent.ccm_alResetSingle();
-	<?php   } else { ?>
+	<?php  } else { ?>
 		highlight = new Array();
-		<?php   foreach($files as $resp) { ?>
-			highlight.push(<?php  echo $resp->getFileID()?>);
-			window.parent.ccm_uploadedFiles.push(<?php  echo intval($resp->getFileID())?>);
-		<?php   } ?>
+		<?php  foreach($files as $resp) { ?>
+			highlight.push(<?php echo $resp->getFileID()?>);
+			window.parent.ccm_uploadedFiles.push(<?php echo intval($resp->getFileID())?>);
+		<?php  } ?>
 		window.parent.jQuery.fn.dialog.closeTop();
-		window.parent.ccm_filesUploadedDialog('<?php  echo $searchInstance?>');		
-	<?php   } ?>
+		window.parent.ccm_filesUploadedDialog('<?php echo $searchInstance?>');		
+	<?php  } ?>
 </script>
 </head>
 <body>

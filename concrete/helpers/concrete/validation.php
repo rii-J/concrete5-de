@@ -1,4 +1,4 @@
-<?php  
+<?php 
 /**
  * @package Helpers
  * @category Concrete
@@ -79,6 +79,9 @@
 		public function username($username) {
 			$username = trim($username);
 			if (strlen($username) < USER_USERNAME_MINIMUM) {
+				return false;
+			}
+			if (strlen($username) > USER_USERNAME_MAXIMUM) {
 				return false;
 			}
 			if(USER_USERNAME_ALLOW_SPACES) {

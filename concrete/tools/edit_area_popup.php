@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $c = Page::getByID($_REQUEST['cID']); 
 $a = Area::get($c, $_GET['arHandle']);
@@ -54,4 +54,4 @@ if (!$canViewPane) {
 
 ?>
 
-<?php   Loader::element($toolSection, $args);
+<?php  Loader::element($toolSection, $args);

@@ -1,6 +1,6 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-<?php  
+<?php 
 if (isset($GLOBALS['CCM_EDITOR_SITEMAP_NODE_NUM'])) {
 	$GLOBALS['CCM_EDITOR_SITEMAP_NODE_NUM']++;
 } else {
@@ -19,9 +19,9 @@ setBookMark = function () {
 	bm = tinyMCE.activeEditor.selection.getBookmark();
 }
 
-ccm_selectSitemapNode<?php  echo $GLOBALS['CCM_EDITOR_SITEMAP_NODE_NUM']?> = function(cID, cName) {
+ccm_selectSitemapNode<?php echo $GLOBALS['CCM_EDITOR_SITEMAP_NODE_NUM']?> = function(cID, cName) {
 	var mceEd = tinyMCE.activeEditor;	
-	var url = '<?php  echo BASE_URL . DIR_REL?>/<?php  echo DISPATCHER_FILENAME?>?cID=' + cID;
+	var url = '<?php echo BASE_URL . DIR_REL?>/<?php echo DISPATCHER_FILENAME?>?cID=' + cID;
 	
 	mceEd.selection.moveToBookmark(bm);
 	var selectedText = mceEd.selection.getContent();
@@ -34,7 +34,7 @@ ccm_selectSitemapNode<?php  echo $GLOBALS['CCM_EDITOR_SITEMAP_NODE_NUM']?> = fun
 			'class' : null
 		});
 	} else {
-		var selectedText = '<a href="<?php  echo BASE_URL . DIR_REL?>/<?php  echo DISPATCHER_FILENAME?>?cID=' + cID + '" title="' + cName + '">' + cName + '<\/a>';
+		var selectedText = '<a href="<?php echo BASE_URL . DIR_REL?>/<?php echo DISPATCHER_FILENAME?>?cID=' + cID + '" title="' + cName + '">' + cName + '<\/a>';
 		tinyMCE.execCommand('mceInsertRawHTML', false, selectedText, true); 
 	}
 	

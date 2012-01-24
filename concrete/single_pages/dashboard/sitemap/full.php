@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 Loader::library('search');
 
@@ -27,15 +27,15 @@ $listHTML = $sh->outputRequestHTML($instanceID, 'full', false, $nodes);
 <script type="text/javascript">
 	var CCM_LAUNCHER_SITEMAP = 'full';
 	$(function() {
-		ccmSitemapLoad('<?php  echo $instanceID?>', 'full');
+		ccmSitemapLoad('<?php echo $instanceID?>', 'full');
 	});
 </script>
 
-<h1><span><?php  echo t('Sitemap')?></span></h1>
+<h1><span><?php echo t('Sitemap')?></span></h1>
 
 <div class="ccm-dashboard-inner" >
 
-	<?php   if ($sh->canRead()) { ?>
+	<?php  if ($sh->canRead()) { ?>
 	
 		<div id="ccm-sitemap-message"></div>
 	
@@ -43,9 +43,9 @@ $listHTML = $sh->outputRequestHTML($instanceID, 'full', false, $nodes);
 		<tr>
 		<td style="width: 100%" valign="top">
 		
-		<div id="tree" sitemap-instance-id="<?php  echo $instance_id?>">
-			<ul id="tree-root0" tree-root-node-id="0" sitemap-mode="full" sitemap-instance-id="<?php  echo $instanceID?>">
-			<?php  echo $listHTML?>
+		<div id="tree" sitemap-instance-id="<?php echo $instance_id?>">
+			<ul id="tree-root0" tree-root-node-id="0" sitemap-mode="full" sitemap-instance-id="<?php echo $instanceID?>">
+			<?php echo $listHTML?>
 			</ul>
 		</div>
 	
@@ -53,8 +53,8 @@ $listHTML = $sh->outputRequestHTML($instanceID, 'full', false, $nodes);
 		<td valign="top">
 		
 		<div id="ccm-show-all-pages">
-		<input type="checkbox" id="ccm-show-all-pages-cb" <?php   if ($_SESSION['dsbSitemapShowSystem'] == 1) { ?> checked <?php   } ?> />
-		<label for="ccm-show-all-pages-cb"><?php  echo t('Show System Pages')?></label>
+		<input type="checkbox" id="ccm-show-all-pages-cb" <?php  if ($_SESSION['dsbSitemapShowSystem'] == 1) { ?> checked <?php  } ?> />
+		<label for="ccm-show-all-pages-cb"><?php echo t('Show System Pages')?></label>
 		</div>
 		
 		</td>
@@ -63,10 +63,10 @@ $listHTML = $sh->outputRequestHTML($instanceID, 'full', false, $nodes);
 		
 		</div>
 	
-	<?php   } else { ?>
+	<?php  } else { ?>
 	
-		<p><?php  echo t("You do not have access to the sitemap.");?></p>
+		<p><?php echo t("You do not have access to the sitemap.");?></p>
 	
-	<?php   } ?>
+	<?php  } ?>
 	
 </div>

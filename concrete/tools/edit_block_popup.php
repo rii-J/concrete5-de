@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");  
 
 if($_REQUEST['isGlobal'] && ($_REQUEST['btask']=='edit' || $_REQUEST['btask'] == 'view_edit_mode' || $_REQUEST['btask']=='template') ){
@@ -87,25 +87,25 @@ if (is_object($b)) {
 				if (is_object($csr)) { 
 					$styleHeader = '#'.$csr->getCustomStyleRuleCSSID(1).' {'. $csr->getCustomStyleRuleText(). "}";  ?>
 					<script type="text/javascript">
-						$('head').append('<style type="text/css"><?php  echo addslashes($styleHeader)?></style>');
+						$('head').append('<style type="text/css"><?php echo addslashes($styleHeader)?></style>');
 					</script>
-				<?php  
+				<?php 
 				}
 
 				if (count($items) > 0) { ?>
 				<script type="text/javascript">				
-				<?php  
+				<?php 
 				foreach($items as $item) { 
 					if ($item instanceof CSSOutputObject) { ?>
 						// we only support CSS here
-						ccm_addHeaderItem("<?php  echo $item->href?>", 'CSS');
-					<?php   } else if ($item instanceof JavaScriptOutputObject) { ?>
-						ccm_addHeaderItem("<?php  echo $item->href?>", 'JAVASCRIPT');
-					<?php   }
+						ccm_addHeaderItem("<?php echo $item->href?>", 'CSS');
+					<?php  } else if ($item instanceof JavaScriptOutputObject) { ?>
+						ccm_addHeaderItem("<?php echo $item->href?>", 'JAVASCRIPT');
+					<?php  }
 				
 				} ?>
 				</script>
-				<?php   }
+				<?php  }
 				
 				if ($rarHandle) {
 					$pagec = Page::getByID($_REQUEST['cID']);

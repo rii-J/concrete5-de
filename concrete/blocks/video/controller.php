@@ -1,4 +1,4 @@
-<?php  
+<?php 
 	/*
 	 * Functions for embedding video in your page. Can automatically determine width and height
 	 * of FLV files from standard metadata.

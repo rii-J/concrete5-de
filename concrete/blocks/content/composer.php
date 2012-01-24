@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 //$replaceOnUnload = 1;
 $class = strtolower('ccm-advanced-editor-' . $controller->getIdentifier());

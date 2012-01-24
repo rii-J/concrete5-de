@@ -1,4 +1,4 @@
-<?php   
+<?php  
 defined('C5_EXECUTE') or die("Access Denied.");
 
 global $c;
@@ -12,13 +12,13 @@ $textHelper = Loader::helper("text");
 if (count($cArray) > 0) { ?>
 <div class="ccm-page-list">
 	
-	<?php    for ($i = 0; $i < count($cArray); $i++ ) {
+	<?php   for ($i = 0; $i < count($cArray); $i++ ) {
 		$cobj = $cArray[$i];
 		$title = $cobj->getCollectionName(); ?>
 	
-	<h3 class="ccm-page-list-title"><a href="<?php   echo $nh->getLinkToCollection($cobj)?>"><?php   echo $title?></a></h3>
+	<h3 class="ccm-page-list-title"><a href="<?php  echo $nh->getLinkToCollection($cobj)?>"><?php  echo $title?></a></h3>
 	<div class="ccm-page-list-description">
-		<?php   
+		<?php  
 		if(!$controller->truncateSummaries){
 			echo $cobj->getCollectionDescription();
 		}else{
@@ -27,16 +27,16 @@ if (count($cArray) > 0) { ?>
 		?>
 	</div>
 	
-	<?php     } ?>
+	<?php    } ?>
 </div>
-<?php    } 
+<?php   } 
  
 */
 ?>
 	
 	 
-<div id="ccmDateNav<?php   echo $bID?>" class="ccmDateNav">
-<?php     
+<div id="ccmDateNav<?php  echo $bID?>" class="ccmDateNav">
+<?php    
 
 $currentPageCID = intval($c->getCollectionID());
 
@@ -111,13 +111,13 @@ foreach($postsByDate as $year=>$postsByMonth ){
 			
 			if($controller->showDescriptions){ ?>
 				<div class="pageSummary">
-					<?php    if(!$controller->truncateSummaries){
+					<?php   if(!$controller->truncateSummaries){
 						echo $page->getCollectionDescription();
 					}else{
 						echo $textHelper->shorten($page->getCollectionDescription(),$controller->truncateChars);
 					} ?>
 				</div>
-			<?php     }
+			<?php    }
 			echo "\t\t </li> \n \r";					
 		}
 		echo "\t\t </ul>";
@@ -140,16 +140,16 @@ if( count($postsByDate)>1 && !$controller->flatDisplay ) echo "</ul> \r \n";
 </div>
 
 <script type="text/javascript">
-<?php    if($controller->defaultNode=='current_month'){ ?>
-ccmDateNav.dateKey='<?php   echo  date( 'm_Y' ) ?>';
-<?php    }else{  // current page
+<?php   if($controller->defaultNode=='current_month'){ ?>
+ccmDateNav.dateKey='<?php  echo  date( 'm_Y' ) ?>';
+<?php   }else{  // current page
 	//if( intval(strtotime($c->getCollectionDatePublic()))>0 ) 
 	$createdDate = strtotime($c->getCollectionDatePublic()); 
 	//else $createdDate = strtotime($c->cDateAdded); 
 	?>
-	ccmDateNav.dateKey='<?php   echo  date( 'm_Y' , $createdDate ) ?>'; 
-	ccmDateNav.loadCurrentPage=<?php   echo intval($currentPageFound) ?>;
-<?php    } ?> 
-ccmDateNav.loadPg=<?php   echo intval($c->getCollectionID()) ?>;
+	ccmDateNav.dateKey='<?php  echo  date( 'm_Y' , $createdDate ) ?>'; 
+	ccmDateNav.loadCurrentPage=<?php  echo intval($currentPageFound) ?>;
+<?php   } ?> 
+ccmDateNav.loadPg=<?php  echo intval($c->getCollectionID()) ?>;
 $(function(){ ccmDateNav.init(); });
 </script>

@@ -1,4 +1,4 @@
-<?php  
+<?php 
 	defined('C5_EXECUTE') or die("Access Denied.");
 	require_once(DIR_FILES_BLOCK_TYPES_CORE . '/library_file/controller.php');
 	

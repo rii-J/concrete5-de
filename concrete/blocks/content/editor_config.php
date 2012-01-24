@@ -1,4 +1,4 @@
-<?php  
+<?php 
 $textEditorWidth=intval(Config::get('CONTENTS_TXT_EDITOR_WIDTH'));
 $textEditorHeight=intval(Config::get('CONTENTS_TXT_EDITOR_HEIGHT'));
 if($textEditorWidth<580)   $textEditorWidth=580;
@@ -10,18 +10,18 @@ else $textEditorHeight= $textEditorHeight-70;
 tinyMCE.init({
 	mode : "textareas",
 	width: "100%", 
-	height: "<?php  echo $textEditorHeight?>px", 	
+	height: "<?php echo $textEditorHeight?>px", 	
 	inlinepopups_skin : "concreteMCE",
 	theme_concrete_buttons2_add : "spellchecker",
 	relative_urls : false,
-	document_base_url: '<?php  echo BASE_URL . DIR_REL?>/',
+	document_base_url: '<?php echo BASE_URL . DIR_REL?>/',
 	convert_urls: false,
-	content_css : "<?php  echo $theme->getThemeEditorCSS()?>",
-	<?php  
+	content_css : "<?php echo $theme->getThemeEditorCSS()?>",
+	<?php 
 	$txtEditorMode=Config::get('CONTENTS_TXT_EDITOR_MODE');
 	if( $txtEditorMode=='CUSTOM' ){ ?>
 		//theme : "concrete",
-		<?php  
+		<?php 
 		echo Config::get('CONTENTS_TXT_EDITOR_CUSTOM_CODE').'';
 	}elseif($txtEditorMode=='ADVANCED'){ ?>
 		plugins: "inlinepopups,spellchecker,safari,advlink,table,advhr,advimage,xhtmlxtras,emotions,insertdatetime,paste,visualchars,nonbreaking,pagebreak,style",
@@ -38,7 +38,7 @@ tinyMCE.init({
 		//theme_advanced_styles: "Note=ccm-note",		
 		theme_advanced_toolbar_align : "left",
 		spellchecker_languages : "+English=en"
- 	<?php   }elseif($txtEditorMode=='OFFICE'){ ?> 
+ 	<?php  }elseif($txtEditorMode=='OFFICE'){ ?> 
 		editor_selector : "ccm-advanced-editor",		
 		spellchecker_languages : "+English=en",
 		theme : "advanced",
@@ -56,11 +56,11 @@ tinyMCE.init({
 		theme_advanced_statusbar_location : "bottom",
 		//theme_advanced_styles: "Note=ccm-note",		
 		theme_advanced_resizing : true				
-	<?php   }else{ //simple ?>
+	<?php  }else{ //simple ?>
 		theme : "concrete", 
 		plugins: "paste,inlinepopups,spellchecker,safari,advlink,advimage,advhr",
 		editor_selector : "ccm-advanced-editor",
 		spellchecker_languages : "+English=en"		
-	<?php   } ?>
+	<?php  } ?>
 });
 </script>

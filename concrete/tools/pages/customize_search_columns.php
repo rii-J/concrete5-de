@@ -1,4 +1,4 @@
-<?php   defined('C5_EXECUTE') or die("Access Denied.");
+<?php  defined('C5_EXECUTE') or die("Access Denied.");
 
 $sh = Loader::helper('concrete/dashboard/sitemap');
 if (!$sh->canRead()) {
@@ -36,21 +36,21 @@ $list = CollectionAttributeKey::getList();
 
 ?>
 
-<form method="post" id="ccm-<?php  echo $searchInstance?>-customize-search-columns-form" action="<?php  echo REL_DIR_FILES_TOOLS_REQUIRED?>/pages/customize_search_columns/">
-<?php  echo $form->hidden('task', 'update_columns')?>
+<form method="post" id="ccm-<?php echo $searchInstance?>-customize-search-columns-form" action="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/pages/customize_search_columns/">
+<?php echo $form->hidden('task', 'update_columns')?>
 
-<h1><?php  echo t('Additional Searchable Attributes')?></h1>
+<h1><?php echo t('Additional Searchable Attributes')?></h1>
 
-<p><?php  echo t('Choose the additional attributes you wish to include as column headers.')?></p>
+<p><?php echo t('Choose the additional attributes you wish to include as column headers.')?></p>
 
-<?php   foreach($list as $ak) { ?>
+<?php  foreach($list as $ak) { ?>
 
-	<div><?php  echo $form->checkbox('akID[]', $ak->getAttributeKeyID(), in_array($ak->getAttributeKeyID(), $selectedAKIDs), array('style' => 'vertical-align: middle'))?> <?php  echo $ak->getAttributeKeyDisplayHandle()?></div>
+	<div><?php echo $form->checkbox('akID[]', $ak->getAttributeKeyID(), in_array($ak->getAttributeKeyID(), $selectedAKIDs), array('style' => 'vertical-align: middle'))?> <?php echo $ak->getAttributeKeyDisplayHandle()?></div>
 	
-<?php   } ?>
+<?php  } ?>
 
 <br/><br/>
-<?php  
+<?php 
 $h = Loader::helper('concrete/interface');
 $b1 = $h->button_js(t('Save'), 'ccm_submitCustomizeSearchColumnsForm()', 'left');
 print $b1;
@@ -60,17 +60,17 @@ print $b1;
 
 <script type="text/javascript">
 ccm_submitCustomizeSearchColumnsForm = function() {
-	ccm_deactivateSearchResults('<?php  echo $searchInstance?>');
-	$("#ccm-<?php  echo $searchInstance?>-customize-search-columns-form").ajaxSubmit(function(resp) {
+	ccm_deactivateSearchResults('<?php echo $searchInstance?>');
+	$("#ccm-<?php echo $searchInstance?>-customize-search-columns-form").ajaxSubmit(function(resp) {
 		jQuery.fn.dialog.closeTop();
-		$("#ccm-<?php  echo $searchInstance?>-advanced-search").ajaxSubmit(function(resp) {
-			ccm_parseAdvancedSearchResponse(resp, '<?php  echo $searchInstance?>');
+		$("#ccm-<?php echo $searchInstance?>-advanced-search").ajaxSubmit(function(resp) {
+			ccm_parseAdvancedSearchResponse(resp, '<?php echo $searchInstance?>');
 		});
 	});
 }
 
 $(function() {
-	$('#ccm-<?php  echo $searchInstance?>-customize-search-columns-form').submit(function() {
+	$('#ccm-<?php echo $searchInstance?>-customize-search-columns-form').submit(function() {
 		ccm_submitCustomizeSearchColumnsForm();
 	});
 });

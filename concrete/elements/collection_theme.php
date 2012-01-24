@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 
 Loader::model('collection_types');
@@ -56,7 +56,7 @@ function ccm_updateMoreThemesTab() {
 		$.ajax({
 			url: CCM_TOOLS_PATH + '/marketplace/refresh_theme',
 			type: 'POST',
-			data: 'cID=<?php  echo $c->getCollectionID()?>',
+			data: 'cID=<?php echo $c->getCollectionID()?>',
 			success: function(html){
 				jQuery.fn.dialog.hideLoader();
 		        $("#ccm-more-themes-interface-tab").html(html);
@@ -71,45 +71,45 @@ function ccm_updateMoreThemesTab() {
 
 <div class="ccm-pane-controls">
  
- 	<h1><?php  echo t('Design')?></h1>
+ 	<h1><?php echo t('Design')?></h1>
 
-		<form method="post" name="ccmThemeForm" action="<?php  echo $c->getCollectionAction()?>">
-			<input type="hidden" name="plID" value="<?php  echo $c->getCollectionThemeID()?>" />
-			<input type="hidden" name="ctID" value="<?php  echo $c->getCollectionTypeID()?>" />
-			<input type="hidden" name="rel" value="<?php  echo $_REQUEST['rel']?>" />
+		<form method="post" name="ccmThemeForm" action="<?php echo $c->getCollectionAction()?>">
+			<input type="hidden" name="plID" value="<?php echo $c->getCollectionThemeID()?>" />
+			<input type="hidden" name="ctID" value="<?php echo $c->getCollectionTypeID()?>" />
+			<input type="hidden" name="rel" value="<?php echo $_REQUEST['rel']?>" />
 	
 			<div class="ccm-form-area">
 	
-				<?php   if ($c->isMasterCollection()) { ?>
-					<h2><?php  echo t('Choose a Page Type')?></h2>
+				<?php  if ($c->isMasterCollection()) { ?>
+					<h2><?php echo t('Choose a Page Type')?></h2>
 				
-					<?php  echo t("This is the defaults page for the %s page type. You cannot change it.", $c->getCollectionTypeName()); ?>
+					<?php echo t("This is the defaults page for the %s page type. You cannot change it.", $c->getCollectionTypeName()); ?>
 					<br/><br/>
 				
-				<?php   } else if ($c->isGeneratedCollection()) { ?>
-				<h2><?php  echo t('Choose a Page Type')?></h2>
+				<?php  } else if ($c->isGeneratedCollection()) { ?>
+				<h2><?php echo t('Choose a Page Type')?></h2>
 
-				<?php  echo t("This page is a single page, which means it doesn't have a page type associated with it."); ?>
+				<?php echo t("This page is a single page, which means it doesn't have a page type associated with it."); ?>
 	
-				<?php   } else if ($cnt > 0) { ?>
+				<?php  } else if ($cnt > 0) { ?>
 
-				<h2><?php  echo t('Choose a Page Type')?></h2>
+				<h2><?php echo t('Choose a Page Type')?></h2>
 	
-				<div class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php  echo ceil($cnt/4)?>">
-					<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
-					<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
+				<div class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php echo ceil($cnt/4)?>">
+					<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
+					<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
 	
 					<div class="ccm-scroller-inner">
-						<ul id="ccm-select-page-type" style="width: <?php  echo $cnt * 132?>px">
-							<?php   
+						<ul id="ccm-select-page-type" style="width: <?php echo $cnt * 132?>px">
+							<?php  
 							foreach($ctArray as $ct) { 
 								if ($c->getCollectionID() == 1 || $parentCP->canAddSubCollection($ct)) { 
 								?>		
-								<?php   $class = ($ct->getCollectionTypeID() == $ctID) ? 'ccm-item-selected' : ''; ?>
+								<?php  $class = ($ct->getCollectionTypeID() == $ctID) ? 'ccm-item-selected' : ''; ?>
 						
-								<li class="<?php  echo $class?>"><a href="javascript:void(0)" ccm-page-type-id="<?php  echo $ct->getCollectionTypeID()?>"><?php  echo $ct->getCollectionTypeIconImage();?></a><span><?php  echo $ct->getCollectionTypeName()?></span>
+								<li class="<?php echo $class?>"><a href="javascript:void(0)" ccm-page-type-id="<?php echo $ct->getCollectionTypeID()?>"><?php echo $ct->getCollectionTypeIconImage();?></a><span><?php echo $ct->getCollectionTypeName()?></span>
 								</li>
-							<?php   } 
+							<?php  } 
 							
 							}?>
 						</ul>
@@ -117,40 +117,40 @@ function ccm_updateMoreThemesTab() {
 	
 				</div>
 	
-				<?php   } ?>
+				<?php  } ?>
 				
 				
-			<?php   if(ENABLE_MARKETPLACE_SUPPORT){ ?>
+			<?php  if(ENABLE_MARKETPLACE_SUPPORT){ ?>
 			<div style="height:1px; overflow: visible; width:100%;">
 				<ul style="position:relative; right:0px; top:4px; width:auto" class="ccm-dialog-tabs ccm-area-theme-tabs">
-					<li><a href="javascript:void(0)" class="ccm-more-themes-interface" id="ccm-more-themes-interface"><?php  echo t('Get More Themes')?></a></li>				
-					<li class="ccm-nav-active"><a href="javascript:void(0)" class="ccm-current-themes-interface" id="ccm-current-themes-interface"><?php  echo t('Current Themes')?></a></li>
+					<li><a href="javascript:void(0)" class="ccm-more-themes-interface" id="ccm-more-themes-interface"><?php echo t('Get More Themes')?></a></li>				
+					<li class="ccm-nav-active"><a href="javascript:void(0)" class="ccm-current-themes-interface" id="ccm-current-themes-interface"><?php echo t('Current Themes')?></a></li>
 				</ul>	
 			</div>
-			<?php   } ?>
+			<?php  } ?>
 				
 			<div id="ccm-current-themes-interface-tab">
 				
-				<h2 ><?php  echo t('Themes')?></h2>
+				<h2 ><?php echo t('Themes')?></h2>
 	
-				<div class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php  echo ceil(count($tArray)/4)?>">
-					<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
-					<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
+				<div class="ccm-scroller" current-page="1" current-pos="0" num-pages="<?php echo ceil(count($tArray)/4)?>">
+					<a href="javascript:void(0)" class="ccm-scroller-l"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_l.png" width="28" height="79" alt="l" /></a>
+					<a href="javascript:void(0)" class="ccm-scroller-r"><img src="<?php echo ASSETS_URL_IMAGES?>/button_scroller_r.png" width="28" height="79" alt="l" /></a>
 					
 					<div class="ccm-scroller-inner">
-						<ul id="ccm-select-theme" style="width: <?php  echo count($tArray) * 132?>px">
-						<?php   foreach($tArray as $t) { ?>
+						<ul id="ccm-select-theme" style="width: <?php echo count($tArray) * 132?>px">
+						<?php  foreach($tArray as $t) { ?>
 						
-							<?php   $class = ($t->getThemeID() == $plID) ? 'ccm-item-selected' : ''; ?>
-							<li class="<?php  echo $class?> themeWrap">
+							<?php  $class = ($t->getThemeID() == $plID) ? 'ccm-item-selected' : ''; ?>
+							<li class="<?php echo $class?> themeWrap">
 							
-								<a href="javascript:void(0)" ccm-theme-id="<?php  echo $t->getThemeID()?>"><?php  echo $t->getThemeThumbnail()?></a>
-									<?php   if ($t->getThemeID() != $plID) { ?><a title="<?php  echo t('Preview')?>" onclick="ccm_previewInternalTheme(<?php  echo $c->getCollectionID()?>, <?php  echo intval($t->getThemeID())?>,'<?php  echo addslashes(str_replace(array("\r","\n",'\n'),'',$t->getThemeName())) ?>')" href="javascript:void(0)" class="preview">
-									<img src="<?php  echo ASSETS_URL_IMAGES?>/icons/magnifying.png" alt="<?php  echo t('Preview')?>" class="ccm-preview" /></a><?php   } ?>
-								<div class="ccm-theme-name" ><?php  echo $t->getThemeName()?></div>
+								<a href="javascript:void(0)" ccm-theme-id="<?php echo $t->getThemeID()?>"><?php echo $t->getThemeThumbnail()?></a>
+									<?php  if ($t->getThemeID() != $plID) { ?><a title="<?php echo t('Preview')?>" onclick="ccm_previewInternalTheme(<?php echo $c->getCollectionID()?>, <?php echo intval($t->getThemeID())?>,'<?php echo addslashes(str_replace(array("\r","\n",'\n'),'',$t->getThemeName())) ?>')" href="javascript:void(0)" class="preview">
+									<img src="<?php echo ASSETS_URL_IMAGES?>/icons/magnifying.png" alt="<?php echo t('Preview')?>" class="ccm-preview" /></a><?php  } ?>
+								<div class="ccm-theme-name" ><?php echo $t->getThemeName()?></div>
 						
 							</li>
-						<?php   } ?>
+						<?php  } ?>
 						</ul>
 					</div>
 				</div>
@@ -159,7 +159,7 @@ function ccm_updateMoreThemesTab() {
 				
 			<div id="ccm-more-themes-interface-tab" style="display:none">	 
 			 
-				<h2><?php  echo t('Themes')?></h2> 
+				<h2><?php echo t('Themes')?></h2> 
 
 			</div> 				
 				
@@ -168,7 +168,7 @@ function ccm_updateMoreThemesTab() {
 	
 			<div class="ccm-buttons">
 			<!--	<a href="javascript:void(0)" onclick="ccm_hidePane()" class="ccm-button-left cancel"><span><em class="ccm-button-close">Cancel</em></span></a>//-->
-				<a href="javascript:void(0)" onclick="$('form[name=ccmThemeForm]').submit()" class="ccm-button-right accept"><span><?php  echo t('Save')?></span></a>
+				<a href="javascript:void(0)" onclick="$('form[name=ccmThemeForm]').submit()" class="ccm-button-right accept"><span><?php echo t('Save')?></span></a>
 			</div>	
 			<input type="hidden" name="update_theme" value="1" class="accept">
 			<input type="hidden" name="processCollection" value="1">
@@ -194,15 +194,15 @@ $(".ccm-area-theme-tabs a").click(function() {
 
 ccm_enable_scrollers = function() {
 	$("a.ccm-scroller-l").hover(function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l_active.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_l_active.png');
 	}, function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_l.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_l.png');
 	});
 
 	$("a.ccm-scroller-r").hover(function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r_active.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_r_active.png');
 	}, function() {
-		$(this).children('img').attr('src', '<?php  echo ASSETS_URL_IMAGES?>/button_scroller_r.png');
+		$(this).children('img').attr('src', '<?php echo ASSETS_URL_IMAGES?>/button_scroller_r.png');
 	});
 	
 	var numThumbs = 4;	
@@ -283,7 +283,7 @@ ccm_enable_scrollers = function() {
 
 $(function() {
 	ccm_enable_scrollers();
-	<?php   if ($_REQUEST['rel'] == 'SITEMAP') { ?>
+	<?php  if ($_REQUEST['rel'] == 'SITEMAP') { ?>
 		$("form[name=ccmThemeForm]").ajaxForm({
 		type: 'POST',
 		iframe: true,
@@ -305,11 +305,11 @@ $(function() {
 		}
 	});
 
-	<?php   } else { ?>
+	<?php  } else { ?>
 		$('form[name=ccmThemeForm]').submit(function() {
 			jQuery.fn.dialog.showLoader();
 		});
-	<?php   } ?>
+	<?php  } ?>
 	$("#ccm-select-page-type a").click(function() {
 		$("#ccm-select-page-type li").each(function() {
 			$(this).removeClass('ccm-item-selected');

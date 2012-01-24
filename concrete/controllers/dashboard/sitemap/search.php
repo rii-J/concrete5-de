@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 Loader::model('page_list');
 class DashboardSitemapSearchController extends Controller {

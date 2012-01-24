@@ -1,4 +1,4 @@
-<?php  
+<?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 $section = 'groups';
 
@@ -95,83 +95,83 @@ $gResults = $gl->getPage();
 
 ?>
 
-<h1><span><?php  echo t('Groups')?></span></h1>
+<h1><span><?php echo t('Groups')?></span></h1>
 <div class="ccm-dashboard-inner">
 
-<?php  
+<?php 
 $tp = new TaskPermission();
 if ($tp->canAccessGroupSearch()) { ?>
 
-<form id="ccm-group-search" method="get" style="top: -30px; left: 10px" action="<?php  echo $this->url('/dashboard/users/groups')?>">
+<form id="ccm-group-search" method="get" style="top: -30px; left: 10px" action="<?php echo $this->url('/dashboard/users/groups')?>">
 <div id="ccm-group-search-fields">
-<input type="text" id="ccm-group-search-keywords" name="gKeywords" value="<?php  echo htmlentities($_REQUEST['gKeywords'])?>" class="ccm-text" style="width: 100px" />
-<input type="submit" value="<?php  echo t('Search')?>" />
+<input type="text" id="ccm-group-search-keywords" name="gKeywords" value="<?php echo htmlentities($_REQUEST['gKeywords'])?>" class="ccm-text" style="width: 100px" />
+<input type="submit" value="<?php echo t('Search')?>" />
 <input type="hidden" name="group_submit_search" value="1" />
 </div>
 </form>
 
-<?php   if (count($gResults) > 0) { 
+<?php  if (count($gResults) > 0) { 
 	$gl->displaySummary();
 	
 foreach ($gResults as $g) { ?>
 
 	<div class="ccm-group">
-		<a class="ccm-group-inner" href="<?php  echo $this->url('/dashboard/users/groups?task=edit&gID=' . $g['gID'])?>" style="background-image: url(<?php  echo ASSETS_URL_IMAGES?>/icons/group.png)"><?php  echo $g['gName']?></a>
-		<?php   if ($g['gDescription']) { ?>
-			<div class="ccm-group-description"><?php  echo $g['gDescription']?></div>
-		<?php   } ?>
+		<a class="ccm-group-inner" href="<?php echo $this->url('/dashboard/users/groups?task=edit&gID=' . $g['gID'])?>" style="background-image: url(<?php echo ASSETS_URL_IMAGES?>/icons/group.png)"><?php echo $g['gName']?></a>
+		<?php  if ($g['gDescription']) { ?>
+			<div class="ccm-group-description"><?php echo $g['gDescription']?></div>
+		<?php  } ?>
 	</div>
 
 
-<?php   }
+<?php  }
 
 	$gl->displayPaging();
 
 } else { ?>
 
-	<p><?php  echo t('No groups found.')?></p>
+	<p><?php echo t('No groups found.')?></p>
 	
-<?php   } ?>
+<?php  } ?>
 
-<?php   } else { ?>
-	<p><?php  echo t('You do not have access to group search. This setting may be changed in the access section of the dashboard settings page.')?></p>
+<?php  } else { ?>
+	<p><?php echo t('You do not have access to group search. This setting may be changed in the access section of the dashboard settings page.')?></p>
 
-<?php   } ?>
+<?php  } ?>
 </div>
 
-<h1><span><?php  echo t('Add Group')?> (<em class="required">*</em> - <?php  echo t('required field')?>)</span></h1>
+<h1><span><?php echo t('Add Group')?> (<em class="required">*</em> - <?php echo t('required field')?>)</span></h1>
 
 <div class="ccm-dashboard-inner">
 
-<form method="post" id="add-group-form" action="<?php  echo $this->url('/dashboard/users/groups/')?>">
-<?php  echo $valt->output('add_or_update_group')?>
+<form method="post" id="add-group-form" action="<?php echo $this->url('/dashboard/users/groups/')?>">
+<?php echo $valt->output('add_or_update_group')?>
 <div style="margin:0px; padding:0px; width:100%; height:auto" >	
 <table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 <tr>
-	<td class="subheader"><?php  echo t('Name')?> <span class="required">*</span></td>
+	<td class="subheader"><?php echo t('Name')?> <span class="required">*</span></td>
 </tr>
 <tr>
-	<td><input type="text" name="gName" style="width: 100%" value="<?php  echo htmlentities($_POST['gName'])?>" /></td>
+	<td><input type="text" name="gName" style="width: 100%" value="<?php echo Loader::helper("text")->entities($_POST['gName'])?>" /></td>
 </tr>
 <tr>
-	<td class="subheader"><?php  echo t('Description')?></td>
+	<td class="subheader"><?php echo t('Description')?></td>
 </tr>
 <tr>
-	<td><textarea name="gDescription" style="width: 100%; height: 120px"><?php  echo $_POST['gDescription']?></textarea></td>
+	<td><textarea name="gDescription" style="width: 100%; height: 120px"><?php echo Loader::helper("text")->entities($_POST['gDescription'])?></textarea></td>
 </tr>
 <tr>
-	<td class="subheader"><?php  echo t("Group Expiration Options")?></td>
+	<td class="subheader"><?php echo t("Group Expiration Options")?></td>
 </tr>
-<?php   $form = Loader::helper('form'); ?>
-<?php   $date = Loader::helper('form/date_time'); ?>
-<?php  
+<?php  $form = Loader::helper('form'); ?>
+<?php  $date = Loader::helper('form/date_time'); ?>
+<?php 
 $style = 'width: 60px';
 ?>
 <tr>	
-	<td><?php  echo $form->checkbox('gUserExpirationIsEnabled', 1, false)?>
-	<?php  echo t('Automatically remove users from this group')?>
+	<td><?php echo $form->checkbox('gUserExpirationIsEnabled', 1, false)?>
+	<?php echo t('Automatically remove users from this group')?>
 	
-	<?php  echo $form->select("gUserExpirationMethod", array(
+	<?php echo $form->select("gUserExpirationMethod", array(
 		'SET_TIME' => t('at a specific date and time'),
 			'INTERVAL' => t('once a certain amount of time has passed')
 		
@@ -179,30 +179,30 @@ $style = 'width: 60px';
 	
 	<div id="gUserExpirationSetTimeOptions" style="display: none">
 	<br/>
-	<h2><?php  echo t('Expiration Date')?></h2>
-	<?php  echo $date->datetime('gUserExpirationSetDateTime')?>
+	<h2><?php echo t('Expiration Date')?></h2>
+	<?php echo $date->datetime('gUserExpirationSetDateTime')?>
 	</div>
 	<div id="gUserExpirationIntervalOptions" style="display: none">
 	<br/>
-	<h2><?php  echo t('Accounts will Expire After')?></h2>
+	<h2><?php echo t('Accounts will Expire After')?></h2>
 	<table border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td valign="top"><strong><?php  echo t('Days')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalDays', array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Days')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalDays', array('style' => $style))?>
 		</td>
-		<td valign="top"><strong><?php  echo t('Hours')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalHours', array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Hours')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalHours', array('style' => $style))?>
 		</td>
-		<td valign="top"><strong><?php  echo t('Minutes')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalMinutes', array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Minutes')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalMinutes', array('style' => $style))?>
 		</td>
 	</tr>
 	</table>
 	</div>
 	<div id="gUserExpirationAction" style="display: none">
 	<br/>
-	<h2><?php  echo t('Expiration Action')?></h2>
-		<?php  echo $form->select("gUserExpirationAction", array(
+	<h2><?php echo t('Expiration Action')?></h2>
+		<?php echo $form->select("gUserExpirationAction", array(
 		'REMOVE' => t('Remove the user from this group'),
 			'DEACTIVATE' => t('Deactivate the user account'),
 			'REMOVE_DEACTIVATE' => t('Remove the user from the group and deactivate the account')
@@ -213,7 +213,7 @@ $style = 'width: 60px';
 	</td>
 </tr>
 <tr>
-	<td class="header"><input type="hidden" name="add" value="1" /><?php  echo $ih->submit(t('Add'), 'add-group-form')?></td>
+	<td class="header"><input type="hidden" name="add" value="1" /><?php echo $ih->submit(t('Add'), 'add-group-form')?></td>
 </tr>
 </table>
 </div>
@@ -221,39 +221,39 @@ $style = 'width: 60px';
 </form>	
 </div>
 
-<?php   } else { ?>
-	<h1><span><?php  echo t('Edit Group')?></span></h1>
+<?php  } else { ?>
+	<h1><span><?php echo t('Edit Group')?></span></h1>
 	<div class="ccm-dashboard-inner">
 	
-		<form method="post" id="update-group-form" action="<?php  echo $this->url('/dashboard/users/groups/')?>">
-		<?php  echo $valt->output('add_or_update_group')?>
-		<input type="hidden" name="gID" value="<?php  echo intval($_REQUEST['gID'])?>" />
+		<form method="post" id="update-group-form" action="<?php echo $this->url('/dashboard/users/groups/')?>">
+		<?php echo $valt->output('add_or_update_group')?>
+		<input type="hidden" name="gID" value="<?php echo intval($_REQUEST['gID'])?>" />
 		<input type="hidden" name="task" value="edit" />
 		
 		<div style="margin:0px; padding:0px; width:100%; height:auto" >	
 		<table class="entry-form" border="0" cellspacing="1" cellpadding="0">
 		<tr>
-			<td class="subheader"><?php  echo t('Name')?> <span class="required">*</span></td>
+			<td class="subheader"><?php echo t('Name')?> <span class="required">*</span></td>
 		</tr>
 		<tr>
-			<td><input type="text" name="gName" style="width: 100%" value="<?php  echo $gName?>" /></td>
+			<td><input type="text" name="gName" style="width: 100%" value="<?php echo Loader::helper('text')->entities($gName)?>" /></td>
 		</tr>
 		<tr>
-			<td class="subheader"><?php  echo t('Description')?></td>
+			<td class="subheader"><?php echo t('Description')?></td>
 		</tr>
 		<tr>
-			<td><textarea name="gDescription" style="width: 100%; height: 120px"><?php  echo $gDescription?></textarea></td>
+			<td><textarea name="gDescription" style="width: 100%; height: 120px"><?php echo $gDescription?></textarea></td>
 		</tr>
 		<tr>
-	<td class="subheader"><?php  echo t("Group Expiration Options")?></td>
+	<td class="subheader"><?php echo t("Group Expiration Options")?></td>
 </tr>
-<?php   $form = Loader::helper('form'); ?>
-<?php   $date = Loader::helper('form/date_time'); ?>
+<?php  $form = Loader::helper('form'); ?>
+<?php  $date = Loader::helper('form/date_time'); ?>
 <tr>	
-	<td><?php  echo $form->checkbox('gUserExpirationIsEnabled', 1, $g->isGroupExpirationEnabled())?>
-	<?php  echo t('Automatically remove users from this group')?>
+	<td><?php echo $form->checkbox('gUserExpirationIsEnabled', 1, $g->isGroupExpirationEnabled())?>
+	<?php echo t('Automatically remove users from this group')?>
 	
-	<?php  echo $form->select("gUserExpirationMethod", array(
+	<?php echo $form->select("gUserExpirationMethod", array(
 		'SET_TIME' => t('at a specific date and time'),
 			'INTERVAL' => t('once a certain amount of time has passed')
 		
@@ -261,13 +261,13 @@ $style = 'width: 60px';
 	
 	<div id="gUserExpirationSetTimeOptions" style="display: none">
 	<br/>
-	<h2><?php  echo t('Expiration Date')?></h2>
-	<?php  echo $date->datetime('gUserExpirationSetDateTime', $g->getGroupExpirationDateTime())?>
+	<h2><?php echo t('Expiration Date')?></h2>
+	<?php echo $date->datetime('gUserExpirationSetDateTime', $g->getGroupExpirationDateTime())?>
 	</div>
 	<div id="gUserExpirationIntervalOptions" style="display: none">
 	<br/>
-	<h2><?php  echo t('Accounts will Expire After')?></h2>
-	<?php  
+	<h2><?php echo t('Accounts will Expire After')?></h2>
+	<?php 
 	$days = $g->getGroupExpirationIntervalDays();
 	$hours = $g->getGroupExpirationIntervalHours();
 	$minutes = $g->getGroupExpirationIntervalMinutes();
@@ -286,22 +286,22 @@ $style = 'width: 60px';
 	?>
 	<table border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td valign="top"><strong><?php  echo t('Days')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalDays', $days, array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Days')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalDays', $days, array('style' => $style))?>
 		</td>
-		<td valign="top"><strong><?php  echo t('Hours')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalHours', $hours, array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Hours')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalHours', $hours, array('style' => $style))?>
 		</td>
-		<td valign="top"><strong><?php  echo t('Minutes')?></strong><br/>
-		<?php  echo $form->text('gUserExpirationIntervalMinutes', $minutes, array('style' => $style))?>
+		<td valign="top"><strong><?php echo t('Minutes')?></strong><br/>
+		<?php echo $form->text('gUserExpirationIntervalMinutes', $minutes, array('style' => $style))?>
 		</td>
 	</tr>
 	</table>
 	</div>
 	<div id="gUserExpirationAction" style="display: none">
 	<br/>
-	<h2><?php  echo t('Expiration Action')?></h2>
-		<?php  echo $form->select("gUserExpirationAction", array(
+	<h2><?php echo t('Expiration Action')?></h2>
+		<?php echo $form->select("gUserExpirationAction", array(
 		'REMOVE' => t('Remove the user from this group'),
 			'DEACTIVATE' => t('Deactivate the user account'),
 			'REMOVE_DEACTIVATE' => t('Remove the user from the group and deactivate the account')
@@ -315,8 +315,8 @@ $style = 'width: 60px';
 		<tr>
 			<td class="header">
 			<input type="hidden" name="update" value="1" />
-			<?php  echo $ih->submit(t('Update'), 'update-group-form')?>
-			<?php  echo $ih->button(t('Cancel'), $this->url('/dashboard/users/groups'), 'left')?>
+			<?php echo $ih->submit(t('Update'), 'update-group-form')?>
+			<?php echo $ih->button(t('Cancel'), $this->url('/dashboard/users/groups'), 'left')?>
 			</td>
 		</tr>
 		</table>
@@ -326,31 +326,31 @@ $style = 'width: 60px';
 		</form>	
 	</div>
 	
-	<h1><span><?php  echo t('Delete Group')?></span></h1>
+	<h1><span><?php echo t('Delete Group')?></span></h1>
 	
 	<div class="ccm-dashboard-inner">
-		<?php  
+		<?php 
 		$u=new User();
 
 		$delConfirmJS = t('Are you sure you want to permanently remove this group?');
 		if($u->isSuperUser() == false){ ?>
-			<?php  echo t('You must be logged in as %s to remove groups.', USER_SUPER)?>			
-		<?php   }else{ ?>   
+			<?php echo t('You must be logged in as %s to remove groups.', USER_SUPER)?>			
+		<?php  }else{ ?>   
 
 			<script type="text/javascript">
 			deleteGroup = function() {
-				if (confirm('<?php  echo $delConfirmJS?>')) { 
-					location.href = "<?php  echo $this->url('/dashboard/users/groups', 'delete', intval($_REQUEST['gID']), $valt->generate('delete_group_' . intval($_REQUEST['gID']) ))?>";				
+				if (confirm('<?php echo $delConfirmJS?>')) { 
+					location.href = "<?php echo $this->url('/dashboard/users/groups', 'delete', intval($_REQUEST['gID']), $valt->generate('delete_group_' . intval($_REQUEST['gID']) ))?>";				
 				}
 			}
 			</script>
 
-			<?php   print $ih->button_js(t('Delete Group'), "deleteGroup()", 'left');?>
+			<?php  print $ih->button_js(t('Delete Group'), "deleteGroup()", 'left');?>
 
-		<?php   } ?>
+		<?php  } ?>
 		<div class="ccm-spacer"></div>
 	</div>	
-	<?php     
+	<?php    
 }
 
 ?>
@@ -386,9 +386,9 @@ $(function() {
 	ccm_checkGroupExpirationOptions();
 	/*
 	$("div#gUserExpirationIntervalOptions input").focus(function() {
-		if ($('input[name=gUserExpirationIntervalDays]').val() == '<?php  echo t("Days")?>' &&
-			$('input[name=gUserExpirationIntervalHours]').val() == '<?php  echo t("Hours")?>' &&
-			$('input[name=gUserExpirationIntervalMinutes]').val() == '<?php  echo t("Minutes")?>') {
+		if ($('input[name=gUserExpirationIntervalDays]').val() == '<?php echo t("Days")?>' &&
+			$('input[name=gUserExpirationIntervalHours]').val() == '<?php echo t("Hours")?>' &&
+			$('input[name=gUserExpirationIntervalMinutes]').val() == '<?php echo t("Minutes")?>') {
 			$("div#gUserExpirationIntervalOptions input").val("");
 			$("div#gUserExpirationIntervalOptions input").css('color', '#000');
 		}
@@ -397,9 +397,9 @@ $(function() {
 		if ($('input[name=gUserExpirationIntervalDays]').val() == '' &&
 			$('input[name=gUserExpirationIntervalHours]').val() == '' &&
 			$('input[name=gUserExpirationIntervalMinutes]').val() == '') {
-			$('input[name=gUserExpirationIntervalDays]').val('<?php  echo t("Days")?>');
-			$('input[name=gUserExpirationIntervalHours]').val('<?php  echo t("Hours")?>');
-			$('input[name=gUserExpirationIntervalMinutes]').val('<?php  echo t("Minutes")?>');
+			$('input[name=gUserExpirationIntervalDays]').val('<?php echo t("Days")?>');
+			$('input[name=gUserExpirationIntervalHours]').val('<?php echo t("Hours")?>');
+			$('input[name=gUserExpirationIntervalMinutes]').val('<?php echo t("Minutes")?>');
 			$("div#gUserExpirationIntervalOptions input").css('color', '#aaa');
 		}
 	});

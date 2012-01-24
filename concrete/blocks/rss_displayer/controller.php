@@ -1,9 +1,7 @@
-<?php  
+<?php 
 	defined('C5_EXECUTE') or die("Access Denied.");
 	class RssDisplayerBlockController extends BlockController {
 		
-		var $pobj;
-
 		protected $btTable = 'btRssDisplay';
 		protected $btInterfaceWidth = "400";
 		protected $btInterfaceHeight = "170";
