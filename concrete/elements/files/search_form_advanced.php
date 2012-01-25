@@ -277,7 +277,7 @@ if (count($s2) > 0) {
 			
 			<div id="ccm-search-fields-submit">
 				<?php  if ($_REQUEST['fssID'] < 1) { ?><div id="ccm-search-save"><a href="<?php echo REL_DIR_FILES_TOOLS_REQUIRED?>/files/save_search?searchInstance=<?php echo $searchInstance?>" id="ccm-<?php echo $searchInstance?>-launch-save-search" dialog-title="<?php echo t('Save Search')?>" dialog-width="320" dialog-height="200" dialog-modal="false"><?php echo t('Save Search')?></a></div><?php  } ?>
-				<?php echo $form->submit('ccm-search-files', 'Search')?>
+				<?php echo $form->submit('ccm-search-files', t('Search'))?>
 			</div>
 		</div>
 	
