@@ -9,6 +9,7 @@ else $textEditorHeight= $textEditorHeight-70;
 <script language="javascript">
 tinyMCE.init({
 	mode : "textareas",
+	language: "de",
 	width: "100%", 
 	height: "<?php echo $textEditorHeight?>px", 	
 	inlinepopups_skin : "concreteMCE",
