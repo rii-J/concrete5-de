@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Concrete5.5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 21:46+0100\n"
-"PO-Revision-Date: 2012-01-27 21:46+0100\n"
+"PO-Revision-Date: 2012-02-04 21:24+0100\n"
 "Last-Translator: Riadh Jouili <info@concrete5-cms.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
@@ -18,573 +18,478 @@ msgstr ""
 "X-Poedit-SearchPath-0: /Users/riadh/Desktop/concrete5.5.1\n"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/controller.php:185
-#, fuzzy
 msgid "Creates navigation trees and sitemaps."
 msgstr "Erstellt Navigationen und Sitemaps."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/controller.php:189
-#, fuzzy
 msgid "Auto-Nav"
 msgstr "Auto-Navigation"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:6
-#, fuzzy
 msgid "Edit"
 msgstr "Bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:7
-#, fuzzy
 msgid "Preview"
 msgstr "Vorschau"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:24
-#, fuzzy
 msgid "Pages Should Appear"
-msgstr "Seiten sollten erscheinen"
+msgstr "Anordnung der Seiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:26
-#, fuzzy
 msgid "in their sitemap order."
-msgstr "in gleicher Reihenfolge wie die Sitemap."
+msgstr "in gleicher Reihenfolge wie auf der Sitemap."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:27
-#, fuzzy
 msgid "with the most recent first."
 msgstr "beginnend mit dem neuesten Eintrag."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:28
-#, fuzzy
 msgid "with the earliest first."
 msgstr "beginnend mit dem ältesten Eintrag."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:29
-#, fuzzy
 msgid "in alphabetical order."
 msgstr "in alphabetischer Reihenfolge."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:30
-#, fuzzy
 msgid "in reverse alphabetical order."
 msgstr "in umgekehrter alphabetischer Reihenfolge."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:31
-#, fuzzy
 msgid "in reverse sitemap order."
 msgstr "in umgekehrter Reihenfolge der Sitemap."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:34
-#, fuzzy
 msgid "Viewing Permissions"
 msgstr "Berechtigungen ansehen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:36
-#, fuzzy
 msgid "Display pages to users even when those users cannot access those pages."
 msgstr "Besuchern Seiten anzeigen trotz fehlende Berechtigungen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:38
-#, fuzzy
 msgid "Display Pages"
 msgstr "Seiten anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:40
-#, fuzzy
 msgid "at the top level."
-msgstr "von oberster Ebene."
+msgstr "ab der obersten Ebene."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:41
-#, fuzzy
 msgid "at the second level."
-msgstr "von zweiter Ebene."
+msgstr "ab der zweiten Ebene."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:42
-#, fuzzy
 msgid "at the third level."
-msgstr "von dritter Ebene."
+msgstr "ab der dritten Ebene."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:43
-#, fuzzy
 msgid "at the level above."
-msgstr "von vorheriger Ebene."
+msgstr "ab der Ebene oberhalb."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:44
-#, fuzzy
 msgid "at the current level."
-msgstr "von aktueller Ebene."
+msgstr "ab der aktuellen Ebene."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:45
-#, fuzzy
 msgid "At the level below."
-msgstr "An der Ebene unterhalb."
+msgstr "ab der Ebene unterhalb."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:46
-#, fuzzy
 msgid "Beneath a particular page"
 msgstr "Unterhalb einer bestimmten Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:57
-#, fuzzy
 msgid "Sub Pages to Display"
 msgstr "Anzuzeigende Unterseiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:59
-#, fuzzy
 msgid "None"
-msgstr "Keine"
+msgstr "Nein"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:60
-#, fuzzy
 msgid "Relevant sub pages."
 msgstr "Relevante Unterseiten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:61
-#, fuzzy
 msgid "Display breadcrumb trail."
-msgstr "Brotkrümel (Breadcrumb)-Pfad anzeigen."
+msgstr "Krümelpfad (Breadcrumb) anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:62
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:70
-#, fuzzy
 msgid "Display all."
 msgstr "Alle anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:66
-#, fuzzy
 msgid "Sub-Page Levels"
-msgstr "Unterseiten Ebenen"
+msgstr "Ebenen der Unterseiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:68
-#, fuzzy
 msgid "Display sub pages to current."
 msgstr "Unterseiten der aktuellen Seite anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:69
-#, fuzzy
 msgid "Display sub pages to current +1."
 msgstr "Unterseiten der aktuellen Seite +1 anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:71
-#, fuzzy
 msgid "Display a custom amount."
 msgstr "Eine benutzerdefinierte Anzahl anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/autonav/form_setup_html.php:76
-#, fuzzy
 msgid "levels"
 msgstr "Ebenen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/content/controller.php:15
-#, fuzzy
 msgid "HTML/WYSIWYG Editor Content."
-msgstr "HTML/WYSIWYG Editor Inhalt."
+msgstr "HTML/WYSIWYG Inhaltseditor."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/content/controller.php:19
-#, fuzzy
 msgid "Content"
-msgstr "Inhalt"
+msgstr "Inhaltseditor"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_scrapbook_display/controller.php:10
 msgid "Proxy block for blocks pasted through the scrapbook."
-msgstr ""
+msgstr "Proxyblock über den Vorlagenkatolog eingefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_scrapbook_display/controller.php:14
-#, fuzzy
 msgid "Scrapbook Display (Core)"
-msgstr "Kern-Blocktyp"
+msgstr "Ansicht desVorlagenkatologs (Kern)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_scrapbook_display/edit.php:11
 msgid "This block was copied from another location. Editing it will create a new instance of it."
-msgstr ""
+msgstr "Dieser Block wurde aus einer anderen Seite kopiert. Beim editieren wird eine neue Instanz erzeugt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_scrapbook_display/edit.php:21
 msgid "You don't have access to edit the original instance of this block."
-msgstr ""
+msgstr "Sie haben keine Berechtigung um die Original-Instanz dieses Blocks zu editieren."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_stack_display/controller.php:10
 msgid "Proxy block for stacks added through the UI."
-msgstr ""
+msgstr "Proxyblock für Sammelmappen hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/core_stack_display/controller.php:14
-#, fuzzy
 msgid "Stack Display (Core)"
-msgstr "Kern-Blocktyp"
+msgstr "Ansicht der Sammelmappe (Kern)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/controller.php:15
 msgid "Displays update and welcome back information on your dashboard."
-msgstr ""
+msgstr "Zeigt Updates und Willkommensnachricht auf der Startseite an"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/controller.php:19
-#, fuzzy
 msgid "Dashboard App Status"
-msgstr "Verwaltung Dateimanager"
+msgstr "Status der Verwaltungsapps"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:3
-#, fuzzy
 msgid "Welcome Back"
-msgstr "Zurück zur Startseite"
+msgstr "Willkommen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:6
-#, fuzzy
 msgid "concrete5 Update"
 msgstr "Concrete5 aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:6
-#, fuzzy, php-format
+#, php-format
 msgid "The latest version of concrete5 is <strong>%s</strong>. You are currently running concrete5 version <strong>%s</strong>."
-msgstr "Die neueste Version von Concrete5 ist <strong>%s</strong>. Sie verwenden  %s. <a href=\"%s\">Aktualisieren Sie jetzt</a>!"
+msgstr "Die neueste Version von Concrete5 ist <strong>%s</strong>. Sie verwenden <strong>%s</strong>."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:6
-#, fuzzy
 msgid "Learn more and update."
-msgstr "Sichern, Aufräumen und Updaten."
+msgstr "Mehr erfahren und Version Aktualisieren."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:9
-#, fuzzy
 msgid "concrete5"
-msgstr "Concrete5 aktualisieren"
+msgstr "Concrete5"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:10
 msgid "You have downloaded a new version of concrete5 but have not upgraded to it yet."
-msgstr ""
+msgstr "Sie haben eine neue Version von concrete5 heruntergeladen aber noch nicht aktualisiert"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:10
-#, fuzzy
 msgid "Update concrete5."
 msgstr "Concrete5 aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:14
-#, fuzzy
 msgid "Add-On Updates"
-msgstr "Gefunden in Seite"
+msgstr "Erweiterungen aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:16
-#, fuzzy
 msgid "There is currently <strong>1</strong> update available."
-msgstr "Es ist momentan <strong>1</strong> Update verfügbar."
+msgstr "Es ist momentan <strong>1</strong> Aktualisierung verfügbar."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:18
-#, fuzzy, php-format
+#, php-format
 msgid "There are currently <strong>%s</strong> updates available."
-msgstr "Es sind momentan <strong>%s</strong> Updates verfügbar."
+msgstr "Es sind momentan <strong>%s</strong> Aktualisierungen verfügbar."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:20
-#, fuzzy
 msgid "Update add-ons."
 msgstr "Aktualisiere Erweiterungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_addon/controller.php:17
 msgid "Features an add-on from concrete5.org."
-msgstr ""
+msgstr "Zeigt eine Erweiterung von concrete5.org"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_addon/controller.php:21
 msgid "Dashboard Featured Add-On"
-msgstr ""
+msgstr "Erweiterung auf der Startseite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_addon/view.php:2
-#, fuzzy
 msgid "Featured Add-On"
-msgstr "Gefunden in Seite"
+msgstr "Aktuelle Erweiterung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_addon/view.php:10
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_theme/view.php:10
-#, fuzzy
 msgid "Learn More"
 msgstr "Mehr Informationen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_addon/view.php:12
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_theme/view.php:12
 msgid "Cannot retrieve data from the concrete5 marketplace."
-msgstr ""
+msgstr "Kann keine Daten vom concrete5 Marktplatz beziehen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_theme/controller.php:17
-#, fuzzy
 msgid "Features a theme from concrete5.org."
-msgstr "Laden Sie mehr Themes auf dem Marketplace von concrete5.org herunter."
+msgstr "Theme aus dem Marktplatz von concrete5.org anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_theme/controller.php:21
-#, fuzzy
 msgid "Dashboard Featured Theme"
-msgstr "Dateien in Theme:"
+msgstr "Theme anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_featured_theme/view.php:2
-#, fuzzy
 msgid "Featured Theme"
-msgstr "Theme hinzufügen"
+msgstr "Theme anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_newsflow_latest/add.php:4
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_newsflow_latest/edit.php:4
 msgid "Slot"
-msgstr ""
+msgstr "Position"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_newsflow_latest/controller.php:15
 msgid "Grabs the latest newsflow data from concrete5.org."
-msgstr ""
+msgstr "Greift die neuesten Nachrichten von concrete5.org auf."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_newsflow_latest/controller.php:19
-#, fuzzy
 msgid "Dashboard Newsflow Latest"
-msgstr "Verwaltung Dateimanager"
+msgstr "Aktuellste Nachrichten auf der Startseite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/controller.php:10
 msgid "Displays a summary of website activity."
-msgstr ""
+msgstr "Zeigt eine Überblick über die Aktivitäten auf der Website an."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/controller.php:14
-#, fuzzy
 msgid "Dashboard Site Activity"
-msgstr "Datenbankaktivitäten protokollieren"
+msgstr "Verwaltungsaktivität"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/controller.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/controller.php:26
-#, fuzzy
 msgid "at"
 msgstr "um"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/controller.php:33
-#, fuzzy
 msgid "Your login is the most recent."
 msgstr "Ihre Anmeldung ist die aktuellste."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/view.php:3
 #, php-format
 msgid "You are logged in as <strong>%s</strong>. You logged in on <strong>%s</strong>."
-msgstr ""
+msgstr "Sie sind als <strong>%s</strong> seit <strong>%s</strong> eingeloggt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/view.php:4
-#, fuzzy
 msgid "Last login"
 msgstr "Letzte Anmeldung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/view.php:5
-#, fuzzy
 msgid "Last edit"
 msgstr "Letzte Bearbeitung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/view.php:6
 #, php-format
 msgid "Total form submissions: <strong>%s</strong> (<strong>%s</strong> today). <a href=\"%s\">View Form Results</a>."
-msgstr ""
+msgstr "Ausgefüllte Formulare: <strong>%s</strong> (heute: <strong>%s</strong>). <a href=\"%s\">Formularergebnisse ansehen</a>."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_site_activity/view.php:8
-#, fuzzy
 msgid "More Statistics"
-msgstr "Download Statistiken"
+msgstr "Weitere Statistiken"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_archive/controller.php:21
 msgid "Displays month archive for pages"
-msgstr ""
+msgstr "Zeigt monatliches Seitenarchiv an"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_archive/controller.php:25
-#, fuzzy
 msgid "Blog Date Archive"
-msgstr "Datum und Zeit"
+msgstr "Blogarchiv"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_archive/form.php:7
-#, fuzzy
 msgid "Display Title"
 msgstr "Titel anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_archive/form.php:15
-#, fuzzy
 msgid "Months Link to Page"
-msgstr "Seitenlink einfügen"
+msgstr "Monate verlinken auf Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/controller.php:17
-#, fuzzy
 msgid "A collapsible date based navigation tree"
 msgstr "Ein zusammenklappbarer Datumbasierter Navigationsbaum"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/controller.php:21
-#, fuzzy
 msgid "Date Navigation"
-msgstr "Datum Navigation"
+msgstr "Datumsnavigation"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:21
-#, fuzzy
 msgid "Number and Type of Pages"
 msgstr "Anzahl und Typ der Seiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:22
-#, fuzzy
 msgid "Display"
 msgstr "Anzeige"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:24
-#, fuzzy
 msgid "pages of type"
 msgstr "Seiten vom Typ"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:30
-#, fuzzy
 msgid "All"
 msgstr "Alle"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:39
-#, fuzzy
 msgid "Featured pages only."
 msgstr "Nur Spezialseiten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:45
-#, fuzzy
 msgid "Location in Website"
 msgstr "Position in der Website"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:46
-#, fuzzy
 msgid "Display pages that are located"
-msgstr "Zeige Seiten die sich befinden"
+msgstr "Zeige Seiten die sich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:50
-#, fuzzy
 msgid "everywhere"
-msgstr "überall"
+msgstr "überall befinden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:52
-#, fuzzy
 msgid "at the current level"
-msgstr "von aktueller Ebene."
+msgstr "auf der aktuellen Ebene befinden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:54
-#, fuzzy
 msgid "beneath this page"
-msgstr "unterhalb dieser Seite"
+msgstr "unterhalb dieser Seite befinden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:56
-#, fuzzy
 msgid "beneath another page"
-msgstr "unterhalb einer anderen Seite"
+msgstr "unterhalb einer anderen Seite befinden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:72
-#, fuzzy
 msgid "Display Format"
 msgstr "Anzeigeformat"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:73
 msgid "Hierarchy"
-msgstr ""
+msgstr "Hierarchie"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:74
-#, fuzzy
 msgid "Flat"
-msgstr "Flat View"
+msgstr "Flat"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:78
-#, fuzzy
 msgid "Open by default to the..."
-msgstr "Standardmässig öffnen an..."
+msgstr "Standardmässig öffnen auf..."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:79
-#, fuzzy
 msgid "Current Page"
-msgstr "Seite öffnen"
+msgstr "Aktuelle Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:80
-#, fuzzy
 msgid "Current Month"
-msgstr "Aktuelle Themes"
+msgstr "Aktueller Monat"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:84
-#, fuzzy
 msgid "Page Info"
 msgstr "Seiteninfo"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:85
-#, fuzzy
 msgid "Titles"
-msgstr "Nur Titel"
+msgstr "Titeln"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:86
-#, fuzzy
 msgid "Titles &amp; Descriptions"
-msgstr "Beschreibungen abschneiden nach"
+msgstr "Titeln &amp; Beschreibungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:91
-#, fuzzy
 msgid "Truncate Titles"
 msgstr "Titeln abschneiden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:94
-#, fuzzy
 msgid "Truncate titles after"
 msgstr "Titeln abschneiden nach"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:96
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:107
-#, fuzzy
 msgid "characters"
 msgstr "Zeichen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:102
-#, fuzzy
 msgid "Truncate Summaries"
 msgstr "Zusammenfassungen abschneiden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/form_setup_html.php:105
-#, fuzzy
 msgid "Truncate descriptions after"
 msgstr "Beschreibungen abschneiden nach"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/tools/rss.php:50
-#, fuzzy
 msgid "Permission Denied"
 msgstr "Zugriff verweigert"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/tools/rss.php:50
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/date_nav/tools/rss.php:55
-#, fuzzy
 msgid "You don't have permission to access this RSS feed"
 msgstr "Sie haben keine Berechtigung auf diesen RSS Feed zuzugreifen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/add.php:4
-#, fuzzy
 msgid "File to include"
-msgstr "Zu verwendende externe Formulardatei"
+msgstr "Einzubindende Datei"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/add.php:7
-#, fuzzy
 msgid "Select a form"
 msgstr "Formular auswählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/add.php:17
 #, php-format
 msgid "This is a list of all files found in your external forms directory: %s"
-msgstr ""
+msgstr "Diese Dateien wurden in Ihrem Ordner für externe Formulardaten gefunden: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/controller.php:15
-#, fuzzy
 msgid "Include external forms in the filesystem and place them on pages."
-msgstr "Externe Formulare im Dateisystem einbinden und auf Seiten zeigen."
+msgstr "Externe Formulare im Dateisystem einbinden und auf Seiten anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/controller.php:19
-#, fuzzy
 msgid "External Form"
 msgstr "Externes Formular"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/controller.php:23
-#, fuzzy
 msgid "You must select a form."
-msgstr "Sie müssen ein Formular auswählen."
+msgstr "Sie müssen einen Formular auswählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/controller.php:62
 #, php-format
 msgid "Unable load external form block controller file: %s"
-msgstr ""
+msgstr "Datei: %s zur Steuerung externe Formulare konnte nicht geladen werden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/forms/test_form.php:9
-#, fuzzy
 msgid "This is just an example of how a custom form works."
 msgstr "Dies ist nur ein Beispiel welches zeigt wie Formulare funktionieren."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/external_form/forms/controllers/test_form.php:7
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:78
-#, fuzzy
 msgid "Thanks!"
 msgstr "Vielen Dank!"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/add.php:6
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/controller.php:25
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/edit.php:9
-#, fuzzy
 msgid "File"
 msgstr "Datei"
 
@@ -592,225 +497,185 @@ msgstr "Datei"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/edit.php:10
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:10
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:14
-#, fuzzy
 msgid "Choose File"
 msgstr "Datei auswählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/add.php:10
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/edit.php:13
-#, fuzzy
 msgid "Link Text"
 msgstr "Link Text"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/controller.php:21
-#, fuzzy
 msgid "Link to files stored in the asset library."
-msgstr "Verknüpfung zu Dateien in der Bibliothek erstellen."
+msgstr "Verlinkung zu Dateien aus der Bibliothek."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/controller.php:29
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/controller.php:35
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/controller.php:29
-#, fuzzy
 msgid "You must select a file."
 msgstr "Sie müssen eine Datei auswählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/file/controller.php:38
-#, fuzzy
 msgid "You must give your file a link."
 msgstr "Sie müssen Ihre Datei verlinken."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:8
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:12
-#, fuzzy
 msgid "Flash File"
 msgstr "Flash Datei."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:16
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:20
-#, fuzzy
 msgid "Quality"
 msgstr "Qualität"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:19
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:23
-#, fuzzy
 msgid "low"
-msgstr "low"
+msgstr "niedrig"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:20
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:24
-#, fuzzy
 msgid "autolow"
-msgstr "autolow"
+msgstr "niedrig(automatisch)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:21
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:25
-#, fuzzy
 msgid "autohigh"
-msgstr "autohigh"
+msgstr "hoch(automatisch)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:22
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:26
-#, fuzzy
 msgid "medium"
 msgstr "medium"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:23
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:27
-#, fuzzy
 msgid "high"
-msgstr "high"
+msgstr "hoch"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:28
-#, fuzzy
 msgid "best"
-msgstr "best"
+msgstr "beste"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/add.php:30
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/edit.php:34
-#, fuzzy
 msgid "Minimum Version"
 msgstr "Mindest-Version des Flash Players"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/controller.php:21
-#, fuzzy
 msgid "Embeds SWF files, including flash detection."
 msgstr "Bettet SWF-Dateien ein und prüft die Flash-Version"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/controller.php:25
-#, fuzzy
 msgid "Flash Content"
-msgstr "Flash Inhalt"
+msgstr "Flash-Inhalt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/view.php:13
-#, fuzzy
 msgid "Content disabled in edit mode."
 msgstr "Inhalt im Bearbeitungsmodus deaktiviert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/flash_content/view.php:18
-#, fuzzy
 msgid "You must install Adobe Flash to view this content."
-msgstr "Adobe Flash muss installiert sein um diesen Inhalt anzeigen zu können."
+msgstr "Sie müssen Adobe Flash installieren um diesen Inhalt azu sehen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:22
-#, fuzzy
 msgid "Build simple forms and surveys."
-msgstr "Einfache Formulare und Umfragen erstellen."
+msgstr "Formulare und Umfragen erstellen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:26
-#, fuzzy
 msgid "Form"
 msgstr "Formular"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:31
-#, fuzzy
 msgid "Are you sure you want to delete this question?"
 msgstr "Sind Sie sicher, dass Sie diese Frage löschen wollen?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:32
-#, fuzzy
 msgid "Your form must have a name."
 msgstr "Das Formular muss einen Namen besitzen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:33
-#, fuzzy
 msgid "Please complete all required fields."
 msgstr "Bitte füllen Sie alle benötigten Felder aus."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:34
-#, fuzzy
 msgid "AJAX Error."
 msgstr "AJAX-Fehler."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:35
-#, fuzzy
 msgid "Please add at least one question to your form."
 msgstr "Bitte mindestens eine Frage hinzufügen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:232
-#, fuzzy
 msgid "Oops, something is wrong with the form you posted (it doesn't have a question set id)."
-msgstr "Oops, etwas stimmt mit dem Formular, welches Sie abgesendet haben, nicht (die Frage ID ist nicht gesetzt)."
+msgstr "Oops, etwas stimmt mit dem Formular, welches Sie abgesendet haben, nicht (die ID fehlt)."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:241
-#, fuzzy
 msgid "Incorrect captcha code"
 msgstr "Ungültiger Sicherheitscode"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:264
-#, fuzzy
 msgid "Complete required fields *"
 msgstr "Benötigte Felder ausfüllen *"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:285
-#, fuzzy
 msgid "Invalid file extension."
 msgstr "Ungültige Dateierweiterung."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:288
-#, fuzzy
 msgid "Invalid file."
 msgstr "Ungültige Datei"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:298
-#, fuzzy
 msgid "Please correct the following errors:"
 msgstr "Bitte folgende Fehler korrigieren:"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:390
-#, fuzzy, php-format
+#, php-format
 msgid "%s Form Submission"
 msgstr "%s Formular Einreichung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:681
-#, fuzzy
 msgid "Submit"
 msgstr "Absenden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:702
-#, fuzzy
 msgid "edit"
 msgstr "bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/controller.php:703
-#, fuzzy
 msgid "remove"
 msgstr "entfernen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:12
-#, fuzzy
 msgid "Add"
-msgstr "Hinzufügen"
+msgstr "hinzufügen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:15
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:32
-#, fuzzy
 msgid "Options"
 msgstr "Optionen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:34
-#, fuzzy
 msgid "Form Name"
 msgstr "Formularname"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:40
-#, fuzzy
 msgid "Message to display when completed"
 msgstr "Nachricht, die nach Fertigstellung angezeigt wird"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:46
-#, fuzzy
 msgid "Notify me by email when people submit this form"
 msgstr "Mich per E-Mail benachrichtigen, wenn dieses Formular abgeschickt wurde"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:55
-#, fuzzy
 msgid "(Seperate multiple emails with a comma)"
 msgstr "(trennen Sie mehrere E-Mails mit einem Komma)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:59
-#, fuzzy, php-format
+#, php-format
 msgid "Solving a <a href=\"%s\" target=\"_blank\">CAPTCHA</a> Required to Post?"
 msgstr "Eingabe eines <a href=\"%s\" target=\"_blank\">CAPTCHA</a> erforderlich um Beitrag zu erstellen?"
 
@@ -823,7 +688,6 @@ msgstr "Eingabe eines <a href=\"%s\" target=\"_blank\">CAPTCHA</a> erforderlich 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:27
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:37
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:57
-#, fuzzy
 msgid "Yes"
 msgstr "Ja"
 
@@ -836,280 +700,235 @@ msgstr "Ja"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:28
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:38
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:58
-#, fuzzy
 msgid "No"
 msgstr "Nein"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:78
-#, fuzzy
 msgid "Redirect to another page after form submission?"
-msgstr "Nach erfolgreicher übermittlung auf einer anderen Seite weiterleiten?"
+msgstr "Nach erfolgreicher Absendung auf einer anderen Seite weiterleiten?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:104
-#, fuzzy
 msgid "Add a New Question"
 msgstr "Eine neue Frage einfügen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:107
-#, fuzzy
 msgid "Your question has been added. To view it click the preview tab."
 msgstr "Ihre Frage wurde hinzugefügt. Klicken Sie auf den Reiter \"Vorschau\" um sie anzuzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:111
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:195
-#, fuzzy
 msgid "Question"
 msgstr "Frage"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:117
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:202
-#, fuzzy
 msgid "Answer Type"
 msgstr "Antworttyp"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:120
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:205
-#, fuzzy
 msgid "Text Field"
 msgstr "Textfeld"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:121
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:206
-#, fuzzy
 msgid "Text Area"
 msgstr "Textbereich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:122
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:207
-#, fuzzy
 msgid "Radio Buttons"
 msgstr "Radiobuttons"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:123
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:208
-#, fuzzy
 msgid "Select Box"
 msgstr "Kombinationsfeld"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:124
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:209
-#, fuzzy
 msgid "Checkbox List"
 msgstr "Checkbox Liste"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:125
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:210
-#, fuzzy
 msgid "File Upload"
 msgstr "Datei Upload"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:126
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:211
-#, fuzzy
 msgid "Email Address"
 msgstr "E-Mail Adresse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:127
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:212
-#, fuzzy
 msgid "Telephone"
 msgstr "Telefon"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:128
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:213
-#, fuzzy
 msgid "Web Address"
 msgstr "E-Mail Adresse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:135
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:220
-#, fuzzy
 msgid "Answer Options"
 msgstr "Antworten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:138
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:223
-#, fuzzy
 msgid "Put each answer options on a new line"
 msgstr "Schreiben Sie jede Antwortmöglichkeit in einer neuen Zeile"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:145
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:230
-#, fuzzy
 msgid "Text Area Width"
-msgstr "Textfeld Breite"
+msgstr "Breite des Textfeldes"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:151
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:236
-#, fuzzy
 msgid "Text Area Height"
-msgstr "Textfeld Höhe"
+msgstr "Höhe des Textfeldes"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:159
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:244
-#, fuzzy
 msgid "Required"
 msgstr "Benötigt?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:177
-#, fuzzy
 msgid "Refresh"
 msgstr "Aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:178
-#, fuzzy
 msgid "Add Question"
 msgstr "Frage einfügen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:188
-#, fuzzy
 msgid "Your question has been edited."
 msgstr "Die Frage wurde bearbeitet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:193
-#, fuzzy
 msgid "Edit Question"
 msgstr "Frage bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:260
-#, fuzzy
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/form_setup_html.php:261
-#, fuzzy
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/form/tools/services.php:30
-#, fuzzy
 msgid "Invalid Permissions"
 msgstr "Ungültige Berechtigungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/controller.php:23
-#, fuzzy
 msgid "Enter an address and a Google Map of that location will be placed in your page."
-msgstr "Geben Sie eine Adresse ein die Google Maps auf Ihrer Seite anzeigen soll."
+msgstr "Geben Sie eine Adresse ein, die Google Maps auf Ihrer Seite anzeigen soll."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/controller.php:28
-#, fuzzy
 msgid "Google Map"
 msgstr "Google Map"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/controller.php:36
-#, fuzzy
 msgid "Please enter a zoom number from 0 to 21."
-msgstr "Bitte einen Vergrößerungswert zwischen 0 und 17 eingeben."
+msgstr "Bitte einen Vergrößerungswert zwischen 0 und 21 eingeben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:9
-#, fuzzy
 msgid "Map Title"
 msgstr "Kartentitel"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:9
-#, fuzzy
 msgid "Optional"
 msgstr "Optional"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:13
-#, fuzzy
 msgid "Location"
 msgstr "Ort"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:16
 msgid "e.g. 17 SE 3rd #410, Portland, OR, 97214"
-msgstr ""
+msgstr "zb. Kurfürstendamm 100, 10719 Berlin"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:20
-#, fuzzy
 msgid "Zoom"
 msgstr "Vergrößerung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/form_setup_html.php:23
-#, fuzzy
 msgid "Enter a number from 0 to 21, with 21 being the most zoomed in."
-msgstr "Geben Sie eine Zahl zwischen 0 und 17 ein, wobei 17 am weitesten herangezoomt bedeutet."
+msgstr "Geben Sie eine Zahl zwischen 0 und 21 ein, wobei 21 am weitesten herangezoomt bedeutet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/scrapbook.php:4
-#, fuzzy, php-format
+#, php-format
 msgid "Location: %s"
 msgstr "Ort: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/scrapbook.php:5
-#, fuzzy, php-format
+#, php-format
 msgid "Latitude: %s"
 msgstr "Breitengrad: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/scrapbook.php:6
-#, fuzzy, php-format
+#, php-format
 msgid "Longitude: %s"
 msgstr "Längengrad: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/google_map/view.php:6
-#, fuzzy
 msgid "Google Map disabled in edit mode."
-msgstr "Popup-Platzhalter (deaktiviert im Bearbeitungsmodus)"
+msgstr "Google MAp (deaktiviert im Bearbeitungsmodus)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:4
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:4
-#, fuzzy
 msgid "Title"
 msgstr "Titel"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:11
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:11
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:10
-#, fuzzy
 msgid "M jS, Y"
-msgstr "d M Y"
+msgstr "d.M.Y"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:16
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:16
-#, fuzzy
 msgid "Date Format"
 msgstr "Datumsformat"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:19
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:19
-#, fuzzy, php-format
+#, php-format
 msgid "Enter a <a href=\"%s\" target=\"_blank\">PHP date string</a> here."
 msgstr "Geben Sie hier einen <a href=\"%s\" target=\"_blank\">PHP date string</a> ein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:24
-#, fuzzy
 msgid "Comments enabled."
-msgstr "Ist das Schreiben von Kommentaren erlaubt?"
+msgstr "Kommentare nicht erlaubt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:34
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:34
-#, fuzzy
 msgid "Comments require approval."
-msgstr "Benötigen Kommentare die Bestätigung eines Moderators?"
+msgstr "Kommentare benötigen die Bestätigung eines Moderators?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:44
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:44
-#, fuzzy
 msgid "Authentication required."
 msgstr "Anmeldung wird für Kommentare benötigt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:47
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:47
-#, fuzzy
 msgid "Email Only"
 msgstr "Nur E-Mail"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:48
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:48
-#, fuzzy
 msgid "Users must login"
 msgstr "Benutzer müssen sich anmelden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:54
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:54
-#, fuzzy
 msgid "CAPTCHA Required."
-msgstr "Handle benötigt."
+msgstr "CAPTCHA benötigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:64
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:64
@@ -1159,7 +978,7 @@ msgstr "Beim Speichern des Kommentars ist ein Fehler aufgetreten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:162
 msgid "Thanks! Your comment has been received. It will require approval before it appears."
-msgstr ""
+msgstr "Vielen Dank! Ihr Kommentar wurde gespeichert und wird nach Sichtung angezeigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:164
 #, fuzzy
@@ -1296,7 +1115,7 @@ msgstr "Bild verweist auf eine URL"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:23
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:33
 msgid "Nothing"
-msgstr ""
+msgstr "Nichts"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:34
@@ -1641,7 +1460,6 @@ msgstr "Oops, es scheint als haben Sie eine ungültige Feed-Adresse eingegeben!"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:11
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/view.php:14
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/templates/read_more.php:14
-#, fuzzy
 msgid "F jS"
 msgstr "d F"
 
@@ -2214,7 +2032,7 @@ msgstr "Seitenaktivität"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blank/controller.php:12
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/packages/blank/controller.php:12
 msgid "Install only items required for concrete5 to run. This will create a blank site."
-msgstr ""
+msgstr "Installiere nur Basisfunktionalitäten von concrete5. Dies erstellt eine leere Seite."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blog/controller.php:8
 #, fuzzy
@@ -2223,7 +2041,7 @@ msgstr "Blog Eintrag"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blog/controller.php:12
 msgid "Creates a concrete5-powered blog, complete with composer integration, integrated date navigation and tag-based searching, and a custom blog theme."
-msgstr ""
+msgstr "Erstellt einen Blog auf concrete5 Basis inklusive intuitiven Composer, Datumsnavigation, Schlüsselwort basierter Suche und einem eigenen Design Theme."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/standard/controller.php:8
 #, fuzzy
@@ -2232,18 +2050,17 @@ msgstr "Standard Eigenschaften"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/standard/controller.php:12
 msgid "Creates a simple website with common examples of concrete5 functionality, including the YouTube block, the slideshow block, the guestbook block, several page types and more."
-msgstr ""
+msgstr "Erstellt eine einfache Website mit Beispielen der cocrete5 Features wie einbinden von YouTube Videos, Bilder Slideshows, einem Gästebuch, verschiedenn Seitentypen und weieteren Funktionalitäten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/packages/standard/controller.php:8
 msgid "Sample Content with Blog"
-msgstr ""
+msgstr "Beispiel-inhalte mit Blog"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/packages/standard/controller.php:12
 msgid "A great starting point for an attractive website with a blog."
-msgstr ""
+msgstr "Ein guter Startpunkt für eine attraktive Website inklusive Blog."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/download_file.php:58
-#, fuzzy
 msgid "Password incorrect. Please try again."
 msgstr "Passwort ungültig. Bitte versuchen Sie es erneut."
 
@@ -2279,7 +2096,7 @@ msgstr "Funktion mysql_connect() nicht gefunden. Es scheint so, als wäre auf Ih
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:198
 msgid "You must select a valid sample content starting point."
-msgstr ""
+msgstr "Bitte wählen Sie einen gültigen Beispielinhalt aus."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:221
 #, fuzzy
@@ -2325,7 +2142,7 @@ msgstr "Datei \"config/site.php\" konnte nicht zum Schreiben geöffnet werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:307
 msgid "Unable to open config/site_user.php for writing."
-msgstr ""
+msgstr "Die Datei config/site_user.php konnte nicht zum Schreiben geöffnet werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:17
 #, fuzzy
@@ -2572,7 +2389,7 @@ msgstr "Gruppe erfolgreich gelöscht."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:51
 msgid "You do not have access to delete this stack."
-msgstr ""
+msgstr "Sie haben nicht die nötigen Nutzerrechte um diese Gruppe zu löschen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:54
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:79
@@ -2643,9 +2460,8 @@ msgid "Draft saved successfully."
 msgstr "Der Block wurde erfolgreich gespeichert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:159
-#, fuzzy
 msgid "Invalid composer draft."
-msgstr "Ungültige Dateierweiterung."
+msgstr "Ungültiger Composerentwurf."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:177
 #, fuzzy, php-format
@@ -2667,7 +2483,7 @@ msgstr "Besondere Elemente"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:30
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:30
 msgid "Recommended"
-msgstr ""
+msgstr "Empfohlen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:31
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:31
@@ -2684,22 +2500,22 @@ msgstr "Hinzugefügt zwischen"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:33
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:33
 msgid "Highest Rated"
-msgstr ""
+msgstr "Best-bewertet"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:34
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:34
 msgid "Price: Low to High"
-msgstr ""
+msgstr "Preis: Niedrig nach Hoch"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:35
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:35
 msgid "Price: High to Low"
-msgstr ""
+msgstr "Preis: Hoch nach Niedrig"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:61
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:61
 msgid "Relevance"
-msgstr ""
+msgstr "Relevanz"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/connect.php:21
 #, fuzzy
@@ -2913,9 +2729,8 @@ msgid "Name required."
 msgstr "Name benötigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/pages/types/composer.php:42
-#, fuzzy
 msgid "Composer settings updated."
-msgstr "IP-Blacklist Einstellungen erneuert."
+msgstr "Composer-Einstellungen aktualisiset."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/pages/types/controller.php:31
 #, fuzzy
@@ -2933,7 +2748,6 @@ msgid "Page type updated successfully."
 msgstr "theme und Seitentyp erfolgreich aktualisiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/pages/types/controller.php:47
-#, fuzzy
 msgid "This page type is no longer included in composer."
 msgstr "Dieser Seitentyp ist nicht mehr in Composer enthalten."
 
@@ -2975,17 +2789,17 @@ msgstr "Attribut-Key aktualisiert."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:54
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:86
 msgid "Specify a handle for your attribute set."
-msgstr ""
+msgstr "Erstellen Sie einen Oberbegriff für Ihre Gruppe von Attributen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:58
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:90
 msgid "That handle is in use."
-msgstr ""
+msgstr "Dieser Begriff ist bereits vergeben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:62
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:94
 msgid "Specify a name for your attribute set."
-msgstr ""
+msgstr "Erstellen Sie einen Namen für Ihre Gruppe von Attributen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:83
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:115
@@ -2996,7 +2810,7 @@ msgstr "Ungültiges Dateienalbum."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/attributes/sets.php:145
 msgid "This attribute set is locked. That means it was added by a package and cannot be manually removed."
-msgstr ""
+msgstr "Diese Gruppe von Attributen ist gesperrt. Es wurde von einem Paket hinzugefügt und kann nicht manuel entfernt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/backup_restore/backup.php:58
 #, fuzzy, php-format
@@ -3066,7 +2880,7 @@ msgstr "Der Block wurde erfolgreich entfernt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/basics/interface.php:23
 msgid "concrete5 interface settings saved successfully."
-msgstr ""
+msgstr "Einstellungen für Schnittstellen gespeichert"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/basics/site_name.php:11
 #, fuzzy
@@ -3095,11 +2909,11 @@ msgstr "Editor Einstellungen gespeichert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/basics/editor/controller.php:58
 msgid "The editor must be at least 580 pixels wide."
-msgstr ""
+msgstr "Der Editor muss wenigstens 580 Pixel breit sein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/basics/editor/controller.php:62
 msgid "The editor must be at least 100 pixels tall."
-msgstr ""
+msgstr "Der Editor muss wenigstens 100 Pixel hoch sein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/basics/multilingual/controller.php:34
 #, fuzzy
@@ -3200,11 +3014,11 @@ msgstr "Ungültiges Paket oder kein Paket gewählt."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/optimization/jobs.php:30
 #, fuzzy
 msgid "Job succesfully uninstalled."
-msgstr "Fehler: Job nicht gefunden"
+msgstr "Dieser Job kann nicht deinstalliert werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/optimization/jobs.php:32
 msgid "This job cannot be uninstalled."
-msgstr ""
+msgstr "Dieser Job kann nicht deinstalliert werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/optimization/jobs.php:35
 #, fuzzy
@@ -3213,7 +3027,7 @@ msgstr "Fehler: Job nicht gefunden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/optimization/jobs.php:51
 msgid "All running jobs have been reset."
-msgstr ""
+msgstr "Alle laufenden Jobs wurden zurückgesetzt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/permissions/antispam.php:9
 #, fuzzy
@@ -3227,7 +3041,7 @@ msgstr "Globale E-Mail Einstellungen wurden gespeichert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/permissions/antispam.php:37
 msgid "Invalid anti-spam library."
-msgstr ""
+msgstr "UNgültige Anti-Spam Bibliothek"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/permissions/captcha.php:20
 #, fuzzy
@@ -3237,7 +3051,7 @@ msgstr "Cache Einstellungen gespeichert."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/permissions/captcha.php:35
 #, fuzzy
 msgid "Invalid captcha library."
-msgstr "Ungültiger Sicherheitscode"
+msgstr "UNgültige Anti-Spam Bibliothek"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/permissions/file_types.php:25
 #, fuzzy
@@ -3359,11 +3173,11 @@ msgstr "Bevorzugte Statistikenanalyse gespeichert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/seo/urls.php:58
 msgid "URL rewriting enabled. You need to update .htaccess by hand."
-msgstr ""
+msgstr "url-Rewriting aktiviert. Sie müssen die .htaccess Datei im Root-Verzeichnis ändern."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/seo/urls.php:60
 msgid "URL rewriting enabled. We were able to automatically update .htaccess file."
-msgstr ""
+msgstr "URL-Rewriting aktiviert. Die .htaccess Datei wurde automatisch geändert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/seo/urls.php:62
 #, fuzzy
@@ -3372,7 +3186,7 @@ msgstr "URL-Umschreibung deaktiviert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/system/seo/tracking_codes/controller.php:24
 msgid "Tracking code settings updated successfully."
-msgstr ""
+msgstr "Einstellungen für den Tracking-Code aktualisiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/users/add.php:34
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/users/search.php:67
@@ -3554,13 +3368,12 @@ msgid "No block types can be added to this area."
 msgstr "Zu diesem Bereich können keine Blocktypen hinzugefügt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/block_area_add_new.php:231
-#, fuzzy
 msgid "More Blocks"
-msgstr "Mehr Informationen"
+msgstr "Mehr Blocks"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/block_area_add_new.php:232
 msgid "Browse our marketplace of add-ons to extend your site!"
-msgstr ""
+msgstr "Stöbern Sie in unserem Marktplatz nach Zusatzpaketen um die Funktionalität Ihrer Seite zu erweitern."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/block_area_add_new.php:233
 #, fuzzy
@@ -3831,14 +3644,12 @@ msgid "Date Modified"
 msgstr "Änderungsdatum"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/block_master_collection_composer.php:17
-#, fuzzy
 msgid "Include block in Composer"
-msgstr "Block im Composer mit einbeziehen"
+msgstr "Block in Composer einbinden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/block_master_collection_composer.php:33
-#, fuzzy
 msgid "Custom Composer Template"
-msgstr "Benutzerdefinierte Vorlage setzen"
+msgstr "Benutzerdefinierte Composer-Vorlage"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_add.php:20
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_metadata.php:88
@@ -3960,12 +3771,12 @@ msgstr "Dies wird %s Unterseite(n) entfernen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_delete.php:86
 msgid "Deleted pages are moved to the trash can in the sitemap."
-msgstr ""
+msgstr "Gelöschte Seiten werden in den Papierkorb in der Sitemap verschoben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_delete.php:88
 #, fuzzy
 msgid "This cannot be undone."
-msgstr "Unterseiten unterhalb dieser Seite hinzugefügt"
+msgstr "Dieser Job kann nicht deinstalliert werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_mcd.php:12
 #, fuzzy
@@ -3999,7 +3810,7 @@ msgstr "Seite löschen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_metadata.php:16
 msgid "Note: Since you haven't checked this page out for editing, these changes will immediately be approved."
-msgstr ""
+msgstr "Bemerkung: Da Sie diese Seite nicht bzgl. einer Bearbeitung überprüft haben werden diese Änderungen direkt angewendet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_metadata.php:90
 #, fuzzy
@@ -4058,7 +3869,7 @@ msgstr "Zusätzliche Attribute"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_metadata_fields.php:78
 msgid "No attributes assigned. Any attributes you set here will automatically be set on pages when they are created."
-msgstr ""
+msgstr "Keine Attribute zugewiesen. Alle Attribute die Sie hier einstellen werden automatisch auf neu erstellte Seiten angewendet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/collection_metadata_fields.php:80
 #, fuzzy
@@ -4354,9 +4165,9 @@ msgid "Delete Attribute"
 msgstr "Attribut löschen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:45
-#, fuzzy, php-format
+#, php-format
 msgid "%s: Basic Details"
-msgstr "Datei Details"
+msgstr "%s: Grund-Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:48
 #, fuzzy
@@ -4385,27 +4196,27 @@ msgstr "Feld verfügbar in \"erweiterter Suche\"."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:89
 msgid "Content included in sitewide page search index."
-msgstr ""
+msgstr "Inhalt zu Seitensuchindex hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:90
 msgid "Field available in Dashboard Page Search."
-msgstr ""
+msgstr "Feld in der Dashboard Seitensuche verfügbar."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:93
 msgid "Content included in file search index."
-msgstr ""
+msgstr "INhalte zum Dateisuchindex hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:94
 msgid "Field available in File Manager Search."
-msgstr ""
+msgstr "Feld in Dateiverwaltungssuche verfügbar."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:97
 msgid "Content included in user keyword search."
-msgstr ""
+msgstr "Inhalt zur Stichwortsuche hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/type_form_required.php:98
 msgid "Field available in Dashboard User Search."
-msgstr ""
+msgstr "Feld in der Dashboard Nutzersuche verfügbar"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/attribute/categories/user.php:14
 #, fuzzy
@@ -4681,7 +4492,7 @@ msgstr "Die Basis URL Ihrer Website stimmt nicht mit einer registrierten Instanz
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/dashboard/marketplace_connect_failed.php:23
 msgid "Unable to connect to your project page. Your database contains a marketplace token which concrete5.org cannot verify."
-msgstr ""
+msgstr "Kann nicht mit Projektseite verbinden. Ihre Datenbanl enthält einen MArktplatz Token den concrete5.org nciht verifizieren kann."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/dashboard/marketplace_connect_failed.php:27
 #, fuzzy
@@ -4999,11 +4810,11 @@ msgstr "Sortieren nach"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/marketplace/search_form.php:40
 msgid "Compatibility"
-msgstr ""
+msgstr "Kompatibilität"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/marketplace/search_form.php:43
 msgid "Include only add-ons compatible with my version of concrete5."
-msgstr ""
+msgstr "Nur Erweiterungen anzeigen die mit meiner concrete5 Version kompatibel sind."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/pages/search_form_advanced.php:6
 #, fuzzy
@@ -5334,7 +5145,7 @@ msgstr "Neueste Nachrichten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/dashboard.php:370
 msgid "Learn about your site and concrete5."
-msgstr ""
+msgstr "Lerne mehr über Concrete5."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/dashboard.php:375
 #, fuzzy
@@ -5354,12 +5165,12 @@ msgstr "Concrete5 aktualisieren"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/dashboard.php:382
 #, php-format
 msgid "<a href=\"%s\">Install</a>, <a href=\"%s\">update</a> or download more <a href=\"%s\">themes</a> and <a href=\"%s\">add-ons</a>."
-msgstr ""
+msgstr "<a href=\"%s\">Installieren</a>, <a href=\"%s\">Updaten</a> oder mehr <a href=\"%s\">Themes</a> und <a href=\"%s\">Add-ons </a>herunterladen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/dashboard.php:388
 #, php-format
 msgid "<a href=\"%s\">Install</a> or <a href=\"%s\">update</a> packages."
-msgstr ""
+msgstr "Packages <a href=\"%s\">installieren</a> oder <a href=\"%s\">updaten</a>."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface.php:215
 #, fuzzy
@@ -5373,11 +5184,11 @@ msgstr "%s mehr zum Anzeigen. <a href=\"%s\">Alle betrachten</a>"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:17
 msgid "Composer lets you prepare content outside the context of your site; similar to most blogging applications.  To use composer, a page type needs to have at least one of its default blocks set to be editable in composer."
-msgstr ""
+msgstr "Composer ermöglicht Ihnen Seiten ausserhalb des In-Context Modus zu erstellen und zu bearbeiten.  Composer kann nur benutzt werden wenn ein Seitentyp mindestens ein Block, in den Standards, in Composer eingebunden wurde  ."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:18
 msgid "Pages that you have not published are shown on this page."
-msgstr ""
+msgstr "Seiten, die nicht veröffentlicht wurden, werden auf dieser Seite angezeigt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:19
 msgid ""
@@ -5385,18 +5196,21 @@ msgid ""
 "\\n"
 " Click a page to see available actions.  Drag a page to move it anywhere in the sitemap.  Concrete5 does not use any arbitrary hierarchies.  Organize your content however you feel. "
 msgstr ""
+"Die Sitemap ermöglicht eine Ansicht alle Seiten in eine Baumstruktur .  In der Sitemap können Sie Seiten kopieren, verschieben und löschen. Sie können aber auch die Berechtigungen setzen\\n"
+"\\n"
+" Wenn Sie auf eine Seite klicken sehen Sie alle möglichen Aktionen.  Mit einem Klick können Sie die Seite verschieben und die Anordnung verändern.  Concrete5 gibt Ihnen die Möglichkeit, Ihre Seiten frei zu organisieren  ."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:20
 msgid "Sitemap flat view is useful for working with specific branches of your site hierarchy.  All actions in the normal sitemap are available here as well."
-msgstr ""
+msgstr "Mit der Flatview können Sie Ihre Seiten ausserhalb der Baumstruktur ansehen. Alle Aktionen aus der Sitemap können Sie hier auch nutzen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:21
 msgid "You can search for pages using a variety of parameters.  Use the checkboxes to select multiple pages and perform the same action on all of them."
-msgstr ""
+msgstr "Sie können Seiten suchen nach verschiedenen Parametern. Benutzen Sie die Checkboxen um mehrere Seiten auszuwählen und die gleiche Suche durchführen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:22
 msgid "Add, search, replace and modify the files for your website.  You can also perform some image editing tasks here."
-msgstr ""
+msgstr "Dateien hinzufügen, ersetzen und verändern. Einige Bildbearbeitungsfunktionen können Sie hier auch ausführen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/interface/help.php:23
 msgid "Files can have additional data attached to them to aid in their organization and modify how they are used as content."
@@ -5869,9 +5683,8 @@ msgid "Multilingual Setup"
 msgstr "Setup Index"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/upgrade/version_542.php:42
-#, fuzzy
 msgid "Composer Beta"
-msgstr "Composer Beta"
+msgstr "Composer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/upgrade/version_542.php:42
 #, fuzzy
@@ -5907,8 +5720,9 @@ msgid "Interface Preferences"
 msgstr "Bearbeitungseinstellungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/upgrade/version_551.php:33
+#, fuzzy
 msgid "Newsflow"
-msgstr ""
+msgstr "Aktuellste Nachrichten auf der Startseite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/form/page_selector.php:50
 #, fuzzy
@@ -7441,9 +7255,8 @@ msgid "Return to Home"
 msgstr "Zurück zur Startseite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/register.php:37
-#, fuzzy
 msgid "Your Details"
-msgstr "Datei Details"
+msgstr "Ihre Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/register.php:102
 #, fuzzy
@@ -7624,9 +7437,8 @@ msgid "Core Block Types"
 msgstr "Kern-Blocktyp"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/drafts.php:3
-#, fuzzy
 msgid "Composer Drafts"
-msgstr "PHP Einstellungen"
+msgstr "Composer-Entwürfe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/drafts.php:18
 #, fuzzy
@@ -7634,7 +7446,7 @@ msgid "(Untitled Page)"
 msgstr "Seite öffnen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/drafts.php:34
-#, fuzzy, php-format
+#, php-format
 msgid "You have not created any drafts. <a href=\"%s\">Visit Composer &gt;</a>"
 msgstr "Sie haben noch keine Entwürfe erstellt. <a href=\"%s\">Composer anzeigen&gt;</a>"
 
@@ -7669,7 +7481,6 @@ msgid "Attributes &amp; Content"
 msgstr "Header Extra Inhalt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/write.php:89
-#, fuzzy
 msgid "Block not found. Unable to edit in composer."
 msgstr "Block nicht gefunden. Kann nicht im Composer bearbeitet werden."
 
@@ -7700,7 +7511,6 @@ msgid "Discard this draft?"
 msgstr "Seite cachen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/write.php:279
-#, fuzzy
 msgid "Composer"
 msgstr "Composer"
 
@@ -7710,7 +7520,6 @@ msgid "What type of page would you like to write?"
 msgstr "Welchen Seitentyp möchten Sie erstellen?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/composer/write.php:289
-#, fuzzy
 msgid "You have not setup any page types for Composer."
 msgstr "Sie haben noch keine Seitentypen für Composer konfiguriert."
 
@@ -7890,9 +7699,8 @@ msgstr "Herunterladen und Installieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/extend/update.php:68
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/extend/update.php:100
-#, fuzzy
 msgid "More Details"
-msgstr "Datei Details"
+msgstr "Mehr Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/extend/update.php:76
 msgid "Unable to locate this add-on on concrete5.org"
@@ -7901,7 +7709,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/extend/update.php:89
 #, fuzzy
 msgid "Update Add-On"
-msgstr "Aktualisiere Erweiterungen"
+msgstr "Erweiterungen aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/extend/update.php:125
 msgid "Your site is not connected to the concrete5 community. Connecting lets you easily extend a site with themes and add-ons. Connecting enables automatic updates."
@@ -8234,49 +8042,40 @@ msgid "Default Attributes to Display"
 msgstr "Anzahl der zu zeigenden Einträge"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:15
-#, fuzzy
 msgid "Composer Settings"
-msgstr "PHP Einstellungen"
+msgstr "Composer-Einstellungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:28
-#, fuzzy
 msgid "Included in Composer?"
-msgstr "Inhalt einbezogen in \"Stichwort Suche\"."
+msgstr "In Composer eingebunden?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:37
-#, fuzzy
 msgid "Yes, include this page type in Composer."
-msgstr "Ja, diesen Seitentyp mit Composer bearbeiten."
+msgstr "Ja, diesen Seitentyp in Composer einbinden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:48
-#, fuzzy
 msgid "Composer Publishing Settings"
-msgstr "Cache Einstellungen gespeichert."
+msgstr "Composer-Veröffentlichungseinstellungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:57
-#, fuzzy
 msgid "Choose from all pages when publishing."
 msgstr "Kann unterhalb einer beliebigen Seite veröffentlicht werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:62
-#, fuzzy
 msgid "Choose from pages of a certain type when publishing."
-msgstr "Kann nur unterhalb von Seites eines bestimmten Typs veröffentlicht werden."
+msgstr "Kann nur unterhalb von Seiten eines bestimmten Typs veröffentlicht werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:77
-#, fuzzy
 msgid "Always publish below a certain page."
 msgstr "Immer unterhalb einer ganz bestimmten Seite veröffentlichen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:95
-#, fuzzy
 msgid "Attributes to Display in Composer"
-msgstr "Attribute, die im Composer angezeigt werden sollen"
+msgstr "Attribute, die in Composer angezeigt werden sollen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:142
-#, fuzzy
 msgid "Composer Content Order"
-msgstr "Seitenreihenfolge ändern"
+msgstr "Composer Inhaltsordnung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:189
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:248
@@ -8285,9 +8084,8 @@ msgid "Back to Page Types"
 msgstr "Keine Seitentypen gefunden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/composer.php:244
-#, fuzzy
 msgid "Unable to access composer settings."
-msgstr "Zugriff auf Dateimanager fehlgeschlagen"
+msgstr "Zugriff auf Composer-Einstellungen fehlgeschlagen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/pages/types/view.php:70
 #, fuzzy
@@ -8626,9 +8424,8 @@ msgid "Edit Set"
 msgstr "öffentliches Album bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/attributes/sets.php:11
-#, fuzzy
 msgid "Update Set Details"
-msgstr "Albumdetails bearbeiten"
+msgstr "Albumdetails aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/attributes/sets.php:15
 msgid "This attribute set is locked. It cannot be deleted, and its handle cannot be changed."
@@ -9298,7 +9095,7 @@ msgstr "Falls Sie diese Jobs im Hintergrund laufen lassen wollen, automatisieren
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/optimization/jobs.php:174
 #, fuzzy
 msgid "Reset all Running Jobs"
-msgstr "Alle Jobs erfolgreich ausgeführt"
+msgstr "Alle laufenden Jobs wurden zurückgesetzt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/optimization/notifications.php:3
 #, fuzzy
@@ -9311,8 +9108,9 @@ msgid "There are no notifications."
 msgstr "Keine Meldungen vorhanden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/permissions/antispam.php:2
+#, fuzzy
 msgid "Spam Control"
-msgstr ""
+msgstr "UNgültige Anti-Spam Bibliothek"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/permissions/antispam.php:12
 #, fuzzy
@@ -9949,9 +9747,8 @@ msgid "Delete User Account"
 msgstr "Benutzerkonto löschen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/users/search.php:384
-#, fuzzy
 msgid "Basic Details"
-msgstr "Datei Details"
+msgstr "Grund-Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/users/search.php:387
 #, fuzzy, php-format
@@ -10038,9 +9835,8 @@ msgid "Back to Mailbox"
 msgstr "Zurück zum Posteingang"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/profile/messages.php:11
-#, fuzzy
 msgid "Message Details"
-msgstr "Details"
+msgstr "Nachricht-Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/profile/messages.php:38
 #, fuzzy
@@ -10395,7 +10191,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/i18n_js.php:33
 #, fuzzy
 msgid "Manage Stack Contents"
-msgstr "Attributtypen verwalten"
+msgstr "Ansicht der Sammelmappe (Kern)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/i18n_js.php:34
 #, fuzzy
@@ -10622,9 +10418,8 @@ msgid "Choose a new parent page from the sitemap."
 msgstr "Neue übergeordnete Seite auswählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/i18n_js.php:104
-#, fuzzy
 msgid "Edit in Composer"
-msgstr "Inhalt im Bearbeitungsmodus deaktiviert."
+msgstr "In Composer bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/i18n_js.php:108
 #, fuzzy
@@ -11421,9 +11216,8 @@ msgid "Save Location"
 msgstr "Ablage speichern"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/files/properties.php:205
-#, fuzzy
 msgid "File Details"
-msgstr "Datei Details"
+msgstr "Datei-Details"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/files/properties.php:230
 #, fuzzy
