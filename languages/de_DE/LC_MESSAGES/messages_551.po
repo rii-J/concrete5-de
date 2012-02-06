@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Concrete5.5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-27 21:46+0100\n"
-"PO-Revision-Date: 2012-02-04 21:24+0100\n"
+"PO-Revision-Date: 2012-02-05 12:53+0100\n"
 "Last-Translator: Riadh Jouili <info@concrete5-cms.de>\n"
 "Language-Team: Concrete5-cms.de <info@concrete5-cms.de>\n"
 "MIME-Version: 1.0\n"
@@ -193,7 +193,7 @@ msgstr "Concrete5 aktualisieren"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:6
 #, php-format
 msgid "The latest version of concrete5 is <strong>%s</strong>. You are currently running concrete5 version <strong>%s</strong>."
-msgstr "Die neueste Version von Concrete5 ist <strong>%s</strong>. Sie verwenden <strong>%s</strong>."
+msgstr "Die neueste Version von Concrete5 ist <strong>%s</strong>. Sie verwenden die Version <strong>%s</strong>."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/dashboard_app_status/view.php:6
 msgid "Learn more and update."
@@ -932,47 +932,38 @@ msgstr "CAPTCHA benötigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/add.php:64
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/edit.php:64
-#, fuzzy
 msgid "Notify Email on Comment"
-msgstr "E-Mail Adresse benachrichtigen wenn ein Kommentar geschrieben wurde"
+msgstr "Per E-Mail benachrichtigen wenn ein Kommentar geschrieben wurde"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:39
-#, fuzzy
 msgid "Adds blog-style comments (a guestbook) to your page."
 msgstr "Fügt Kommentare im Blog-Stil (ein Gästebuch) zu Ihrer Seite hinzu."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:43
-#, fuzzy
 msgid "Guestbook / Comments"
 msgstr "Gästebuch/Kommentare"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:107
-#, fuzzy
 msgid "Your session has expired.  Please log back in."
-msgstr "Ihre Sitzung ist abgelaufen. Bitte neu anmelden."
+msgstr "Ihre Sitzung ist abgelaufen. Melden Sie sich erneut an."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:110
-#, fuzzy
 msgid "Invalid Email Address"
 msgstr "Ungültige E-Mail Adresse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:113
-#, fuzzy
 msgid "Name is required"
 msgstr "Name ist erforderlich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:126
-#, fuzzy
 msgid "a comment is required"
 msgstr "Kommentar ist erforderlich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:154
-#, fuzzy
 msgid "The comment has been saved"
 msgstr "Kommentar wurde gespeichert"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:156
-#, fuzzy
 msgid "An Error occured while saving the comment"
 msgstr "Beim Speichern des Kommentars ist ein Fehler aufgetreten"
 
@@ -981,134 +972,109 @@ msgid "Thanks! Your comment has been received. It will require approval before i
 msgstr "Vielen Dank! Ihr Kommentar wurde gespeichert und wird nach Sichtung angezeigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:164
-#, fuzzy
 msgid "Thanks! Your comment has been posted."
 msgstr "Vielen Dank! Ihr Kommentar wurde hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:186
-#, fuzzy
 msgid "Guestbook Comment Notification"
 msgstr "Hinweis auf einen Kommentar im Gästebuch"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:234
-#, fuzzy
 msgid "The comment has been removed."
 msgstr "Der Kommentar wurde entfernt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:255
-#, fuzzy
 msgid "The comment has been approved."
 msgstr "Der Kommentar wurde akzeptiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/controller.php:274
-#, fuzzy
 msgid "The comment has been unapproved."
 msgstr "Der Kommentar wurde abgelehnt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:20
-#, fuzzy
 msgid "Are you sure you would like to remove this comment?"
 msgstr "Sind Sie sicher, dass Sie diesen Kommentar entfernen wollen?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:20
-#, fuzzy
 msgid "Remove"
 msgstr "Entfernen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:22
-#, fuzzy
 msgid "Un-Approve"
 msgstr "Ablehnen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:24
-#, fuzzy
 msgid "Approve"
 msgstr "Genehmigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:29
-#, fuzzy
 msgid "Posted by"
 msgstr "Geschrieben von"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:40
-#, fuzzy
 msgid "on"
 msgstr "am"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:56
-#, fuzzy
 msgid "You must be logged in to leave a reply."
 msgstr "Sie müssen angemeldet sein um eine Nachricht zu erstellen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:56
-#, fuzzy
 msgid "Login"
 msgstr "Anmelden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:62
-#, fuzzy
 msgid "Leave a Reply"
 msgstr "Antwort schreiben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:69
-#, fuzzy
 msgid "Name"
 msgstr "Name"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:71
-#, fuzzy
 msgid "Email"
 msgstr "E-Mail"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:72
-#, fuzzy
 msgid "Your email will not be publicly displayed."
 msgstr "Ihre E-Mail Adresse wird nicht angezeigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/guestbook/view.php:91
-#, fuzzy
 msgid "Post Comment"
 msgstr "Kommentar schreiben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/html/controller.php:20
-#, fuzzy
 msgid "For adding HTML by hand."
 msgstr "HTML Code manuell einfügen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/html/controller.php:24
-#, fuzzy
 msgid "HTML"
 msgstr "HTML"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:11
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/controller.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:21
-#, fuzzy
 msgid "Image"
 msgstr "Bild"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:12
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:22
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/composer/thumbnail.php:24
-#, fuzzy
 msgid "Choose Image"
 msgstr "Bild auswählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:15
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:25
-#, fuzzy
 msgid "Image On-State"
 msgstr "Mouse-Over-Bild"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:16
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:26
-#, fuzzy
 msgid "Choose Image On-State"
 msgstr "Wählen Sie ein Bild für den Mouse-Over-Effekt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:21
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:31
-#, fuzzy
 msgid "Image Links to:"
 msgstr "Bild verweist auf eine URL"
 
@@ -1119,37 +1085,31 @@ msgstr "Nichts"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:24
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:34
-#, fuzzy
 msgid "Another Page"
 msgstr "unterhalb einer anderen Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:25
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:35
-#, fuzzy
 msgid "External URL"
-msgstr "Primäre URL"
+msgstr "Externe URL"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:37
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:47
-#, fuzzy
 msgid "Alt Text/Caption"
 msgstr "Alternative Bildbeschreibung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:42
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:52
-#, fuzzy
 msgid "Maximum Dimensions"
 msgstr "Maximale Größen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:45
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:55
-#, fuzzy
 msgid "Width"
 msgstr "Breite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/add.php:48
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/edit.php:58
-#, fuzzy
 msgid "Height"
 msgstr "Höhe"
 
@@ -1159,301 +1119,242 @@ msgid "Adds images and onstates from the library to pages."
 msgstr "Fügt Bilder und Mouse-Over-Bilder aus der Bibliothek, Seiten hinzu."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/controller.php:29
-#, fuzzy
 msgid "You must select an image."
 msgstr "Sie müssen ein Bild auswählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/controller.php:88
-#, fuzzy
 msgid "Image Not Found. "
 msgstr "Bild nicht gefunden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/tools/composer_save.php:5
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/image/tools/crop_image.php:5
-#, fuzzy
 msgid "Unable to add files."
 msgstr "Dateien konnten nicht hinzugefügt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/controller.php:32
-#, fuzzy
 msgid "Files added to the asset library"
 msgstr "Dateien zur Bibliothek hinzugefügt"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/controller.php:36
-#, fuzzy
 msgid "Library File"
 msgstr "Bibliotheks-Datei"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/tools/properties.php:11
-#, fuzzy
 msgid "Size"
 msgstr "Größe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/tools/properties.php:15
-#, fuzzy
 msgid "Added By"
 msgstr "Hinzugefügt von"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/tools/properties.php:29
-#, fuzzy
 msgid "Dimensions"
 msgstr "Abmessungen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/tools/properties.php:34
-#, fuzzy
 msgid "Date Added:"
 msgstr "Hinzugefügt am:"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/library_file/tools/properties.php:38
-#, fuzzy
 msgid "Date Modified:"
 msgstr "Geändert am:"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/add.php:4
-#, fuzzy
 msgid "Next"
 msgstr "Weiter"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/add.php:5
-#, fuzzy
 msgid "Previous"
 msgstr "Zurück"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/add.php:6
-#, fuzzy
 msgid "Up"
 msgstr "Nach oben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/controller.php:17
-#, fuzzy
 msgid "Navigate through sibling pages."
-msgstr "List pages based on type, area."
+msgstr "Durch Zielseiten navigieren."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/controller.php:21
-#, fuzzy
 msgid "Next & Previous Nav"
 msgstr "Vor & Zurück Navigation"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:10
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:17
-#, fuzzy
 msgid "Next Label"
 msgstr "Nächstes Label"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:11
-#, fuzzy
 msgid "Next & Previous Labels"
 msgstr "Nächste und vorherige Label "
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:12
-#, fuzzy
 msgid "Page Titles"
 msgstr "Seitentiteln"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:22
-#, fuzzy
 msgid "Previous Label"
 msgstr "Vorheriges Label"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:27
-#, fuzzy
 msgid "Up Label"
 msgstr "Nach oben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:33
-#, fuzzy
 msgid "Show Arrows"
 msgstr "Pfeile anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:38
-#, fuzzy
 msgid "Loop"
 msgstr "Loop"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:39
-#, fuzzy
 msgid "Return to start/end of page sequence"
 msgstr "Zum Start/Ende der Seitensequenz zurück kehren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:43
-#, fuzzy
 msgid "Page Order"
 msgstr "Seitenreihenfolge"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:45
-#, fuzzy
 msgid "Sitemap"
 msgstr "Sitemap"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:46
-#, fuzzy
 msgid "Chronological"
 msgstr "Chronologisch"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:51
-#, fuzzy
 msgid "Exclude System Pages"
 msgstr "System-Seiten ausschliessen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/next_previous/form_setup_html.php:52
-#, fuzzy
 msgid "yes"
 msgstr "Ja"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/controller.php:17
-#, fuzzy
 msgid "List pages based on type, area."
 msgstr "Seiten nach Typ und Bereich auflisten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/controller.php:21
-#, fuzzy
 msgid "Page List"
 msgstr "Seitenliste"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/controller.php:26
-#, fuzzy
 msgid "Please give your RSS Feed a name."
 msgstr "Bitte Namen für den RSS-Feed angeben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:29
-#, fuzzy
 msgid "Filter"
 msgstr "Filter"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:38
-#, fuzzy
 msgid "(<strong>Note</strong>: You must create the \"is_featured\" page attribute first.)"
 msgstr "(<strong>Hinweis</strong>: Das Attribute \"is_featured\" muss erst erstellt werden.)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:42
-#, fuzzy
 msgid "Display page aliases."
 msgstr "Page-Aliase anzeigen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:47
-#, fuzzy
 msgid "Pagination"
 msgstr "Seitenumbruch"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:49
-#, fuzzy
 msgid "Display pagination interface if more items are available than are displayed."
 msgstr "Eine Seitenumbruchs-Navigation erstellen, wenn mehr Elemente verfügbar sind als angezeigt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:81
-#, fuzzy
 msgid "Include all child pages"
-msgstr "Einrichten auf Unterseiten"
+msgstr "Alle Unterseiten einbinden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:85
-#, fuzzy
 msgid "Sort Pages"
 msgstr "Seiten sortieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:86
-#, fuzzy
 msgid "Pages should appear"
 msgstr "Seiten sollten erscheinen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:88
-#, fuzzy
 msgid "in their sitemap order"
 msgstr "in gleicher Reihenfolge wie die Sitemap"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:89
-#, fuzzy
 msgid "with the most recent first"
 msgstr "die neuesten zu erst"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:90
-#, fuzzy
 msgid "with the earliest first"
 msgstr "beginnend mit dem ältesten Eintrag."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:91
-#, fuzzy
 msgid "in alphabetical order"
 msgstr "in alphabetischer Reihenfolge"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:92
-#, fuzzy
 msgid "in reverse alphabetical order"
 msgstr "in umgekehrter alphabetischer Reihenfolge"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:97
-#, fuzzy
 msgid "Provide RSS Feed"
 msgstr "RSS-Feed anbieten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:103
-#, fuzzy
 msgid "RSS Feed Title"
 msgstr "Titel des RSS-Feeds"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:105
-#, fuzzy
 msgid "RSS Feed Description"
 msgstr "Beschreibung des RSS-Feeds"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/page_list_form.php:127
-#, fuzzy
 msgid "Preview Pane"
 msgstr "Vorschaubereich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/view.php:63
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/templates/blog_index.php:57
-#, fuzzy
 msgid "RSS Icon"
-msgstr "RSS-Darsteller"
+msgstr "RSS-Icon"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/view.php:63
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/templates/blog_index.php:57
-#, fuzzy
 msgid "RSS Feed"
 msgstr "RSS-Feed"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/templates/blog_index.php:17
-#, fuzzy
 msgid "Comment"
 msgstr "Kommentar"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/templates/blog_index.php:17
-#, fuzzy
 msgid "Comments"
 msgstr "Kommentare"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/templates/blog_index.php:56
-#, fuzzy
 msgid "Subscribe to RSS Feed"
 msgstr "RSS-Feed abonnieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/page_list/tools/blog_rss.php:58
-#, fuzzy
 msgid "This page list doesn't use the custom blog template, or you don't have permission to access this RSS feed"
 msgstr "Diese Seiteliste benutzt nicht die benutzerdefinierte Blogvorlage oder Sie haben keine Berechtigung auf diesen RSS Feed zuzugreifen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/controller.php:23
-#, fuzzy
 msgid "Fetch, parse and display the contents of an RSS or Atom feed."
 msgstr "Laden, verarbeiten und anzeigen eines RSS- oder Atom-Feeds."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/controller.php:27
-#, fuzzy
 msgid "RSS Displayer"
 msgstr "RSS-Darsteller"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/controller.php:32
-#, fuzzy
 msgid "Please enter a valid feed address."
 msgstr "Bitte eine gültige Feed-Adresse eingeben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/controller.php:33
-#, fuzzy
 msgid "Please enter the number of items to display."
-msgstr "Bitte die Anzahl der zu zeigenden Einträge eingeben."
+msgstr "Bitte die Anzahl der Einträge eingeben, die angezeigt werden sollen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/controller.php:50
-#, fuzzy
 msgid "Oops, it looks like you've entered an invalid feed address!"
 msgstr "Oops, es scheint als haben Sie eine ungültige Feed-Adresse eingegeben!"
 
@@ -1464,570 +1365,460 @@ msgid "F jS"
 msgstr "d F"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:16
-#, fuzzy
 msgid "Feed URL"
 msgstr "Feed-Adresse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:29
-#, fuzzy
 msgid "Feed Title"
 msgstr "Feed-Titel"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:36
-#, fuzzy
 msgid "# items to display"
-msgstr "Anzahl der zu zeigenden Einträge"
+msgstr "#Anzahl der Einträge, die angezeigt werden sollen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:46
-#, fuzzy
 msgid "Only Titles"
 msgstr "Nur Titel"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:47
-#, fuzzy
 msgid "Titles & Summary"
 msgstr "Titel und Zusammenfassung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/form_setup_html.php:56
-#, fuzzy
 msgid "Open links in a new window"
 msgstr "Verknüpfungen in einem neuem Fenster öffnen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/rss_displayer/templates/read_more.php:36
-#, fuzzy
 msgid "Read More"
 msgstr "Weiterlesen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/controller.php:59
-#, fuzzy
 msgid "Add a search box to your site."
 msgstr "Fügen Sie einen Suchfeld in Ihre Seite ein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/controller.php:63
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/controller.php:73
-#, fuzzy
 msgid "Search"
 msgstr "Suchen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/controller.php:67
-#, fuzzy
 msgid "Please enter a valid search title."
 msgstr "Bitte geben Sie einen gültigen Suchbegriff ein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:9
-#, fuzzy
 msgid "The search index does not appear to exist. This block will not function until the reindex job has been run at least once in the dashboard."
-msgstr "Der Suchindex scheint nicht zu existieren. Dieser Block wird nicht funktionieren bis der Neu-Indizieren-Job mindestens einmal über das Hauptmenü ausgeführt wurde."
+msgstr "Der Suchindex scheint nicht zu existieren. Dieser Block wird nicht funktionieren bis der Neu-Indizieren-Job mindestens einmal über die Verwaltung ausgeführt wurde."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:13
-#, fuzzy
 msgid "Search Title"
 msgstr "Titel der Suche"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:17
-#, fuzzy
 msgid "Submit Button Text"
 msgstr "Beschriftung der Absenden-Schaltfläche"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:21
-#, fuzzy
 msgid "Search Within Path"
 msgstr "Suche innerhalb des Pfades"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:54
-#, fuzzy
 msgid "Results Page"
 msgstr "Ergebnis-Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/form_setup_html.php:58
-#, fuzzy
 msgid "Post to Another Page Elsewhere"
 msgstr "Auf einer anderen Seite anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/search/view.php:27
-#, fuzzy
 msgid "There were no results found. Please try another keyword or phrase."
 msgstr "Es konnten keine Ergebnisse gefunden werden. Bitte versuchen Sie andere Suchbegriffe."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/controller.php:25
-#, fuzzy
 msgid "Display a running loop of images."
 msgstr "Zeigt Bilder in einer Slideshow."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/controller.php:29
-#, fuzzy
 msgid "Slideshow"
 msgstr "Slideshow"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/controller.php:34
-#, fuzzy
 msgid "Choose Image/File"
 msgstr "Datei/Bild wählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/controller.php:35
-#, fuzzy
 msgid "Please choose at least two images."
 msgstr "Bitte mindestens 2 Bilder auswählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/controller.php:36
-#, fuzzy
 msgid "Please choose a file set."
 msgstr "Bitte wählen Sie ein Album aus."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/fileset_row_include.php:4
-#, fuzzy
 msgid "File Set:"
-msgstr "Dateienalbum löschen"
+msgstr "Album:"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/fileset_row_include.php:5
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/image_row_include.php:12
-#, fuzzy
 msgid "Duration"
 msgstr "Anzeige-Dauer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/fileset_row_include.php:7
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/image_row_include.php:14
-#, fuzzy
 msgid "Fade Duration"
 msgstr "überblendungs-Dauer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:21
-#, fuzzy
 msgid "Type"
 msgstr "Typ"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:23
-#, fuzzy
 msgid "Custom Slideshow"
 msgstr "Individuelle Slideshow"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:24
-#, fuzzy
 msgid "Pictures from File Set"
 msgstr "Bilder aus dem Album"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:28
-#, fuzzy
 msgid "Playback"
 msgstr "Wiedergabe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:30
-#, fuzzy
 msgid "Display Order"
 msgstr "Anzeigeordnung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:31
-#, fuzzy
 msgid "Random (But keep sets together)"
 msgstr "Zufällig (aber Alben zusammenhalten)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:32
-#, fuzzy
 msgid "Completely Random"
 msgstr "Ganz zufällig"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/form_setup_html.php:39
-#, fuzzy
 msgid "Add Image"
 msgstr "Bild einfügen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/image_row_include.php:16
-#, fuzzy
 msgid "Set Number"
 msgstr "Album-Nummer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/slideshow/image_row_include.php:18
-#, fuzzy
 msgid "Link URL (optional)"
 msgstr "Verweis auf eine Adresse (optional)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/add.php:20
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/edit.php:21
-#, fuzzy
 msgid "Open to all site visitors?"
 msgstr "Offen für alle Besucher der Website?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/add.php:23
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/edit.php:24
-#, fuzzy
 msgid "No. Registration is required to answer."
-msgstr "Nein. Registrierung ist für das Antworten erforderlich."
+msgstr "Nein. Registrierung ist für Antworten erforderlich."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/add.php:31
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/edit.php:42
-#, fuzzy
 msgid "Add option"
 msgstr "Option einfügen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/controller.php:38
-#, fuzzy
 msgid "Provide a simple survey, along with results in a pie chart format."
-msgstr "Eine einfache Umfrage und ein auswertendes Kreisdiagramm zur Verfügung stellen."
+msgstr "Eine Umfrage und ein auswertendes Kreisdiagramm zur Verfügung stellen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/controller.php:42
-#, fuzzy
 msgid "Survey"
 msgstr "Umfrage"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/controller.php:228
-#, fuzzy
 msgid "No data is available yet."
-msgstr "Dieser Block ist nicht mehr verfügbar"
+msgstr "Es sind keine Daten vorhanden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:11
-#, fuzzy
 msgid "You've voted on this survey."
 msgstr "Sie haben schon abgestimmt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:49
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:85
-#, fuzzy
 msgid "Vote"
 msgstr "Abstimmen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:49
-#, fuzzy
 msgid "Votes"
 msgstr "Stimmen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:55
-#, fuzzy
 msgid "survey results"
-msgstr "Formular-Ergebnisse"
+msgstr "Umfrage-Ergebnisse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:62
-#, fuzzy
 msgid "View Full Results"
 msgstr "Ergebnisse anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/survey/view.php:87
-#, fuzzy
 msgid "Please Login to Vote"
 msgstr "Bitte anmelden um abzustimmen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/controller.php:30
-#, fuzzy
 msgid "Tags"
 msgstr "Tags"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:6
-#, fuzzy, php-format
+#, php-format
 msgid "Error: The required page attribute with the handle of: \"%s\" doesn't exist"
-msgstr "Fehler: Der aufgeforderte Seitenattribut mit dem Handle:  \"%s\" existiert nicht"
+msgstr "Fehler: Der aufgeforderte Seitenattribut mit der Kennung:  \"%s\" existiert nicht"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:11
-#, fuzzy
 msgid "Advanced"
 msgstr "Erweitert"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:27
-#, fuzzy
 msgid "Display Tags for the current page"
 msgstr "Tags für die aktuelle Seite anzeigen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:28
-#, fuzzy
 msgid "Display available tags"
-msgstr "Alle verfügbaren Länder"
+msgstr "Alle verfügbaren Tags"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:44
-#, fuzzy
 msgid "Number to Display"
-msgstr "Anzahl der zu zeigenden Einträge"
+msgstr "Anzahl der zu zeigenden EInträge"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/tags/tag_form.php:54
-#, fuzzy
 msgid "Link Tags to Page"
-msgstr "Seitenlink einfügen"
+msgstr "Tags verlinken"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/add.php:9
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/edit.php:11
-#, fuzzy
 msgid "Video File"
-msgstr "Video Datei"
+msgstr "Video-Datei"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/add.php:11
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/edit.php:13
-#, fuzzy
 msgid "Choose Video File"
-msgstr "Video Datei auswählen"
+msgstr "Video-Datei auswählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/controller.php:32
-#, fuzzy
 msgid "Embeds uploaded video into a web page. Supports AVI, WMV, Quicktime/MPEG4 and FLV formats."
 msgstr "Bettet hochgeladene Videos in die Webseite ein. Unterstützt die Formate AVI, WMV, Quicktime/MPEG4 und FLV."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/controller.php:36
-#, fuzzy
 msgid "Video Player"
-msgstr "Video Player"
+msgstr "Video-Player"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/controller.php:40
-#, fuzzy
 msgid "You must select a valid FLV file."
 msgstr "Bitte eine gültige FLV-Datei wählen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/video/view.php:44
-#, fuzzy
 msgid "Loading Video... If you're seeing this message you may not have Flash installed."
 msgstr "Video wird geladen... Wenn Sie diese Meldung sehen, haben Sie Flash eventuell nicht installiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/controller.php:24
-#, fuzzy
 msgid "Embeds a YouTube Video in your web page."
-msgstr "Fügt ein Youtube Video in Ihre Website ein."
+msgstr "Fügt ein Youtube-Video in Ihre Website ein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/controller.php:28
-#, fuzzy
 msgid "YouTube Video"
-msgstr "Youtube Video"
+msgstr "Youtube-Video"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/controller.php:38
-#, fuzzy
 msgid "My Video"
-msgstr "Mein Video"
+msgstr "Mein-Video"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/edit.php:2
-#, fuzzy
 msgid "Access Denied."
 msgstr "Zugriff verweigert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/form_setup_html.php:24
-#, fuzzy
 msgid "YouTube URL"
-msgstr "Primäre URL"
+msgstr "YouTube-URL"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/form_setup_html.php:44
-#, fuzzy
 msgid "iFrame - Works in more devices"
 msgstr "iFrame - Kompatibel mit einer größeren Anzahl von Geräten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/form_setup_html.php:45
-#, fuzzy
 msgid "Flash Embed - Legacy method"
 msgstr "Flash Einbettung - Klassische Methode"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/blocks/youtube/view.php:17
-#, fuzzy
 msgid "YouTube Video disabled in edit mode."
-msgstr "Popup-Platzhalter (deaktiviert im Bearbeitungsmodus)"
+msgstr "YouTube-Video (deaktiviert im Bearbeitungsmodus)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:16
-#, fuzzy
 msgid "JPEG"
 msgstr "JPEG"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:17
-#, fuzzy
 msgid "GIF"
 msgstr "GIF"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:18
-#, fuzzy
 msgid "PNG"
 msgstr "PNG"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:19
-#, fuzzy
 msgid "Windows Bitmap"
 msgstr "BMP (Bitmap)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:20
-#, fuzzy
 msgid "TIFF"
 msgstr "TIFF"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:22
-#, fuzzy
 msgid "Flash"
 msgstr "Flash"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:23
-#, fuzzy
 msgid "Icon"
 msgstr "Symbol"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:24
-#, fuzzy
 msgid "Windows Video"
 msgstr "Windows Video"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:25
-#, fuzzy
 msgid "Quicktime"
 msgstr "Quicktime"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:26
-#, fuzzy
 msgid "AVI"
 msgstr "AVI"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:27
-#, fuzzy
 msgid "Plain Text"
 msgstr "Text"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:28
-#, fuzzy
 msgid "CSV"
 msgstr "CSV"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:29
-#, fuzzy
 msgid "XML"
 msgstr "XML"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:30
-#, fuzzy
 msgid "PHP"
 msgstr "PHP"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:31
-#, fuzzy
 msgid "MS Word"
 msgstr "MS Word"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:32
-#, fuzzy
 msgid "Stylesheet"
 msgstr "Stylesheet"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:33
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:36
-#, fuzzy
 msgid "MP4"
 msgstr "MP4"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:34
-#, fuzzy
 msgid "FLV"
 msgstr "FLV"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:35
-#, fuzzy
 msgid "MP3"
 msgstr "MP3"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:37
-#, fuzzy
 msgid "Realaudio"
 msgstr "Real-Audio"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:38
-#, fuzzy
 msgid "Windows Audio"
 msgstr "Windows Audio"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:39
-#, fuzzy
 msgid "Rich Text"
 msgstr "RTF"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:40
-#, fuzzy
 msgid "JavaScript"
 msgstr "JavaScript"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:41
-#, fuzzy
 msgid "PDF"
 msgstr "PDF"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:42
-#, fuzzy
 msgid "Photoshop"
 msgstr "Photoshop"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:43
-#, fuzzy
 msgid "MPEG"
 msgstr "MPEG"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:44
-#, fuzzy
 msgid "MS Excel"
 msgstr "MS Excel"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:45
-#, fuzzy
 msgid "MS Powerpoint"
 msgstr "MS Powerpoint"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:46
-#, fuzzy
 msgid "TAR Archive"
 msgstr "TAR Archiv"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:47
-#, fuzzy
 msgid "Zip Archive"
 msgstr "ZIP Archiv"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/file_types.php:48
-#, fuzzy
 msgid "GZip Archive"
 msgstr "GZip Archiv"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:41
-#, fuzzy
 msgid "F d, Y \\a\\t g:i A"
-msgstr "d.F.Y \\u\\m H:i:s"
+msgstr "d.m.Y \\u\\m H:i:s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:45
-#, fuzzy
 msgid "n/j/Y \\a\\t g:i A"
 msgstr "d.m.Y \\u\\m H:i"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:53
-#, fuzzy
 msgid "n/j/Y"
 msgstr "d.m.Y"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:57
-#, fuzzy
 msgid "F d, Y"
 msgstr "d.m.Y"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:61
-#, fuzzy
 msgid "g:i A"
 msgstr "H:i"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:65
-#, fuzzy
 msgid "g:i:s A"
 msgstr "H:i:s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:69
-#, fuzzy
 msgid "d-m-Y_H:i_"
-msgstr "d.m.Y_H:i_"
+msgstr "d-m-Y_H:i_"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:115
-#, fuzzy
 msgid "This block is no longer available."
 msgstr "Dieser Block ist nicht mehr verfügbar"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:116
-#, fuzzy
 msgid "Guest"
 msgstr "Gast"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:117
-#, fuzzy
 msgid "Registered Users"
 msgstr "Registrierte Benutzer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/localization.php:118
-#, fuzzy
 msgid "Admin"
 msgstr "Administrator"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blank/controller.php:8
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/packages/blank/controller.php:8
-#, fuzzy
 msgid "Empty Site"
-msgstr "Seitenaktivität"
+msgstr "Leere Seite"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blank/controller.php:12
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/packages/blank/controller.php:12
@@ -2035,18 +1826,16 @@ msgid "Install only items required for concrete5 to run. This will create a blan
 msgstr "Installiere nur Basisfunktionalitäten von concrete5. Dies erstellt eine leere Seite."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blog/controller.php:8
-#, fuzzy
 msgid "Blog"
-msgstr "Blog Eintrag"
+msgstr "Blog"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/blog/controller.php:12
 msgid "Creates a concrete5-powered blog, complete with composer integration, integrated date navigation and tag-based searching, and a custom blog theme."
 msgstr "Erstellt einen Blog auf concrete5 Basis inklusive intuitiven Composer, Datumsnavigation, Schlüsselwort basierter Suche und einem eigenen Design Theme."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/standard/controller.php:8
-#, fuzzy
 msgid "Standard Website"
-msgstr "Standard Eigenschaften"
+msgstr "Standard Website"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/config/install/disabled/standard/controller.php:12
 msgid "Creates a simple website with common examples of concrete5 functionality, including the YouTube block, the slideshow block, the guestbook block, several page types and more."
@@ -2065,32 +1854,27 @@ msgid "Password incorrect. Please try again."
 msgstr "Passwort ungültig. Bitte versuchen Sie es erneut."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:78
-#, fuzzy
 msgid "concrete5 is already installed."
-msgstr "Dieses theme ist bereits installiert."
+msgstr "Concrete5 ist bereits installiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:101
-#, fuzzy, php-format
+#, php-format
 msgid "Congratulations. concrete5 has been installed. You have been logged in as <b>%s</b> with the password you chose. If you wish to change this password, you may do so from the users area of the dashboard."
-msgstr "Glückwunsch. Concrete wurde installiert. Sie sind angemeldet als <b>%s</b> mit dem Passwort <b>%s</b>.<br/><br/>Wenn Sie das Passwort ändern möchten, so können Sie dies unter Verwaltung im Bereich Benutzer tun."
+msgstr "Glückwunsch. Concrete5 wurde installiert. Sie sind angemeldet als <b>%s</b> mit dem Passwort das Sie eingegeben haben. Wenn Sie das Passwort ändern möchten, so können Sie dies unter Verwaltung im Bereich Benutzer tun."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:146
-#, fuzzy
 msgid "Your configuration directory config/ does not appear to be writable by the web server."
 msgstr "In das Konfigurationsverzeichnis \"config/\" kann nicht geschrieben werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:150
-#, fuzzy
 msgid "Your files directory files/ does not appear to be writable by the web server."
 msgstr "In das Verzeichnis \"files/\" kann nicht geschrieben werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:154
-#, fuzzy
 msgid "Your packages directory packages/ does not appear to be writable by the web server."
 msgstr "Der Webserver kann anscheinend nicht in Ihr Paketverzeichnis packages/ schreiben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:166
-#, fuzzy
 msgid "Function mysql_connect() not found. Your system does not appear to have MySQL available within PHP."
 msgstr "Funktion mysql_connect() nicht gefunden. Es scheint so, als wäre auf Ihrem System MySQL nicht verfügbar."
 
@@ -2099,44 +1883,37 @@ msgid "You must select a valid sample content starting point."
 msgstr "Bitte wählen Sie einen gültigen Beispielinhalt aus."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:221
-#, fuzzy
 msgid "Unable to connect to database."
 msgstr "Verbindung zur Datenbank konnte nicht hergestellt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:225
-#, fuzzy, php-format
+#, php-format
 msgid "There are already %s tables in this database. concrete5 must be installed in an empty database."
-msgstr "In der Datenbank sind bereits %s Tabellen vorhanden. Concrete5 muss in eine leere Datenbank installiert werden."
+msgstr "In der Datenbank sind bereits %s Tabellen vorhanden. Concrete5 muss aun eine leeren Datenbank installiert werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:238
-#, fuzzy
 msgid "Please specify your site's name"
-msgstr "Bitte geben Sie den Namen Ihrer Website an"
+msgstr "Bitte geben Sie Ihrer Website einen Namen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:239
-#, fuzzy
 msgid "Please specify a valid email address"
 msgstr "Bitte geben Sie eine gültige E-Mail Adresse ein"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:240
-#, fuzzy
 msgid "You must specify a valid database name"
 msgstr "Sie müssen einen gültigen Datenbanknamen angeben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:241
-#, fuzzy
 msgid "You must specify a valid database server"
 msgstr "Sie müssen einen gültigen Datenbankserver angeben"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:252
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:400
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:111
-#, fuzzy
 msgid "The two passwords provided do not match."
-msgstr "Die beiden Passworte sind unterschiedlich."
+msgstr "Die beiden Passwörter sind unterschiedlich."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/install.php:293
-#, fuzzy
 msgid "Unable to open config/site.php for writing."
 msgstr "Datei \"config/site.php\" konnte nicht zum Schreiben geöffnet werden."
 
@@ -2145,55 +1922,47 @@ msgid "Unable to open config/site_user.php for writing."
 msgstr "Die Datei config/site_user.php konnte nicht zum Schreiben geöffnet werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:17
-#, fuzzy
 msgid "Username"
 msgstr "Benutzername"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:35
-#, fuzzy
 msgid "** Default"
-msgstr "Standard"
+msgstr "**Standard"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:61
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:64
-#, fuzzy
 msgid "Invalid email address provided."
 msgstr "Ungültige E-Mail Adresse angegeben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:63
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:66
-#, fuzzy, php-format
+#, php-format
 msgid "The email address %s is already in use. Please choose another."
-msgstr "Die E-Mail Adresse %s ist schon in Gebrauch. Bitte wählen Sie eine andere."
+msgstr "Die E-Mail Adresse %s wird von einem anderen Benutzer gebraucht. Bitte wählen Sie eine andere."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:95
-#, fuzzy
 msgid "OpenID Verification Cancelled"
 msgstr "OpenID überprüfung abgebrochen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:98
-#, fuzzy, php-format
+#, php-format
 msgid "OpenID Authentication Failed: %s"
 msgstr "OpenID Authentifikation fehlgeschlagen: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:130
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:175
-#, fuzzy
 msgid "This user is inactive. Please contact us regarding this account."
 msgstr "Dieser Benutzer ist inaktiv. Bitte kontaktieren Sie uns bezüglich dieses Kontos."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:149
-#, fuzzy
 msgid "Invalid OpenID."
 msgstr "Ungültige OpenID."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:155
-#, fuzzy
 msgid "An email address and password are required."
 msgstr "Eine E-Mail Adresse und ein Passwort sind erforderlich."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:157
-#, fuzzy
 msgid "A username and password are required."
 msgstr "Ein Benutzername und ein Passwort sind erforderlich."
 
@@ -2203,189 +1972,162 @@ msgid "This account has not yet been validated. Please check the email associate
 msgstr "Dieser Account wurde noch nicht validiert. Bitte überprüfen Sie Ihre E-Mail Addresse, die mit diesem Account verbunden ist und folgen Sie dem enthalten Link."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:169
-#, fuzzy
 msgid "Invalid email address or password."
 msgstr "Ungültige E-Mail Adresse oder Passwort."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:171
-#, fuzzy
 msgid "Invalid username or password."
 msgstr "Ungültiger Benutzername oder Passwort."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:190
-#, fuzzy
 msgid "This account does not match the email address provided."
-msgstr "Dieser Account stimmt nicht mit der übermittelten Email Adresse überein."
+msgstr "Dieser Account stimmt nicht mit der übermittelten E-Mail Adresse überein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:195
-#, fuzzy
 msgid "Login Successful"
 msgstr "Anmeldung erfolgreich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:254
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:121
-#, fuzzy, php-format
+#, php-format
 msgid "The field \"%s\" is required"
 msgstr "Das Feld \"%s\" ist erforderlich"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:355
-#, fuzzy
 msgid "An email containing instructions on resetting your password has been sent to your account address."
-msgstr "Eine E-Mail mit Instruktionen um ein neues Passwort zu setzen wurde an Ihre Adresse versendet."
+msgstr "Eine E-Mail mit Anweisungen um ein neues Passwort zu setzen, wurde an Ihre Adresse versendet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:391
-#, fuzzy
 msgid "Key Expired. Please visit the forgot password page again to have a new key generated."
 msgstr "Schlüssel abgelaufen. Bitte besuchen Sie die \"Passwort vergessen\"-Seite um einen neuen Schlüssel anzufordern."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:428
-#, fuzzy
 msgid "Invalid Key. Please visit the forgot password page again to have a new key generated."
 msgstr "Ungültiger Schlüssel. Bitte besuchen Sie die \"Passwort vergessen\"-Seite um einen neuen Schlüssel anzufordern."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:439
-#, fuzzy
 msgid "Invalid email address."
 msgstr "Ungültige E-Mail Adresse."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:444
-#, fuzzy
 msgid "We have no record of that email address."
 msgstr "Diese E-Mail Adresse konnte nicht in der Datenbank gefunden werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:462
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/login.php:466
-#, fuzzy
 msgid "Forgot Password"
 msgstr "Passwort vergessen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:59
-#, fuzzy
 msgid "Incorrect image validation code. Please check the image and re-enter the letters or numbers as necessary."
-msgstr "Falscher Code. Bitte prüfen Sie das Bild und geben Sie die Buchstaben und Zahlen wie dort zu sehen ein."
+msgstr "Falscher Code. Bitte prüfen Sie das Bild und geben Sie die Buchstaben und Zahlen, wie dort zu sehen sind, ein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:72
-#, fuzzy, php-format
+#, php-format
 msgid "A username must be between at least %s characters long."
 msgstr "Ein Benutzername muss mindestens %s Zeichen lang sein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:76
-#, fuzzy, php-format
+#, php-format
 msgid "A username cannot be more than %s characters long."
 msgstr "Ein Benutzername kann nicht mehr als %s Zeichen lang sein."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:82
-#, fuzzy
 msgid "A username may only contain letters, numbers and spaces."
 msgstr "Ein Benutzername kann nur Buchstaben, Zahlen und Leerzeichen enthalten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:84
-#, fuzzy
 msgid "A username may only contain letters or numbers."
 msgstr "Ein Benutzername darf nur Buchstaben und Ziffern enthalten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:89
-#, fuzzy, php-format
+#, php-format
 msgid "The username %s already exists. Please choose another"
 msgstr "Der Benutzername %s existiert schon. Bitte wählen Sie einen anderen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:94
-#, fuzzy
 msgid "Invalid Username"
 msgstr "Ungültiger Benutzername"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:146
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:150
-#, fuzzy
 msgid "Website Registration Notification"
-msgstr "Website Registrierungsmeldung"
+msgstr "Website Registrierungs-Meldung"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:191
-#, fuzzy
 msgid "Validate Email Address"
 msgstr "E-Mail Adresse validieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:264
-#, fuzzy
 msgid "Your account has been created, and you are now logged in."
 msgstr "Ihr Konto wurde erstellt und Sie sind jetzt eingeloggt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:269
-#, fuzzy
 msgid "You are registered but you need to validate your email address. Some or all functionality on this site will be limited until you do so."
 msgstr "Sie sind registriert, müssen aber noch Ihre E-Mail Adresse bestätigen. Teile, vielleicht auch die komplette Funktionalität dieser Website sind eingeschränkt, bis Sie dies getan haben."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:270
-#, fuzzy
 msgid "An email has been sent to your email address. Click on the URL contained in the email to validate your email address."
 msgstr "Eine E-Mail wurde an Ihre Adresse gesendet. Klicken Sie auf die URL in dieser E-Mail um die Bestätigung abzuschliessen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/register.php:275
-#, fuzzy
 msgid "You are registered but a site administrator must review your account, you will not be able to login until your account has been approved."
 msgstr "Sie sind registriert, aber ein Administrator muss Ihren Account noch freigeben, damit Sie sich einloggen können."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:39
-#, fuzzy
 msgid "Unable to determine your current version of Concrete. Upgrading cannot continue."
 msgstr "Aktuelle Version von Concrete5 konnte nicht ermittelt werden. Aktualisierung kann nicht ausgeführt werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:41
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:71
-#, fuzzy, php-format
+#, php-format
 msgid "Upgrading from <b>%s</b>"
 msgstr "Upgrade von <b>%s</b>"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:42
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:72
-#, fuzzy, php-format
+#, php-format
 msgid "Upgrading to <b>%s</b>"
 msgstr "Upgrade auf <b>%s</b>"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:43
-#, fuzzy
 msgid "Your current website uses a version of Concrete5 greater than this one. You cannot upgrade."
 msgstr "Ihre Website verwendet derzeit eine Version von Concrete5 die höher ist als diese. Sie können kein Upgrade durchführen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:46
-#, fuzzy, php-format
+#, php-format
 msgid "Your site is already up to date! The current version of Concrete5 is <b>%s</b>. You should remove this file for security."
 msgstr "Ihre Website ist auf dem aktuellsten Stand! Die aktuelle Version von Concrete5 ist <b>%s</b>. Diese Datei sollten Sie aus Sicherheitsgründen entfernen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:52
-#, fuzzy
 msgid "You must first upgrade your site to version 5.4.2.2"
-msgstr "Sie müssen zunächst auf Version 5.3.2 upgraden."
+msgstr "Sie müssen zunächst auf Version 5.4.2.2 upgraden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:158
-#, fuzzy
 msgid "Unable to locate database import file."
 msgstr "Zu importierende Datenbankdatei konnte nicht gefunden werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:215
-#, fuzzy, php-format
+#, php-format
 msgid "An Unexpected Error occurred while upgrading: %s"
 msgstr "Ein unerwarteter Fehler ist während des Upgrades aufgetreten: %s"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/upgrade.php:219
-#, fuzzy, php-format
+#, php-format
 msgid "Upgrade to <b>%s</b> complete!"
 msgstr "Upgrade auf <b>%s</b> abgeschlossen!"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:27
-#, fuzzy
 msgid "You must give your stack a name."
-msgstr "Geben Sie Ihrer individuellen Stilvorlage einen Namen."
+msgstr "Geben Sie Ihrer Sammelmappe eine Namen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:35
-#, fuzzy
 msgid "Stack added successfully"
-msgstr "Neues Dateienalbum erfolgreich hinzugefügt."
+msgstr "Sammelmappe erfolgreich hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:39
-#, fuzzy
 msgid "Stack deleted successfully"
-msgstr "Gruppe erfolgreich gelöscht."
+msgstr "Sammelmappe erfolgreich gelöscht."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:51
 msgid "You do not have access to delete this stack."
@@ -2393,80 +2135,67 @@ msgstr "Sie haben nicht die nötigen Nutzerrechte um diese Gruppe zu löschen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:54
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/stacks/controller.php:79
-#, fuzzy
 msgid "Invalid stack"
-msgstr "Ungültige Berechtigungen"
+msgstr "Ungültige Sammelmappe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:43
-#, fuzzy
 msgid "Block Type Refreshed. Any database schema changes have been applied."
 msgstr "Blocktyp neu eingelesen. Jegliche Änderungen am Datenbankschema wurden andewendet."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:61
-#, fuzzy
 msgid "Block Type Installed."
 msgstr "Blocktyp installiert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:68
-#, fuzzy
 msgid "You do not have permission to install custom block types or add-ons."
 msgstr "Sie haben keine Berechtigung eigene Blocktypen oder Erweiterungen zu installieren."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:83
-#, fuzzy
 msgid "Only the super user may remove block types."
-msgstr "Nur der Super User können Blocktypen entfernen."
+msgstr "Nur der Super-Admin kann Blocktypen entfernen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:91
-#, fuzzy
 msgid "This block type is internal. It cannot be uninstalled."
 msgstr "Dies ist ein interner Blocktyp. Er kann nicht deinstalliert werden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/blocks/types/controller.php:118
-#, fuzzy
 msgid "The block type has been removed."
 msgstr "Dieser Blocktyp wurde entfernt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/drafts.php:13
-#, fuzzy
 msgid "Draft deleted."
-msgstr "Datei gelöscht."
+msgstr "Entwurf gelöscht."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:16
-#, fuzzy
 msgid "Invalid page."
-msgstr "Ungültige Seiten ID angegeben."
+msgstr "Ungültige Seite."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:30
-#, fuzzy
 msgid "You must provide a name for your page before you can publish it."
 msgstr "Sie müssen einen Namen für die Seite angeben, bevor diese veröffentlicht werden kann."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:37
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:154
-#, fuzzy
 msgid "Invalid parent page."
-msgstr "Ungültige Seiten ID angegeben."
+msgstr "Ungültige übergeordnete Seite."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:41
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:166
-#, fuzzy
 msgid "You do not have permissions to add this page type in that location."
 msgstr "Sie haben keine Berechtigung diesen Seitentyp an diesem Ort hinzuzufügen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:103
-#, fuzzy
 msgid "Draft saved successfully."
-msgstr "Der Block wurde erfolgreich gespeichert."
+msgstr "Entwurf wurde erfolgreich gespeichert."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:159
 msgid "Invalid composer draft."
 msgstr "Ungültiger Composerentwurf."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/composer/write.php:177
-#, fuzzy, php-format
+#, php-format
 msgid "This page will be published beneath %s."
-msgstr "Unterseiten unterhalb dieser Seite hinzugefügt"
+msgstr "Diese Seite wird unterhalb %s veröffentlicht."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/add-ons.php:22
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/extend/themes.php:22
@@ -2641,7 +2370,7 @@ msgstr "Seitenattribut gelöscht."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/pages/single.php:23
 #, fuzzy
 msgid "Page Successfully Added."
-msgstr "Zu Seite hinzugefügt."
+msgstr "Sammelmappe erfolgreich hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/pages/single.php:25
 #, fuzzy
@@ -3244,7 +2973,7 @@ msgstr "Benutzerattribut geändert."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/users/groups.php:42
 #, fuzzy
 msgid "Group added successfully"
-msgstr "Gruppe erfolgreich gelöscht."
+msgstr "Sammelmappe erfolgreich hinzugefügt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/controllers/dashboard/users/groups.php:46
 #, fuzzy
@@ -4969,79 +4698,64 @@ msgid "Registered Between"
 msgstr "Registriert zwischen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_form_advanced.php:6
-#, fuzzy
 msgid "Activated Users"
 msgstr "Aktivierte Benutzer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_form_advanced.php:30
-#, fuzzy
 msgid "Inactive Users"
 msgstr "Inaktive Benutzer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_form_advanced.php:30
-#, fuzzy
 msgid "Active Users"
 msgstr "Aktive Benutzer"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_form_advanced.php:49
-#, fuzzy
 msgid "Username or Email"
-msgstr "Benutzername oder E-Mail Adresse enthält:"
+msgstr "Benutzername oder E-Mail Adresse"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_form_advanced.php:61
-#, fuzzy
 msgid "Group(s)"
-msgstr "Gruppe"
+msgstr "Gruppe(n)"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_results.php:36
-#, fuzzy
 msgid "Choose"
 msgstr "Auswählen"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_results.php:98
-#, fuzzy
 msgid "No users found."
-msgstr "Keine Benutzer gefunden."
+msgstr "Kein Benutzer gefunden."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/elements/users/search_results.php:106
-#, fuzzy
 msgid "Export"
-msgstr "Alle exportieren"
+msgstr "Exportieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:124
-#, fuzzy
 msgid "days"
 msgstr "Tage"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:126
-#, fuzzy
 msgid "day"
 msgstr "Tag"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:128
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:132
-#, fuzzy
 msgid "hours"
 msgstr "Stunden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:134
-#, fuzzy
 msgid "hour"
 msgstr "Stunde"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:144
-#, fuzzy
 msgid "minute"
 msgstr "Minute"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:146
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:152
-#, fuzzy
 msgid "seconds"
 msgstr "Sekunden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/date.php:154
-#, fuzzy
 msgid "second"
 msgstr "Sekunde"
 
@@ -5438,7 +5152,6 @@ msgid "Get submission data."
 msgstr "Gesendete Daten ansehen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/helpers/concrete/upgrade/version_510.php:80
-#, fuzzy
 msgid "Users and Groups"
 msgstr "Benutzer und Gruppen"
 
@@ -7333,7 +7046,7 @@ msgstr "Sind Sie sicher dass Sie dieses Attribut entfernen wollen?"
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/blocks/stacks/view.php:42
 #, fuzzy
 msgid "Delete Stack"
-msgstr "Antwort entfernen"
+msgstr "Ungültige Sammelmappe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/blocks/stacks/view.php:49
 #, fuzzy
@@ -7366,7 +7079,7 @@ msgstr "Der Block wurde erfolgreich hinzugefügt."
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/blocks/stacks/view.php:120
 #, fuzzy
 msgid "Add Stack"
-msgstr "Objekt hinzufügen"
+msgstr "Ungültige Sammelmappe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/blocks/types/view.php:7
 #, fuzzy
@@ -8434,7 +8147,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/attributes/sets.php:43
 #, fuzzy
 msgid "Update Set"
-msgstr "Bitte wählen Sie ein Album aus."
+msgstr "Albumdetails aktualisieren"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/attributes/sets.php:49
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/attributes/sets.php:56
@@ -9398,7 +9111,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/registration/public_registration.php:23
 #, fuzzy
 msgid " On - email validation"
-msgstr "E-Mail Adresse überprüft"
+msgstr "Per E-Mail benachrichtigen wenn ein Kommentar geschrieben wurde"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/registration/public_registration.php:29
 #, fuzzy
@@ -9412,7 +9125,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/registration/public_registration.php:49
 #, fuzzy
 msgid "CAPTCHA required"
-msgstr "Handle benötigt."
+msgstr "CAPTCHA benötigt."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/dashboard/system/registration/public_registration.php:55
 #, fuzzy
@@ -9810,7 +9523,6 @@ msgid "Edit Profile"
 msgstr "Profil bearbeiten"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/single_pages/profile/edit.php:49
-#, fuzzy
 msgid "Leave blank if you'd like your password to remain the same"
 msgstr "Leer lassen, um Passwort nicht zu ändern"
 
@@ -9962,7 +9674,7 @@ msgstr ""
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/startup/process.php:408
 #, fuzzy
 msgid "Invalid stack."
-msgstr "Ungültige Berechtigungen"
+msgstr "Ungültige Sammelmappe"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/startup/process.php:472
 #, fuzzy
@@ -11499,21 +11211,18 @@ msgid "Unable to delete one or more pages."
 msgstr "Nicht möglich eine oder mehrere Dateien zu löschen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/delete.php:59
-#, fuzzy
 msgid "You do not have permission to delete any of the selected pages."
-msgstr "Sie haben keine Berechtigung, die markierten Dateien zu löschen."
+msgstr "Sie haben keine Berechtigung, die markierten Seiten zu löschen."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/delete.php:62
-#, fuzzy
 msgid "Are you sure you want to delete the following pages?"
-msgstr "Sind Sie sicher, dass die folgenden Dateien gelöscht werden sollen?"
+msgstr "Sind Sie sicher, dass die folgenden Seiten gelöscht werden sollen?"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/design.php:126
 msgid "You do not have permission to modify the page type or theme on any of the selected pages."
 msgstr ""
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/design.php:177
-#, fuzzy
 msgid "Get more themes."
 msgstr "Weitere Themes"
 
@@ -11523,22 +11232,19 @@ msgstr ""
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/speed_settings.php:130
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/pages/speed_settings.php:154
-#, fuzzy
 msgid "Multiple values"
 msgstr "Mehrere Werte"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/themes/preview_external.php:39
-#, fuzzy
 msgid "curl must be enabled to preview external themes."
 msgstr "curl muss eingeschaltet sein um eine Vorschau externer Themes zu erhalten."
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/themes/preview_internal.php:25
-#, fuzzy, php-format
+#, php-format
 msgid "Theme not found in %s"
 msgstr "Theme in %s nicht gefunden"
 
 #: /Users/riadh/Desktop/concrete5.5.1/concrete/tools/users/search_results_export.php:28
-#, fuzzy
 msgid "Registered"
 msgstr "Registriert"
 
